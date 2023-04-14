@@ -1,0 +1,76 @@
+{
+  "home": {
+    "kicker": "ALS Reviewer Mobile Application​",
+    "title": "LEARNING STRAND 6 DIGITAL CITIZENSHIP",
+    "footer": "Cavite State University Tanza Campus",
+    "cta1": "LEARN",
+    "cta2": "ABOUT APP",
+    "disclaimer": {
+      "kicker": "For the ALS Learner:",
+      "title": "Welcome to ALS Mobile Application. This module was designed to provide you with fun and meaningful opportunities for guided and independent learning at your own pace and time. You will be enabled to process the contents of the learning resource while​ being an active learner.​",
+      "longText1": "This part includes an activity that aims to check what you already know about the lesson before you proceed with the module.",
+      "longText2": "Once ready you may click the Proceed button below.",
+      "cta": "PROCEED"
+    }
+  },
+  "about": {
+    "title": "ALS Reviewer Mobile Application",
+    "longText": "Cupidatat reprehenderit non aliquip aliqua reprehenderit dolore eiusmod in veniam amet eu adipisicing cupidatat. Exercitation cupidatat dolor nisi ad sint excepteur veniam duis eu aute nostrud cupidatat. Laboris reprehenderit eu occaecat minim ullamco cupidatat Lorem. Occaecat nisi id consequat esse nostrud adipisicing mollit commodo ullamco ut sunt. Irure laboris non nostrud ullamco irure dolore ipsum occaecat elit magna.",
+    "footer": "Cavite State University Tanza Campus"
+  },
+  "modules": {
+    "title": "LEARNING STRAND 6 DIGITAL CITIZENSHIP",
+    "subTitle": "ALS Reviewer Mobile Application",
+    "items": [
+      {
+        "title": "DIGITAL CONCEPTS"
+      },
+      {
+        "title": "DIGITAL OPERATION AND MANAGEMENT"
+      },
+      {
+        "title": "DIGITAL APPLICATION",
+        "topics": [
+          {
+            "title": "DIGITAL APPLICATION - WORD PROCESSING",
+            "lessons": [
+              {
+                "title": "Lesson 1: Word Processing",
+                "objectives": "<b>After this lesson, learners should be able to<br><ul><li>make use of a word-processing application to produce different documents used in everyday life;</li><li>create a new document based on the different available templates;</li><li>save documents under another name to a location on a drive;</li><li>switch between open documents and between page view modes;</li><li>demonstrate how to save a document as another file type;</li><li>identify the process of inserting symbols or special characters;</li><li>and determine the use of the display and hide nonprinting formatting marks line.</li></ul></b>",
+                "items": [
+                  {
+                    "kicker": "Try this one",
+                    "title": "Directions: Recall a moment when you need to create and submit a document in school, in work, or in government transactions. What did you do to produce the documents needed?"
+                  },
+                  {
+                    "title": "Uses of Word Processing",
+                    "longText": "Word processors offer a wide variety of features that can help people produce different documents for a specific purpose. Anyone can use word processors because of their user-friendly interface."
+                  },
+                  {
+                    "title": "Getting Familiar with word processing",
+                    "longText": "Microsoft Word (MS Word) is one of the most common word processors available in the market. It can be accessed from Microsoft Office’s productivity tools that have different programs for different tasks. The latest version today is Microsoft Word 2019.​<br>This module will use Microsoft Word in getting familiar with word processing, as it is the most common word processor."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "DIGITAL APPLICATION - SPREAD SHEETS"
+          },
+          {
+            "title": "DIGITAL APPLICATION - PRESENTATION SOFTWARE"
+          }
+        ]
+      },
+      {
+        "title": "DIGITAL SYSTEM NETWORK"
+      },
+      {
+        "title": "DIGITAL DEVICES"
+      },
+      {
+        "title": "DIGITAL ETHICS"
+      }
+    ]
+  }
+}
