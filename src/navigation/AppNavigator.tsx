@@ -6,7 +6,6 @@ import mock from "../../mock/als.json";
 import Home from "../screens/Home";
 import About from "../screens/About";
 import ModuleTOC from "../screens/ModuleTOC";
-import Generic from "../screens/Generic";
 import Module from "../screens/Module";
 import Quiz from "../screens/Quiz";
 
@@ -26,7 +25,6 @@ const AppNavigator = () => {
           <Stack.Screen name="Home" component={Home} initialParams={{ data: data?.home }} />
           <Stack.Screen name="About" component={About} initialParams={{ data: data?.about }}  />
           <Stack.Screen name="ModuleTOC" component={ModuleTOC} initialParams={{ data: data?.modules }}  />
-          <Stack.Screen name="Generic" component={Generic} />
           <Stack.Screen name="Module" component={Module} />
           <Stack.Screen name="Quiz" component={Quiz} />
         </Stack.Navigator>

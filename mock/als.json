@@ -1,6 +1,6 @@
 {
   "home": {
-    "kicker": "ALS Reviewer Mobile Application​",
+    "kicker": "ALS Reviewer Mobile Application",
     "title": "LEARNING STRAND 6 DIGITAL CITIZENSHIP",
     "footer": "Cavite State University Tanza Campus",
     "cta1": "LEARN",
@@ -33,9 +33,12 @@
         "topics": [
           {
             "title": "DIGITAL APPLICATION - WORD PROCESSING",
+            "subTitle": "Topic 1: Word Processing",
+            "longText": "This module will give you the basic steps on using word processors. The following are the three lessons in this module:",
             "lessons": [
               {
-                "title": "Lesson 1: Word Processing",
+                "title": "UNDERSTANDING WORD PROCESSING APPLICATIONS",
+                "subTitle": "Lesson 1: Word Processing",
                 "objectives": "<b>After this lesson, learners should be able to<br><ul><li>make use of a word-processing application to produce different documents used in everyday life;</li><li>create a new document based on the different available templates;</li><li>save documents under another name to a location on a drive;</li><li>switch between open documents and between page view modes;</li><li>demonstrate how to save a document as another file type;</li><li>identify the process of inserting symbols or special characters;</li><li>and determine the use of the display and hide nonprinting formatting marks line.</li></ul></b>",
                 "items": [
                   {
@@ -48,9 +51,21 @@
                   },
                   {
                     "title": "Getting Familiar with word processing",
-                    "longText": "Microsoft Word (MS Word) is one of the most common word processors available in the market. It can be accessed from Microsoft Office’s productivity tools that have different programs for different tasks. The latest version today is Microsoft Word 2019.​<br>This module will use Microsoft Word in getting familiar with word processing, as it is the most common word processor."
+                    "longText": "Microsoft Word (MS Word) is one of the most common word processors available in the market. It can be accessed from Microsoft Office's productivity tools that have different programs for different tasks. The latest version today is Microsoft Word 2019.<br>This module will use Microsoft Word in getting familiar with word processing, as it is the most common word processor."
                   }
                 ]
+              },
+              {
+                "title": "FORMATTING AND INSERTING GRAPHICS IN A DOCUMENT",
+                "subTitle": "Lesson 2: Word Processing",
+                "objectives": "<b>After this lesson, learners should be able to<br><ul><li>demonstrate the use of formatting commands in a word-processing document;</li><li>make use of formatting in paragraphs; and</li><li>demonstrate good practice in creating tables, formatting tables, and inserting graphical objects</li></ul></b>",
+                "items": []
+              },
+              {
+                "title": "MAIL MERGING AND FINALIZING A DOCUMENT",
+                "subTitle": "Lesson 3: Word Processing",
+                "objectives": "<b>After this lesson, learners should be able to;<br><ul><li>demonstrate the process of mail merging; and</li><li>finalize a document using page setup, headers and footers, spell-check, and printing commands.</li></ul></b>",
+                "items": []
               }
             ]
           },
