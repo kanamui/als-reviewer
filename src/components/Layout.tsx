@@ -1,28 +1,55 @@
-import React, { useLayoutEffect, useState } from "react";
-import { Dimensions, LayoutChangeEvent } from "react-native";
-import { Box, IBoxProps, ScrollView } from "native-base";
+import React from "react";
+import { useWindowDimensions } from "react-native";
+import { ILayout } from "../models/components/ILayout";
+import { Box, Button, HStack, Text, VStack } from "native-base";
+import RenderHTML from "react-native-render-html";
+import HeaderNav from "./HeaderNav";
 
-const Layout: React.FC<IBoxProps> = ({ children }) => {
-  const [exceedsScreen, setExceedsScreen] = useState(false);
-  const [containerHeight, setContainerHeight] = useState(0);
-  const screenHeight = Dimensions.get("window").height;
-
-  useLayoutEffect(() => {
-    setExceedsScreen(containerHeight > screenHeight);
-  }, [containerHeight, screenHeight]);
-
-  const handleContainerLayout = (event: LayoutChangeEvent) => {
-    setContainerHeight(event.nativeEvent.layout.height);
-  };
+const Layout = ({
+  header,
+  subTitle,
+  kicker,
+  title,
+  longText,
+  image,
+  cta,
+}: ILayout) => {
+  const { width } = useWindowDimensions();
 
   return (
-    <Box size="full" bg="white" safeAreaX onLayout={handleContainerLayout}>
-      {exceedsScreen ? (
-        <ScrollView size="full">{children}</ScrollView>
-      ) : (
-        children
+    <>
+      <HeaderNav title={subTitle} onPress={header?.onPress} />
+      {kicker && (
+        <VStack w="full" alignItems="center" mb="2">
+          <Text color="primary.600">{kicker}</Text>
+        </VStack>
       )}
-    </Box>
+      <Box px="6" pb="6" flex="1">
+        <VStack flex="1" alignItems="center" justifyContent="space-between">
+          <HStack
+            flex="1"
+            justifyContent="center"
+            space="3"
+            w={image ? "full" : "80%"}
+          >
+            <VStack>
+              {title && <Text bold>{title}</Text>}
+              {longText && (
+                <RenderHTML contentWidth={width} source={{ html: longText }} />
+              )}
+            </VStack>
+          </HStack>
+
+          {cta && (
+            <Button w="32" onPress={cta?.onPress}>
+              <Text color="white" bold>
+                {cta?.title}
+              </Text>
+            </Button>
+          )}
+        </VStack>
+      </Box>
+    </>
   );
 };
 

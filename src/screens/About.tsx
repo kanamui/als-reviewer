@@ -1,14 +1,13 @@
 import React from "react";
-import { HStack, Heading, Image, Text, VStack } from "native-base";
+import { Box, HStack, Heading, Image, Text, VStack } from "native-base";
 import { IMAGES } from "../logic/constants/images.constants";
-import Layout from "../components/Layout";
 
-const About: React.FC = ({ navigation, route }: any) => {
+const About: React.FC = ({ route }: any) => {
   // Variables
   const { data } = route.params;
 
   return (
-    <Layout>
+    <Box size="full" bg="white" safeAreaX>
       <Image
         w="full"
         source={IMAGES.banner}
@@ -17,6 +16,7 @@ const About: React.FC = ({ navigation, route }: any) => {
       <VStack
         py="6"
         flex="1"
+        bg="white"
         alignItems="center"
         justifyContent="space-between"
       >
@@ -24,6 +24,7 @@ const About: React.FC = ({ navigation, route }: any) => {
           <Heading size="md" textAlign="center">
             {data?.title}
           </Heading>
+          
           <Text bold>{data?.longText}</Text>
         </VStack>
         <HStack space="2" alignItems="center">
@@ -38,7 +39,7 @@ const About: React.FC = ({ navigation, route }: any) => {
           </Text>
         </HStack>
       </VStack>
-    </Layout>
+    </Box>
   );
 };
 

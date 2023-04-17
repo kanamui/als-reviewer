@@ -1,14 +1,13 @@
 import React from "react";
-import { Center, Heading } from "native-base";
-import Layout from "../components/Layout";
+import { Box, Center, Heading } from "native-base";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   return (
-    <Layout>
+    <Box size="full" bg="white" safeAreaX>
       <Center flex="1">
         <Heading>Quiz</Heading>
       </Center>
-    </Layout>
+    </Box>
   );
 };
 

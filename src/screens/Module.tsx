@@ -1,17 +1,48 @@
-import React from "react";
-import { Center, Heading } from "native-base";
+import React, { useState } from "react";
+import { Box } from "native-base";
 import Layout from "../components/Layout";
 
 const Module: React.FC = ({ navigation, route }: any) => {
+  // States
+  const [slide, setSlide] = useState<number>(0);
+
   // Variables
   const { data } = route.params;
-  
+  const slideLength = data?.items?.length || 0;
+
+  // Handlers
+  const handleBack = () => {
+    if (slide === 0) {
+      navigation.goBack();
+    } else {
+      setSlide(slide - 1);
+    }
+  };
+
+  const handleProceed = () => {
+    if (slide < slideLength - 1) {
+      setSlide(slide + 1);
+    } else {
+      navigation.goBack();
+    }
+  };
+
   return (
-    <Layout>
-      <Center flex="1">
-        <Heading>Module</Heading>
-      </Center>
-    </Layout>
+    <Box size="full" bg="white" safeAreaX>
+      <Layout
+        header={{
+          onPress: handleBack,
+        }}
+        subTitle={data?.subTitle}
+        kicker={data?.items?.[slide]?.kicker}
+        title={data?.items?.[slide]?.title}
+        longText={data?.items?.[slide]?.longText}
+        cta={{
+          title: "PROCEED",
+          onPress: handleProceed,
+        }}
+      />
+    </Box>
   );
 };
 

@@ -1,9 +1,6 @@
-// Modules
 import React, { useState } from "react";
-import { Button, HStack, Heading, Image, Text, VStack } from "native-base";
+import { Box, Button, HStack, Heading, Image, Text, VStack } from "native-base";
 import { IMAGES } from "../logic/constants/images.constants";
-// Components
-import Layout from "../components/Layout";
 
 const Home: React.FC = ({ navigation, route }: any) => {
   // States
@@ -30,21 +27,13 @@ const Home: React.FC = ({ navigation, route }: any) => {
 
           <VStack space="4">
             <HStack space="4" maxW="270px" alignItems="center">
-              <Image
-                size="xs"
-                source={IMAGES.checklist}
-                alt="checklist"
-              />
+              <Image size="xs" source={IMAGES.checklist} alt="checklist" />
               <Text fontSize="xs" bold>
                 {data?.disclaimer?.longText1}
               </Text>
             </HStack>
             <HStack space="4" maxW="270px" alignItems="center">
-              <Image
-                size="xs"
-                source={IMAGES.book}
-                alt="book"
-              />
+              <Image size="xs" source={IMAGES.book} alt="book" />
               <Text fontSize="xs" bold>
                 {data?.disclaimer?.longText2}
               </Text>
@@ -90,12 +79,7 @@ const Home: React.FC = ({ navigation, route }: any) => {
         </VStack>
 
         <HStack space="2" alignItems="center">
-          <Image
-            w="36px"
-            h="32px"
-            source={IMAGES.cvsu}
-            alt="cvsu"
-          />
+          <Image w="36px" h="32px" source={IMAGES.cvsu} alt="cvsu" />
           <Text fontSize="xs" bold>
             {data?.footer}
           </Text>
@@ -105,16 +89,17 @@ const Home: React.FC = ({ navigation, route }: any) => {
   };
 
   return (
-    <Layout>
+    <Box size="full" bg="white" safeAreaX>
       <VStack
         py="6"
         flex="1"
+        bg="white"
         alignItems="center"
         justifyContent="space-between"
       >
         {disclaimer ? Disclaimer() : Main()}
       </VStack>
-    </Layout>
+    </Box>
   );
 };
 

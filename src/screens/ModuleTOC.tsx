@@ -1,14 +1,24 @@
 import React, { useState } from "react";
-import { Box, Button, Flex, HStack, Heading, Text, VStack } from "native-base";
-import Layout from "../components/Layout";
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Heading,
+  Modal,
+  Text,
+  VStack,
+} from "native-base";
 import HeaderNav from "../components/HeaderNav";
-import Generic from "../components/Generic";
+import Layout from "../components/Layout";
 
 const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   // States
   const [module, setModule] = useState<any>();
   const [topic, setTopic] = useState<any>();
+  const [lesson, setLesson] = useState<any>();
   const [screen, setScreen] = useState<string | undefined>();
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   // Variables
   const { data } = route.params;
@@ -29,8 +39,23 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   };
 
   const handleLesson = (lesson: any) => {
-    navigation.navigate("Module", { data: lesson });
-    setTimeout(() => setScreen("main"), 500);
+    setLesson(lesson);
+
+    if (topic?.preQuiz) {
+      setShowModal(true);
+    } else {
+      navigation.navigate("Module", { data: lesson });
+    }
+  };
+
+  const handleModal = (assess: boolean = false) => {
+    setShowModal(false);
+
+    if (assess) {
+      navigation.navigate("Quiz", { data: topic?.preQuiz });
+    } else {
+      navigation.navigate("Module", { data: lesson });
+    }
   };
 
   // Functions
@@ -83,7 +108,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
 
   const Introduction = () => {
     return (
-      <Generic
+      <Layout
         header={{
           onPress: () => setScreen("topics"),
         }}
@@ -163,7 +188,47 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     );
   };
 
-  return <Layout>{DynamicScreen()}</Layout>;
+  return (
+    <>
+      <Box size="full" bg="white" safeAreaX>
+        {DynamicScreen()}
+      </Box>
+      <Modal isOpen={showModal} onClose={handleModal}>
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header>Pre-Assessment</Modal.Header>
+          <Modal.Body>
+            <Text>
+              Do you want to take the Pre-Assessment first before proceeding
+              with the lessons?
+            </Text>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button.Group space={2}>
+              <Button
+                variant="ghost"
+                colorScheme="error"
+                onPress={() => {
+                  handleModal(false);
+                }}
+              >
+                NO
+              </Button>
+              <Button
+                variant="ghost"
+                colorScheme="success"
+                onPress={() => {
+                  handleModal(true);
+                }}
+              >
+                YES
+              </Button>
+            </Button.Group>
+          </Modal.Footer>
+        </Modal.Content>
+      </Modal>
+    </>
+  );
 };
 
 export default ModuleTOC;
