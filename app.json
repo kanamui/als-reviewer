@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "alt-learning",
-    "slug": "alt-learning",
+    "name": "als-reviewer",
+    "slug": "als-reviewer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
