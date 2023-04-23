@@ -46,33 +46,25 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     if (topic?.preQuiz && index === 0) {
       setShowModal(true);
     } else {
-      navigateModule();
+      navigation.navigate("Module", {
+        data: lesson,
+        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+      });
     }
   };
 
   const handleModal = (assess: boolean = false) => {
     setShowModal(false);
 
-    if (assess) {
-      navigation.navigate("Quiz", {
-        data: topic?.preQuiz,
-        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
-        lesson,
-        assess: true,
-      });
-    } else {
-      navigateModule();
-    }
-  };
-
-  // Functions
-  const navigateModule = () => {
     navigation.navigate("Module", {
       data: lesson,
       quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+      lesson: assess ? lesson : null,
+      assess,
     });
   };
 
+  // Functions
   const DynamicScreen = () => {
     switch (screen) {
       case "lessons":
