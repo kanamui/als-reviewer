@@ -7,7 +7,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
   const [slide, setSlide] = useState<number>(0);
 
   // Variables
-  const { data } = route.params;
+  const { data, quiz } = route.params;
   const slideLength = data?.items?.length || 0;
 
   // Handlers
@@ -22,6 +22,8 @@ const Module: React.FC = ({ navigation, route }: any) => {
   const handleProceed = () => {
     if (slide < slideLength - 1) {
       setSlide(slide + 1);
+    } else if (quiz) {
+      navigation.navigate("Quiz", { data: quiz })
     } else {
       navigation.goBack();
     }
@@ -38,7 +40,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
         title={data?.items?.[slide]?.title}
         longText={data?.items?.[slide]?.longText}
         cta={{
-          title: "PROCEED",
+          title: "NEXT",
           onPress: handleProceed,
         }}
       />

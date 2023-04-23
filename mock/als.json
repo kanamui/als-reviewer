@@ -36,109 +36,111 @@
             "subTitle": "Topic 1: Word Processing",
             "longText": "This module will give you the basic steps on using word processors. The following are the three lessons in this module:",
             "preQuiz": {
-              "title": "Directions: Read each question carefully and choose what is the correct answer.",
+              "header": "Word Processing",
               "kicker": "Pre-Assessment",
+              "title": "Directions: Read each question carefully and choose what is the correct answer.",
               "items": [
                 {
                   "answer": "Cut",
-                  "options": [
+                  "choices": [
                     "Cut",
-                    "Font type",
                     "Italic",
+                    "Font type",
                     "Copy"
                   ]
                 },
                 {
                   "answer": "Underline",
-                  "options": [
+                  "choices": [
                     "Underline",
-                    "Font type",
                     "Italic",
+                    "Font type",
                     "Copy"
                   ]
                 },
                 {
                   "answer": "Font type",
-                  "options": [
+                  "choices": [
                     "Font size",
-                    "Font type",
                     "Italic",
+                    "Font type",
                     "Arial"
                   ]
                 },
                 {
                   "answer": "Bold",
-                  "options": [
+                  "choices": [
                     "Font size",
-                    "Bold",
                     "Italic",
+                    "Bold",
                     "Arial"
                   ]
                 },
                 {
                   "answer": "Copy",
-                  "options": [
+                  "choices": [
                     "Copy",
-                    "Print",
                     "Paste",
+                    "Print",
                     "Cut"
                   ]
                 },
                 {
                   "answer": "Center",
-                  "options": [
+                  "choices": [
                     "Align right",
-                    "Align left",
                     "Center",
+                    "Align left",
                     "Justify"
                   ]
                 },
                 {
                   "answer": "Align right",
-                  "options": [
+                  "choices": [
                     "Align right",
-                    "Align left",
                     "Center",
+                    "Align left",
                     "Justify"
                   ]
                 },
                 {
                   "answer": "Italic",
-                  "options": [
+                  "choices": [
                     "Italic",
-                    "Underline",
                     "Bold",
+                    "Underline",
                     "Shadow"
                   ]
                 },
                 {
                   "answer": "Margins",
-                  "options": [
+                  "choices": [
                     "Underline",
-                    "Align left",
                     "Center",
+                    "Align left",
                     "Margins"
                   ]
                 },
                 {
                   "answer": "Font size",
-                  "options": [
+                  "choices": [
                     "Font color",
-                    "Font type",
                     "Font size",
+                    "Font type",
                     "Numbering"
                   ]
                 }
               ]
             },
             "quiz": {
+              "header": "Word Processing",
               "title": "Directions. Write True if the statement is correct; otherwise, write False and underline the word that makes the statement incorrect.",
               "kicker": "Let's Have Some Fun",
               "items": [
                 {
                   "title": "1. Ctrl+Pr is the shortcut key for Print.",
                   "answer": "False",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -146,7 +148,7 @@
                 {
                   "title": "2. You can print selected pages in a document.",
                   "answer": "True",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -154,7 +156,7 @@
                 {
                   "title": "3. Aside from the page number, you can also insert dates in the header.",
                   "answer": "True",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -162,7 +164,7 @@
                 {
                   "title": "4. You can change the size of the paper at the Layout tab.",
                   "answer": "True",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -170,7 +172,7 @@
                 {
                   "title": "5. Only one copy of the document can be printed.",
                   "answer": "False",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -178,7 +180,7 @@
                 {
                   "title": "6. Microsoft Word has a feature to correct the spelling if the word turns green.",
                   "answer": "False",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -186,7 +188,7 @@
                 {
                   "title": "7. The Header & Footer tab allows you to insert pictures.",
                   "answer": "True",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -194,7 +196,7 @@
                 {
                   "title": "8. Page numbers can only be seen at the footer section of the document.",
                   "answer": "False",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -202,7 +204,7 @@
                 {
                   "title": "9. The Check Document command can check the spelling and grammar of the whole document.",
                   "answer": "True",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
@@ -210,7 +212,7 @@
                 {
                   "title": "10. Headers and footers can be seen only in the first page.",
                   "answer": "False",
-                  "options": [
+                  "choices": [
                     "True",
                     "False"
                   ]
