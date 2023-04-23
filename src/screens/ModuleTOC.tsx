@@ -17,6 +17,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   const [module, setModule] = useState<any>();
   const [topic, setTopic] = useState<any>();
   const [lesson, setLesson] = useState<any>();
+  const [lessonIndex, setLessonIndex] = useState<number>(0);
   const [screen, setScreen] = useState<string | undefined>();
   const [showModal, setShowModal] = useState<boolean>(false);
 
@@ -34,17 +35,18 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   const handleTopic = (topic: any) => {
     if (topic?.lessons) {
       setTopic(topic);
-      setScreen("intro");
+      setScreen(topic?.longText ? "intro" : "lessons");
     }
   };
 
-  const handleLesson = (lesson: any) => {
+  const handleLesson = (lesson: any, index: number) => {
     setLesson(lesson);
+    setLessonIndex(index);
 
     if (topic?.preQuiz) {
       setShowModal(true);
     } else {
-      navigation.navigate("Module", { data: lesson });
+      navigateModule();
     }
   };
 
@@ -52,13 +54,25 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     setShowModal(false);
 
     if (assess) {
-      navigation.navigate("Quiz", { data: topic?.preQuiz });
+      navigation.navigate("Quiz", {
+        data: topic?.preQuiz,
+        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+        lesson,
+        assess: true,
+      });
     } else {
-      navigation.navigate("Module", { data: lesson });
+      navigateModule();
     }
   };
 
   // Functions
+  const navigateModule = () => {
+    navigation.navigate("Module", {
+      data: lesson,
+      quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+    });
+  };
+
   const DynamicScreen = () => {
     switch (screen) {
       case "lessons":
@@ -90,7 +104,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
                       w="64"
                       h="16"
                       rounded="full"
-                      onPress={() => handleLesson(lesson)}
+                      onPress={() => handleLesson(lesson, key)}
                     >
                       <Text textAlign="center" color="white" bold>
                         {lesson?.title}
