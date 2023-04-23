@@ -43,7 +43,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     setLesson(lesson);
     setLessonIndex(index);
 
-    if (topic?.preQuiz) {
+    if (topic?.preQuiz && index === 0) {
       setShowModal(true);
     } else {
       navigateModule();
