@@ -56,12 +56,19 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   const handleModal = (assess: boolean = false) => {
     setShowModal(false);
 
-    navigation.navigate("Module", {
-      data: lesson,
-      quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
-      lesson: assess ? lesson : null,
-      assess,
-    });
+    if (assess) {
+      navigation.navigate("Quiz", {
+        data: topic?.preQuiz,
+        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+        lesson,
+        assess: true,
+      });
+    } else {
+      navigation.navigate("Module", {
+        data: lesson,
+        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+      });
+    }
   };
 
   // Functions
