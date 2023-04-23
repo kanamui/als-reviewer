@@ -1315,6 +1315,7 @@
                 "subTitle": "Lesson 1: Presentation Software",
                 "items": [
                   {
+                    "image": "T3001",
                     "longText": "Before, our teachers used blackboards, manila paper, overhead projectors, and slide projectors to teach their lessons properly. Now, the most common presentation tool today is the computer.<br>At present, we use presentation software that help make dynamic presentations a quality's absent in traditional presentation tools."
                   },
                   {
@@ -1322,14 +1323,17 @@
                     "longText": "<b><ul><li>use a presentation software to produce different documents to present information in everyday life;</li><li>determine the use of the different toolbars;</li><li>create a new presentation based on the default templates;</li><li>demonstrate the creation of a new presentation;</li><li>demonstrate how to save a presentation under another name, as another file type, and to a location on the drive;</li><li>distinguish different view modes; and manage a slide.</li></ul></b>"
                   },
                   {
+                    "image": "T3013",
                     "kicker": "Try this One",
                     "longText": "<b>Directions: Identify at least three capabilities of a blackboard and a computer. Write your answers on a separate sheet of word document.</b>"
                   },
                   {
+                    "image": "T3014",
                     "longText": " Presentation tools are helpful when you have a large audience, such as students in a classroom. Most of the time, teachers use the blackboard to help them clearly explain their lesson to the students, but this limits them from becoming more creative in presenting their lesson. This is now possible through technologies such as presentation software.<br><br>Today, people have become more dynamic in presenting information using different presentation software. Among these are Microsoft PowerPoint (MS PowerPoint), Prezi, Presentations, iWork Keynote, OpenOffice Impress, and Google Slides."
 
                   },
                   {
+                    "image": "T3015",
                     "longText": "<b>Presentation Program</b><br><ul><li>Microsoft PowerPoint</li><li>Prezi</li><li>Presentations</li><li>iWork Keynote</li><li>OpenOffice software</li></ul><br><b>Operating System</b><ul><li>Windows</li><li>Any (Online)</li><li>Windows</li><li>Apple MacOS</li><li>OpenOffice Impress</li><li>Google Slides</li></ul>"
                   },
                   {
@@ -1337,60 +1341,76 @@
                     "longText": "These software programs are used in many industries, such as in schools where teachers use presentation software as visual aid; in companies to present their plans or results during meetings, seminars, and trainings; and even in personal events.<br><br>Like any other application, Microsoft PowerPoint 2019 has its toolbars, ribbons, tabs, and groups with different functions that will help you create presentations easily and professionally."
                   },
                   {
+                    "image": "T3017",
                     "longText": "1. <b>Slide tab</b>The tab that shows you a scheme with a title and work area. It allows you to visualize a thumbnail of the created slide.<br>2. <b>Slide area</b>The area where most of your work such as editing, adding, and deleting content is done. It has a series of panels, such as notes and zoom, which simplifies the work.<br>3. <b>Slide number</b>This shows the current number of slides you are working with.<br>4. <b>View buttons</b>The four buttons to the left of the Zoom control that allows you to switch between different displays: Normal, Slide Sorter, Reading View, and Slideshow."
                   },
                   {
+                    "image": "T3018",
                     "title": "Creating A New Presentation Based On The Default Templates And Themes",
                     "longText": "The Home page is the first thing you will see when you open Microsoft PowerPoint. Here, you will find different themes to use for a new presentation, including Blank Presentation. Templates and themes have predesigned slides to help you start.<br><br>You can click on the suggested searches to display more templates and themes or search online templates if you are connected to the internet."
                   },
                   {
+                    "image": "T3019",
                     "longText": "1. Click More themes to explore other templates and themes"
                   },
                   {
+                    "image": "T3020",
                     "longText": "2. For this lesson, let us select and click the Geometric Color Block template."
                   },
                   {
+                    "image": "T3021",
                     "longText": "Once it is selected, a window will appear with some details about the template. Click Create."
                   },
                   {
+                    "image": "T3022",
                     "longText": "3. You may now start creating your presentation. Simply edit the contents of the text in this template. First is the title of your presentation<br><br>4. After editing the title, click on the second slide to proceed with your next slide presentation"
                   },
                   {
+                    "image": "T3023",
                     "longText": "Go to the Graphics Format (or Graphic Tools > Format) tab, and then click Change Graphic. You will be presented with four methods: From a File, From Online Sources, From Icons, From Clipboard. For this activity, choose From Icons."
                   },
                   {
+                    "image": "T3024",
                     "longText": "An Insert Icons window will appear, and you will see various icons grouped into several categories. Scroll down and find the Sports category. Select the volleyball icon then click Insert."
                   },
                   {
+                    "image": "T3025",
                     "title": "Adding A New Slide",
                     "longText": "If you need more slides for your presentation, click on New Slide. A drop - down menu with different types of layout will appear. You may choose any of them."
                   },
                   {
+                    "image": "T3026",
                     "title": "Saving A New Presentation",
                     "longText": "Save a new presentation by doing any of the following:<br>1. Press Ctrl+S on the keyboard.<br>2. Click the Save button on the upper left corner of the presentation.<br>3. Click File then Save.<br><br> If you are saving a new presentation, a dialog box will appear, asking for the file name and a location where the file will be stored. If you are going to locate a folder, click the drop-down arrow on Choose a Location or click More save options to look for other locations. Once you are done, press Save."
                   },
                   {
+                    "image": "T3027",
                     "longText": "You can also save the files in a different location, file name, and file type.<br><br>1 Click <i>File</i>, and select <i>Save</i> As then <i>Browse</i>. You can select any location from your computer such as Desktop and Documents. Edit the file name of your presentation then click <i>Save</i>.<br><br>Presentations in Microsoft PowerPoint are usually saved in the Documents folder and with the file type PPTX."
                   },
                   {
+                    "image": "T3029",
                     "title": "Using Ribbons, Tabs, And The Quick Access Toolbar",
                     "longText": "Ribbons are designed to help you quickly find the command that you want to execute in Microsoft Office. Ribbons are divided into logical groups called Tabs, and each tab has its own set of unique functions to perform. There are various tabs: Home, Insert, Page Layout, Formulas, Data, Review, and View.<br><br>1. Ribbons can be hidden when you collapse or minimize ribbons. Right- click on the Ribbon area and choose Collapse the Ribbon.<br>2. Only tabs will be displayed. Ribbons will only appear if you select a tab."
                   },
                   {
+                    "image": "T3030",
                     "title": "Creating A New Presentation",
                     "longText": "To create a new presentation, open Microsoft PowerPoint and choose Blank Presentation.<br><br>A blank presentation has a plain white background. Edit text, add other slides, and insert pictures based on what you need for your presentation."
                   },
                   {
+                    "image": "T3031",
                     "title": "Distinguishing Different View Modes",
                     "longText": "In Microsoft PowerPoint, there are different view modes located at the lower right corner of the screen. Let us see the difference in each view mode."
                   },
                   {
+                    "image": "T3032",
                     "longText": "<b> Normal View</b><br>This is the default view of the   presentation, with the slide sheet on the right and slide thumbnails to the left. This view allows you to work on the slides and rearrange them.<br><br><b>Slide Sorter</b><br>The slide sorter displays all the slides in a tabular form. This view only allows you to rearrange the slides and confirm that all the needed slides are still there."
                   },
                   {
                     "longText": "<b>Reading View</b><br>This view will allow you to read the slide carefully, but you cannot perform any editing. Unlike the Slide Show view, it includes easily accessible buttons for navigation, located at the bottom-right.<br><br>Slide Show<br>This displays all the slides along with the animations and sounds that you have included. The Slide Show view has an additional menu that appears when you hover your mouse, allowing you to navigate slides and access other features."
                   },
                   {
+                    "image": "T3034",
                     "longText": "<b>Managing Slides</b> - There are a many ways to manage slides more easily, especially when you have a long presentation.<br><b>Viewing An Outline</b> - The outline view shows your slide text in outline form. This allows you to quickly edit your slide text and view the contents of multiple slides at once. Choose Outline View in the Presentation Views group in the View tab.<br><b>Organizing Slides Into Sections</b></br> - You can organize your slides into sections to navigate your presentation easily. Sections can be collapsed or expanded in the left pane and named for easy reference. In this example, we will add two sections: one for volleyball equipment and another for basic skills in volleyball."
                   },
                   {
@@ -1415,23 +1435,29 @@
                     "longText": "<b>Formatting A Presentation</b> - One of the primary difficulties encountered by people who use presentation tools is getting and keeping the attention of the audience. To avoid such difficulties, use Microsoft PowerPoint, which has many features that allow you to make your presentation more presentable and creative.<br><br><b>Theme</b> - A theme is a predefined combination of colors, fonts, and effects. Different themes also use different slide layouts. You are already using a theme, even if you are not aware of it: the default Office theme. You can choose from a variety of new themes at any time, giving your entire presentation a consistent, professional look."
                   },
                   {
+                    "image": "T3038",
                     "title": "THEME ELEMENTS",
                     "longText": "<b>Theme Colors</b><br>There are ten theme colors with light to dark variations, available from every Color menu."
                   },
                   {
+                    "image": "T3039",
                     "longText": "<b>Theme Font</b><br>There are two theme fonts available at the top of the Font menu under Theme Fonts."
                   },
                   {
+                    "image": "T3040",
                     "longText": "<b>Theme Effects</b><br>These affect the preset shape styles. You can find shape styles on the Format tab whenever you select a shape or a SmartArt graphic."
                   },
                   {
+                    "image": "T3041",
                     "title": "APPLYING THEMES",
                     "longText": "To apply a theme, do the following steps:<br><br>1. On the Design tab, in the Themes group, click the drop-down arrow. The menu will expand to show a gallery of themes."
                   },
                   {
+                    "image": "T3042",
                     "longText": "2. Select a theme by clicking it. After application, every slide will have a new look based on the selected theme."
                   },
                   {
+                    "image": "T3043",
                     "title": "Different Practices in Creating Slide Content",
                     "longText": "<b>Keep It Simple</b> - Presentation software use slides with a horizontal or landscape orientation. They were designed to display graphical information that would support the speaker and supplement the presentation. The slides were never meant to be the “star of the show.” Your slides should have plenty of “white space” or “negative space.”"
                   },
@@ -1439,19 +1465,24 @@
                     "longText": "<b>Avoid Excessive Words -</b> Excessive words and lengthy texts make it difficult to see and process information. People will either try to read everything or copy down everything and will lose interest.<br><br><b>Make bullet points easy to read -</b> There should be no more than six bullets per slide (some recommend four or five bullets), and each should not have more than six to seven words. Periods at the end of the bullets are not advisable.<br><br><b>Use a dark font on a light background and white or light font on a dark background -</b> Avoid using too many colors because it will be overwhelming on the audience's eyes."
                   },
                   {
+                    "image": "T3045",
                     "title": "ENTERING TEXT INTO A PLACEHOLDER IN STANDARD AND OUTLINE VIEW",
                     "longText": "1. To enter a text in a standard view or normal view, click the placeholder you want to enter a text with. There are two placeholders available on the example below, one for the title and another for the subtitle."
                   },
                   {
+                    "image": "T3046",
                     "longText": "2. Let us add a text for the title. Type in “Hello World.” You can always click the placeholder if you want to edit the text.<br><br>3. You may also use the outline view to enter text. First, click the View tab, and then select Outline View on the Presentation Views group."
                   },
                   {
+                    "image": "T3047",
                     "longText": "4. Once you select Outline View, you will see the outline on the left panel and the content of the slide. Let us edit “Hello World” to “Hello Philippines.” Just put your cursor on the text you want to edit."
                   },
                   {
+                    "image": "T3048",
                     "longText": "5. You will notice that the text in the slide area also changed."
                   },
                   {
+                    "image": "T3049",
                     "longText": "6. To add text on the next placeholder, the subtitle, using Outline View, position your cursor under the first letter of the title text. In this example, click your mouse under the letter H. If you wish to add a new slide, just press enter."
                   },
                   {
@@ -1472,77 +1503,100 @@
                     "longText": "<i>To Redo:</i><ul><li>Press the shortcut key Ctrl+Y or the Redo button at the Quick Access Bar.</li><li>The Redo command does not have a list of actions because it will only redo the latest action that has been undone.</li></ul>"
                   },
                   {
+                    "image": "T3055",
                     "title": "Formatting Text",
                     "longText": "<i>To change the font size:</i><br><br>Highlight the text then select the Font Size button in the Font group in the Home tab. Click the drop-down arrow to choose font sizes."
                   },
                   {
+                    "image": "T3056",
                     "longText": "<i>To change the font type:</i><br><br>Highlight the text then select the Font button in the Font group in the Home tab. Click the drop-down arrow to choose font types."
                   },
                   {
+                    "image": "T3057",
                     "longText": "<i>To apply font styles:</i><br><br>Highlight the text then choose among the five font styles in the Font group. In PowerPoint, there are five available font styles: bold, italic, underline, text shadow, and strikethrough. Font styles can be used all at the same time."
                   },
                   {
+                    "image": "T3058",
                     "longText": "<i>To change the font color:</i><br><br>Highlight the text then select the Font Color button in the Font group n the Home tab. Click the drop-down arrow to choose from a selection of font colors, or choose a custom color by clicking on More Colors. You may also use the eyedropper tool."
                   },
                   {
+                    "image": "T3059",
                     "longText": "<i>To apply case changes to text:</i><br><br>1. The Change Case command, which can be found in the Font group, allows you to select among Sentence Case, Lowercase, Uppercase, Capitalize Each Word, and Toggle Case."
                   },
                   {
+                    "image": "T3060",
                     "longText": "<i>To align text:</i><br><br>Highlight the text you want to align, and then choose your preferred alignment: Align Left, Center, Align Right, Justify, or Distributed (only in newer versions) in the Paragraph group in the Home tab."
                   },
                   {
+                    "image": "T3061",
                     "title": "ADDING LISTS AND TABLES",
                     "longText": "For example, you will list down all the places in the Philippines that will be joining a volleyball tournament. Numbers 1-30 representatives are now listed, but as you can see, the list automatically goes down and fits itself by adjusting the font size."
                   },
                   {
+                    "image": "T3063",
                     "longText": "First, highlight all the text to break down. Then in the Paragraph group, click the Columns drop-down arrow and choose Three Columns.<br><br>The long list is now broken down into three columns. The text and font are now readable."
                   },
                   {
+                    "image": "T3064",
                     "title": "Adding Bulleted Text",
                     "longText": "<i>To indent bulleted text and remove indent from bulleted text:</i><br><br>1. Enter the list that you need for your presentation."
                   },
                   {
+                    "image": "T3065",
                     "longText": "2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
                   },
                   {
+                    "image": "T3066",
                     "longText": "3. To remove the indentions, click the Decrease List level button."
                   },
                   {
+                    "image": "T3067",
                     "longText": "<i>To switch to different bullet and number styles:</i><br><br>1. Highlight the list, and then select the Bullets drop-down button in the Paragraph group. You will see different styles of bullets."
                   },
                   {
+                    "image": "T3068",
                     "longText": "2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
                   },
                   {
+                    "image": "T3069",
                     "title": "Adding Tables",
                     "longText": "<i>To create a table:</i><br><br>1. In the Inset tab , <b>create a table</b>:,  A drop-down menu will appear, allowing you to choose the number of cells you need."
                   },
                   {
+                    "image": "T3070",
                     "longText": "2. If you need to move the table, select it and place your cursor on one of the edges. Click and drag it to your desired location then let go."
                   },
                   {
+                    "image": "T3071",
                     "longText": "3. You might also want to add columns and rows. For example, let us add a row above and column to the right of Violet. Select the table, and then go to the Layout tab then the Rows & Columns group."
                   },
                   {
+                    "image": "T3072",
                     "longText": "4. If you want to delete rows and columns, go to the Layout tab then click Delete in the Rows & Columns group. A drop-down menu will appear; choose what you want to delete. In this example, let us delete the second row"
                   },
                   {
+                    "image": "T3073",
                     "longText": "5. You can also merge cells with one another. Let us select the cell Violet and the cell beside it. Highlight the two cells. Then in the Layout tab, click Merge Cells in the Merge group."
                   },
                   {
+                    "image": "T3074",
                     "longText": "6. You can also split cells. For example, select the cell Violet. Then in the Layout tab, choose Split Cells in the Merge group. A dialog box will appear, asking the number of columns and rows. If it is all set, click OK."
                   },
                   {
+                    "image": "T3075",
                     "title": "<i>To modify column width and row height:</i>",
                     "longText": "1. To modify the column width and row height of a table, select the area you want to adjust. A double arrow mouse pointer will appear."
                   },
                   {
+                    "image": "T3076",
                     "longText": "2. For column width, drag your mouse to the left to decrease the width or to the right to increase it."
                   },
                   {
+                    "image": "T3077",
                     "longText": "3. For row height, drag your mouse up to decrease the height or down to increase it."
                   },
                   {
+                    "image": "T3078",
                     "title": "Editing Charts In A Presentation",
                     "longText": "<ol type= '1'><li>Click the insert tab then select chart.</li><li>Click the type you need and then double-click your chart choice.</li><li>In the worksheet, replace the placeholder data with your own information.</li></ol>"
                   },
@@ -1570,29 +1624,37 @@
                   "longText": "<br>CREATIVITY<ol type ='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol>"
                 },
                 {
+                  "image": "T3083",
                   "longText": "Slides are considered frames with different scenes. There are pictures and texts that should be arranged in order. It is the same with creating presentations; you should carefully plan them.<br><br>Combining pictures and texts help make the slide become much more interesting and informational, but avoid putting everything in a presentation."
                 },
                 {
+                  "image": "T3084",
                   "title": "Inserting Graphics",
                   "longText": "To insert a picture, select the slide where you want to place the picture. Then in the Insert tab, select one of the options in the Images group. For this example, let us choose Pictures. Choose the location of your picture to be inserted.<br><br>You may select more than one picture by simply pressing the Ctrl key on the keyboard then arrange them accordingly."
                 },
                 {
+                  "image": "T3085",
                   "longText": "It is best if you have a picture that has a transparent background, or change your layout with white background. You may search pictures that have a PNG file type, even online."
                 },
                 {
+                  "image": "T3086",
                   "longText": "On the right side of the window, the Design Ideas panel will open with suggestions. These will help you have appealing slides, but they can only be seen if you are connected to the internet."
                 },
                 {
+                  "image": "T3087",
                   "longtext": "Another way to insert a picture is through the slide itself. For example, if you add a second slide with a Title and Content layout, you will see that there are icons in the slide area. Select the Picture icon."
                 },
                 {
+                  "image": "T3088",
                   "longText": "A dialog box will appear where you can locate your picture; it will automatically be inserted in the slide.<br><br>The same procedure can be applied if you are going to insert shapes and charts."
                 },
                 {
+                  "image": "T3089",
                   "title": "Using Tools To Customize Graphical Objects In A Presentation",
                   "longText": "Graphical objects can be pictures, shapes, and charts. These are useful in creating an effective presentation. They can all be found in the Insert tab in the Images group and Illustrations group."
                 },
                 {
+                  "image": "T3090",
                   "title": "<i>To copy and remove graphical objects:</i>",
                   "longText": "1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
                 },
@@ -1600,32 +1662,41 @@
                   "longText": "2. To remove a graphical object, click the object to be removed, and then press Del in the keyboard. To cut it, right-click then choose Cut, or press the shortcut key Ctrl+X. It will be in the clipboard, waiting to be pasted.<br><br>3. To copy and remove a slide, select the slide using the switching view command."
                 },
                 {
+                  "image": "T3092",
                   "title": "<i>To resize, rotate, and delete graphical objects:</i>",
                   "longText": "<ol type ='1'><li>To resize the graphical objects, click the object then drag one of the size handles (encircled in the figure on the right).</li><li>You can manually enter the desired size to your images in the Shape Format tab in the Size group.</li><li>To rotate a graphical object, select the object then slowly drag clockwise or counterclockwise on the rotate handle (encircled in the figure below).</li></ol>"
                 },
                 {
+                  "image": "T3093",
                   "longText": "You can also click on Rotate in the Arrange group.<br><br>4. To delete a graphical object, select the object to be deleted then press Del on the keyboard.<br><br>5. To align the graphical objects, select the object then select Align in the Arrange group in the Shape Format tab. Then, select your desired alignment."
                 },
                 {
+                  "image": "T3094",
                   "title": "To add and change drawn object to a slide:",
                   "longText": "Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
                 },
                 {
+                  "image": "T3095",
                   "longText": "For example, let us insert a square and a circle. First, click the square then drag in the area where you want to draw, followed by the circle."
                 },
                 {
+                  "image": "T3096",
                   "longText": "To change the fill color and line color, select the shape. In the Shape Format tab, select Shape Fill or Shape Outline in the Shape Styles group.<br><br>Shape Fill is the color of the shape, while Shape Outline is the color of its border."
                 },
                 {
+                  "image": "T3097",
                   "longText": "In Shape Outline, you can also change the line style: Sketched or Dashes. You can also change the line weight, which is the thickness of the border."
                 },
                 {
+                  "image": "T3098",
                   "longText": "To group objects, select two or more objects by pressing the Ctrl key on the keyboard. Then, right-click and select the Group command."
                 },
                 {
+                  "image": "T3099",
                   "longText": "To ungroup objects, right-click on the grouped objects then select the Ungroup command.<br><br>To apply shadow, select Shape Effects in the Shape Styles group in Shape Format tab. In Shape Effects, click Shadow then choose the desired shadow to be applied."
                 },
                 {
+                  "image": "T3100",
                   "longText": "To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
                 },
                 {
@@ -1633,19 +1704,24 @@
                   "longText": "Animations are visual effects that make your texts, images, shapes, or charts come “alive.” They can catch your audience's attention and helps them engage with you and your presentation.<br><br>There are two types of animations you can use to make your presentation come alive. These are the following:"
                 },
                 {
+                  "image": "T3102",
                   "longText": "<b>Transitions</b> - The first type of animation is called transition animation; these are animations added in between slides. You can view the different transition options by going to the Transitions tab in the PowerPoint ribbon.<br><br>The default view shows ten transitions, but if you click on the drop- down arrow on the lower-right corner, it will expand and show more transitions.<br><ul><li>Subtle</li><li>Exciting</li><li>Dynamic Content</li></ul>"
                 },
                 {
+                  "image": "T3103",
                   "longText": "Transition animations have additional effect options. Clicking on the Effect Options button will allow you to add and change settings.<br><br>You can also adjust the timing and duration of each transition and set when you want the transition to take place."
                 },
                 {
+                  "image": "T3104",
                   "title": "Animations",
                   "longText": "Animation brings the objects or elements in your slide to life. To add an animation, click on the object you want to animate, and then go to the Animations tab.<br><br>The default view shows eight animations, but if you click on the drop- down arrow, the menu will show more options."
                 },
                 {
+                  "image": "T3105",
                   "longText": "<b>Entrance</b> - The icons for this type of animation are colored green. This will animate the object as it enters the slide according to your timing  preferences.<br><br><b>Emphasis</b> -The icons for this type of animation are colored yellow. This animates the object to draw attention to it.<br><br><b>Exit</b> - The icons for this type of animation are colored red. This will animate the object as it exits from the slide.<br><br><b>Motion path</b> - This type of animation will allow an object to move from one spot to another. You can specify or draw the path you want the object to take."
                 },
                 {
+                  "image": "T3106",
                   "title": "To apply animation:",
                   "longText": "<ol type ='1'><li>Click all the pictures and texts that you want to apply animation to.</li><li>Select your chosen animation. Notice that a number will appear on the upper left corner of the elements. This is to indicate the sequence of the animation.</li><li>Control the timing of the animation through the commands in the timing group.</li></ol>"
                 },
@@ -1653,49 +1729,66 @@
                   "longText": "To see the results of the applied transitions and animations, click on the Slide Show view button or press F5 on the keyboard.<br><br><b>Important Points When Adding Animations</b><br><br>Adding animations to presentation slides is relatively easy, but avoid overdoing it. You might find yourself animating all objects and adding transitions to every slide. It might look fun, but it can distract your audience's  attention from the message you are trying to convey in your presentation"
                 },
                 {
+                  "image": "T3108",
                   "title": "Adding Presenters Or Speaker Notes In Slides",
                   "longText": "When you are creating a presentation, you can add speaker notes to refer to later while delivering the slide show in front of an audience.<br><br>1. The Notes pane is a box that appears below each slide. An empty Notes pane will prompt you with text that says, “Click to add notes.” "
                 },
                 {
+                  "image": "T3109",
                   "longText": "Type your speaker notes there. If you do not see the Notes pane or it is completely minimized, click Notes on the task bar across the bottom of the PowerPoint window.<br><br>2. When you connect your computer to a projector, the presenter view will appear on your computer screen while the slides appear on the projector screen. In presenter view, you can see your notes as you present, while the audience sees only your slides."
                 },
                 {
+                  "image": "T3110",
                   "title": "Checking The Presentation",
                   "longText": "<i>To hide or show a slide:</i><br><br>1. In the left navigation pane, select a slide. To hide a slide, right-click the slide that you want to hide and then click Hide Slide. You will notice that the slide number is slashed to indicate that the slide is hidden.<br><br>2. To show a slide that you previously hid, right-click the slide that you want to show and then click Hide Slide."
                 },
                 {
+                  "image": "T3111",
                   "longText": "<i>To spell-check a presentation:</i><br><br>You can spell-check your entire presentation by using the Spelling command in the Review tab. The Spelling command will do a complete change on the spelling errors."
                 },
                 {
+                  "image": "T3112",
                   "longText": "<i>To change slide setup and slide orientation:</i><br><br>1. Select the Design tab.<br>2. Near the right end, select Slide Size, and then click Custom Slide Size.<br>3. In the Slide Size dialog box, select Portrait then select OK."
                 },
                 {
+                  "image": "T3113",
                   "longText": "4. In the next dialog box, select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
                 },
                 {
+                  "image": "T3114",
                   "longText": "<i>To change paper size:</i>1. Select the Design tab on the toolbar ribbon. Select the Slide Size icon near the far-right end of the toolbar.<br><br>2. Select your desired slide size: Standard (4:3 aspect ratio), Widescreen (16:9), or Custom Slide Size."
                 },
                 {
+                  "image": "T3115",
                   "longText": "3. In the next dialog box, you can select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
                 },
                 {
+                  "image": "T3116",
                   "longText": "<i>To print your PowerPoint slides, handouts, or notes:</i><ol type ='1'><li>Select File then Print.</li><li>Then, click on the Printer drop-down menu and select your printer.</li><li>In the Settings drop-down menu, you can customize which slides you want to print. You can also select how you would like them to be printed:</li></ol><ul><li>Slides. Click on the drop-down arrow. Here, you can choose to print all slides, selected slides, or the current slide.</li></ul>"
                 },
                 {
+                  "image": "T3117",
                   "longText": "You may also type which slide numbers to print in the Slides box, separated by a comma.<ul><li>Print Layout. You may choose to print just the slides, include the speaker notes, or lay it out as an outline or a handout.</li><li>The Outline layout prints only the text in the slides, without images.</li><li>The Notes Pages layout shows the slide and the related speaker notes below it.</li></ul>"
                 },
                 {
+                  "image": "T3118",
                   "longText": "<ul><li>The Handouts layout allows you to print several slides on one page and, depending on your option, can leave you space for note-taking.</li><li>For Copies, select how many copies you want to print.</li></ul>4. Select print."
                 },
                 {
+                  "image": "T3119",
                   "title": "Presenting Your Slide Show",
-                  "longText": "Once your slide show is complete, you will need to learn how to present it to an audience. PowerPoint offers several tools and features to help make your presentation smooth, engaging, and professional.<br><br>1. There are several ways you can begin your presentation:<ul><li>Click the Start From Beginning command on the Quick Access Toolbar, or press F5 key on your keyboard. The presentation will appear in full-screen mode.</li><li>Select the Slide Show view command at the bottom of the PowerPoint window to begin a presentation from the current slide.</li><li>Go to the Slide Show tab on the ribbon to access more options. From here, you can start the presentation from the beginning of the slide.</li></ul>2. You can exit presentation mode by pressing Esc on your keyboard. Alternatively, you can right-click then select End Show."
+                  "longText": "Once your slide show is complete, you will need to learn how to present it to an audience. PowerPoint offers several tools and features to help make your presentation smooth, engaging, and professional.<br><br>1. There are several ways you can begin your presentation:<ul><li>Click the Start From Beginning command on the Quick Access Toolbar, or press F5 key on your keyboard. The presentation will appear in full-screen mode.</li>"
+                },
+                {
+                  "image": "t3120",
+                  "longText": "<ul><li>Select the Slide Show view command at the bottom of the PowerPoint window to begin a presentation from the current slide.</li><li>Go to the Slide Show tab on the ribbon to access more options. From here, you can start the presentation from the beginning of the slide.</li></ul>2. You can exit presentation mode by pressing Esc on your keyboard. Alternatively, you can right-click then select End Show."
                 },
                 {
                   "title": "Saving A Presentation In Various Multimedia Formats",
                   "longText": "<b>PPTX <i>presentation software</i></b><br>The default format. You can still edit the presentation, even in other computers.<br><br><b>WMV <i>Windows media video</i></b><br>A video file based on the Microsoft Advanced Systems Format (ASF) container format and compressed with Windows Media compression. The presentation will be played as a video.<br><br><b>MP4<i>mpeg-4 video</i></b><br>One of the most common video file formats used for downloading and streaming videos on the internet. The presentation can be played as a video."
                 },
                 {
+                  "image": "t3122",
                   "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
                 },
                 {
