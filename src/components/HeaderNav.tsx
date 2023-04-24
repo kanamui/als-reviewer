@@ -5,7 +5,7 @@ import { ICta } from "../models/components/ICta";
 
 const HeaderNav = ({ title, onPress }: ICta) => {
   return (
-    <HStack space="3" alignItems="center" py="3">
+    <HStack space="3" alignItems="center" pt="2">
       <IconButton
         p="1"
         borderRadius="full"
@@ -19,7 +19,7 @@ const HeaderNav = ({ title, onPress }: ICta) => {
         }
         onPress={onPress}
       />
-      <Heading fontSize="lg">{title}</Heading>
+      <Heading fontSize="md">{title}</Heading>
     </HStack>
   );
 };

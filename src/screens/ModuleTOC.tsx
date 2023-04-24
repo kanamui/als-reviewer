@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import {
+  AspectRatio,
   Box,
   Button,
+  Center,
   Flex,
   HStack,
   Heading,
+  Image,
   Modal,
   Text,
   VStack,
 } from "native-base";
 import HeaderNav from "../components/HeaderNav";
 import Layout from "../components/Layout";
+import { IMAGES } from "../logic/constants/images.constants";
 
 const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   // States
@@ -93,9 +97,28 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
           title={`${module?.title} LESSONS`}
           onPress={() => setScreen("topics")}
         />
-        <Box py="6" flex="1">
-          <HStack flex="1" alignItems="center" justifyContent="center">
-            <VStack space="2">
+        <Box px="6" py="3" flex="1">
+          <HStack
+            flex="1"
+            alignItems="center"
+            justifyContent="center"
+            space="6"
+          >
+            {topic?.image && (
+              <AspectRatio h="full" ratio={1}>
+                <Image
+                  size="full"
+                  resizeMode="contain"
+                  source={IMAGES[topic.image]}
+                  alt={"topic"}
+                />
+              </AspectRatio>
+            )}
+            <VStack
+              space="2"
+              w={topic?.image ? "50%" : "full"}
+              alignItems="center"
+            >
               {topic?.lessons?.map((lesson: any, key: number) => {
                 return (
                   <Box key={key}>
@@ -127,10 +150,13 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
         }}
         subTitle={topic?.subTitle}
         title={topic?.longText}
-        cta={{
-          title: "PROCEED",
-          onPress: () => setScreen("lessons"),
-        }}
+        image={topic?.image}
+        cta={[
+          {
+            title: "PROCEED",
+            onPress: () => setScreen("lessons"),
+          },
+        ]}
       />
     );
   };
@@ -142,9 +168,28 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
           title={`${module?.title} TOPICS`}
           onPress={() => setScreen("main")}
         />
-        <Box py="6" flex="1">
-          <HStack flex="1" alignItems="center" justifyContent="center">
-            <VStack space="2">
+        <Box px="6" py="3" flex="1">
+          <HStack
+            flex="1"
+            alignItems="center"
+            justifyContent="center"
+            space="6"
+          >
+            {module?.image && (
+              <AspectRatio h="full" ratio={1}>
+                <Image
+                  size="full"
+                  resizeMode="contain"
+                  source={IMAGES[module.image]}
+                  alt={"topic"}
+                />
+              </AspectRatio>
+            )}
+            <VStack
+              space="2"
+              w={module?.image ? "50%" : "full"}
+              alignItems="center"
+            >
               {module?.topics?.map((topic: any, key: number) => {
                 return (
                   <Box key={key}>
@@ -170,32 +215,35 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
 
   const Main = () => {
     return (
-      <Box py="6" flex="1">
-        <VStack alignItems="center" space="4">
+      <Box pt="6" pb="3" flex="1">
+        <VStack flex="1" alignItems="center">
           <VStack space="2" alignItems="center">
-            <Heading maxW="80" textAlign="center">
+            <Heading size="md" maxW="64" textAlign="center">
               {data?.title}
             </Heading>
             <Heading size="sm">{data?.subTitle}</Heading>
           </VStack>
-          <Flex flexWrap="wrap" h="240px">
-            {data?.items?.map((module: any, key: number) => {
-              return (
-                <Box key={key} p="1">
-                  <Button
-                    w="56"
-                    h="16"
-                    rounded="full"
-                    onPress={() => handleModule(module)}
-                  >
-                    <Text textAlign="center" color="white" bold>
-                      {module?.title}
-                    </Text>
-                  </Button>
-                </Box>
-              );
-            })}
-          </Flex>
+          <Center flex="1">
+            <Flex flexWrap="wrap" h="220px">
+              {data?.items?.map((module: any, key: number) => {
+                return (
+                  <Box key={key} p="1">
+                    <Button
+                      w="56"
+                      h="16"
+                      rounded="full"
+                      onPress={() => handleModule(module)}
+                      isDisabled={!!!module?.topics}
+                    >
+                      <Text textAlign="center" color="white" bold>
+                        {module?.title}
+                      </Text>
+                    </Button>
+                  </Box>
+                );
+              })}
+            </Flex>
+          </Center>
         </VStack>
       </Box>
     );

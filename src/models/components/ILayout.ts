@@ -6,6 +6,6 @@ export interface ILayout {
   kicker?: string;
   title?: string;
   longText?: string;
-  image?: any;
-  cta?: ICta;
+  image?: string;
+  cta?: ICta[];
 }

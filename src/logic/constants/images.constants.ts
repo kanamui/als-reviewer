@@ -1,15 +1,18 @@
-export const IMAGES = {
+export const IMAGES: any = {
   banner: require("../../../assets/als/als-banner.jpg"),
   cvsu: require("../../../assets/als/cvsu.png"),
   checklist: require("../../../assets/als/checklist.jpg"),
   book: require("../../../assets/als/book.jpg"),
+  
+  M3: require("../../../assets/als/M3.jpg"),
+  M3T1: require("../../../assets/als/M3T1.jpg"),
 
   // TOPIC 2
   T2001: require("../../../assets/als/topic-2/T2001.png"),
   T2008: require("../../../assets/als/topic-2/T2008.png"),
   T2009: require("../../../assets/als/topic-2/T2009.png"),
   T2010: require("../../../assets/als/topic-2/T2010.png"),
-  T2011: require("../../../assets/als/topic-2/T2011.JPG"),
+  T2011: require("../../../assets/als/topic-2/T2011.jpg"),
   T2012: require("../../../assets/als/topic-2/T2012.png"),
   T2014: require("../../../assets/als/topic-2/T2014.png"),
   T2015: require("../../../assets/als/topic-2/T2015.png"),

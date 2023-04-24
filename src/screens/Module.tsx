@@ -12,6 +12,10 @@ const Module: React.FC = ({ navigation, route }: any) => {
 
   // Handlers
   const handleBack = () => {
+    navigation.goBack();
+  };
+
+  const handlePrev = () => {
     if (slide === 0) {
       navigation.goBack();
     } else {
@@ -19,11 +23,11 @@ const Module: React.FC = ({ navigation, route }: any) => {
     }
   };
 
-  const handleProceed = () => {
+  const handleNext = () => {
     if (slide < slideLength - 1) {
       setSlide(slide + 1);
     } else if (quiz) {
-      navigation.navigate("Quiz", { data: quiz })
+      navigation.navigate("Quiz", { data: quiz });
     } else {
       navigation.goBack();
     }
@@ -39,10 +43,17 @@ const Module: React.FC = ({ navigation, route }: any) => {
         kicker={data?.items?.[slide]?.kicker}
         title={data?.items?.[slide]?.title}
         longText={data?.items?.[slide]?.longText}
-        cta={{
-          title: "NEXT",
-          onPress: handleProceed,
-        }}
+        image={data?.items?.[slide]?.image}
+        cta={[
+          {
+            title: "PREV",
+            onPress: handlePrev,
+          },
+          {
+            title: "NEXT",
+            onPress: handleNext,
+          },
+        ]}
       />
     </Box>
   );

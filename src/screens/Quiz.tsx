@@ -48,7 +48,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
 
   const Result = () => {
     return (
-      <Box px="6" pb="6" flex="1">
+      <Box px="6" pb="3" flex="1">
         <VStack flex="1" alignItems="center" justifyContent="space-between">
           <VStack space="2" alignItems="center">
             {assess ? (
@@ -80,11 +80,11 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     return (
       <>
         {data?.kicker && (
-          <VStack w="full" alignItems="center" mb="2">
+          <VStack w="full" ml="46px">
             <Text color="primary.600">{data.kicker}</Text>
           </VStack>
         )}
-        <Box px="6" pb="6" flex="1">
+        <Box px="6" py="3" flex="1">
           <VStack flex="1" alignItems="center" justifyContent="space-between">
             <HStack flex="1" justifyContent="center" space="3" w="80%">
               <VStack space="3" alignItems="center">
@@ -112,7 +112,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
               </VStack>
             </HStack>
 
-            <Button w="32" onPress={handleNext} isDisabled={!!!answer}>
+            <Button w="32" onPress={handleNext} isDisabled={!!!answer} >
               <Text color="white" bold>
                 NEXT
               </Text>
