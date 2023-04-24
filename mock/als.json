@@ -263,7 +263,7 @@
                     "longText": "6. To save a new document, press Ctrl+S on the keyboard, or click the Save button on the upper left corner of the document. You may also click the File tab then select Save."
                   },
                   {
-                    "longText": "7. A dialog box will appear asking for a File Name. Under Choose a Location, you can choose where the file will be stored. To locate a folder, click the arrow on Choose a Location or More save options then press Save.<br><br>Notice that the file name on the upper left corner has changed from Document3 to My Business Cards. Documents in Microsoft Word are usually saved in the Documents folder with the file type <b>DOCX</b>."
+                    "longText": "7. A dialog box will appear asking for a File Name. Under Choose a Location, you can choose where the file will be stored. To locate a folder, click the arrow on Choose a Location or More save options then press Save.<br><br>Notice that the file name on the upper left corner has changed from Document 3 to My Business Cards. Documents in Microsoft Word are usually saved in the Documents folder with the file type <b>DOCX</b>."
                   },
                   {
                     "longText": "8. You can also save the files in a different location, with a different file name, and with a different file type. Just click on the File tab, then select Save As."
@@ -698,6 +698,7 @@
                 "subTitle": "Lesson 1: Spreadsheets",
                 "items": [
                   {
+                    "image": "T2001",
                     "longText": "We deal with numbers every day. For example, we budget our money for our food, fare, clothing, and other expenses.<br><br>Calculating numbers is a skill we can easily do and apply in our daily lives, but what if you need to calculate larger numbers and bigger sums such as in banks, department stores, supermarkets, grades, or payrolls? This is where a spreadsheet program take part as it helps in computing and organizing data."
                   },
                   {
@@ -712,22 +713,27 @@
                     "longText": "<b><ul><li>demonstrate understanding of using cells in a spreadsheet;</li><li>apply the process of modifying rows and columns; and</li><li>customize worksheets.</li></ul>"
                   },
                   {
+                    "image": "T2008",
                     "kicker": "Try This One",
                     "longText": "<b>Directions</b>: Identify and locate the contents in the cell references below. Write your answers on a separate word document.<br><br><b><table><tr><td>1. A1</td><td>6. A4</td></tr><tr><td>2. C2</td><td>7. A7</td></tr><tr><td>3. B6</td><td>8. E8</td></tr><tr><td>4. E3</td><td>9. D4</td></tr><tr><td>5. C5 to C11&nbsp;&nbsp;</td><td>10. D6</td></tr></table></b>"
                   },
                   {
+                    "image": "T2009",
                     "title": "SPREADSHEET",
                     "longText": "A spreadsheet or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form. Spreadsheet software programs are considered unique because they can calculate values using mathematical formulas and data in the cells.<br><br>Like word processors, many applications are used to create spreadsheets. Below is a list of the most common spreadsheet applications and their operating system where these programs can be opened."
                   },
                   {
+                    "image": "T2010",
                     "title": "USES OF SPREADSHEET",
                     "longText": "Spreadsheets are mostly used in accounting and recording data, such as preparing budgets, recording students' grades, preparing financial statements, analyzing numbers, managing inventory, or making forecasts. Spreadsheets can be used at home, in school, in work, or in business."
                   },
                   {
+                    "image": "T2011",
                     "title": "PARTS OF A SPREADSHEET",
                     "longText": "Let us get to know the parts of Microsoft Excel before creating spreadsheets. To open Microsoft Excel, look for the Excel logo in your desktop or search using the search bar and then double-click. Spreadsheets are contained in a file called workbook. In Microsoft Excel, Book with a number beside it (in this case “Book1”) refers to the spreadsheet's file name. The basic parts of the Microsoft Excel are row, column, cell, active cell, cell address, and formula bar."
                   },
                   {
+                    "image": "T2012",
                     "title": "PARTS OF A SPREADSHEET",
                     "longText": "Rows. - The horizontally aligned cells in a spreadsheet, identified with numbers (row header).<br><br>Columns - The vertically aligned cells in a spreadsheet, identified with letters (column header).<br><br>Cell - An individual intersection between rows and columns, labeled by the row number and column letter."
                   },
@@ -736,217 +742,277 @@
                     "longText": "Active cell - The cell currently being edited, marked by a thick black border around the cell.<br><br>Cell address - Also called cell reference, an alphanumeric value used to identify a specific cell.<br><br>Formula bar - Shows the contents of the active cell and allows you to create and view formulas.<br><br>Sheet tabs - Contains the names of the available worksheets in the current workbook."
                   },
                   {
+                    "image": "T2014",
                     "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "1. To launch or open a spreadsheet application, double-click the spreadsheet icon in the desktop if it is available. For example, you will see the Excel icon is in the desktop."
                   },
                   {
+                    "image": "T2015",
                     "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "2. You may also use the search bar on the taskbar. Type the name of the spreadsheet application you are looking for. For example, type Excel; if there is a result, click it to launch."
                   },
                   {
+                    "image": "T2016",
                     "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "3. To open a new workbook, click New on the right side of the screen then select Blank workbook."
                   },
                   {
+                    "image": "T2017",
                     "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "4. To close a spreadsheet application, click the Close button on the upper right corner of the screen."
                   },
                   {
+                    "image": "T2018",
                     "title": "CREATING A NEW SPREADSHEET BASED ON THE AVAILABLE TEMPLATES",
                     "longText": "Microsoft Excel allows users to use available templates with formatting and predefined formulas. You can browse different templates, depending on the type of spreadsheet you want to create, such as record lists, budgets, calendars, schedules, inventory lists, and plans."
                   },
                   {
+                    "image": "T2019",
                     "longText": "Click Personal in the suggested searches.<br><br>2. Select Personal Monthly Budget. Once it is selected, a window will appear with details about the template. Click Create."
                   },
                   {
+                    "image": "T2020",
                     "longText": "3. Once Excel loads the selected template, you will see two sheets: Start and Personal Monthly Budget.<br><br>Click the Personal Monthly Budget sheet.<br><br>4. To edit, click the cells and change to your desired contents."
                   },
                   {
+                    "image": "T2021",
                     "longText": "5. Templates can still be modified according to the preferred data.<br><br>6. If you do not like the templates, you can always go back and use a blank workbook"
                   },
                   {
+                    "image": "T2022",
                     "title": "SAVING A WORKBOOK",
                     "longText": "1. To save a new workbook, press Ctrl+S on the keyboard. You can also click the Save button on the upper left corner of the workbook, or click the File tab then select Save.<br><br>2. A dialog box will appear, asking for a File Name and Choose a Location where the file will be stored. If you are going to locate a folder, click the drop-down arrow on Choose a Location or click More save options to look for other locations. Enter your desired file name and press."
                   },
                   {
+                    "image": "T2023",
                     "longText": "3. Notice that the file name on the upper left corner has changed from “Book1” to “My First Workbook.”<br><br>Spreadsheets in Microsoft Excel are usually saved in the Documents folder as XLSX."
                   },
                   {
+                    "image": "T2024",
                     "longText": "4. You can also save the file in a different location, with a different file name, and file type. Just click on the File tab then select Save As.<br><br>5. To save under a different file name, delete the current filename and type a new one. You can also save it as a different file format, just click the drop-down arrow on the file type and select the desired file type."
                   },
                   {
+                    "image": "T2025",
                     "longText": "It can be saved as a template, Portable Document Format (PDF), web page, rich text format, or any file type you want to use.<br><br>6. Click Browse to choose the folder or drive where you want to save the file. A window will appear where you can locate your folder or drive. Choose a location then click Save to finish the process."
                   },
                   {
+                    "image": "T2026",
                     "longText": "<b>SWITCHING BETWEEN OPEN SPREADSHEETS</b><br><br>There are several ways to switch between files.<br><br><b>USING THE SWITCH WINDOWS BUTTON</b><br><br>1. One option to switch between the open Excel files is to use the View tab on the ribbon. Go to the View tab and click on Switch Windows."
                   },
                   {
+                    "image": "T2027",
                     "longText": "2. Pick the workbook you would like to move from the list of available open files. There will be a check next to the file that you are currently viewing for easy reference. In the example below, there are two open spreadsheets: Book 1 and Book 2. Choose among the open spreadsheets you want to switch with by clicking it."
                   },
                   {
+                    "image": "T2028",
                     "longText": "<b>USING KEYBOARD SHORTCUTS</b><br><br>To move back and forth between any open windows (of all file types and browsers), use the combination Alt+Tab. Hold Alt and press Tab to browse through the files until you get to the file you are looking for.<br><br><b>CLICKING THROUGH THE TASKBAR</b><br><br>Click the icon of the spreadsheet application on the taskbar. A small window will appear. Then, select the file you want to open."
                   },
                   {
+                    "image": "T2029",
                     "title": "USING AVAILABLE HELP FUNCTIONS",
                     "longText": "The help feature in Microsoft Office applications is usually the fastest and easiest way to get help. In Windows, access it by pressing F1 in the application or just click the Help tab."
                   },
                   {
+                    "image": "T2030",
                     "longText": "Once the help feature opens, use the search feature in the right-side task pane to find answers to your questions related to the use of spreadsheet programs. To browse for topics, open <b>Recommended Topics</b>."
                   },
                   {
+                    "image": "T2031",
                     "title": "ZOOM TOOLS",
                     "longText": "Zoom tools are available in most applications such as Microsoft Word, Microsoft Excel, and Microsoft PowerPoint. Zoom tools let you zoom in or out your documents, workbooks, or presentations while working on them. You can find the zoom tools under the View tab of the application."
                   },
                   {
+                    "image": "T2032",
                     "longText": "1. The default view is 100%, but you can adjust this by clicking Zoom. A window with different levels of magnification to choose from will pop out, including Fit Selection and Custom.<br><br>2. will allow you to zoom the document up to 400%, which Is Zoom to Selection s the maximum magnification. This helps you focus on a specific area of the sheet."
                   },
                   {
+                    "image": "T2033",
                     "longText": "3. Alternatively, the <b>zoom slider</b> is available for instant zoom in and zoom out. It is located at the lower right corner of the workbook."
                   },
                   {
+                    "image": "T2034",
                     "title": "USING RIBBONS, TABS, AND THE QUICK ACCESS TOOLBAR",
                     "longText": "Ribbons are designed to help you quickly find the command that you want to execute in Microsoft Office. Ribbons are divided into logical groups called tabs, and each tab has its own set of groups with unique functions to perform. There are various tabs: Home, Insert, Page Layout, Formulas, Data, Review, and View.<br><br>Ribbons can be hidden when you collapse or minimize ribbons. Right- click on the ribbon area and choose Collapse the Ribbon."
                   },
                   {
+                    "image": "T2035",
                     "longText": "To restore the Ribbons, click the Ribbon Display Options at the upper right of the workbook then select Show Tabs and Commands."
                   },
                   {
+                    "image": "T2036",
                     "longText": "The Quick Access Toolbar is a universal toolbar that is always visible and is not dependent on the tab that you are working with. It lets you execute commands easily."
                   },
                   {
-                    "longText": "The default commands are the save, undo, and redo buttons. You can customize the toolbar by clicking on the drop-down button at the right of the toolbar and then checking the desired commands to be included on the Quick Access Toolbar.<br><br>As aforementioned, a cell is made up of a row and a column. Each cell should only contain one element of data. If you are ready to insert data or content, click a cell.<br><br>1. Click the cell to insert data such as numbers, dates, and texts. Let us put data in cells A1 to A5.<br><br>To organize your workbook, starting at the left corner of the sheet is recommended."
+                    "image": "T2037",
+                    "longText": "The default commands are the save, undo, and redo buttons. You can customize the toolbar by clicking on the drop-down button at the right of the toolbar and then checking the desired commands to be included on the Quick Access Toolbar."
                   },
                   {
+                    "image": "T2038",
+                    "title": "USING SPREADSHEET CELLS",
+                    "longText": "As aforementioned, a cell is made up of a row and a column. Each cell should only contain one element of data. If you are ready to insert data or content, click a cell.<br><br>1. Click the cell to insert data such as numbers, dates, and texts. Let us put data in cells A1 to A5.<br><br>To organize your workbook, starting at the left corner of the sheet is recommended."
+                  },
+                  {
+                    "image": "T2039",
                     "longText": "2. Let us put names as text beside each number in cells B1 to B5."
                   },
                   {
+                    "image": "T2040",
                     "longText": "3. Then, insert birthdates on C1 to C5 in mm/dd/yyyy format.<br><br>Notice that the inserted date can be seen in the formula bar."
                   },
                   {
+                    "image": "T2041",
                     "longText": "4. If the data is longer than the width, put your cursor on the right side of the header and drag to adjust the column headers. Use the same process to adjust the rows."
                   },
                   {
+                    "image": "T2042",
                     "title": "CREATING LISTS",
                     "longText": "When creating lists of data in a spreadsheet, remember the basics to for better results. Examine the sample illustrations below.<br><br>1. Avoid blank rows and columns in the main body of the list. It may look unpleasing to the eye, and the data may look disorganized."
                   },
                   {
+                    "image": "T2043",
                     "longText": "2. If your list needs to have a total row like the example on the next page, it is best to put a blank row before the total row to separate the final data from the main list."
                   },
                   {
+                    "image": "T2044",
                     "longText": "3. Ensure that the cell bordering lists are blank. It is better not to put borders to main lists to avoid confusion, especially if you are going to insert rows between data in the future. Apply No Border found on the Font group to remove the cell borders."
                   },
                   {
+                    "image": "T2045",
                     "title": "SELECTING CELLS AND WORKSHEETS",
                     "longText": "1. To select a single cell, click the cell using your mouse or use the arrows keys on the keyboard.<br><br>2. To select a range of cells, hold the left button of your mouse and drag from the start of the range up to the end. You may also use the arrow keys while holding the Shift key in the keyboard."
                   },
                   {
+                    "image": "T2046",
                     "longText": "3. To select a nonadjacent cell or cell, click each cell while holding the Ctrl key on the keyboard."
                   },
                   {
+                    "image": "T2047",
                     "longText": "4. If you want to select the entire worksheet, click the triangle at the corner of A1."
                   },
                   {
+                    "image": "T2048",
                     "title": "COPYING AND MOVING CELL CONTENTS",
                     "longText": "1. To copy cell content, follow the steps we previously discussed on selecting cells then click Copy in the Clipboard group on the Home tab, or press Ctrl+C on your keyboard. You can also right-click on the selected cells and choose Copy."
                   },
                   {
+                    "image": "T2049",
                     "longText": "2. Select the cell or cells where you want to paste the content then click the Paste command on the Home tab, or press Ctrl+V on your keyboard. Alternatively, right-click on a blank cell, choose Paste Options, and click Paste."
                   },
                   {
+                    "image": "T2050",
                     "longText": "3. To move contents in a cell, select the cell or cells to be moved then click Cut on the Home tab. You may also press Ctrl+X on the keyboard, or right-click on the selected cells and choose Cut. The Cut command will remove the contents from its origin and transfer them to your chosen cell."
                   },
                   {
+                    "image": "T2051",
                     "longText": "4. Select the cells where you want to move your content then click Paste."
                   },
                   {
+                    "image": "T2052",
                     "longText": "5. You can also copy or move cell contents from one sheet to another or between open workbooks. Do the same procedure in copying contents in a worksheet.<br><br>6. To remove or delete cell contents, select the cells to be deleted then press Del on the keyboard."
                   },
                   {
+                    "image": "T2053",
                     "title": "USING THE AUTOFILL TOOL",
                     "longText": "Instead of entering data manually, Microsoft Excel has a feature called AutoFill that lets you fill cells automatically. It may either follow a pattern or base on data from other cells.<br><br>1. To use AutoFill, let us enter a text in a cell. In this example, let us type a month, say, January."
                   },
                   {
+                    "image": "T2054",
                     "longText": "2. Point your mouse on the lower right corner of the cell. You should see a solid cross pointer; this is called the fill handle.<br><br>3. Hold the mouse's left button and drag down the pointer. You will be guided by a tool tip indicating the next content."
                   },
                   {
+                    "image": "T2055",
                     "longText": "4. AutoFill Options will appear after your use the fill handle. When you click the button, the options for AutoFill will be displayed.<br><br>5. The default selection is Fill Series. Copy Cells will not follow a pattern; it will only copy the selected word."
                   },
                   {
+                    "image": "T2056",
                     "longText": "If you want to copy the format of the cell but not the content, choose Fill Formatting Only. If you want to copy the content of the cell but not the format, choose Fill Without Formatting.<br><br>Autofill can also be done horizontally; just follow the same steps, but this time, drag your mouse to the right."
                   },
                   {
-
+                    "image": "T2057"
                   },
                   {
+                    "image": "T2058",
                     "longText": "AutoFill can add incremental data entries if the data is numerical or alphanumeric. Enter any starting value in a cell. Enter the next value in the cell below it to establish a pattern. Select those two cells and drag the bottom fill handle down the column to create a series of incremental numbers."
                   },
                   {
+                    "image": "T2059",
                     "title": "SELECTING ROWS AND COLUMNS",
                     "longText": "1. To choose a row or a column, click the row header (number) or column header (letter).<br><br>2. To click more than one row or column, click and hold the headers, hold the left button, and drag the mouse vertically or horizontally."
                   },
                   {
+                    "image": "T2060",
                     "longText": "3. To select nonadjacent rows and columns, click the headers of the desired rows and columns while pressing the Ctrl key on the keyboard."
                   },
                   {
+                    "image": "T2061",
                     "title": "ADJUSTING ROW HEIGHT AND COLUMN WIDTH",
                     "longText": "1. To adjust the row height, select the row headers to be adjusted and then point your mouse to the last selected row header. Double-click or resize it manually by holding the left button while dragging down the headers."
                   },
                   {
+                    "image": "T2062",
                     "longText": "2. To adjust the column width, select the column headers to be adjusted and then point your mouse to the last selected column header. Double-click or resize it manually by holding the left click while dragging the headers to the left or to the right."
                   },
                   {
+                    "image": "T2063",
                     "title": "INSERTING AND DELETING ROWS AND COLUMNS",
                     "longText": "1. To insert a row in between, right-click on the row header and click Insert.<br><br>2. To insert more than one row, select the desired number of row headers and click Insert. The selected rows correspond to the number of new rows."
                   },
                   {
+                    "image": "T2064",
                     "longText": "3. To insert a column in between, right-click the column header and click Insert.<br><br>4. To insert more than one column, select the desired number of column headers then click Insert. The selected columns correspond to the number of new columns."
                   },
                   {
+                    "image": "T2065",
                     "longText": "5. To delete cells, do the same procedure in inserting rows or columns, but instead of Insert, click Delete."
                   },
                   {
+                    "image": "T2066",
                     "title": "FREEZING AND UNFREEZING PANES",
                     "longText": "1. To keep an area of a worksheet visible while you scroll to another area of the worksheet, go to the View tab and click Freeze Panes to lock specific rows and columns in place.<br><br>2. To freeze the first column, click Freeze First Column; to freeze the top row, click Freeze Top Row. You will see a faint line between the first column and the second column. It indicates that the first column was locked or frozen."
                   },
                   {
+                    "image": "T2067",
                     "longText": "3. Aside from the first column, you can also freeze two or more columns and rows. Example if you want to freeze the first and second column, you need to choose the third column and then click Freeze Panes on the View tab.<br><br>4. The same procedure will be applied for the rows. Freezing panes is very helpful if you are working with big or long worksheets. The effect will be seen upon scrolling from left to right or from up to down.<br><br>5. To unfreeze the panes, simply click Unfreeze Panes."
                   },
                   {
+                    "image": "T2068",
                     "title": "CUSTOMIZING WORKSHEETS",
                     "longText": "You can only see one worksheet upon opening a workbook, and its default name is “Sheet1.” You can add more sheets, and each sheet added will have their names change incrementally."
                   },
                   {
+                    "image": "T2069",
                     "title": "ADDING WORKSHEETS",
                     "longText": "1. To add another sheet, click the plus sign button beside Sheet 1.<br><br>2. A new sheet will appear with Sheet2 as the name. You can continue doing this if you need more worksheets."
                   },
                   {
+                    "image": "T2070",
                     "title": "RENAMING A WORKSHEET",
                     "longText": "1. To Rename a worksheet, right-click on the worksheet to be renamed then select Rename. Type a meaningful worksheet name that is related to your task. Let us rename our worksheet to “Sample 1” and “Sample 2.”"
                   },
                   {
+                    "image": "T2071",
                     "longText": "2. Do the same procedure to all the worksheets that you will add.<br><br>3. To switch between worksheets, just click the sheet that you want to work on."
                   },
                   {
+                    "image": "T2072",
                     "title": "COPYING, MOVING, AND DELETING WORKSHEETS",
                     "longText": "1. To copy a worksheet, right-click the worksheet to be copied then click Move or Copy.."
                   },
                   {
+                    "image": "T2073",
                     "longText": "2. A dialog box will appear with a list of existing worksheets. Check Create a copy.<br><br>3. A duplicate worksheet will appear with the same name but with “(2)” because Excel does not accept worksheets with the same names. You can also change it to your desired name."
                   },
                   {
+                    "image": "T2074",
                     "longText": "4. To move worksheets, right- click the sheet to be moved then select Move or Copy and choose (move to end). Click OK.<br><br>Here, Sample 3 was moved to the end after all the existing sheets. Moving can also be as easy as dragging the worksheet to your desired place."
                   },
                   {
+                    "image": "T2075",
                     "longText": "5. To delete a worksheet, click the worksheet to be deleted, right-click, and then choose Delete."
                   },
                   {
+                    "image": "T2076",
                     "longText": "<b>Directions:</b> Identify the parts of Microsoft Excel. Write your answers on a separate word document."
-                  },
-                  {
-                    "longText": "After this lesson, learners should be able to<br><br><ul><li>Employ Good Practices In Using Arithmetic Formulas And Functions In Spreadsheets;</li><li>Create Formulas Using Cell References And Arithmetic Operators;</li><li>Identify Errors In Formulas;</li><li>Identify Errors In Formulas;</li><li>Employ Spreadsheet Functions; And</li><li>Use Logical Functions.</li></ul>"
-                  },
-                  {
-
                   }
                 ]
               },
@@ -964,243 +1030,317 @@
                     "longText": "<table><tr><td>1. 55 = 10</td><td>6. 44 = True</td></tr><tr><td>2. 73 = 4</td><td>7. 52 = True</td></tr><tr><td>3. 102 = 5</td><td>8. 73 = False</td></tr><tr><td>4. 93 = 27</td><td>9. 18 = False</td></tr><tr><td>5. 55 = 25</td><td>10. 61 = True</td></tr></table>"
                   },
                   {
+                    "image": "T2079",
                     "longText": "Formulas in a spreadsheet are expressions that operate or calculate the values in a range of cells, while functions are predefined formulas that are already available in spreadsheet applications.<br>The most practical way of entering formulas and functions in Excel is to type the equal sign (=) first, followed by the constants and operators.<br>For example, if you want to get the sum of two numbers entered in A1+A2, you will put your formula in A3 as =A1+A2."
                   },
                   {
+                    "image": "T2080",
                     "title": "ENTERING A FORMULA",
                     "longText": "1. To enter a formula, select a cell then type an equal sign (=), followed by the cell address of the numbers to be calculated. For example, A3 is the cell where the formula will be inserted to calculate the input numbers in cells A1 and A2."
                   },
                   {
+                    "image": "T2081",
                     "longText": "2. Instead of typing the cell labels, simply the first select cell, type the operator, and then select the second cell.<br><br>If you change the value in the input cells, the output cell will change as well because it has a formula."
                   },
                   {
+                    "image": "T2082",
                     "longText": "3. To edit the formula, click the cell on the formula bar and press Enter. Alternatively, you can double-click on the cell to change the formula.<br><ul><li>You can change the arithmetic operators, such as the division sign ( / ) and the multiplication sign ( * ).</li></ul>"
                   },
                   {
+                    "image": "T2083",
                     "longText": "<b>IDENTIFYING ERROR VALUES IN FORMULAS</b><br><br>If the intended result is not met after entering a formula, it may sometimes lead to error values. This includes errors such as #NAME?, #DIV/0!, and #REF!.<br><br><b>ERROR VALUES</b><br><br>#NAME? displays when Excel does not recognize the text in a formula. These texts are built-in functions in Excel.<br>In the example, instead of the word sum, sume was entered. To remove the error, simply correct the spelling of the word."
                   },
                   {
+                    "image": "T2084",
                     "longText": "#DIV/0! displays when a number is divided either by zero or by a cell that contains no value.<br><br>In the example shown on the next page, instead of A2, the cell reference that was entered in the formula was B2, which has no value entered. To remove the error, do not divide the other number by zero or correct the cell reference in the formula."
                   },
                   {
+                    "image": "T2085",
                     "longText": "#REF! displays when a cell reference is not valid.<br><br>For example, you may have deleted the row of cell A2. To remove the error, press Undo or Ctrl+Z to undo the deletion."
                   },
                   {
+                    "image": "T2086",
                     "title": "USING RELATIVE AND ABSOLUTE CELL REFERENCING",
                     "longText": "Cell reference or cell address is a combination of a column letter and a row number that identifies a cell on a worksheet. You can see your cell reference at the cell address bar. Cell references help Excel find the values the formula should calculate.<br>In Excel, a range is a block of two or more cells. A range reference is represented by the address of the upper left cell and the lower right cell separated with a colon. For example, the range A1:D3 contains 12 cells from A1 to D3."
                   },
                   {
+                    "image": "T2087",
                     "longText": "There are different types of cell references for creating a formula. These are the relative and absolute references. They function differently, so it is important to use the appropriate address type.<br><br>A relative reference is the default cell references in copying a formula. When you use relative, as you copy the formula, the cell reference will change according to the position of the cell.<br><br>1. To use a relative reference, enter all the data first."
                   },
                   {
+                    "image": "T2088",
                     "longText": "2. Type the formula in the output cell. Here, the formula is typed on C2 to get the sum of the two numbers."
                   },
                   {
+                    "image": "T2089",
                     "longText": "3. To automatically insert a formula for a range, say C3:C6, use relative referencing. Use the fill handle tool on the lower right corner of the cell, drag it down until you reach the last cell, and then release the left button."
                   },
                   {
+                    "image": "T2090",
                     "longText": "In the example, notice that even if the formula in C2 was copied to the cell range C3:C6, there are different answers. This is because in relative reference, the position of the cell will change automatically."
                   },
                   {
+                    "image": "T2091",
                     "longText": "On the other hand, an absolute reference will not change as you copy the formula. Absolute reference is especially useful when you want to perform multiple calculations with a value in a specific cell or when you need to copy a formula to other cells without changing references.<br><br>1. Let us create an additional calculation to the previous example. Let us multiply all the answers in C2:C6 by a single number placed in E7."
                   },
                   {
+                    "image": "T2092",
                     "longText": "2. Enter a new formula in D2, =C2*E7."
                   },
                   {
+                    "image": "T2093",
                     "longText": "3. To copy the formula, use the fill handle and drag down until D6.<br><br>After using the fill handle tool, you will notice a zero (0) result. It is because a relative reference was used."
                   },
                   {
+                    "image": "T2094",
                     "longText": "4. Let us check the result. Click each cell reference and you will notice that it follows the next cell reference after E7, which is E8, then E9, and so on."
                   },
                   {
+                    "image": "T2095",
                     "longText": "5. To make the formula absolute, you need to put a dollar sign ($) in the cell reference E7 in the formula. To execute the dollar sign, press Shift+4."
                   },
                   {
+                    "image": "T2096",
                     "longText": "6. After putting a dollar sign, easily apply the formula to the other cells by dragging the fill handle until D6. Notice that the only thing that changed is the position of the first cell reference in the formula, which is C2 to C6."
                   },
                   {
+                    "image": "T2097",
+                    "longText": "Let us check the formula of the other cell references. It is absolute because the E7 cell reference did not change for the rest of the formulas when a dollar sign was placed."
+                  },
+                  {
+                    "image": "T2098",
                     "title": "USING FUNCTIONS",
                     "longText": "<ul><li>SUM is used to compute the total of all items in the specified range.</li><li>AVERAGE is used to get the average of the items in a range.</li><li>COUNT is used to count the values found in the range.</li><li>COUNTA is used to count cells that contain numbers, texts, logical values, error values, and empty texts returned n formulas.</li><li>ROUND is used to round a number to a specified number of digits.</li><li>MAX is used to get the largest value within the range.</li><li>MIN is used to get the smallest value within the range.</li></ul>"
                   },
                   {
+                    "image": "T2099",
                     "title": "THE SUM FUNCTION",
                     "longText": "1. Let us prepare sample data to work with."
                   },
                   {
+                    "image": "T2100",
                     "longText": "2. To get the total score, you need to use a sum function. In this example, you need to enter the formula =SUM(B2:F2) in G2. To get the range of the cells, simply highlight the range to be inserted in the formula."
                   },
                   {
+                    "image": "T2101",
                     "longText": "3. Use relative referencing to copy the formula to the rest of cells.<br><br>The result is 0 because there is no data in the cells yet."
                   },
                   {
+                    "image": "T2102",
                     "title": "THE AVERAGE FUNCTION",
                     "longText": "Let us get the average, total number of quizzes, largest score, and smallest score in the quizzes of the previous example.<br><br>1. To get the average, enter =AVERAGE(B2:F2)."
                   },
                   {
+                    "image": "T2103",
                     "longText": "2. Use the fill handle to copy the function to other cells."
                   },
                   {
+                    "image": "T2104",
                     "title": "THE COUNT FUNCTION",
                     "longText": "1. To use the count function, type =COUNT([range of cells]).<br><br>You can also double-click COUNT from the drop-down list. Here, we type =COUNT(B2:F2)<br><br>2. When you double-click the function, it will automatically be selected, and the next entry should be the range of the cell.<br><br>The result will be 5, which means there are five quizzes. Use the fill handle to copy the formula to the rest of the cells."
                   },
                   {
+                    "image": "T2105",
                     "title": "THE COUNTA FUNCTION",
                     "longText": "1. If you wish to return the number of non-blank cells in one cell range, say A2:A7, use the COUNTA function. In this example, you can see that the formula returns the number of non-blank cells in the range A2:A7."
                   },
                   {
+                    "image": "T2106",
                     "title": "2. =COUNTA(A2:A7) counts the number of data-filled cells in A2 through A7 and returns a value of 5 because cell A5 is blank. So all values are counted except the value in cell A5, which is blank."
                   },
                   {
+                    "image": "T2107",
                     "title": "THE ROUND FUNCTION",
                     "longText": "The ROUND function in Excel rounds a number to a specified number of digits. Numbers 1, 2, 3, and 4 get rounded down, while 5, 6, 7, 8, and 9 get rounded up. Here are examples on how to use the ROUND function."
                   },
                   {
+                    "image": "T2108",
                     "title": "THE MAX AND MIN FUNCTION",
                     "longText": "To use the max or min function, type in the formula =MAX([range of cells]) or =MIN([range of cells]). In these examples, we type =MAX(B2:F2) and =MIN(B2:F2).<br><br><ul><li>The maximum number should be 25, and the minimum number should be 10. Use the fill handle to copy the formulas to the rest of the cells.</li></ul>"
                   },
                   {
+                    "image": "T2109",
                     "title": "USING THE LOGICAL FUNCTION IF",
                     "longText": "The logical function If is useful in decision-making statements to determine if the result is a success or not to the standard being set.<br><br>Let us use grades of students as an example.<br><br>1. Prepare a sample workbook containing students' grades in the first quarter. The remarks will only display “Passed” or “Failed.”"
                   },
                   {
+                    "image": "T2110",
                     "longText": "2. Enter the IF function in the output cell. Here, type in =IF(B2>=75, “Passed”, “Failed”) in C2.<br><br>If the value in B2 is greater than or equal to 75, it will result in a passed remark. Otherwise, if the value in B2 is 74 and below, it will result in a failed remark."
                   },
                   {
+                    "image": "T2111",
                     "longText": "The remark for C2 will be “Passed” because the statement is true for C2; the grade 75 is equal to the value set.<br><br>3. Use the fill handle to copy the formula. C4 is “Failed” because the grade 71 is not greater than or equal to 75."
                   },
                   {
+                    "image": "T2112",
                     "longText": "<b>FORMATTING NUMERICAL DATA</b><br><br>Formatting is different in a spreadsheet when it comes to numerical data entered in a cell. When you enter data with numbers, Excel will recognize what type of numerical data you are referring to, but you can always change it with your desired format.<br><br><b>DECIMAL PLACES AND SEPARATOR</b><br><br>To edit the number format of cells, look for the Number group in the Home tab."
                   },
                   {
+                    "image": "T2113",
                     "longText": "You can find the full set of number formatting options if you click the Dialog Box Launcher in the corner of the Number group."
                   },
                   {
+                    "image": "T2114",
                     "longText": "Some have two decimal places and some only have one because Excel displays the zeroes that end a decimal. But for the purpose of uniformity and organization, you can choose to format decimal places.<br><br>1. To format decimal places, click the cell or cell ranges, then click the Number Format drop-down list, and then choose Number."
                   },
                   {
+                    "image": "T2115",
                     "longText": "2. Next, let us calculate first. Here, we compute for the total price of each item by multiplying the price by the quantity."
                   },
                   {
+                    "image": "T2116",
                     "longText": "3. To change the format to two decimal places, change the number format to Number in the Number group."
                   },
                   {
-                    "longText": "However, this quick access is not applicable if you want a decimal place that is more than two."
+                    "image": "T2117",
+                    "longText": "However, this quick access is not applicable if you want a decimal place that is more than two. To format it, click More Number Formats... or the dialog box launcher. For example, when you use the mathematical operator divide (/) in a formula, it is expected to have results with decimal places."
                   },
                   {
-                    "longText": "To format it, click More Number Formats... or the dialog box launcher. For example, when you use the mathematical operator divide (/) in a formula, it is expected to have results with decimal places."
-                  },
-                  {
+                    "image": "T2118",
                     "longText": "Let us change the decimal places to three. Select the range of cells, say C2:C4, then click More Number Formats. A Format Cells dialog box will appear. Then, choose Number."
                   },
                   {
+                    "image": "T2119",
                     "longText": "Let us go back to the first example. Total prices in thousands do not have a separator because they were entered as numbers with a General format.<br><br>To add a comma or a thousands separator, select the cell range to be formatted then click Comma Style in the Number group."
                   },
                   {
+                    "image": "T2120",
                     "longText": "Then, the number format will become Accounting, and a thousands separator will be displayed in D4."
                   },
                   {
+                    "image": "T2121",
                     "longText": "<b>ADDING DATE TYPE, CURRENCY SYMBOL, AND PERCENTAGE</b><br><br>There are other numerical data that need special formatting. For example, you can choose among the available date formats, depend on the currency of a specific country when entering money, and display numbers as percentage.<br><br><b>DATE TYPE</b>From the example in our previous topic, let us put a date when the items were purchased or bought. The default format for dates is dd/mm/yyyy."
                   },
                   {
+                    "image": "T2122",
                     "longText": "To change, select E2 then click More Number Formats dialog box launcher. Select the type that you prefer. For this example, let us select the format date/short month/year; just scroll down the selection."
                   },
                   {
+                    "image":"T2123",
                     "longText": "The date will be changed to the type assigned. You can do this to other dates in the cells. Do not use the fill handle, as it will create a series of dates following the first date entered."
                   },
                   {
+                    "image": "T2124",
                     "title": "CURRENCY SYMBOL",
                     "longText": "Let us put a currency symbol on the price and total prices. Select the cell range to be formatted. In this example, we will select B2:B4 and D2:D4. To select nonadjacent cells and format cells easily and quickly, press the Ctrl key while selecting the cell ranges."
                   },
                   {
+                    "image": "T2125",
                     "longText": "Click the Currency format in the Number group. You can see a Peso sign if you are using Microsoft Excel in countries with a Peso currency such as the Philippines."
                   },
                   {
+                    "image": "T2126",
                     "longText": "If the data is displayed as a series of number signs or hashtags (#)- also known as hash or pound sign-it means that the data is longer than the default width of the column. Adjust the column width by double-clicking on the right side of the header."
                   },
                   {
+                    "image": "T2127",
                     "title": "PERCENTAGE",
                     "longText": "How about discounting the price of the items? Let us put a percentage in each price. There are two ways to do it. First, enter the numbers.<br><br>For the first method, click Percent Style in the Number group."
                   },
                   {
+                    "image": "T2128",
                     "longText": "But the percentage displayed two additional decimal places. To solve this problem, simply reenter the original numbers 5, 10, and 50."
                   },
                   {
+                    "image": "T2129",
                     "longText": "The second method is to enter the numbers followed by a percent sign (%) to avoid reentering the numbers."
                   },
                   {
+                    "image": "T2130",
                     "longText": "To complete our example, let us compute for the less price, discounted price, and the total amount due. Create a formula on G2:G4 for the less price by multiplying the original price to the percentage discount."
                   },
                   {
+                    "image": "T2131",
                     "longText": "Next, for the discounted price, create a formula in H2:H4 by subtracting the original price to the less price. Freeze columns A and B for a while."
                   },
                   {
+                    "image": "T2132",
                     "longText": "For the total amount, multiply the discounted price to the quantity. First, freeze columns A, B, and C."
                   },
                   {
+                    "image": "T2133",
                     "longText": "Lastly, compute for the total price on all items, both with original prices and discounted prices. Use the SUM function in D5 and I5."
                   },
                   {
+                    "image": "T2134",
                     "longText": "<b>FORMATTING CELL APPEARANCE</b><br><br>Cells use the same format as default. However, a workbook can have a lot of information, so drawing attention to a specific section can be difficult. Basic formatting can help you customize your workbook's appearance to make it easier to view and understand.<br><br><b>CHANGING FONT SIZE, FONT, AND FONT STYLE</b><br><br>Let us change the font size and font type of the sample workbook about the small clothing business. The Font group can be found in the Home tab."
                   },
                   {
+                    "image": "T2135",
                     "longText": "To change the font size, click the drop-down arrow and choose the desired size, or click the Increase Font Size or Decrease Font Size button. You can also type a number in the text box.<br><br><b>Font</b> is located beside the Font Size drop-down menu. Click the drop-down arrow to choose from the variety of fonts or type the font if you know the name."
                   },
                   {
+                    "image": "T2136",
                     "longText": "1. In this sample, let us change the font size of the headings to 12 and the rest of the cells to 10."
                   },
                   {
+                    "image": "T2137",
                     "longText": "2. Apply the font Arial Narrow to all the cells."
                   },
                   {
+                    "image": "T2138",
                     "longText": "You can also apply font styles. Font style can be bold, italic, underline, or double underline.<br><br>3. Let us make all the headings bold. Click the B icon in the Font group.<br><br>4. Next, make A2:A4 italic. Click the I icon in the Font group."
                   },
                   {
+                    "image": "T2139",
                     "longText": "5. Apply underline on D4 and I4, the last prices in the items. Click U in the Font group."
                   },
                   {
+                    "image": "T2140",
                     "longText": "6. Apply double underline to D5 and I5, the sum of each total amount. A Format Cells dialog box will appear where there are options for Underline. Click the drop-down arrow then select Double Underline.<br><br>Alternatively, you can click on the drop-down arrow beside the U button."
                   },
                   {
+                    "image": "T2141",
                     "title": "APPLYING CELL BACKGROUND AND CONTENT COLOR",
                     "longText": "1. Apply color green to the background of all the headings. Highlight the cells first then click the drop-down arrow in the Fill Color command and choose green in the Standard Colors. You can also choose among Theme Colors or click More Colors."
                   },
                   {
+                    "image": "T2142",
                     "longText": "1. Apply color green to the background of all the headings. Highlight the cells first then click the drop-down arrow in the Fill Color command and choose green in the Standard Colors. You can also choose among Theme Colors or click More Colors."
                   },
                   {
+                    "image": "T2143",
                     "longText": "2. Apply a light blue color for the items under Items.<br><br>3. Next, color B2:E4 yellow and F2:I4 red.<br><br>4. For D5 and I5, let us make the background black and the text white."
                   },
                   {
+                    "image": "T2144",
                     "title": "WRAPPING TEXT CONTENT",
                     "longText": "Because Excel cells have a default width, long text contents overlap with other cells, but you can easily fix this by adjusting the column widths.<br><br>However, if you want to keep the width as is or shorter so that all the information is there when you print the file, use the Wrap Text command. Wrap Text can display long texts by wrapping it into multiple lines in a single cell."
                   },
                   {
+                    "image": "T2145",
                     "title": "ALIGNING CELL CONTENTS HORIZONTALLY AND VERTICALLY",
                     "longText": "To apply horizontal alignment, select the cells then select align left, which is the default alignment; center; or align right. For the example, let us align the headings to the center.<br><br>For vertical alignment, the default is bottom alignment. You can apply top align, middle align, or bottom align. Let us align all the headings in the middle of the cell."
                   },
                   {
+                    "image": "T2146",
                     "title": "USING CELL CONTENT ORIENTATION",
                     "longText": "The Orientation command lets you rotate texts vertically or diagonally. It is a great way to label narrow columns. Simply click the Orientation command in the Alignment group then choose your preferred orientation."
                   },
                   {
+                    "image": "T2147",
                     "title": "MERGING CELLS",
                     "longText": "Merging cells is to combine two or more cells. This can be useful if you want to clarify that a label in Excel applies to multiple columns. The Merge & Center command is found in the Alignment group."
                   },
                   {
+                    "image": "T2148",
                     "longText": "Insert a column beside column A and highlight the two cells. Click Merge & Center.<br><br>A1 and B1 were combined without affecting the other cells. To unmerge cells, just click the drop-down arrow on Merge & Center command then select Unmerge Cells."
                   },
                   {
+                    "image": "T2149",
                     "title": "APPLYING CELL BORDERS",
                     "longText": "Cell borders allow you to create a clear boundary among the different cells of your worksheet.<br><br>First, select the cells to be modified then click Borders in the Font group and choose what border to apply."
                   },
                   {
+                    "image": "T2150",
                     "longText": "You can also modify the line color and line style. Click the drop- down arrow again and select Line Color. Select Light Gray, Background 2, Darker 10%, and then select the style at the bottom of the Line Style drop-down list.<br><br>You will notice a pencil pointer ready to apply the chosen color and style."
                   },
                   {
+                    "image": "T2151",
                     "longText": "Apply this to the borders one by one. This lets you personalize your worksheets more.<br><br>There is so much you can do in preparing your workbook. You can always improve your spreadsheets and create different finance applications, tabular records, as well as calculate numbers, by using the best features of the software program, formulas and formatting cells."
                   },
                   {
+                    "image": "T2152",
                     "kicker": "Let's Have Some Fun",
                     "longText": "<b>Directions:</b> Determine the formula needed for the following situations. Write your answers on a separate word document."
                   }
@@ -1215,92 +1355,119 @@
                     "longText": "<b><ul><li>Create different types of charts in a spreadsheet;</li><li>Edit charts in a spreadsheet; and</li><li>Demonstrate the preparation of outputs in a spreadsheet.</li></ul></b>"
                   },
                   {
+                    "image": "T2154",
                     "kicker": "Try This One",
                     "longText": "Directions: Answer the following questions based on the given pie chart of job classifications below. Write your answers on a separate word document.<br><br><ol type=\"1\"><li>How many job classifications are presented in the chart?</li><li>Which is likely the largest to be applied by the people?</li><li>What percentage does “Janitorial” have in the chart?</li><li>Which job category has a percentage of 24.8%?</li><li>What is the overall percentage of the job classifications?</li></ol>"
                   },
                   {
+                    "image": "T2155",
                     "longText": "Workbooks that contain a lot of data are sometimes difficult to analyze and interpret. Charts allow you to illustrate your workbook data graphically, which makes it easy to visualize comparisons and interpret results.<br><br>Microsoft Excel has different types of charts that allow you to choose what is best for your data. The most frequently used types of charts are as follows:<br><br><b>Column charts</b> use vertical bars to represent data. they are typically used to compare several items in a specific range of values."
                   },
                   {
+                    "image": "T2156",
                     "longText": "<b>Bar charts</b> work just like column charts, but they use horizontal bars instead of vertical bars.<br><br><b>Line</b> charts are ideal for showing trends. The data points are connected with lines, making it easy to see whether values are increasing or decreasing over time.<br><br><b>Pie charts</b> make it easy to compare proportions. Each value is shown as a slice of the pie, so it is easy to see which values make up the percentage of a whole."
                   },
                   {
+                    "image": "T2157",
                     "title": "CREATING A CHART",
                     "longText": "To create a chart, you must first have your data in the worksheet. Let us create a dummy grading sheet for first quarter.<br><br>1. To insert a chart, select the data you will need. In our example, select A1:B17. The remarks column is not included.<br><br>2. Click the Insert tab and find the Charts group."
                   },
                   {
+                    "image": "T2158",
                     "longText": "3. Choose the column and bar chart type and click the drop-down arrow to choose Clustered Column under 2-D Column as the subtype. A column chart will be displayed on the right side of the worksheet."
                   },
                   {
+                    "image": "T2159",
                     "longText": "To change a chart type, select the chart, click the Line Chart icon in the Charts group. Select Line in 2-D Line.<br><br>To resize, simply select any corner of the chart then hold the mouse and resize.<br><br>You can move a chart by dragging it to any location in a worksheet. To delete a chart, just select the chart then press the Del key on the keyboard."
                   },
                   {
+                    "image": "T2160",
                     "longText": "4. Let us delete the first chart and update our data.<br><br>5. Click Line Chart in the Charts group and choose Line with Markers."
                   },
                   {
+                    "image": "T2161",
                     "longText": "Since the data was updated, you will now see two lines: one for the First Quarter Grade and one for the Second Quarter Grade.<br><br>You will see that another part of the chart appears because of the additional data, but there was no chart title assigned; instead, it just has a “Chart Title” caption. To edit the chart title, click on the area of the chart title then replace it with “First and Second Quarter Grades.”"
                   },
                   {
+                    "image": "T2162",
                     "longText": "To remove a chart, click the plus sign button or Chart Elements at the right corner of the chart then uncheck Chart Title. If you want to add a title, check Chart Title."
                   },
                   {
+                    "image": "T2163",
                     "longText": "To edit the legend at the bottom, right-click the legend then choose Select Data.<br><br>Then, choose the legend to be edited. Click Edit on the dialog box.<br><br>In the Series Name, type First Quarter. Repeat the same procedure for Series 2. Then, click OK.<br><br>The legend is now changed."
                   },
                   {
+                    "image": "T2164",
                     "title": "CHANGING COLORS IN A CHART",
                     "longText": "To change colors, select the chart and click the Chart Design tab. Choose Change Colors then pick a set of colors.<br><br>To change the background color and text color of the chart, select the parts that you want to change the color, then select Format beside Chart Design."
                   },
                   {
+                    "image": "T2165",
                     "longText": "To change the color of the background, choose Shape Fill in the Shape Styles group; for the text color, choose Text Fill in the WordArt Styles group.<br><br>To change the font, font size, font color, or font style on the text of each part, simply use the Font group in the Home tab.<br><br>These formats can be applied to different types of chart available in Microsoft Excel."
                   },
                   {
+                    "image": "T2166",
                     "title": "FINALIZING A SPREADSHEET",
                     "longText": "Before printing the spreadsheet, check its setup.<br><br>Let us begin with the page setup of the spreadsheet. Page Setup is in the Page Layout tab, which includes the margins, paper size, and document orientation."
                   },
                   {
+                    "image": "T2167",
                     "title": "MARGINS",
                     "longText": "To edit the margins, click Margins. Decide which option you need for your spreadsheet. Normal is the default, but if you like none of the options, customize with Custom Margins."
                   },
                   {
+                    "image": "T2168",
                     "longText": "When you apply changes in the margin, you will not be able to see the effect unless you go to Print Preview. From there, click Show Margin in the lower right corner of the preview to adjust the margins manually.<br><br>Margins will now be visible for manual adjustment. Just click and drag the lines to apply changes."
                   },
                   {
+                    "image": "T2169",
                     "title": "SIZE AND ORIENTATION",
                     "longText": "Paper Size can be set up before you begin doing your spreadsheet. The default size is Letter size, but you can always choose which one you need.<br><br>Unlike word processors, you are unable to see the paper size in spreadsheets until you set up the size or go to Print Preview.<br><br>Once you have set up the size, you will see a marquee line indicating the boundary of the page."
                   },
                   {
+                    "image": "T2170",
                     "longText": "Notice that the half of the chart overlapped the marquee line. It means that only the first half of the chart will be included on the first page. Printing spreadsheets is challenging, especially if you are only limited to common paper sizes."
                   },
                   {
+                    "image": "T2171",
                     "longText": "To fix this problem, you can put the chart after the data above or simply change the orientation from Portrait to Landscape.<br><br>But if you are aiming for a portrait orientation, adjust the margins or scale of the spreadsheet. Click the Scaling option on Print Preview then choose Fit Sheet on One Page."
                   },
                   {
+                    "image": "T2172",
                     "longText": "You may use Show Margins to enlarge the scale."
                   },
                   {
+                    "image": "T2173",
                     "title": "HEADER AND FOOTER",
                     "longText": "To add a header and footer, open the Page Setup dialog box.<br><br>In the Header/Footer tab, you will see that Excel already has a number of presets based on your worksheet when you click on the Header or Footer drop-down. You may choose from the list or customize your own."
                   },
                   {
+                    "image": "T2174",
                     "longText": "To customize your header or footer, click Custom Header or Custom Footer. A header or footer dialog box will open. Click the left, center, or right section and type your own header or footer."
                   },
                   {
+                    "image": "T2175",
                     "longText": "Customize your header or footer with the different available formatting options just above the text boxes."
                   },
                   {
+                    "image": "T2176",
                     "longText": "Let us write “Alternative Learning System” for our header and add some text formatting.<br><br>Alternatively, you can also find Header & Footer in the Insert tab of the Text group.<br><br>The display will change to the Page Layout view where you will see a Header panel on top and a Footer panel at the bottom. The Header & Footer Design tab will also appear on the Ribbon."
                   },
                   {
+                    "image": "T2177",
                     "longText": "Click on the text box and type your new header or footer.<br><br>Edit your header and footer with the formatting tools available on the Header & Footer Design tab."
                   },
                   {
+                    "image": "T2178",
                     "title": "PREVIEWING AND PRINTING SPREADSHEETS",
                     "longText": "It is important to preview your output first to avoid errors and waste of paper.<br><br>1. Select the Print Preview button on the Quick Access Toolbar or press Ctrl+P on the keyboard."
                   },
                   {
+                    "image": "T2179",
                     "longText": "2. Choose the active printer on Printer, and then indicate the number of copies to be printed on Copies.<br><br>To print specific pages, type in the pages you want to include. If there are five pages but you only want to print pages 1 to 3, then type 1 on the first box and 3 on the second box. If you only want page 2, then type 2 on the first box. If you are going to print the entire workbook, leave it blank."
                   },
                   {
+                    "image": "T2180",
                     "kicker": "Let's Get Some Fun",
                     "longText": "<b>Directions:</b> Using a Venn diagram, compare and contrast the different types of charts used in a spreadsheet by listing down their characteristics and features. Do this activity on a separate word document."
                   }
@@ -1782,7 +1949,7 @@
                   "longText": "Once your slide show is complete, you will need to learn how to present it to an audience. PowerPoint offers several tools and features to help make your presentation smooth, engaging, and professional.<br><br>1. There are several ways you can begin your presentation:<ul><li>Click the Start From Beginning command on the Quick Access Toolbar, or press F5 key on your keyboard. The presentation will appear in full-screen mode.</li>"
                 },
                 {
-                  "image": "t3120",
+                  "image": "T3120",
                   "longText": "<ul><li>Select the Slide Show view command at the bottom of the PowerPoint window to begin a presentation from the current slide.</li><li>Go to the Slide Show tab on the ribbon to access more options. From here, you can start the presentation from the beginning of the slide.</li></ul>2. You can exit presentation mode by pressing Esc on your keyboard. Alternatively, you can right-click then select End Show."
                 },
                 {
@@ -1790,7 +1957,7 @@
                   "longText": "<b>PPTX <i>presentation software</i></b><br>The default format. You can still edit the presentation, even in other computers.<br><br><b>WMV <i>Windows media video</i></b><br>A video file based on the Microsoft Advanced Systems Format (ASF) container format and compressed with Windows Media compression. The presentation will be played as a video.<br><br><b>MP4<i>mpeg-4 video</i></b><br>One of the most common video file formats used for downloading and streaming videos on the internet. The presentation can be played as a video."
                 },
                 {
-                  "image": "t3122",
+                  "image": "T3122",
                   "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
                 },
                 {
