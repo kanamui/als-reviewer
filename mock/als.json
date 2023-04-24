@@ -30,11 +30,13 @@
       },
       {
         "title": "DIGITAL APPLICATION",
+        "image": "M3",
         "topics": [
           {
             "title": "DIGITAL APPLICATION - WORD PROCESSING",
+            "image": "M3T1",
             "subTitle": "Topic 1: Word Processing",
-            "longText": "This module will give you the basic steps on using word processors. The following are the three lessons in this module:",
+            "longText": "<h3>This module will give you the basic steps on using word processors. The following are the three lessons in this module:<h3>",
             "preQuiz": {
               "header": "Word Processing",
               "kicker": "Pre-Assessment",
@@ -692,6 +694,133 @@
           {
             "title": "DIGITAL APPLICATION - SPREAD SHEETS",
             "subTitle": "Topic 2: Spreadsheets",
+            "preQuiz": {
+              "header": "Spreadsheets",
+              "kicker": "Pre-Assessment",
+              "title": "Directions: Choose the correct answer in the parenthesis to complete the statement.",
+              "items": [
+                {
+                  "title": "1. Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
+                  "answer": "horizontally",
+                  "choices": [
+                    "horizontally",
+                    "vertically"
+                  ]
+                },
+                {
+                  "title": "2. Columns are a range of _________ aligned cells represented by letters in a spreadsheet.",
+                  "answer": "vertically",
+                  "choices": [
+                    "horizontally",
+                    "vertically"
+                  ]
+                },
+                {
+                  "title": "3. In moving a cell content, use the _________ command",
+                  "answer": "cut",
+                  "choices": [
+                    "copy",
+                    "cut"
+                  ]
+                },
+                {
+                  "title": "4. _________ is the individual intersection between rows and columns.",
+                  "answer": "Cell",
+                  "choices": [
+                    "Box",
+                    "Cell"
+                  ]
+                },
+                {
+                  "title": "5. Bold, Italic, Bold Italic, and Underline are _________.",
+                  "answer": "font styles",
+                  "choices": [
+                    "font styles",
+                    "font types"
+                  ]
+                },
+                {
+                  "title": "6. Arial, Times New Roman, and Verdana are examples of _________.",
+                  "answer": "font types",
+                  "choices": [
+                    "font styles",
+                    "font types"
+                  ]
+                },
+                {
+                  "title": "7. Spreadsheet or worksheet is an arrangement of _________ in columns and rows.",
+                  "answer": "cells",
+                  "choices": [
+                    "boxes",
+                    "cells"
+                  ]
+                },
+                {
+                  "title": "8. To put a background color for a cell, you need to use the _________ command.",
+                  "answer": "Fill Color",
+                  "choices": [
+                    "Fill Color",
+                    "Font Color"
+                  ]
+                },
+                {
+                  "title": "9. Left, center, and right are _________ alignments.",
+                  "answer": "horizontal",
+                  "choices": [
+                    "horizontal",
+                    "vertical"
+                  ]
+                },
+                {
+                  "title": "10. Addition, subtraction, multiplication, and division are _________ operations.",
+                  "answer": "mathematical",
+                  "choices": [
+                    "mathematical",
+                    "logical"
+                  ]
+                },
+                {
+                  "title": "11. The _________ is used for easy comparison of proportions.",
+                  "answer": "Pie Chart",
+                  "choices": [
+                    "Line Chart",
+                    "Pie Chart"
+                  ]
+                },
+                {
+                  "title": "12. _________ are predefined formula in Microsoft Excel.",
+                  "answer": "Functions",
+                  "choices": [
+                    "Formulas",
+                    "Functions"
+                  ]
+                },
+                {
+                  "title": "13. _________ is the separator used in accounting number format.",
+                  "answer": "Comma",
+                  "choices": [
+                    "Comma",
+                    "Point"
+                  ]
+                },
+                {
+                  "title": "14. A function that is used to compute the total of all items in the specified range is called _________.",
+                  "answer": "Sum",
+                  "choices": [
+                    "Sum",
+                    "Total"
+                  ]
+                },
+                {
+                  "title": "15. A command called _________ is used to change the background color of a cell.",
+                  "answer": "Fill Color",
+                  "choices": [
+                    "Fill Cell",
+                    "Fill Color"
+                  ]
+                }
+              ]
+            },
             "lessons": [
               {
                 "title": "SPREADSHEETS 1",
@@ -700,9 +829,6 @@
                   {
                     "image": "T2001",
                     "longText": "We deal with numbers every day. For example, we budget our money for our food, fare, clothing, and other expenses.<br><br>Calculating numbers is a skill we can easily do and apply in our daily lives, but what if you need to calculate larger numbers and bigger sums such as in banks, department stores, supermarkets, grades, or payrolls? This is where a spreadsheet program take part as it helps in computing and organizing data."
-                  },
-                  {
-                    "longText": ""
                   },
                   {
                     "title": "After this lesson, learners should be able to",
@@ -1108,7 +1234,6 @@
                     "longText": "Let us check the formula of the other cell references. It is absolute because the E7 cell reference did not change for the rest of the formulas when a dollar sign was placed."
                   },
                   {
-                    "image": "T2098",
                     "title": "USING FUNCTIONS",
                     "longText": "<ul><li>SUM is used to compute the total of all items in the specified range.</li><li>AVERAGE is used to get the average of the items in a range.</li><li>COUNT is used to count the values found in the range.</li><li>COUNTA is used to count cells that contain numbers, texts, logical values, error values, and empty texts returned n formulas.</li><li>ROUND is used to round a number to a specified number of digits.</li><li>MAX is used to get the largest value within the range.</li><li>MIN is used to get the smallest value within the range.</li></ul>"
                   },
@@ -1478,6 +1603,113 @@
           {
             "title": "DIGITAL APPLICATION - PRESENTATION SOFTWARE",
             "subTitle": "Topic 3: Presentation Software",
+            "preQuiz": {
+              "header": "Presentation Software",
+              "kicker": "Pre-Assessment",
+              "title": "Directions: Read each question carefully and choose what is the correct answer.",
+              "items": [
+                {
+                  "title": "1. Which tab do you click to add a picture or graphic to your presentation?",
+                  "answer": "Insert",
+                  "choices": [
+                    "Home",
+                    "Insert",
+                    "Design",
+                    "Animations"
+                  ]
+                },
+                {
+                  "title": "2. Which tab do you click to change the font from bold to italics?",
+                  "answer": "Home",
+                  "choices": [
+                    "Home",
+                    "Insert",
+                    "Design",
+                    "Animations"
+                  ]
+                },
+                {
+                  "title": "3. I added a new slide, but I want to change the layout. Where do I go to change it?",
+                  "answer": "Home",
+                  "choices": [
+                    "Home",
+                    "Insert",
+                    "Design",
+                    "Animations"
+                  ]
+                },
+                {
+                  "title": "4. I would like the presentation to fade in and out of each slide. Which tab do I need to click to find the transition?",
+                  "answer": "Transitions",
+                  "choices": [
+                    "Transitions",
+                    "Slide Show",
+                    "Design",
+                    "Animations"
+                  ]
+                },
+                {
+                  "title": "5. If I want to add a chart or a table with data, which tab do I need to click?",
+                  "answer": "Insert",
+                  "choices": [
+                    "Home",
+                    "Insert",
+                    "Slide Show",
+                    "View"
+                  ]
+                },
+                {
+                  "title": "6. I have created a slide with a bulleted list. I would like each item to show up one at a time. Where do I go to make this happen?",
+                  "answer": "Animations",
+                  "choices": [
+                    "Transitions",
+                    "Slide Show",
+                    "Design",
+                    "Animations"
+                  ]
+                },
+                {
+                  "title": "7. Which tab do you need to click to save a presentation to a different file type?",
+                  "answer": "File",
+                  "choices": [
+                    "Home",
+                    "Slide Show",
+                    "File",
+                    "Insert"
+                  ]
+                },
+                {
+                  "title": "8. When you create a new presentation, you can select a _________ to give all the text and slides a consistent appearance.",
+                  "answer": "Template",
+                  "choices": [
+                    "Slide",
+                    "Template",
+                    "Layout",
+                    "Design"
+                  ]
+                },
+                {
+                  "title": "9. The first slide in a presentation is called the _________.",
+                  "answer": "Title Slide",
+                  "choices": [
+                    "Content",
+                    "Section Header",
+                    "Comparison",
+                    "Title Slide"
+                  ]
+                },
+                {
+                  "title": "10. Once you have made your selection, pick a _________ for each slide.",
+                  "answer": "Layout",
+                  "choices": [
+                    "Template",
+                    "Layout",
+                    "Background",
+                    "Design"
+                  ]
+                }
+              ]
+            },
             "lessons": [
               {
                 "title": "Presentation Software 1",
@@ -1586,11 +1818,7 @@
                     "kicker": "Let's Have Some Fun",
                     "title": "Directions: Enumerate the following.",
                     "longText": "<table><tr><th>Major Parts of Microsoft PowerPoint</th><th>Ways to Manage Slides</th><th>Different Views in Microsoft PowerPoint</th></tr><tr><td style='color: red;vertical-align: top'><ol type='1'><li>Slide Tab</li><li>Slide Number</li><li>Slide Area</li><li>View Buttons</li></ol></td><td style='color: red;vertical-align: top'><ol type='1'><li>Viewing an Outline</li><li>Organizing Slides into Sections</li></ol></td><td style='color: red;vertical-align: top'><ol type='1'><li>Normal View</li><li>Slide Sorter View</li><li>Reading View</li><li>Slide Show View</li></ol></td></tr></table>"
-                  },
-                  {
-                    
                   }
-                  
                 ]
               },
               {
@@ -1598,7 +1826,8 @@
                 "subTitle": "Lesson 2: Presentation Software",
                 "items": [
                   {
-                    "longText": "<b>After this lesson, learners should be able to:<br><br><ul><li>Demonstrate understanding of formatting in a presentation file;</li><li>Apply different practices in creating slide content;</li><li>Demonstrate good practices in lists and tables in a presentation;</li><li>Customize text in a presentation; and</li><li>Edit charts in a presentation.</li></ul></b>"
+                    "title": "After this lesson, learners should be able to:",
+                    "longText": "<b><ul><li>Demonstrate understanding of formatting in a presentation file;</li><li>Apply different practices in creating slide content;</li><li>Demonstrate good practices in lists and tables in a presentation;</li><li>Customize text in a presentation; and</li><li>Edit charts in a presentation.</li></ul></b>"
                   },
                   {
                     "longText": "<b>Formatting A Presentation</b> - One of the primary difficulties encountered by people who use presentation tools is getting and keeping the attention of the audience. To avoid such difficulties, use Microsoft PowerPoint, which has many features that allow you to make your presentation more presentable and creative.<br><br><b>Theme</b> - A theme is a predefined combination of colors, fonts, and effects. Different themes also use different slide layouts. You are already using a theme, even if you are not aware of it: the default Office theme. You can choose from a variety of new themes at any time, giving your entire presentation a consistent, professional look."
