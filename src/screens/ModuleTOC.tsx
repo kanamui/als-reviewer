@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AspectRatio,
   Box,
@@ -24,6 +24,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   const [lessonIndex, setLessonIndex] = useState<number>(0);
   const [screen, setScreen] = useState<string | undefined>();
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(true);
 
   // Variables
   const { data } = route.params;
@@ -90,6 +91,14 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     }
   };
 
+  // Effects
+  useEffect(() => {
+    // force reload cached images
+    setShow(false);
+    const timeout = setTimeout(() => setShow(true));
+    return () => clearTimeout(timeout);
+  }, [screen]);
+
   const Lessons = () => {
     return (
       <>
@@ -102,7 +111,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
             flex="1"
             alignItems="center"
             justifyContent="center"
-            space="6"
+            space="2"
           >
             {topic?.image && (
               <AspectRatio h="full" ratio={1}>
@@ -173,7 +182,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
             flex="1"
             alignItems="center"
             justifyContent="center"
-            space="6"
+            space="2"
           >
             {module?.image && (
               <AspectRatio h="full" ratio={1}>
@@ -252,7 +261,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   return (
     <>
       <Box size="full" bg="white" safeAreaX>
-        {DynamicScreen()}
+        {show && DynamicScreen()}
       </Box>
       <Modal isOpen={showModal} onClose={handleModal}>
         <Modal.Content>
