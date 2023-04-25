@@ -231,106 +231,134 @@
                     "longText": "<b><ul><li>make use of a word-processing application to produce different documents used in everyday life;</li><li>create a new document based on the different available templates;</li><li>save documents under another name to a location on a drive;</li><li>switch between open documents and between page view modes;</li><li>demonstrate how to save a document as another file type;</li><li>identify the process of inserting symbols or special characters;</li><li>and determine the use of the display and hide nonprinting formatting marks line.</li></ul></b>"
                   },
                   {
+                    "image": "T1020",
                     "kicker": "Try this one",
                     "title": "Directions: Recall a moment when you need to create and submit a document in school, in work, or in government transactions. What did you do to produce the documents needed?"
                   },
                   {
+                    "image": "T1021",
                     "title": "Uses of Word Processing",
                     "longText": "Word processors offer a wide variety of features that can help people produce different documents for a specific purpose. Anyone can use word processors because of their user-friendly interface."
                   },
                   {
+                    "image": "T1022",
                     "title": "Getting Familiar with word processing",
                     "longText": "Microsoft Word (MS Word) is one of the most common word processors available in the market. It can be accessed from Microsoft Office's productivity tools that have different programs for different tasks. The latest version today is Microsoft Word 2019.<br><br>This module will use Microsoft Word in getting familiar with word processing, as it is the most common word processor."
                   },
                   {
+                    "image": "T1023",
                     "title": "How to Create a New Document Based on the Different Available Templates",
                     "longText": "Opening Microsoft Word will lead you to the New command where you will see different options to create a new document, including Blank document and other templates. Templates are predesigned documents that you can use to make your document look visually appealing.<br><br>There are templates for business cards, flyers, invitation cards, letters, resumes, calendars, etc. All you must do is to select your desired template."
                   },
                   {
+                    "image": "T1024",
                     "longText": "You can also click on the suggested searches to display more templates or search online if you are connected to the internet. Just type the word related to the template you are looking for.<br><br>For example, if “Cards” was selected on the suggested searches, it will display different designs and templates of cards, such as invitation cards, thank you cards, and business cards."
                   },
                   {
+                    "image": "T1025",
                     "longText": "1. Select a template (e.g., Blue curve business cards). Once it is selected, a window will appear with details about the template. Click Create"
                   },
                   {
+                    "image": "T1026",
                     "longText": "2. Next, you will see the selected business card template ready for editing contents.<br><br>3. To put contents in the business card, you just need to edit the first card; it will be automatically applied to the rest of the cards."
                   },
                   {
+                    "image": "T1027",
                     "longText": "4. To insert a logo, select each LOGO HERE box, right-click and choose Change Picture, and then click From a File. It means that the image to be inserted is stored in a folder in the computer."
                   },
                   {
+                    "image": "T1028",
                     "longText": "5. A window will appear, letting you locate your image to be inserted. Once located, just click on the desired image and then click Insert."
                   },
                   {
+                    "image": "T1029",
                     "longText": "6. To save a new document, press Ctrl+S on the keyboard, or click the Save button on the upper left corner of the document. You may also click the File tab then select Save."
                   },
                   {
+                    "image": "T1030",
                     "longText": "7. A dialog box will appear asking for a File Name. Under Choose a Location, you can choose where the file will be stored. To locate a folder, click the arrow on Choose a Location or More save options then press Save.<br><br>Notice that the file name on the upper left corner has changed from Document 3 to My Business Cards. Documents in Microsoft Word are usually saved in the Documents folder with the file type <b>DOCX</b>."
                   },
                   {
+                    "image": "T1031",
                     "longText": "8. You can also save the files in a different location, with a different file name, and with a different file type. Just click on the File tab, then select Save As."
                   },
                   {
+                    "image": "T1032",
                     "longText": "9. To save under a different file name, delete the existing file name and type a new one. Documents can also be saved in a different file format. Just click the arrow on the file type and select your desired file type. It can be saved as a template, Portable Document Format (PDF), web page, rich text format, or any file type you want to use.<br><br>10. Click Browse to locate the folder or drive. A dialog box will appear on the left side. Click Save to finish the process"
                   },
                   {
-
+                    "image": "T1033"
                   },
                   {
+                    "image": "T1034",
                     "title": "Switching Views",
                     "longText": "You can open more than one file when working on word processors, just like any other software. All open programs can be seen on the taskbar, usually located at the bottom of the screen. If you open two or more documents, they will appear as a single icon; but when you hover your mouse over the icon, you can see other documents that are currently open."
                   },
                   {
+                    "image": "T1035",
                     "longText": "Click the document you want to view in the screen. Documents can also be viewed in the same screen simultaneously, but with a limited view<br><br>On the upper right corner of the document, click Restore Down beside Close for both documents, and then arrange the documents in the screen."
                   },
                   {
+                    "image": "T1036",
                     "title": "How to Switch Between Word Document Page View Modes",
                     "longText": "As a user of word processors, you likely know that viewing your document in different modes can help you understand what other people will see. Word 2019 can display your document in one of five views, which can help you better understand the layout, margins, and page breaks in your document.<br><br>1. <b>Read Mode</b> displays pages that require you to slide them horizontally to view adjacent pages."
                   },
                   {
+                    "image": "T1037",
                     "longText": "2. <b>Print Layout</b> displays page breaks as thick, dark horizontal bars so you can clearly see where a page ends and begins. (This is the default view.)"
                   },
                   {
+                    "image": "T1038",
                     "longText": "3. <b>Web Layout</b> displays your document exactly as it    would appear if you saved it as a web page."
                   },
                   {
+                    "image": "T1039",
                     "longText": "4. <b>Outline</b> displays your document as outline headings and subheadings."
                   },
                   {
+                    "image": "T1040",
                     "longText": "5. <b>Draft</b> displays the document without top or bottom page margins and with page breaks as dotted lines."
                   },
                   {
+                    "image": "T1041",
                     "title": "Switching Between Page Views In Word",
                     "longText": "Microsoft Word gives you two ways to switch between different document views:<br><br>1. Click the view icons at the bottom-right corner of your document window. The only view icons in the bottom-right corner of the document window are Read Mode, Print Layout, and Web Layout."
                   },
                   {
+                    "image": "T1042",
                     "longText": "2. Click the View tab and then click what you want to use, such as Print Layout or Draft view."
                   },
                   {
+                    "image": "T1043",
                     "title": "Using Available Help Functions",
                     "longText": "The help feature within Microsoft Office applications is usually the fastest and easiest way to get help. In Windows, access it by pressing F1 from within the application or just click the Help tab."
                   },
                   {
+                    "image": "T1044",
                     "longText": "Once the help feature opens, you can use the search feature on the right-side task pane to find answers to your questions that are related to using Microsoft Word. To browse, open <b>Recommended Topics</b>."
                   },
                   {
+                    "image": "T1045",
                     "title": "Inserting Symbols Or Special Characters",
                     "longText": "Some symbols and special characters are not available on the keyboard. These characters can be inserted to add more detail to your documents. Microsoft Word has a feature for inserting the symbols and special characters.<br><br>1. Click the Insert tab. From the Symbols group, select Symbol and click More Symbols. A dialog box will appear, displaying different symbols and special characters."
                   },
                   {
+                    "image": "T1046",
                     "longText": "2. Under Font, browse through the Webdings, Windings, Windings 2, and Windings 3 fonts. These are fonts that feature symbols and special characters. Choose which symbols you want to insert. You can insert as many as needed."
                   },
                   {
+                    "image": "T1047",
                     "title": "Displaying And Hiding Nonprinting Characters",
                     "longText": "Nonprinting characters help you edit a document. They indicate the presence of various types of formatting, but they do not print with the document, even when they are displayed on the screen. It is easier to understand the spacing and layout in your document when these special characters are displayed.<br><br>To show or hide nonprinting characters, click the nonprinting characters icon at the Home tab of the top toolbar. Alternatively, you can press Ctrl+Shift+8."
                   },
                   {
-                    
+                    "image": "T1048"
                   },
                   {
-
+                    "image": "T1049"
                   },
                   {
+                    "image": "T1050",
                     "longText": "Templates can be helpful when thinking of an initial design for a document, as these serve as a starting point in case you run out of concepts or ideas. Getting to know various features of a word processor can help you flawlessly create a document"
                   },
                   {
@@ -348,6 +376,7 @@
                     "longText": "<b><ul><li>demonstrate the use of formatting commands in a word-processing document;</li><li>make use of formatting in paragraphs; and</li><li>demonstrate good practice in creating tables, formatting tables, and inserting graphical objects</li></ul></b>"
                   },
                   {
+                    "image": "T1053",
                     "kicker": "Try This One",
                     "title": "Directions: Look at the two documents below. How do they differ from each other? Which is better? Use a Venn diagram to answer"
                   },
@@ -355,192 +384,244 @@
                     "longText": "<b>Formatting</b> is the process of modifying specific parts of the document, which will determine how the document will look like when finalized and printed. Common formatting options include the font, font size, color, alignment, spacing, margins, and other properties.<br><br>In making a paragraph for a letter, research paper, or essay, detailed formatting may be applied to achieve a more presentable and readable document. As featured in the first activity, arranging and organizing a document’s contents can have an impact on readers. They may easily understand the information in the document if it is properly formatted."
                   },
                   {
+                    "image": "T1055",
                     "longText": "Let us start by looking at an unformatted paragraph.<br><br>There are two paragraphs in the image. If you want them to be merged, place your cursor at the period of the first paragraph and then press Del on the keyboard."
                   },
                   {
+                    "image": "T1056",
                     "title": "INSERTING AND REMOVING A LINE BREAK",
                     "longText": "Line breaks end a current line and lets you continue the text on another line. These are useful for separating paragraphs from each other, without the space registering as an empty line that can have characters on it.<br><br>1. Place the cursor where you want to put a line break. For example, the third sentence in the first paragraph will be placed on a new line."
                   },
                   {
+                    "image": "T1057",
                     "longText": "2. <b>Press Shift+Enter</b>. Here, the third sentence will move to the next line but on the same paragraph.<br><br>Line breaks are useful for address blocks, for poems, or in list items with long sentences because they omit the extra space between lines. To remove a line break, press the Undo command or place the cursor to the left of the line break you want to remove, then press Delete."
                   },
                   {
+                    "image": "T1058",
                     "title": "Setting, Removing, And Using Decimal Tabs",
                     "longText": "Word offers several types of tab stop alignment. One of those types is a decimal tab. If a tab stop has been designated as a decimal tab, then the text is aligned according to a decimal point or period in the text. Decimal tabs are most frequently used to align columns of numbers.<br><br>1. Before setting, make sure that the Ruler is visible. Click View tab then check the Ruler in the Show group. Rulers on top and left side of the document will be visible"
                   },
                   {
+                    "image": "T1059",
                     "longText": "2. Next, go to the Home tab. In the Paragraph group, click the Paragraph launcher arrow on the lower right corner."
                   },
                   {
+                    "image": "T1060",
                     "longText": "3. The Paragraph dialog box will appear. Then, click the Tabs button."
                   },
                   {
+                    "image": "T1061",
                     "longText": "4. The Tabs dialog box will appear. Type your desired position in numbers where the characters will be placed. Select Decimal and then click Set and OK."
                   },
                   {
+                    "image": "T1062",
                     "longText": "Notice that the text was placed automatically eight centimeters away from its original position and a tab indication (∟) can be seen under number 8 of the ruler"
                   },
                   {
+                    "image": "T1063",
                     "longText": "5. You can also add visible dots in between words and numbers. Select your desired number under the Leader option then click OK"
                   },
                   {
+                    "image": "T1064",
                     "longText": "6. To remove the tabs being set, just click Clear or Clear All."
                   },
                   {
-                    "title": "Aligning And Indenting Paragraphs"
-                  },
-                  {
+                    "image": "T1065",
+                    "title": "Aligning And Indenting Paragraphs",
                     "longText": "Formatting paragraphs include changing their text alignment and indention. There are four alignments for a paragraph: align left, which is the default alignment; center; align right; and justify, which distributes the text evenly between the margins.<br><br>1. To align the paragraph, select the content you want to align by pressing Ctrl+A to select all or by highlighting the specific paragraph to be aligned. Choose your desired alignment at the Home tab in the Paragraph group."
                   },
                   {
-                    
+                    "image": "T1066"
                   },
                   {
-
+                    "image": "T1067"
                   },
                   {
+                    "image": "T1068",
                     "longText": "2. To indent the first lines of each paragraph, place your cursor at the beginning of the word in the paragraph then press Tab on the keyboard. Indentions give the signal to the readers that it is the start of the paragraph."
                   },
                   {
+                    "image": "T1069",
                     "longText": "3. At times, a whole paragraph can be indented far away from the margin, depending on what is needed. Go again to the Paragraph group then click Increase Indent."
                   },
                   {
+                    "image": "T1070",
                     "longText": "<b>Spacing</b> between lines allows the reader to read the paragraph more clearly. In some cases, those spaces are used to put corrections or suggestions by the person whom you submitted the document.<br><br>1. To adjust spacing, click Line and Paragraph Spacing in the Paragraph group. There are six spacing options that can be applied in a paragraph: default (single space or 1.0); 1.15 spacing; 1.5 spacing; 2.0 spacing, which is preferred to give space for comments and suggestions; 2.5 spacing; and 3.0 spacing, which provides even larger spaces between lines."
                   },
                   {
+                    "image": "T1071",
                     "longText": "2. Select the paragraph and apply your desired spacing. Spacing can also be modified in Line Spacing Options.<br><br>3. Add Space Before Paragraph and Add Space After Paragraph are simply adding spaces between the paragraphs."
                   },
                   {
+                    "image": "T1072",
                     "title": "Adding Borders And Shading",
                     "longText": "Let us put borders on the paragraph and format its background color. You can find Borders in the Paragraph group.<br><br>1. Select the paragraph you want to apply the border to. Just put the cursor at the beginning of the paragraph, and then click the drop-down arrow beside the Borders icon and choose All Borders or Outside Borders."
                   },
                   {
+                    "image": "T1073",
                     "longText": "2. To change the background or shading of the border, click on Borders and Shading... at the bottom of the drop-down list"
                   },
                   {
+                    "image": "T1074",
                     "longText": "In the Borders and Shading dialog box, you will see the Borders, Page Border, and Shading. You may change the style, color, and width of the border."
                   },
                   {
+                    "image": "T1075",
                     "longText": "3. You need to select all the sides in the diagram to apply the border style, color, and width."
                   },
                   {
+                    "image": "T1076",
                     "longText": "4. To add background color, do the same procedure, but this time, select the Shading tab."
                   },
                   {
+                    "image": "T1077",
                     "longText": "5. Click Fill to choose the color you want for your background then click OK.<br><br>Borders can also be applied to other paragraphs with different styles and shading."
                   },
                   {
+                    "image": "T1078",
                     "title": "Applying Styles In Texts Or Paragraphs",
                     "longText": "Texts and paragraphs can be styled automatically with different predefined styles in the Styles group beside the Paragraph group."
                   },
                   {
+                    "image": "T1079",
                     "longText": "Recommended styles can be applied to a text or a paragraph. Styles can help emphasize a word or words in a paragraph.<br><br>1. To apply a style to a text, highlight the text and then select the desired style in the Styles group."
                   },
                   {
+                    "image": "T1080",
                     "longText": "2. For paragraphs, select the whole paragraph and then choose a style. It will be automatically applied to the selected paragraph."
                   },
                   {
+                    "image": "T1081",
                     "longText": "If you are formatting many paragraphs and you forget to select a paragraph after applying all the formats, no need to worry; a tool called <b>Format Painter</b> can help you copy the format applied to previous texts or paragraphs.<br><br>Format Painter copies the format but not the content. It can be found at the Home tab in the Clipboard group.<br><br>To use the format Painter tool, select the text or paragraph that has been formatted and then press the Format Painter tool."
                   },
                   {
+                    "image": "T1082",
                     "longText": "Format Painter saves time and energy in formatting texts or paragraphs over again."
                   },
                   {
+                    "image": "T1083",
                     "title": "INSERTING AND FORMATTING TABLES",
                     "longText": "Tables can help you control the alignment of contents, keep related contents together, layout step-by-step instructions and present numerical data. A table is a grid of cells arranged in rows and columns.<br><br>1. To insert a table in a document, click the Insert tab and choose Table in the Tables group."
                   },
                   {
+                    "image": "T1084",
                     "longText": "2. Next, highlight the number of rows and columns you need for the table. For example, let us make a table with five columns and two rows.<br>You may insert or delete rows and columns later as needed."
                   },
                   {
+                    "image": "T1085",
                     "longText": "3. You will be taken from the Insert tab to the Table Design tab. In other versions, select <b>Table Tools</b> then <b>Design</b>. Tabs like Table Design will only appear after the element in the document has been selected, as shown below."
                   },
                   {
+                    "image": "T1086",
                     "longText": "4. To insert data in the table, put the cursor on the desired rows and columns and start typing."
                   },
                   {
-                    "title": "Inserting And Deleting Cells"
-                  },
-                  {
+                    "image": "T1087",
+                    "title": "Inserting And Deleting Cells",
                     "longText": "1. If the rows and columns are not enough, you may press the Tab key on the keyboard. For example, let us insert two additional rows."
                   },
                   {
+                    "image": "T1088",
                     "longText": "2. Another way to add more rows and columns is to click the plus sign (+) button in the table. Just hover your mouse on the leftmost edge of the row of the table."
                   },
                   {
+                    "image": "T1089",
                     "longText": "3. To delete rows and columns in between, highlight the rows or columns to be deleted, right-click, and select Delete Cells. Alternatively, you can press the Backspace key after highlighting"
                   },
                   {
+                    "image": "T1090",
                     "longText": "4. A dialog box will open, showing options on what will happen to the cells around the cells to be deleted. Just select the default, which is Shift cells Left, then press OK."
                   },
                   {
+                    "image": "T1091",
                     "longText": "5. To remove excess rows, select the rows and columns to be deleted. You can either right-click and select Delete Cells or press the Backspace key."
                   },
                   {
+                    "image": "T1092",
                     "title": "Formatting Contents",
                     "longText": "Let us format the contents of the table. You can format the entire table or select only the cells you want to be formatted.<br><br>1. To select the entire table, click the move button on the upper left corner"
                   },
                   {
+                    "image": "T1093",
                     "longText": "2. After selecting the entire table, you may choose the desired font, font size, font color, font style, and alignment."
                   },
                   {
+                    "image": "T1094",
                     "title": "Modifying Cell Borders",
                     "longText": "1. As mentioned above, when a table is selected, the Table Design tab will appear. To modify the table, select the entire table and click the Table Design tab. Here, you will see different options to format and style your table."
                   },
                   {
+                    "image": "T1095",
                     "longText": "2. There are table styles ready to use if you do not have time to modify each part. Browse other styles by expanding Table Styles. You will see a preview when you point your mouse to the style."
                   },
                   {
+                    "image": "T1095",
                     "longText": "3. If you feel like creating your own style, Borders can help you modify the shading, width, and border style."
                   },
                   {
+                    "image": "T1097",
                     "title": "Inserting Pictures And Other Objects In Word",
                     "longText": "In word processing, pictures, shapes, and charts can help you present data more visually. You can insert pictures from your computer or online.<br><br>1. To start, click the Insert tab and look for the Illustrations group. This will help you insert objects in the document."
                   },
                   {
+                    "image": "T1098",
                     "longText": "2. Click Pictures. A dialog box will appear that will let you locate a saved picture in your computer. Once you have selected a picture, click Insert."
                   },
                   {
+                    "image": "T1099",
                     "longText": "3. To reduce the size of the picture, select the picture and click any of the sizing handles. Then, drag it continuously until you reach your desired size.<br><br>4. You may continue inserting more pictures that is needed in your document."
                   },
                   {
+                    "image": "T1100",
                     "longText": "Next, let us try getting pictures online. This will only work if you are connected to the internet."
                   },
                   {
+                    "image": "T1101",
                     "longText": "There are thousands of pictures online, and these pictures are all protected by copyright laws. Microsoft Word has the license to let you use the pictures. In the picture above, categories are already available, but you can still search by typing the keyword in the search bar."
                   },
                   {
+                    "image": "T1102",
                     "longText": "5. For this activity, let us find images of dogs. Different pictures of dogs will appear. Select the pictures you want then click Insert."
                   },
                   {
+                    "image": "T1103",
                     "longText": "6. You can insert as many online pictures as you want on the same category at the same time. Simply click all the desired pictures, click Insert, and then adjust the pictures."
                   },
                   {
+                    "image": "T1104",
                     "longText": "Inserting pictures may be easy, but putting them in a desired position may give you a hard time. You can always modify its position so that pictures, other objects, and texts can go along with one another."
                   },
                   {
+                    "image": "T1105",
                     "longText": "7. Select the picture you want to modify; a Picture Format tab will appear. Click Wrap Text and choose Tight. Do the same for the other pictures."
                   },
                   {
+                    "image": "T1106",
                     "longText": "Pictures are now ready to be positioned anywhere. There are more options on how the picture will be wrapped in the text.<br><br>When a document has a text, you can use the Position command to position the text to the center, left, right, bottom, or in line with the text."
                   },
                   {
+                    "image": "T1107",
                     "longText": "8. To position the text and picture, click the picture then select the Picture Format tab and choose Position. A preview will be displayed upon pointing the mouse to different text-wrapping positions."
                   },
                   {
+                    "image": "T1108",
                     "title": "Inserting Shapes And Charts",
                     "longText": "1. To insert other objects such as shapes and charts, the same procedure will be applied, but this time, you will select Shapes or Chart in the Illustrations group."
                   },
                   {
+                    "image": "T1109",
                     "longText": "2. Choose your desired shapes and start dragging the mouse to draw the object. You can modify it by changing the color of the outline or the fill color of the shape through the Shape Format tab."
                   },
                   {
+                    "image": "T1110",
                     "longText": "3. Objects in a document can be duplicated. Let us duplicate the rectangle and paste it beside the first shape. Select the shape; press Ctrl+C, which is the shortcut key for copy; and then press Ctrl+V, which is the shortcut key for paste. Or right-click the shape, select copy, click anywhere, right click again, and choose Paste Options."
                   },
                   {
+                    "image": "T1111",
                     "longText": "Numerical data can also be presented in a document through a chart. When you insert a chart, a spreadsheet program will appear to input the numbers."
                   },
                   {
+                    "image": "T1112",
                     "longText": "Any changes in the contents will show in the chart because they are connected. Then, click Close to close the program.<br><br>Word processors are very flexible because of its wide variety of formatting commands that can modify and personalize your documents."
                   },
                   {
@@ -564,127 +645,165 @@
                     "longText": "<b>Suppose you are a Sangguniang Kabataan chairperson, and your barangay will be having a leadership training two weeks from now. As the chairperson, how are you going to write letters to invite two hundred youths in your barangay in the easiest way possible?</b>"
                   },
                   {
+                    "image": "T1116",
                     "longText": "<b>Mail merge</b> is a feature in most data-processing applications that enables users to send a similar letter or document to multiple recipients. It connects a single form template with a data source that contains information about the recipient's name, address, and other predefined and supported data.<br>Mail plays an important role in creating a word document and sending it to the recipients with their personal information. The idea of mail merge is to mail the same content but with different names and other information without inputting them manually. Mail merge is easy to use especially with the help of the “Step-by-Step Mail Merge Wizard.”"
                   },
                   {
+                    "image": "T1117",
                     "title": "PREPARING THE DOCUMENT TO BE MAIL MERGED",
                     "longText": "To begin, let us have an invitation letter as the document for mail merge.<br>Notice the big space between the date and the content of the letter. This space will hold the individual name and greeting for each recipient."
                   },
                   {
+                    "image": "T1118",
                     "title": "SELECTING THE RECIPIENTS",
                     "longText": "Before mail merging, make sure you have the list of recipients. You can create a database of recipients if you do not have an existing list in a spreadsheet or email contacts.<br><br>1. To create, click <b>Select Recipients</b> in the Mailings tab."
                   },
                   {
+                    "image": "T1119",
                     "longText": "2. Enter all the names of the recipients and other details you want to include, such as home address. Press <b>New Entry</b> every time you will input a new record. If done, click <b>OK</b>. The Save Address List box will appear, asking for a file name for the database. Then, click <b>Save</b>."
                   },
                   {
+                    "image": "T1120",
                     "longText": "3. If you want to add more people in the created database, you may click <b>Edit Recipients</b> in the Mailings tab."
                   },
                   {
+                    "image": "T1121",
                     "longText": "4. Then, select the database to be edited on the lower left corner and click <b>Edit</b> and <b>OK</b>."
                   },
                   {
+                    "image": "T1122",
                     "title": "Preparing The Document To Be Mail Merged",
                     "longText": "1. Begin by going to the Mailings tab and choose Start Mail Merge. Select the Step-by-Step Mail Merge Wizard in the drop-down menu. Data fields can be inserted one by one, but using special features in word processors is a good idea to save time and energy."
                   },
                   {
+                    "image": "T1123",
                     "longText": "2. A Mail Merge panel will be displayed on the right side of the screen, guiding you in each step."
                   },
                   {
+                    "image": "T1124",
                     "longText": "3. Then, you will be asked to select the recipients. In our example, the Barangay Mansanas database was already selected because it was created prior to the wizard."
                   },
                   {
+                    "image": "T1125",
                     "longText": "4. Write the letter if you have not done it yet. This step also allows adding information or fields, such as the address block and the greeting line.<br><br>If you click Address Block, a dialog box will appear with options on what to include in address block."
                   },
                   {
+                    "image": "T1126",
                     "longText": "5. An Address Block placeholder will appear after selecting the information to be included."
                   },
                   {
+                    "image": "T1127",
                     "longText": "6. You can preview how the letter will look like in each recipient by clicking the next step in the wizard."
                   },
                   {
+                    "image": "T1128",
                     "longText": "7. You may see the preview from different recipients by clicking the arrows on the wizard."
                   },
                   {
+                    "image": "T1129",
                     "longText": "8. The last step in this process is to complete the merge, prepare it for printing, and send it to the intended recipients. Click Print to start printing all the letters.<br><br>You may print all the records or choose pages to be printed."
                   },
                   {
+                    "image": "T1130",
                     "title": "Finalizing A Document",
                     "longText": "Finalizing a word document is essential before sending or printing the file. Below are the things to remember in finalizing a word document.<br><br>Let us begin with page setup."
                   },
                   {
+                    "image": "T1131",
                     "longText": "1. <b>Margins</b> help define where a line of text begins and ends. The normal margin, or the default, has a margin of 1 inch or 2.54 cm on all sides. You can change this depending on the required margin."
                   },
                   {
+                    "image": "T1132",
                     "longText": "2. To check the Here, you will find the margins, paper size, and document orientation tools, among others. orientation of the document, click <b>Orientation</b> and choose between portrait, which is the default, or landscape."
                   },
                   {
+                    "image": "T1133",
                     "longText": "3. The next thing you should check is the paper size. In the Size menu, there are different paper sizes, with Letter, Legal, and A4 as the most commonly used sizes.<br>Letter size, which is equivalent to a short bond paper, has a measurement of 8.5 &times; 11 inches. On the other hand, Legal size has a measurement of 8.5 &times; 14 inches, although this is not available in some countries. Some use 8.5 &times; 13 inches, which has the same dimensions as a long bond paper. A4 size is used mainly in government-related official documents."
                   },
                   {
+                    "image": "T1134",
                     "title": "INSERTING AND DELETING PAGE BREAKS IN A DOCUMENT",
                     "longText": "Word automatically adds page breaks when there is more content that can fit on one page, but sometimes you will want to add a break somewhere else, for example, if you are creating a new section in a long document or more space around an image or a chart. Page breaks work when you want to use another page to put other words or images.<br><br>To insert a page break in a document, follow the following steps:<br><br>1. Place your cursor where you want to create a page break. For example, the rest of the paragraphs needs to be in another page."
                   },
                   {
+                    "image": "T1135",
                     "longText": "2. Then select the Layout tab, click <b>Breaks</b>, and then click <b>Page</b>. You will notice the succeeding paragraphs will be placed in a new page."
                   },
                   {
+                    "image": "T1136",
                     "longText": "3. To remove a page break, place the cursor where the page break was done then press the Del key."
                   },
                   {
+                    "image": "T1137",
                     "title": "PLACING HEADERS AND FOOTERS",
                     "longText": "The Header and Footer group can be found on the Insert tab.<br><br>1. To add text or graphics to the top or bottom of the pages in your document, add a header or footer. Changes made in the header and footer will appear on every page of your document."
                   },
                   {
+                    "image": "T1138",
                     "longText": "2. Select one of the Header or Footer templates from the options that appear."
                   },
                   {
+                    "image": "T1139",
                     "longText": "3. When one template has been selected, it will appear in your document.<br>4. To change the header or footer, simply select <b>eader or Footer</b> again and choose a different template.<br>5. To get back into the body of your document, double-click in the body of your document or select <b>Close Header and Footer</b>."
                   },
                   {
+                    "image": "T1140",
                     "title": "Customizing Headers And Footers",
                     "longText": "In customizing headers and footers, there are three common elements that people usually include. One is inserting a picture, such as a company logo, name of the company, and other details. Some people add a date or set the header and footer so that they are not seen in the first page.<br><br>1. To customize your header or footer, double-click on the header or footer of the document to activate them and display the Header & Footer tab."
                   },
                   {
+                    "image": "T1141",
                     "longText": "2. To add a picture, click on the header or footer where you want to add the picture.<br><br>3. Select Pictures in the Insert group of the Header & Footer tab."
                   },
                   {
+                    "image": "T1142",
                     "longText": "4. Select a picture and click Insert."
                   },
                   {
+                    "image": "T1143",
                     "longText": "5. Resize the picture by selecting it and dragging the sizing handle.<br><br>6. To add the date, click on the header or footer where you want to add it.<br><br>7. Select Date & Time in the Insert group of the Header & Footer tab."
                   },
                   {
+                    "image": "T1144",
                     "longText": "8. Select the date format of your choice and click OK."
                   },
                   {
+                    "image": "T1145",
                     "longText": "9. To set the header and footer such that they do not show on the first page, check Different First Page in the Options group of the Header & Footer tab."
                   },
                   {
+                    "image": "T1146",
                     "title": "Adding Page Numbers",
                     "longText": "Page numbers serve as a guide for a document with more than one page. This is mainly used in research papers, articles, reaction papers, reflection papers, and others. You can insert page numbers either in the header or footer, but it is more commonly inserted at the footer. In the previous steps, there are styles that are ready to use, but there are also customizable options.<br><br>1. Let us add a page number at the footer of the document. Double-click the footer of the document."
                   },
                   {
+                    "image": "T1147",
                     "longText": "2. Click Page Number in the Header & Footer group.<br><br>3. Choose Bottom of Page then select your desired option. Let us use Plain Number 3 for our lesson.<br><br>4. Once it is selected, you can change the font and font size of the page numbers. Simply highlight the page number then click the Insert tab and choose the Font group. The succeeding pages will automatically insert the corresponding page number."
                   },
                   {
+                    "image": "T1148",
                     "title": "CHECKING SPELLING AND GRAMMAR",
                     "longText": "Word processors such as Microsoft Word have a feature to check your document for spelling and grammar mistakes. Let us follow this step-by-step guide to learn how to use it.<br><br>1. To correct, just right click on the word and then choose the suggested correction."
                   },
                   {
+                    "image": "T1149",
                     "longText": "2. If many words in the document need to be corrected, click Check Document in the Review tab."
                   },
                   {
+                    "image": "T1150",
                     "longText": "3. The Check Document menu will look for spelling and grammar errors starting from the location of your cursor in the document. An Editor pane will appear on the right side.<br><br>4. Click on the corrections for spelling or grammar then follow the suggestions. Do it until all the errors in the document are corrected."
                   },
                   {
+                    "image": "T1151",
                     "title": "PREVIEWING AND PRINTING A DOCUMENT",
                     "longText": "1. To print a document, check first if there is an installed printer and if it is plugged properly.<br><br>2. Microsoft Word allows you to preview your document before printing. If you press <b>Ctrl+P</b> or click the File tab and select Print, you will be directed to the <b>Print</b> window where you can preview your document."
                   },
                   {
+                    "image": "T1152",
                     "longText": "3. Click the Printer menu to choose the printer you want to use, or which printer is in a Ready status."
                   },
                   {
+                    "image": "T1153",
                     "longText": "4. To print the entire pages of the document, click Print. If you will print a specific page, just type the page number on the Pages text box.<br>5. For the number of copies, select the Copies drop-down menu and choose the number or you can just type the number of copies.<br><br>Do you think you are ready to use a word processor such as Microsoft Word? If yes, excellent! You can always go back to this module and review the steps here, or you may explore Microsoft Word and other word processors."
                   }
                 ]
