@@ -14,7 +14,7 @@ const About: React.FC = ({ route }: any) => {
         alt="ALS"
       />
       <VStack
-        py="6"
+        p="6"
         flex="1"
         bg="white"
         alignItems="center"

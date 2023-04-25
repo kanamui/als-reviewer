@@ -18,27 +18,25 @@ const Home: React.FC = ({ navigation, route }: any) => {
   // Functions
   const Disclaimer = () => {
     return (
-      <>
-        <VStack space="8" alignItems="center">
-          <VStack space="2">
-            <Text bold>{data?.disclaimer?.kicker}</Text>
-            <Text bold>{data?.disclaimer?.title}</Text>
-          </VStack>
+      <VStack flex="1" alignItems="center" justifyContent="space-between">
+        <VStack space="2">
+          <Text bold>{data?.disclaimer?.kicker}</Text>
+          <Text bold>{data?.disclaimer?.title}</Text>
+        </VStack>
 
-          <VStack space="4">
-            <HStack space="4" maxW="270px" alignItems="center">
-              <Image size="xs" source={IMAGES.checklist} alt="checklist" />
-              <Text fontSize="xs" bold>
-                {data?.disclaimer?.longText1}
-              </Text>
-            </HStack>
-            <HStack space="4" maxW="270px" alignItems="center">
-              <Image size="xs" source={IMAGES.book} alt="book" />
-              <Text fontSize="xs" bold>
-                {data?.disclaimer?.longText2}
-              </Text>
-            </HStack>
-          </VStack>
+        <VStack space="4">
+          <HStack space="4" maxW="270px" alignItems="center">
+            <Image size="xs" source={IMAGES.checklist} alt="checklist" />
+            <Text fontSize="xs" bold>
+              {data?.disclaimer?.longText1}
+            </Text>
+          </HStack>
+          <HStack space="4" maxW="270px" alignItems="center">
+            <Image size="xs" source={IMAGES.book} alt="book" />
+            <Text fontSize="xs" bold>
+              {data?.disclaimer?.longText2}
+            </Text>
+          </HStack>
         </VStack>
 
         <Button w="32" onPress={handleProceed}>
@@ -46,7 +44,7 @@ const Home: React.FC = ({ navigation, route }: any) => {
             {data?.disclaimer?.cta}
           </Text>
         </Button>
-      </>
+      </VStack>
     );
   };
 
