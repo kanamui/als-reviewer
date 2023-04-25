@@ -53,7 +53,7 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     } else {
       navigation.navigate("Module", {
         data: lesson,
-        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
+        quiz: index === topic?.lessons?.length - 1 ? topic?.quiz : null,
       });
     }
   };
