@@ -43,6 +43,7 @@
               "title": "Directions: Read each question carefully and choose what is the correct answer.",
               "items": [
                 {
+                  "image": "M3T1A01",
                   "answer": "Cut",
                   "choices": [
                     "Cut",
@@ -52,6 +53,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A02",
                   "answer": "Underline",
                   "choices": [
                     "Underline",
@@ -61,6 +63,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A03",
                   "answer": "Font type",
                   "choices": [
                     "Font size",
@@ -70,6 +73,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A04",
                   "answer": "Bold",
                   "choices": [
                     "Font size",
@@ -79,6 +83,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A05",
                   "answer": "Copy",
                   "choices": [
                     "Copy",
@@ -88,6 +93,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A06",
                   "answer": "Center",
                   "choices": [
                     "Align right",
@@ -97,6 +103,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A07",
                   "answer": "Align right",
                   "choices": [
                     "Align right",
@@ -106,6 +113,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A08",
                   "answer": "Italic",
                   "choices": [
                     "Italic",
@@ -115,6 +123,7 @@
                   ]
                 },
                 {
+                  "image": "M3T1A09",
                   "answer": "Margins",
                   "choices": [
                     "Underline",
@@ -124,6 +133,17 @@
                   ]
                 },
                 {
+                  "image": "M3T1A10",
+                  "answer": "Align left",
+                  "choices": [
+                    "Underline",
+                    "Center",
+                    "Align left",
+                    "Margins"
+                  ]
+                },
+                {
+                  "image": "M3T1A11",
                   "answer": "Font size",
                   "choices": [
                     "Font color",

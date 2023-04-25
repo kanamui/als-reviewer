@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
   Flex,
   HStack,
   Heading,
+  Image,
   Radio,
   Text,
   VStack,
 } from "native-base";
 import HeaderNav from "../components/HeaderNav";
+import { IMAGES } from "../logic/constants/images.constants";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
@@ -20,6 +22,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   const [index, setIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [answer, setAnswer] = useState<string>("");
+  const [show, setShow] = useState<boolean>(true);
 
   // Handlers
   const handleRadio = (value: any) => {
@@ -27,7 +30,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   };
 
   const handleNext = () => {
-    if (index < total - 1) {
+    if (index < total) {
       const item = data?.items?.[index];
       if (item?.choices?.[answer] === item?.answer) {
         setScore(score + 1);
@@ -46,6 +49,13 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     }
   };
 
+  // Effects
+  useEffect(() => {
+    setShow(false);
+    const timeout = setTimeout(() => setShow(true));
+    return () => clearTimeout(timeout);
+  }, [index]);
+
   const Result = () => {
     return (
       <Box px="6" pb="3" flex="1">
@@ -62,7 +72,9 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
             {assess ? (
               <Heading size="md">You may now proceed with the lessons.</Heading>
             ) : (
-              <Heading size="md">You may now proceed with the next topic.</Heading>
+              <Heading size="md">
+                You may now proceed with the next topic.
+              </Heading>
             )}
           </VStack>
 
@@ -86,38 +98,54 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
         )}
         <Box px="6" py="3" flex="1">
           <VStack flex="1" alignItems="center" justifyContent="space-between">
-            <HStack flex="1" justifyContent="center" space="3" w="80%">
-              <VStack space="3" alignItems="center">
-                {data?.title && <Text bold>{data.title}</Text>}
-                {data?.items?.[index]?.title && (
-                  <Text>{data.items[index].title}</Text>
-                )}
-                <Radio.Group
-                  name="question"
-                  value={answer}
-                  onChange={handleRadio}
-                >
-                  <Flex flexWrap="wrap" h="80px" justifyContent="space-between">
-                    {data?.items?.[index]?.choices.map(
-                      (choice: string, key: number) => {
-                        return (
-                          <Radio key={key} value={`${key}`} m="1">
-                            <Text mr="20">{choice}</Text>
-                          </Radio>
-                        );
-                      }
-                    )}
-                  </Flex>
-                </Radio.Group>
-              </VStack>
-            </HStack>
-
-            <Button w="32" onPress={handleNext} isDisabled={!!!answer} >
-              <Text color="white" bold>
-                NEXT
-              </Text>
-            </Button>
+            {show && (
+              <HStack flex="1" justifyContent="center" space="3" w="80%">
+                <VStack space="4" alignItems="center">
+                  {data?.title && <Text bold>{data.title}</Text>}
+                  {data?.items?.[index]?.title && (
+                    <Text>{data.items[index].title}</Text>
+                  )}
+                  <Image
+                    resizeMode="contain"
+                    source={IMAGES[data?.items?.[index]?.image]}
+                    alt={"question"}
+                  />
+                  <Radio.Group
+                    name="question"
+                    value={answer}
+                    onChange={handleRadio}
+                  >
+                    <Flex
+                      flexWrap="wrap"
+                      h="80px"
+                      justifyContent="space-between"
+                    >
+                      {data?.items?.[index]?.choices.map(
+                        (choice: string, key: number) => {
+                          return (
+                            <Radio key={key} value={`${key}`} m="1">
+                              <Text mr="20">{choice}</Text>
+                            </Radio>
+                          );
+                        }
+                      )}
+                    </Flex>
+                  </Radio.Group>
+                </VStack>
+              </HStack>
+            )}
           </VStack>
+
+          <Button
+            w="32"
+            alignSelf="center"
+            onPress={handleNext}
+            isDisabled={!!!answer}
+          >
+            <Text color="white" bold>
+              NEXT
+            </Text>
+          </Button>
         </Box>
       </>
     );
@@ -126,7 +154,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   return (
     <Box size="full" bg="white" safeAreaX>
       <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
-      {index < total - 1 ? Main() : Result()}
+      {index < total ? Main() : Result()}
     </Box>
   );
 };
