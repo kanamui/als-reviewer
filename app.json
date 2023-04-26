@@ -2,6 +2,9 @@
   "expo": {
     "name": "als-reviewer",
     "slug": "als-reviewer",
+    "privacy": "public",
+    "description": "ALS Reviewer Mobile Application",
+    "githubUrl": "https://github.com/kanamui/als-reviewer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
