@@ -1411,7 +1411,7 @@
                   },
                   {
                     "image": "T2106",
-                    "title": "2. =COUNTA(A2:A7) counts the number of data-filled cells in A2 through A7 and returns a value of 5 because cell A5 is blank. So all values are counted except the value in cell A5, which is blank."
+                    "longText": "2. =COUNTA(A2:A7) counts the number of data-filled cells in A2 through A7 and returns a value of 5 because cell A5 is blank. So all values are counted except the value in cell A5, which is blank."
                   },
                   {
                     "image": "T2107",
@@ -1421,7 +1421,7 @@
                   {
                     "image": "T2108",
                     "title": "THE MAX AND MIN FUNCTION",
-                    "longText": "To use the max or min function, type in the formula =MAX([range of cells]) or =MIN([range of cells]). In these examples, we type =MAX(B2:F2) and =MIN(B2:F2).<br><br><ul><li>The maximum number should be 25, and the minimum number should be 10. Use the fill handle to copy the formulas to the rest of the cells.</li></ul>"
+                    "longText": "To use the max or min function, type in the formula =MAX([range of cells]) or =MIN([range of cells]). In these examples, we type =MAX(B2:F2) and =MIN(B2:F2).<ul><li>The maximum number should be 25, and the minimum number should be 10. Use the fill handle to copy the formulas to the rest of the cells.</li></ul>"
                   },
                   {
                     "image": "T2109",
@@ -1622,7 +1622,7 @@
                   {
                     "image": "T2154",
                     "kicker": "Try This One",
-                    "longText": "Directions: Answer the following questions based on the given pie chart of job classifications below. Write your answers on a separate word document.<br><br><ol type=\"1\"><li>How many job classifications are presented in the chart?</li><li>Which is likely the largest to be applied by the people?</li><li>What percentage does “Janitorial” have in the chart?</li><li>Which job category has a percentage of 24.8%?</li><li>What is the overall percentage of the job classifications?</li></ol>"
+                    "longText": "Directions: Answer the following questions based on the given pie chart of job classifications below. Write your answers on a separate word document.<ol type=\"1\"><li>How many job classifications are presented in the chart?</li><li>Which is likely the largest to be applied by the people?</li><li>What percentage does “Janitorial” have in the chart?</li><li>Which job category has a percentage of 24.8%?</li><li>What is the overall percentage of the job classifications?</li></ol>"
                   },
                   {
                     "image": "T2155",
