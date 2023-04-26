@@ -53,14 +53,25 @@ const Layout = ({
               w={image ? "full" : "80%"}
             >
               {image && (
-                <AspectRatio h="full" ratio={1}>
-                  <Image
-                    size="full"
-                    resizeMode="contain"
-                    source={IMAGES[image]}
-                    alt={image}
-                  />
-                </AspectRatio>
+                <>
+                  {(title || longText) ? (
+                    <AspectRatio h="full" ratio={1}>
+                      <Image
+                        size="full"
+                        resizeMode="contain"
+                        source={IMAGES[image]}
+                        alt={image}
+                      />
+                    </AspectRatio>
+                  ) : (
+                    <Image
+                      size="full"
+                      resizeMode="contain"
+                      source={IMAGES[image]}
+                      alt={image}
+                    />
+                  )}
+                </>
               )}
 
               {(title || longText) && (
