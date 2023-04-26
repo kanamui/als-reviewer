@@ -7,5 +7,6 @@ export interface ILayout {
   title?: string;
   longText?: string;
   image?: string;
+  page?: string;
   cta?: ICta[];
 }

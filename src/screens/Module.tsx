@@ -44,6 +44,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
         title={data?.items?.[slide]?.title}
         longText={data?.items?.[slide]?.longText}
         image={data?.items?.[slide]?.image}
+        page={`${slide + 1} / ${slideLength}`}
         cta={[
           {
             title: "PREV",

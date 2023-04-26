@@ -22,6 +22,7 @@ const Layout = ({
   title,
   longText,
   image,
+  page,
   cta,
 }: ILayout) => {
   const { width } = useWindowDimensions();
@@ -86,16 +87,23 @@ const Layout = ({
           )}
         </VStack>
 
-        <HStack alignSelf="flex-end" space="3" mt="3">
-          {cta?.map((btn: any, key: number) => {
-            return (
-              <Button key={key} w="32" onPress={btn?.onPress} size="xs">
-                <Text color="white" bold>
-                  {btn?.title}
-                </Text>
-              </Button>
-            );
-          })}
+        <HStack justifyContent="space-between">
+          <Box justifyContent="center">
+            {page && (
+              <Text color="gray.400">{page}</Text>
+            )}
+          </Box>
+          <HStack alignSelf="flex-end" space="3" mt="3">
+            {cta?.map((btn: any, key: number) => {
+              return (
+                <Button key={key} w="32" onPress={btn?.onPress} size="xs">
+                  <Text color="white" bold>
+                    {btn?.title}
+                  </Text>
+                </Button>
+              );
+            })}
+          </HStack>
         </HStack>
       </Box>
     </>
