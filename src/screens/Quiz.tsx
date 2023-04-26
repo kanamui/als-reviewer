@@ -92,7 +92,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     return (
       <>
         {data?.kicker && (
-          <VStack w="full" ml="46px">
+          <VStack w="full" ml="52px">
             <Text color="primary.600">{data.kicker}</Text>
           </VStack>
         )}

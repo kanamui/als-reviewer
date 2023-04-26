@@ -38,7 +38,7 @@ const Layout = ({
     <>
       <HeaderNav title={subTitle} onPress={header?.onPress} />
       {kicker && (
-        <VStack w="full" ml="46px">
+        <VStack w="full" ml="52px">
           <Text color="primary.600">{kicker}</Text>
         </VStack>
       )}
