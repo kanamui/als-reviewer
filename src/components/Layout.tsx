@@ -37,13 +37,17 @@ const Layout = ({
   return (
     <>
       <HeaderNav title={subTitle} onPress={header?.onPress} />
-      {kicker && (
-        <VStack w="full" ml="52px">
-          <Text color="primary.600">{kicker}</Text>
-        </VStack>
-      )}
-
-      <Box px="6" py="3" flex="1">
+      <Box
+        px="5"
+        pt="4"
+        pb="3"
+        flex="1"
+        bg="white"
+        borderTopRadius="3xl"
+        shadow="6"
+        safeAreaX
+      >
+        {kicker && <Text color="primary.600">{kicker}</Text>}
         <VStack flex="1" alignItems="center" justifyContent="space-between">
           {show && (
             <HStack
@@ -54,7 +58,7 @@ const Layout = ({
             >
               {image && (
                 <>
-                  {(title || longText) ? (
+                  {title || longText ? (
                     <AspectRatio h="full" ratio={1}>
                       <Image
                         size="full"
@@ -75,8 +79,8 @@ const Layout = ({
               )}
 
               {(title || longText) && (
-                <Box w={image ? "50%" : "full"}>
-                  <ScrollView size="full">
+                <Box w={image ? "50%" : "full"} pt="2">
+                  <ScrollView>
                     <VStack space="1">
                       {title && (
                         <RenderHTML
@@ -99,16 +103,14 @@ const Layout = ({
         </VStack>
 
         <HStack justifyContent="space-between">
-          <Box justifyContent="center">
-            {page && (
-              <Text color="gray.400">{page}</Text>
-            )}
+          <Box justifyContent="flex-end">
+            {page && <Text color="gray.400">{page}</Text>}
           </Box>
           <HStack alignSelf="flex-end" space="3" mt="3">
             {cta?.map((btn: any, key: number) => {
               return (
-                <Button key={key} w="32" onPress={btn?.onPress} size="xs">
-                  <Text color="white" bold>
+                <Button key={key} w="24" onPress={btn?.onPress} size="xs">
+                  <Text color="white" fontSize="xs" bold>
                     {btn?.title}
                   </Text>
                 </Button>

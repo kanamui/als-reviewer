@@ -1,94 +1,104 @@
 import React, { useEffect, useState } from "react";
 import {
-  AspectRatio,
   Box,
   Button,
   Center,
-  Flex,
   HStack,
   Heading,
-  Image,
-  Modal,
+  Icon,
+  ScrollView,
   Text,
   VStack,
 } from "native-base";
+import {
+  Entypo,
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from "@expo/vector-icons";
 import HeaderNav from "../components/HeaderNav";
-import Layout from "../components/Layout";
-import { IMAGES } from "../logic/constants/images.constants";
+import AnimatedPressable from "../components/AnimatedPressable";
 
 const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   // States
   const [module, setModule] = useState<any>();
+  const [moduleId, setModuleId] = useState<number>(0);
   const [topic, setTopic] = useState<any>();
-  const [lesson, setLesson] = useState<any>();
-  const [lessonIndex, setLessonIndex] = useState<number>(0);
+  const [topicId, setTopicId] = useState<number>(0);
   const [screen, setScreen] = useState<string | undefined>();
-  const [showModal, setShowModal] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(true);
 
   // Variables
   const { data } = route.params;
+  const progress = [
+    {
+      moduleId: 2,
+      currentTopic: 0,
+      topic: [
+        {
+          topicId: 0,
+          lesson: [
+            {
+              lessonId: 0,
+              slide: 2,
+            },
+            // other lessons
+          ],
+        },
+        // other topics
+      ],
+    },
+    // other modules
+  ];
+
+  const isCurrentTopic = (topicId: number) => {
+    const p = progress?.find((p) => p.moduleId === moduleId);
+    return p ? p?.currentTopic === topicId : false;
+  };
+
+  const isCurrentSlide = (lessonId: number, slideId: number) => {
+    const p = progress
+      ?.find((p) => p.moduleId === moduleId)
+      ?.topic?.find((t) => t?.topicId === topicId)
+      ?.lesson?.find((l) => l?.lessonId === lessonId);
+
+    return p ? p?.slide <= slideId : false;
+  };
+
+  const isSlideComplete = (lessonId: number, slideId: number) => {
+    const p = progress
+      ?.find((p) => p.moduleId === moduleId)
+      ?.topic?.find((t) => t?.topicId === topicId)
+      ?.lesson?.find((l) => l?.lessonId === lessonId);
+    return p ? p?.slide > slideId : false;
+  };
 
   // Handlers
-  const handleModule = (module: any) => {
+  const handleModule = (module: any, index: number) => {
     if (module?.topics) {
       setModule(module);
+      setModuleId(index);
       setScreen("topics");
     }
   };
 
-  const handleTopic = (topic: any) => {
+  const handleTopic = (topic: any, index: number) => {
     if (topic?.lessons) {
       setTopic(topic);
-      setScreen(topic?.longText ? "intro" : "lessons");
+      setTopicId(index);
+      setScreen("lessons");
     }
   };
 
-  const handleLesson = (lesson: any, index: number) => {
-    setLesson(lesson);
-    setLessonIndex(index);
-
-    if (topic?.preQuiz && index === 0) {
-      setShowModal(true);
-    } else {
-      navigation.navigate("Module", {
-        data: lesson,
-        quiz: index === topic?.lessons?.length - 1 ? topic?.quiz : null,
-      });
-    }
+  const handleLesson = (lesson: any) => {
+    navigation.navigate("Module", { data: lesson });
   };
 
-  const handleModal = (assess: boolean = false) => {
-    setShowModal(false);
+  const handleAssessment = () => {
+    navigation.navigate("Quiz", { data: topic?.assessment });
+  }
 
-    if (assess) {
-      navigation.navigate("Quiz", {
-        data: topic?.preQuiz,
-        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
-        lesson,
-        assess: true,
-      });
-    } else {
-      navigation.navigate("Module", {
-        data: lesson,
-        quiz: lessonIndex === topic?.lessons?.length - 1 ? topic?.quiz : null,
-      });
-    }
-  };
-
-  // Functions
-  const DynamicScreen = () => {
-    switch (screen) {
-      case "lessons":
-        return Lessons();
-      case "intro":
-        return Introduction();
-      case "topics":
-        return Topics();
-      case "main":
-      default:
-        return Main();
-    }
+  const handleQuiz = (lesson: number) => {
+    navigation.navigate("Quiz", { data: topic?.lessons?.[lesson]?.quiz });
   };
 
   // Effects
@@ -99,124 +109,286 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
     return () => clearTimeout(timeout);
   }, [screen]);
 
+  // Functions
+  const DynamicScreen = () => {
+    switch (screen) {
+      case "lessons":
+        return Lessons();
+      case "topics":
+        return Topics();
+      case "main":
+      default:
+        return Main();
+    }
+  };
+
   const Lessons = () => {
     return (
       <>
-        <HeaderNav
-          title={`${module?.title} LESSONS`}
-          onPress={() => setScreen("topics")}
-        />
-        <Box px="6" py="3" flex="1">
-          <HStack
-            flex="1"
-            alignItems="center"
-            justifyContent="center"
-            space="2"
-          >
-            {topic?.image && (
-              <AspectRatio h="full" ratio={1}>
-                <Image
-                  size="full"
-                  resizeMode="contain"
-                  source={IMAGES[topic.image]}
-                  alt={"topic"}
-                />
-              </AspectRatio>
-            )}
-            <VStack
-              space="2"
-              w={topic?.image ? "50%" : "full"}
-              alignItems="center"
-            >
-              {topic?.lessons?.map((lesson: any, key: number) => {
-                return (
-                  <Box key={key}>
-                    <Button
-                      w="64"
-                      h="16"
-                      rounded="full"
-                      onPress={() => handleLesson(lesson, key)}
-                    >
-                      <Text textAlign="center" color="white" bold>
-                        {lesson?.title}
+        <HeaderNav title={topic?.title} onPress={() => setScreen("topics")} />
+        <Box
+          pt="6"
+          px="3"
+          flex="1"
+          size="full"
+          bg="gray.100"
+          borderTopRadius="3xl"
+          shadow="6"
+        >
+          <ScrollView opacity={show ? 1 : 0}>
+            <Box safeAreaX>
+              {topic?.longText && (
+                <VStack
+                  borderWidth="1"
+                  borderColor="gray.200"
+                  px="5"
+                  py="3"
+                  mb="5"
+                  bg="white"
+                  space="3"
+                >
+                  <Heading fontSize="md">About</Heading>
+                  <Text>{topic?.longText}</Text>
+                </VStack>
+              )}
+
+              {/* Pre-Assessment */}
+              {topic?.assessment && (
+                <VStack borderWidth="1" borderColor="gray.200" mb="5" bg="white">
+                  <HStack
+                    p="5"
+                    space="3"
+                    borderBottomWidth="1"
+                    borderBottomColor="gray.200"
+                    alignItems="center"
+                  >
+                    <Icon
+                      size="lg"
+                      as={MaterialCommunityIcons}
+                      name="brain"
+                      color="tertiary.600"
+                    />
+                    <VStack>
+                      <Heading fontSize="md">{topic?.assessment?.kicker}</Heading>
+                      <Text>{topic?.assessment?.longText}</Text>
+                    </VStack>
+                  </HStack>
+                  <Box p="5">
+                    <Button w="full" variant="outline" onPress={handleAssessment}>
+                      <Text color="tertiary.600" bold>
+                        Start
                       </Text>
                     </Button>
                   </Box>
+                </VStack>
+              )}
+              {topic?.lessons?.map((lesson: any, lessonKey: number) => {
+                return (
+                  <Box key={lessonKey}>
+                    {/* Lesson */}
+                    <VStack
+                      borderWidth="1"
+                      borderColor="gray.200"
+                      mb="5"
+                      bg="white"
+                    >
+                      <HStack
+                        p="5"
+                        borderBottomWidth="1"
+                        borderBottomColor="gray.200"
+                        alignItems="center"
+                      >
+                        <Heading fontSize="md">{`Lesson ${lessonKey + 1}: ${
+                          lesson?.title
+                        }`}</Heading>
+                      </HStack>
+                      <VStack>
+                        {lesson?.items?.map((slide: any, slideKey: number) => {
+                          return slide?.section ? (
+                            <Box key={slideKey}>
+                              <AnimatedPressable
+                                onPress={() => handleLesson(lesson)}
+                              >
+                                <HStack
+                                  px="5"
+                                  py="3"
+                                  space="3"
+                                  alignItems="center"
+                                  pl={isCurrentSlide(lessonKey, slideKey) ? 4 : 5}
+                                  borderLeftWidth={
+                                    isCurrentSlide(lessonKey, slideKey) ? 4 : 0
+                                  }
+                                  borderLeftColor="tertiary.400"
+                                >
+                                  <Icon
+                                    size="lg"
+                                    as={MaterialCommunityIcons}
+                                    name="crown"
+                                    color={
+                                      isSlideComplete(lessonKey, slideKey)
+                                        ? "tertiary.400"
+                                        : "gray.500"
+                                    }
+                                  />
+                                  <VStack>
+                                    {isCurrentSlide(lessonKey, slideKey) && (
+                                      <Text color="tertiary.400" bold>
+                                        Up next for you
+                                      </Text>
+                                    )}
+                                    <Text fontSize="md">{slide.section}</Text>
+                                  </VStack>
+                                </HStack>
+                              </AnimatedPressable>
+                            </Box>
+                          ) : null;
+                        })}
+                      </VStack>
+                    </VStack>
+
+                    {/* Quiz */}
+                    {lesson?.quiz && (
+                      <VStack
+                        borderWidth="1"
+                        borderColor="gray.200"
+                        mb="5"
+                        bg="white"
+                      >
+                        <HStack
+                          p="5"
+                          space="3"
+                          borderBottomWidth="1"
+                          borderBottomColor="gray.200"
+                          alignItems="center"
+                        >
+                          <Icon
+                            size="lg"
+                            as={MaterialCommunityIcons}
+                            name="trophy"
+                            color="tertiary.600"
+                          />
+                          <VStack>
+                            <Heading fontSize="md">{lesson?.quiz?.name}</Heading>
+                            <Text>{lesson?.quiz?.section}</Text>
+                          </VStack>
+                        </HStack>
+                        <Box p="5">
+                          <Button
+                            w="full"
+                            variant="outline"
+                            onPress={() => handleQuiz(lessonKey)}
+                          >
+                            <Text color="tertiary.600" bold>
+                              Start
+                            </Text>
+                          </Button>
+                        </Box>
+                      </VStack>
+                    )}
+                  </Box>
                 );
               })}
-            </VStack>
-          </HStack>
+            </Box>
+          </ScrollView>
         </Box>
       </>
-    );
-  };
-
-  const Introduction = () => {
-    return (
-      <Layout
-        header={{
-          onPress: () => setScreen("topics"),
-        }}
-        subTitle={topic?.subTitle}
-        title={topic?.longText}
-        image={topic?.image}
-        cta={[
-          {
-            title: "PROCEED",
-            onPress: () => setScreen("lessons"),
-          },
-        ]}
-      />
     );
   };
 
   const Topics = () => {
     return (
       <>
-        <HeaderNav
-          title={`${module?.title} TOPICS`}
-          onPress={() => setScreen("main")}
-        />
-        <Box px="6" py="3" flex="1">
-          <HStack
-            flex="1"
-            alignItems="center"
-            justifyContent="center"
-            space="2"
-          >
-            {module?.image && (
-              <AspectRatio h="full" ratio={1}>
-                <Image
-                  size="full"
-                  resizeMode="contain"
-                  source={IMAGES[module.image]}
-                  alt={"topic"}
-                />
-              </AspectRatio>
-            )}
-            <VStack
-              space="2"
-              w={module?.image ? "50%" : "full"}
-              alignItems="center"
-            >
+        <HeaderNav title={module?.title} onPress={() => setScreen("main")} />
+        <Box
+          pt="6"
+          px="3"
+          flex="1"
+          size="full"
+          bg="gray.100"
+          borderTopRadius="3xl"
+          shadow="6"
+        >
+          <ScrollView opacity={show ? 1 : 0}>
+            <Box safeAreaX>
               {module?.topics?.map((topic: any, key: number) => {
                 return (
-                  <Box key={key}>
-                    <Button
-                      w="56"
-                      h="16"
-                      rounded="full"
-                      onPress={() => handleTopic(topic)}
-                    >
-                      <Text textAlign="center" color="white" bold>
-                        {topic?.title}
-                      </Text>
-                    </Button>
-                  </Box>
+                  <VStack
+                    key={key}
+                    borderWidth="1"
+                    borderColor="gray.200"
+                    borderTopWidth={isCurrentTopic(key) ? 4 : 1}
+                    borderTopColor={
+                      isCurrentTopic(key) ? "tertiary.400" : "gray.200"
+                    }
+                    mb="5"
+                    bg="white"
+                  >
+                    <AnimatedPressable onPress={() => handleTopic(topic, key)}>
+                      <HStack
+                        px="5"
+                        py="3"
+                        space="4"
+                        borderBottomWidth="1"
+                        borderBottomColor="gray.200"
+                      >
+                        <Center
+                          borderRadius="full"
+                          size="12"
+                          bg={
+                            !!!module?.topics ? "tertiary.100" : "tertiary.600"
+                          }
+                        >
+                          <Icon
+                            size="lg"
+                            as={MaterialCommunityIcons}
+                            name={topic?.icon || "alert-circle-outline"}
+                            color="white"
+                          />
+                        </Center>
+                        <HStack
+                          w="90%"
+                          alignItems="center"
+                          justifyContent="space-between"
+                        >
+                          <VStack>
+                            {isCurrentTopic(key) && (
+                              <Text color="tertiary.400" bold>
+                                Up next for you
+                              </Text>
+                            )}
+                            <Heading
+                              fontSize="md"
+                              color={!!!module?.topics ? "gray.300" : "black"}
+                            >
+                              {topic?.title}
+                            </Heading>
+                            <Text>0% Progress</Text>
+                          </VStack>
+                          <Icon
+                            size="sm"
+                            as={MaterialIcons}
+                            name="arrow-forward-ios"
+                            color="gray.500"
+                          />
+                        </HStack>
+                      </HStack>
+                    </AnimatedPressable>
+                    <AnimatedPressable onPress={() => handleTopic(topic, key)}>
+                      <VStack space="2" p="5">
+                        {topic?.lessons?.map((lesson: any, key: number) => {
+                          return (
+                            <Text key={key} color="gray.500" fontSize="md">
+                              {lesson?.title}
+                            </Text>
+                          );
+                        })}
+                      </VStack>
+                    </AnimatedPressable>
+                  </VStack>
                 );
               })}
-            </VStack>
-          </HStack>
+            </Box>
+          </ScrollView>
         </Box>
       </>
     );
@@ -224,80 +396,77 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
 
   const Main = () => {
     return (
-      <Box pt="6" pb="3" flex="1">
-        <VStack flex="1" alignItems="center">
-          <VStack space="2" alignItems="center">
-            <Heading size="md" maxW="64" textAlign="center">
-              {data?.title}
-            </Heading>
-            <Heading size="sm">{data?.subTitle}</Heading>
-          </VStack>
-          <Center flex="1">
-            <Flex flexWrap="wrap" h="220px">
+      <>
+        <HeaderNav title={data?.title} onPress={() => navigation.goBack()} />
+        <Box
+          pt="3"
+          px="3"
+          flex="1"
+          size="full"
+          bg="white"
+          borderTopRadius="3xl"
+          shadow="6"
+        >
+          <ScrollView opacity={show ? 1 : 0}>
+            <Box safeAreaX>
               {data?.items?.map((module: any, key: number) => {
                 return (
-                  <Box key={key} p="1">
-                    <Button
-                      w="56"
-                      h="16"
-                      rounded="full"
-                      onPress={() => handleModule(module)}
-                      isDisabled={!!!module?.topics}
+                  <AnimatedPressable
+                    key={key}
+                    disabled={!!!module?.topics}
+                    onPress={() => handleModule(module, key)}
+                  >
+                    <Box
+                      w="full"
+                      borderBottomWidth="1"
+                      borderBottomColor="gray.200"
+                      py="3"
                     >
-                      <Text textAlign="center" color="white" bold>
-                        {module?.title}
-                      </Text>
-                    </Button>
-                  </Box>
+                      <HStack key={key} p="1" space="4" alignItems="center">
+                        <Box
+                          borderRadius="full"
+                          p="3"
+                          bg={
+                            !!!module?.topics ? "gray.200" : "tertiary.600"
+                          }
+                        >
+                          <Icon
+                            size="lg"
+                            as={Entypo}
+                            name="open-book"
+                            color="white"
+                          />
+                        </Box>
+                        <HStack justifyContent="space-between" w="90%">
+                          <Text
+                            fontSize="md"
+                            color={!!!module?.topics ? "gray.300" : "black"}
+                          >
+                            {module?.title}
+                          </Text>
+                          <Icon
+                            size="sm"
+                            as={MaterialIcons}
+                            name="arrow-forward-ios"
+                            color={!!!module?.topics ? "gray.200" : "gray.500"}
+                          />
+                        </HStack>
+                      </HStack>
+                    </Box>
+                  </AnimatedPressable>
                 );
               })}
-            </Flex>
-          </Center>
-        </VStack>
-      </Box>
+            </Box>
+          </ScrollView>
+        </Box>
+      </>
     );
   };
 
   return (
-    <>
-      <Box size="full" bg="white" safeAreaX>
-        {show && DynamicScreen()}
-      </Box>
-      <Modal isOpen={showModal} onClose={handleModal}>
-        <Modal.Content>
-          <Modal.CloseButton />
-          <Modal.Header>Pre-Assessment</Modal.Header>
-          <Modal.Body>
-            <Text>
-              Do you want to take the Pre-Assessment first before proceeding
-              with the lessons?
-            </Text>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button.Group space={2}>
-              <Button
-                variant="ghost"
-                colorScheme="error"
-                onPress={() => {
-                  handleModal(false);
-                }}
-              >
-                NO
-              </Button>
-              <Button
-                variant="ghost"
-                colorScheme="success"
-                onPress={() => {
-                  handleModal(true);
-                }}
-              >
-                YES
-              </Button>
-            </Button.Group>
-          </Modal.Footer>
-        </Modal.Content>
-      </Modal>
-    </>
+    <Box size="full" bg="tertiary.600">
+      {DynamicScreen()}
+    </Box>
   );
 };
 

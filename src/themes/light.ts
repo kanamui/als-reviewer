@@ -2,7 +2,7 @@ import { extendTheme, theme as nbTheme } from "native-base";
 
 const theme = extendTheme({
   colors: {
-    primary: nbTheme.colors.success,
+    primary: nbTheme.colors.tertiary,
   },
   config: {
     initialColorMode: "light",

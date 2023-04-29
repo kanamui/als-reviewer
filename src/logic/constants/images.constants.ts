@@ -4,21 +4,18 @@ export const IMAGES: any = {
   checklist: require("../../../assets/als/checklist.jpg"),
   book: require("../../../assets/als/book.jpg"),
 
-  M3: require("../../../assets/als/M3.jpg"),
-  M3T1: require("../../../assets/als/M3T1.jpg"),
-
   // TOPIC 1 ASSESSMENT
-  M3T1A01: require("../../../assets/als/topic-1/assessment/M3T1A01.png"),
-  M3T1A02: require("../../../assets/als/topic-1/assessment/M3T1A02.png"),
-  M3T1A03: require("../../../assets/als/topic-1/assessment/M3T1A03.png"),
-  M3T1A04: require("../../../assets/als/topic-1/assessment/M3T1A04.png"),
-  M3T1A05: require("../../../assets/als/topic-1/assessment/M3T1A05.png"),
-  M3T1A06: require("../../../assets/als/topic-1/assessment/M3T1A06.png"),
-  M3T1A07: require("../../../assets/als/topic-1/assessment/M3T1A07.png"),
-  M3T1A08: require("../../../assets/als/topic-1/assessment/M3T1A08.png"),
-  M3T1A09: require("../../../assets/als/topic-1/assessment/M3T1A09.png"),
-  M3T1A10: require("../../../assets/als/topic-1/assessment/M3T1A10.png"),
-  M3T1A11: require("../../../assets/als/topic-1/assessment/M3T1A11.png"),
+  T1A01: require("../../../assets/als/topic-1/assessment/T1A01.png"),
+  T1A02: require("../../../assets/als/topic-1/assessment/T1A02.png"),
+  T1A03: require("../../../assets/als/topic-1/assessment/T1A03.png"),
+  T1A04: require("../../../assets/als/topic-1/assessment/T1A04.png"),
+  T1A05: require("../../../assets/als/topic-1/assessment/T1A05.png"),
+  T1A06: require("../../../assets/als/topic-1/assessment/T1A06.png"),
+  T1A07: require("../../../assets/als/topic-1/assessment/T1A07.png"),
+  T1A08: require("../../../assets/als/topic-1/assessment/T1A08.png"),
+  T1A09: require("../../../assets/als/topic-1/assessment/T1A09.png"),
+  T1A10: require("../../../assets/als/topic-1/assessment/T1A10.png"),
+  T1A11: require("../../../assets/als/topic-1/assessment/T1A11.png"),
 
   // TOPIC 1
   T1020: require("../../../assets/als/topic-1/T1020.png"),

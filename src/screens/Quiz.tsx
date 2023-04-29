@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useWindowDimensions } from "react-native";
 import {
   Box,
   Button,
   Flex,
   HStack,
-  Heading,
   Image,
   Radio,
   Text,
@@ -12,17 +12,23 @@ import {
 } from "native-base";
 import HeaderNav from "../components/HeaderNav";
 import { IMAGES } from "../logic/constants/images.constants";
+import RenderHTML from "react-native-render-html";
+import QuizResult from "../components/QuizResult";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
-  const { data, quiz, lesson, assess } = route.params;
+  const { data } = route.params;
   const total = data?.items?.length || 0;
+
+  // Hooks
+  const { width } = useWindowDimensions();
 
   // States
   const [index, setIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [answer, setAnswer] = useState<string>("");
   const [show, setShow] = useState<boolean>(true);
+  const [showResult, setShowResult] = useState<boolean>(false);
 
   // Handlers
   const handleRadio = (value: any) => {
@@ -30,22 +36,16 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   };
 
   const handleNext = () => {
-    if (index < total) {
-      const item = data?.items?.[index];
-      if (item?.choices?.[answer] === item?.answer) {
-        setScore(score + 1);
-      }
+    const item = data?.items?.[index];
+    if (item && item?.choices?.[answer] === item?.answer) {
+      setScore(score + 1);
+    }
+
+    if (index < total - 1) {
       setAnswer("");
       setIndex(index + 1);
-    }
-  };
-
-  const handleExit = () => {
-    navigation.goBack();
-    if (assess) {
-      navigation.navigate("Module", { data: lesson, quiz });
     } else {
-      navigation.goBack();
+      setShowResult(true);
     }
   };
 
@@ -56,105 +56,99 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     return () => clearTimeout(timeout);
   }, [index]);
 
-  const Result = () => {
-    return (
-      <Box px="6" pb="3" flex="1">
-        <VStack flex="1" alignItems="center" justifyContent="space-between">
-          <VStack space="2" alignItems="center">
-            {assess ? (
-              <Heading size="md">Pre-Assessment</Heading>
-            ) : (
-              <Heading size="md">Quiz</Heading>
-            )}
-            <Heading mb="4">
-              Score: {score}/{total}
-            </Heading>
-            {assess ? (
-              <Heading size="md">You may now proceed with the lessons.</Heading>
-            ) : (
-              <Heading size="md">
-                You may now proceed with the next topic.
-              </Heading>
-            )}
-          </VStack>
-
-          <Button w="32" onPress={handleExit}>
-            <Text color="white" bold>
-              PROCEED
-            </Text>
-          </Button>
-        </VStack>
-      </Box>
-    );
-  };
-
-  const Main = () => {
-    return (
-      <>
-        {data?.kicker && (
-          <VStack w="full" ml="52px">
-            <Text color="primary.600">{data.kicker}</Text>
-          </VStack>
-        )}
-        <Box px="6" py="3" flex="1">
-          <VStack flex="1" alignItems="center" justifyContent="space-between">
-            {show && (
-              <HStack flex="1" justifyContent="center" space="3" w="80%">
-                <VStack space="4" alignItems="center">
-                  {data?.title && <Text bold>{data.title}</Text>}
-                  {data?.items?.[index]?.title && (
-                    <Text>{data.items[index].title}</Text>
-                  )}
-                  <Image
-                    resizeMode="contain"
-                    source={IMAGES[data?.items?.[index]?.image]}
-                    alt={"question"}
-                  />
-                  <Radio.Group
-                    name="question"
-                    value={answer}
-                    onChange={handleRadio}
-                  >
-                    <Flex
-                      flexWrap="wrap"
-                      h="80px"
-                      justifyContent="space-between"
-                    >
-                      {data?.items?.[index]?.choices.map(
-                        (choice: string, key: number) => {
-                          return (
-                            <Radio key={key} value={`${key}`} m="1">
-                              <Text mr="20">{choice}</Text>
-                            </Radio>
-                          );
-                        }
-                      )}
-                    </Flex>
-                  </Radio.Group>
-                </VStack>
-              </HStack>
-            )}
-          </VStack>
-
-          <Button
-            w="32"
-            alignSelf="center"
-            onPress={handleNext}
-            isDisabled={!!!answer}
-          >
-            <Text color="white" bold>
-              NEXT
-            </Text>
-          </Button>
-        </Box>
-      </>
-    );
-  };
-
   return (
-    <Box size="full" bg="white" safeAreaX>
+    <Box size="full" bg="tertiary.600">
       <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
-      {index < total ? Main() : Result()}
+      {showResult ? (
+        <QuizResult score={score} total={total} navigation={navigation} />
+      ) : (
+        <Box
+          px="5"
+          pt="4"
+          pb="3"
+          flex="1"
+          bg="white"
+          borderTopRadius="3xl"
+          shadow="6"
+          safeAreaX
+        >
+          {data?.kicker && (
+            <Text color="primary.600" mb="2">
+              {data.kicker}
+            </Text>
+          )}
+          <Box flex="1">
+            {show && (
+              <>
+                {data?.title && (
+                  <RenderHTML
+                    contentWidth={width}
+                    source={{ html: data.title }}
+                  />
+                )}
+                {data?.items ? (
+                  <VStack flex="1" pt="4" space="4" alignItems="center">
+                    {data?.items?.[index]?.title && (
+                      <Text>{data.items[index].title}</Text>
+                    )}
+                    <Image
+                      resizeMode="contain"
+                      source={IMAGES[data?.items?.[index]?.image]}
+                      alt={"question"}
+                    />
+                    <Radio.Group
+                      name="question"
+                      value={answer}
+                      onChange={handleRadio}
+                    >
+                      <Flex
+                        flexWrap="wrap"
+                        h="70px"
+                        justifyContent="space-between"
+                      >
+                        {data?.items?.[index]?.choices.map(
+                          (choice: string, key: number) => {
+                            return (
+                              <Radio key={key} value={`${key}`} m="1">
+                                <Text mr="16">{choice}</Text>
+                              </Radio>
+                            );
+                          }
+                        )}
+                      </Flex>
+                    </Radio.Group>
+                  </VStack>
+                ) : data?.longText ? (
+                  <RenderHTML
+                    contentWidth={width}
+                    source={{ html: data?.longText }}
+                  />
+                ) : null}
+              </>
+            )}
+          </Box>
+
+          <HStack justifyContent="space-between">
+            <Box justifyContent="flex-end">
+              {data?.items && (
+                <Text color="gray.400">{`${index + 1} / ${total}`}</Text>
+              )}
+            </Box>
+            <HStack alignSelf="flex-end" space="3" mt="3">
+              <Button
+                w="32"
+                alignSelf="flex-end"
+                onPress={handleNext}
+                isDisabled={!!!answer && !!data?.items}
+              >
+                <Text color="white" bold>
+                  Next
+                </Text>
+              </Button>
+            </HStack>
+          </HStack>
+        </Box>
+      )}
     </Box>
   );
 };

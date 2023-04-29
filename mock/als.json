@@ -3,47 +3,46 @@
     "kicker": "ALS Reviewer Mobile Application",
     "title": "LEARNING STRAND 6 DIGITAL CITIZENSHIP",
     "footer": "Cavite State University Tanza Campus",
-    "cta1": "LEARN",
-    "cta2": "ABOUT APP",
+    "cta1": "Learn",
+    "cta2": "About",
     "disclaimer": {
-      "kicker": "For the ALS Learner:",
+      "kicker": "For the ALS Learner",
       "title": "Welcome to ALS Mobile Application. This module was designed to provide you with fun and meaningful opportunities for guided and independent learning at your own pace and time. You will be enabled to process the contents of the learning resource while​ being an active learner.​",
       "longText1": "This part includes an activity that aims to check what you already know about the lesson before you proceed with the module.",
       "longText2": "Once ready you may click the Proceed button below.",
-      "cta": "PROCEED"
+      "cta": "Proceed"
     }
   },
   "about": {
     "title": "ALS Reviewer Mobile Application",
-    "longText": "Cupidatat reprehenderit non aliquip aliqua reprehenderit dolore eiusmod in veniam amet eu adipisicing cupidatat. Exercitation cupidatat dolor nisi ad sint excepteur veniam duis eu aute nostrud cupidatat. Laboris reprehenderit eu occaecat minim ullamco cupidatat Lorem. Occaecat nisi id consequat esse nostrud adipisicing mollit commodo ullamco ut sunt. Irure laboris non nostrud ullamco irure dolore ipsum occaecat elit magna.",
+    "longText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "footer": "Cavite State University Tanza Campus"
   },
   "modules": {
-    "title": "LEARNING STRAND 6 DIGITAL CITIZENSHIP",
-    "subTitle": "ALS Reviewer Mobile Application",
+    "title": "Explore ALS",
     "items": [
       {
-        "title": "DIGITAL CONCEPTS"
+        "title": "Digital Concepts"
       },
       {
-        "title": "DIGITAL OPERATION AND MANAGEMENT"
+        "title": "Digital Operation and Management"
       },
       {
-        "title": "DIGITAL APPLICATION",
-        "image": "M3",
+        "title": "Digital Application",
         "topics": [
           {
-            "title": "DIGITAL APPLICATION - WORD PROCESSING",
-            "image": "M3T1",
+            "title": "Word Processing",
+            "icon": "file-document-edit",
             "subTitle": "Topic 1: Word Processing",
-            "longText": "<h3>This module will give you the basic steps on using word processors. The following are the three lessons in this module:<h3>",
-            "preQuiz": {
+            "longText": "This module will give you the basic steps on using word processors.",
+            "assessment": {
               "header": "Word Processing",
               "kicker": "Pre-Assessment",
-              "title": "Directions: Read each question carefully and choose what is the correct answer.",
+              "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
-                  "image": "M3T1A01",
+                  "image": "T1A01",
                   "answer": "Cut",
                   "choices": [
                     "Cut",
@@ -53,7 +52,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A02",
+                  "image": "T1A02",
                   "answer": "Underline",
                   "choices": [
                     "Underline",
@@ -63,7 +62,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A03",
+                  "image": "T1A03",
                   "answer": "Font type",
                   "choices": [
                     "Font size",
@@ -73,7 +72,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A04",
+                  "image": "T1A04",
                   "answer": "Bold",
                   "choices": [
                     "Font size",
@@ -83,7 +82,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A05",
+                  "image": "T1A05",
                   "answer": "Copy",
                   "choices": [
                     "Copy",
@@ -93,7 +92,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A06",
+                  "image": "T1A06",
                   "answer": "Center",
                   "choices": [
                     "Align right",
@@ -103,7 +102,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A07",
+                  "image": "T1A07",
                   "answer": "Align right",
                   "choices": [
                     "Align right",
@@ -113,7 +112,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A08",
+                  "image": "T1A08",
                   "answer": "Italic",
                   "choices": [
                     "Italic",
@@ -123,7 +122,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A09",
+                  "image": "T1A09",
                   "answer": "Margins",
                   "choices": [
                     "Underline",
@@ -133,7 +132,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A10",
+                  "image": "T1A10",
                   "answer": "Align left",
                   "choices": [
                     "Underline",
@@ -143,7 +142,7 @@
                   ]
                 },
                 {
-                  "image": "M3T1A11",
+                  "image": "T1A11",
                   "answer": "Font size",
                   "choices": [
                     "Font color",
@@ -154,108 +153,24 @@
                 }
               ]
             },
-            "quiz": {
-              "header": "Word Processing",
-              "title": "Directions. Write True if the statement is correct; otherwise, write False and underline the word that makes the statement incorrect.",
-              "kicker": "Let's Have Some Fun",
-              "items": [
-                {
-                  "title": "1. Ctrl+Pr is the shortcut key for Print.",
-                  "answer": "False",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "2. You can print selected pages in a document.",
-                  "answer": "True",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "3. Aside from the page number, you can also insert dates in the header.",
-                  "answer": "True",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "4. You can change the size of the paper at the Layout tab.",
-                  "answer": "True",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "5. Only one copy of the document can be printed.",
-                  "answer": "False",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "6. Microsoft Word has a feature to correct the spelling if the word turns green.",
-                  "answer": "False",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "7. The Header & Footer tab allows you to insert pictures.",
-                  "answer": "True",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "8. Page numbers can only be seen at the footer section of the document.",
-                  "answer": "False",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "9. The Check Document command can check the spelling and grammar of the whole document.",
-                  "answer": "True",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                },
-                {
-                  "title": "10. Headers and footers can be seen only in the first page.",
-                  "answer": "False",
-                  "choices": [
-                    "True",
-                    "False"
-                  ]
-                }
-              ]
-            },
             "lessons": [
               {
-                "title": "UNDERSTANDING WORD PROCESSING APPLICATIONS",
+                "title": "Understanding Word Processing Applications",
                 "subTitle": "Lesson 1: Word Processing",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to:",
                     "longText": "<b><ul><li>make use of a word-processing application to produce different documents used in everyday life;</li><li>create a new document based on the different available templates;</li><li>save documents under another name to a location on a drive;</li><li>switch between open documents and between page view modes;</li><li>demonstrate how to save a document as another file type;</li><li>identify the process of inserting symbols or special characters;</li><li>and determine the use of the display and hide nonprinting formatting marks line.</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "image": "T1020",
                     "kicker": "Try this one",
                     "title": "Directions: Recall a moment when you need to create and submit a document in school, in work, or in government transactions. What did you do to produce the documents needed?"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T1021",
                     "title": "Uses of Word Processing",
                     "longText": "Word processors offer a wide variety of features that can help people produce different documents for a specific purpose. Anyone can use word processors because of their user-friendly interface."
@@ -380,27 +295,33 @@
                   {
                     "image": "T1050",
                     "longText": "Templates can be helpful when thinking of an initial design for a document, as these serve as a starting point in case you run out of concepts or ideas. Getting to know various features of a word processor can help you flawlessly create a document"
-                  },
-                  {
-                    "kicker": "Let's Have Some Fun",
-                    "title": "Directions: List down the step-by-step procedure in saving a file under a new file name and file type as a PDF file. Write your answer on a separate Word Document."
-                  } 
-                ]
+                  }
+                ],
+                "quiz": {
+                  "name": "Quiz 1",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 1: Lesson 1 - Word Processing",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<h3>Directions: List down the step-by-step procedure in saving a file under a new file name and file type as a PDF file. Write your answer on a separate Word Document.</h3>"
+                }
               },
               {
-                "title": "FORMATTING AND INSERTING GRAPHICS IN A DOCUMENT",
+                "title": "Formatting and Inserting Graphics in a Document",
                 "subTitle": "Lesson 2: Word Processing",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to:",
                     "longText": "<b><ul><li>demonstrate the use of formatting commands in a word-processing document;</li><li>make use of formatting in paragraphs; and</li><li>demonstrate good practice in creating tables, formatting tables, and inserting graphical objects</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "image": "T1053",
                     "kicker": "Try This One",
                     "title": "Directions: Look at the two documents below. How do they differ from each other? Which is better? Use a Venn diagram to answer"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "longText": "<b>Formatting</b> is the process of modifying specific parts of the document, which will determine how the document will look like when finalized and printed. Common formatting options include the font, font size, color, alignment, spacing, margins, and other properties.<br><br>In making a paragraph for a letter, research paper, or essay, detailed formatting may be applied to achieve a more presentable and readable document. As featured in the first activity, arranging and organizing a document’s contents can have an impact on readers. They may easily understand the information in the document if it is properly formatted."
                   },
                   {
@@ -643,28 +564,34 @@
                   {
                     "image": "T1112",
                     "longText": "Any changes in the contents will show in the chart because they are connected. Then, click Close to close the program.<br><br>Word processors are very flexible because of its wide variety of formatting commands that can modify and personalize your documents."
-                  },
-                  {
-                    "kicker": "Let's Have Some Fun",
-                    "title": "Directions: Make a two-paragraph essay about yourself in Microsoft Word using the following format:",
-                    "longText": "<ol type=\"1\"><li>Font size - 12 pt for the body and 16pt for the title</li><li>Font family - Arial</li><li>Alignment - Justify</li><li>Title - “All About Me” (before the paragraph)</li><li>Indent the first line of each paragraph</li><li>Spacing - 1.5</li><li>File name - lastname_aboutmyself<br>Example: santos_aboutmyself</li></ol>"
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 2",
+                  "section": "Treading the Road to Mastery",
+                  "header": "Quiz 2: Lesson 2 - Word Processing",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions: Make a two-paragraph essay about yourself in Microsoft Word using the following format:</b>",
+                  "longText": "<ol type=\"1\"><li>Font size - 12 pt for the body and 16pt for the title</li><li>Font family - Arial</li><li>Alignment - Justify</li><li>Title - “All About Me” (before the paragraph)</li><li>Indent the first line of each paragraph</li><li>Spacing - 1.5</li><li>File name - lastname_aboutmyself<br>Example: santos_aboutmyself</li></ol>"
+                }
               },
               {
-                "title": "MAIL MERGING AND FINALIZING A DOCUMENT",
+                "title": "Mail Merging and Finalizaing a Document",
                 "subTitle": "Lesson 3: Word Processing",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to:",
                     "longText": "<b><ul><li>demonstrate the process of mail merging; and</li><li>finalize a document using page setup, headers and footers, spell-check, and printing commands.</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "kicker": "Try This One",
                     "title": "Directions: Think about this situation and put your answer on a word document.",
                     "longText": "<b>Suppose you are a Sangguniang Kabataan chairperson, and your barangay will be having a leadership training two weeks from now. As the chairperson, how are you going to write letters to invite two hundred youths in your barangay in the easiest way possible?</b>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T1116",
                     "longText": "<b>Mail merge</b> is a feature in most data-processing applications that enables users to send a similar letter or document to multiple recipients. It connects a single form template with a data source that contains information about the recipient's name, address, and other predefined and supported data.<br>Mail plays an important role in creating a word document and sending it to the recipients with their personal information. The idea of mail merge is to mail the same content but with different names and other information without inputting them manually. Mail merge is easy to use especially with the help of the “Step-by-Step Mail Merge Wizard.”"
                   },
@@ -826,18 +753,110 @@
                     "image": "T1153",
                     "longText": "4. To print the entire pages of the document, click Print. If you will print a specific page, just type the page number on the Pages text box.<br>5. For the number of copies, select the Copies drop-down menu and choose the number or you can just type the number of copies.<br><br>Do you think you are ready to use a word processor such as Microsoft Word? If yes, excellent! You can always go back to this module and review the steps here, or you may explore Microsoft Word and other word processors."
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 3",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 3: Lesson 3 - Word Processing",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions. Write True if the statement is correct; otherwise, write False and underline the word that makes the statement incorrect.</b>",
+                  "items": [
+                    {
+                      "title": "1. Ctrl+Pr is the shortcut key for Print.",
+                      "answer": "False",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "2. You can print selected pages in a document.",
+                      "answer": "True",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "3. Aside from the page number, you can also insert dates in the header.",
+                      "answer": "True",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "4. You can change the size of the paper at the Layout tab.",
+                      "answer": "True",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "5. Only one copy of the document can be printed.",
+                      "answer": "False",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "6. Microsoft Word has a feature to correct the spelling if the word turns green.",
+                      "answer": "False",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "7. The Header & Footer tab allows you to insert pictures.",
+                      "answer": "True",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "8. Page numbers can only be seen at the footer section of the document.",
+                      "answer": "False",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "9. The Check Document command can check the spelling and grammar of the whole document.",
+                      "answer": "True",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    },
+                    {
+                      "title": "10. Headers and footers can be seen only in the first page.",
+                      "answer": "False",
+                      "choices": [
+                        "True",
+                        "False"
+                      ]
+                    }
+                  ]
+                }
               }
             ]
           },
           {
-            "title": "DIGITAL APPLICATION - SPREAD SHEETS",
+            "title": "Spreadsheets",
+            "icon": "table-large",
             "image": "M3T1",
             "subTitle": "Topic 2: Spreadsheets",
-            "preQuiz": {
+            "longText": "This module will walk you through how to use spreadsheets to help you get familiar with it.",
+            "assessment": {
               "header": "Spreadsheets",
               "kicker": "Pre-Assessment",
-              "title": "Directions: Choose the correct answer in the parenthesis to complete the statement.",
+              "title": "<b>Directions: Choose the correct answer in the parenthesis to complete the statement.</b>",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
                   "title": "1. Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
@@ -963,7 +982,7 @@
             },
             "lessons": [
               {
-                "title": "SPREADSHEETS 1",
+                "title": "Understanding Spreadsheets",
                 "subTitle": "Lesson 1: Spreadsheets",
                 "items": [
                   {
@@ -971,6 +990,7 @@
                     "longText": "We deal with numbers every day. For example, we budget our money for our food, fare, clothing, and other expenses.<br><br>Calculating numbers is a skill we can easily do and apply in our daily lives, but what if you need to calculate larger numbers and bigger sums such as in banks, department stores, supermarkets, grades, or payrolls? This is where a spreadsheet program take part as it helps in computing and organizing data."
                   },
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to",
                     "longText": "<b><ul><li>Use the spreadsheet application to generate different documents;</li><li>Create a new spreadsheet based on the different available templates;</li><li>Demonstrate how to save a spreadsheet under another name, as another file type, and to a location on a drive;</li><li>Distinguish the different uses of magnification or zoom tools;</li><li>Determine the use of the different toolbars;</li></ul></b>"
                   },
@@ -979,11 +999,13 @@
                     "longText": "<b><ul><li>demonstrate understanding of using cells in a spreadsheet;</li><li>apply the process of modifying rows and columns; and</li><li>customize worksheets.</li></ul>"
                   },
                   {
+                    "section": "Trying This Out",
                     "image": "T2008",
                     "kicker": "Try This One",
                     "longText": "<b>Directions</b>: Identify and locate the contents in the cell references below. Write your answers on a separate word document.<br><br><b><table><tr><td>1. A1</td><td>6. A4</td></tr><tr><td>2. C2</td><td>7. A7</td></tr><tr><td>3. B6</td><td>8. E8</td></tr><tr><td>4. E3</td><td>9. D4</td></tr><tr><td>5. C5 to C11&nbsp;&nbsp;</td><td>10. D6</td></tr></table></b>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T2009",
                     "title": "SPREADSHEET",
                     "longText": "A spreadsheet or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form. Spreadsheet software programs are considered unique because they can calculate values using mathematical formulas and data in the cells.<br><br>Like word processors, many applications are used to create spreadsheets. Below is a list of the most common spreadsheet applications and their operating system where these programs can be opened."
@@ -1275,27 +1297,34 @@
                   {
                     "image": "T2075",
                     "longText": "5. To delete a worksheet, click the worksheet to be deleted, right-click, and then choose Delete."
-                  },
-                  {
-                    "image": "T2076",
-                    "longText": "<b>Directions:</b> Identify the parts of Microsoft Excel. Write your answers on a separate word document."
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 1",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 1: Lesson 1 - Spreadsheets",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions:</b> Identify the parts of Microsoft Excel. Write your answers on a separate word document.",
+                  "image": "T2076"
+                }
               },
               {
-                "title": "SPREADSHEETS 2",
+                "title": "Using Formulas and Formatting Cells",
                 "subTitle": "Lesson 2: Spreadsheets",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to",
                     "longText": "<b><ul><li>Employ Good Practices In Using Arithmetic Formulas And Functions In Spreadsheets;</li><li>Create Formulas Using Cell References And Arithmetic Operators;</li><li>Identify Errors In Formulas;</li><li>Identify Errors In Formulas;</li><li>Employ Spreadsheet Functions; And</li><li>Use Logical Functions.</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "kicker": "Try This One",
                     "title": "Directions: Supply the missing mathematical and logical operators. Write your answers on a separate word document.",
                     "longText": "<table><tr><td>1. 55 = 10</td><td>6. 44 = True</td></tr><tr><td>2. 73 = 4</td><td>7. 52 = True</td></tr><tr><td>3. 102 = 5</td><td>8. 73 = False</td></tr><tr><td>4. 93 = 27</td><td>9. 18 = False</td></tr><tr><td>5. 55 = 25</td><td>10. 61 = True</td></tr></table>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T2079",
                     "longText": "Formulas in a spreadsheet are expressions that operate or calculate the values in a range of cells, while functions are predefined formulas that are already available in spreadsheet applications.<br>The most practical way of entering formulas and functions in Excel is to type the equal sign (=) first, followed by the constants and operators.<br>For example, if you want to get the sum of two numbers entered in A1+A2, you will put your formula in A3 as =A1+A2."
                   },
@@ -1603,28 +1632,34 @@
                   {
                     "image": "T2151",
                     "longText": "Apply this to the borders one by one. This lets you personalize your worksheets more.<br><br>There is so much you can do in preparing your workbook. You can always improve your spreadsheets and create different finance applications, tabular records, as well as calculate numbers, by using the best features of the software program, formulas and formatting cells."
-                  },
-                  {
-                    "image": "T2152",
-                    "kicker": "Let's Have Some Fun",
-                    "longText": "<b>Directions:</b> Determine the formula needed for the following situations. Write your answers on a separate word document."
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 2",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 2: Lesson 2 - Spreadsheets",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions:</b> Determine the formula needed for the following situations. Write your answers on a separate word document.",
+                  "image": "T2152"
+                }
               },
               {
-                "title": "SPREADSHEETS 3",
+                "title": "Inserting Charts and Finalizing Spreadsheets",
                 "subTitle": "Lesson 3: Spreadsheets",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to",
                     "longText": "<b><ul><li>Create different types of charts in a spreadsheet;</li><li>Edit charts in a spreadsheet; and</li><li>Demonstrate the preparation of outputs in a spreadsheet.</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "image": "T2154",
                     "kicker": "Try This One",
                     "longText": "Directions: Answer the following questions based on the given pie chart of job classifications below. Write your answers on a separate word document.<ol type=\"1\"><li>How many job classifications are presented in the chart?</li><li>Which is likely the largest to be applied by the people?</li><li>What percentage does “Janitorial” have in the chart?</li><li>Which job category has a percentage of 24.8%?</li><li>What is the overall percentage of the job classifications?</li></ol>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T2155",
                     "longText": "Workbooks that contain a lot of data are sometimes difficult to analyze and interpret. Charts allow you to illustrate your workbook data graphically, which makes it easy to visualize comparisons and interpret results.<br><br>Microsoft Excel has different types of charts that allow you to choose what is best for your data. The most frequently used types of charts are as follows:<br><br><b>Column charts</b> use vertical bars to represent data. they are typically used to compare several items in a specific range of values."
                   },
@@ -1730,24 +1765,30 @@
                   {
                     "image": "T2179",
                     "longText": "2. Choose the active printer on Printer, and then indicate the number of copies to be printed on Copies.<br><br>To print specific pages, type in the pages you want to include. If there are five pages but you only want to print pages 1 to 3, then type 1 on the first box and 3 on the second box. If you only want page 2, then type 2 on the first box. If you are going to print the entire workbook, leave it blank."
-                  },
-                  {
-                    "image": "T2180",
-                    "kicker": "Let's Get Some Fun",
-                    "longText": "<b>Directions:</b> Using a Venn diagram, compare and contrast the different types of charts used in a spreadsheet by listing down their characteristics and features. Do this activity on a separate word document."
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 3",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 3: Lesson 3 - Spreadsheets",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions:</b> Using a Venn diagram, compare and contrast the different types of charts used in a spreadsheet by listing down their characteristics and features. Do this activity on a separate word document.",
+                  "image": "T2180"
+                }
               }
             ]
           },
           {
-            "title": "DIGITAL APPLICATION - PRESENTATION SOFTWARE",
+            "title": "Presentation Software",
+            "icon": "presentation",
             "image": "M3T1",
             "subTitle": "Topic 3: Presentation Software",
-            "preQuiz": {
+            "longText": "This module will give you basic the steps on using presentation software.",
+            "assessment": {
               "header": "Presentation Software",
               "kicker": "Pre-Assessment",
-              "title": "Directions: Read each question carefully and choose what is the correct answer.",
+              "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
                   "title": "1. Which tab do you click to add a picture or graphic to your presentation?",
@@ -1853,7 +1894,7 @@
             },
             "lessons": [
               {
-                "title": "Presentation Software 1",
+                "title": "Understanding Presentation Software",
                 "subTitle": "Lesson 1: Presentation Software",
                 "items": [
                   {
@@ -1861,15 +1902,18 @@
                     "longText": "Before, our teachers used blackboards, manila paper, overhead projectors, and slide projectors to teach their lessons properly. Now, the most common presentation tool today is the computer.<br>At present, we use presentation software that help make dynamic presentations a quality's absent in traditional presentation tools."
                   },
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to",
                     "longText": "<b><ul><li>use a presentation software to produce different documents to present information in everyday life;</li><li>determine the use of the different toolbars;</li><li>create a new presentation based on the default templates;</li><li>demonstrate the creation of a new presentation;</li><li>demonstrate how to save a presentation under another name, as another file type, and to a location on the drive;</li><li>distinguish different view modes; and manage a slide.</li></ul></b>"
                   },
                   {
+                    "section": "Trying This Out",
                     "image": "T3013",
                     "kicker": "Try this One",
                     "longText": "<b>Directions: Identify at least three capabilities of a blackboard and a computer. Write your answers on a separate sheet of word document.</b>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "image": "T3014",
                     "longText": " Presentation tools are helpful when you have a large audience, such as students in a classroom. Most of the time, teachers use the blackboard to help them clearly explain their lesson to the students, but this limits them from becoming more creative in presenting their lesson. This is now possible through technologies such as presentation software.<br><br>Today, people have become more dynamic in presenting information using different presentation software. Among these are Microsoft PowerPoint (MS PowerPoint), Prezi, Presentations, iWork Keynote, OpenOffice Impress, and Google Slides."
 
@@ -1954,23 +1998,28 @@
                   {
                     "image": "T3034",
                     "longText": "<b>Managing Slides</b> - There are a many ways to manage slides more easily, especially when you have a long presentation.<br><b>Viewing An Outline</b> - The outline view shows your slide text in outline form. This allows you to quickly edit your slide text and view the contents of multiple slides at once. Choose Outline View in the Presentation Views group in the View tab.<br><b>Organizing Slides Into Sections</b></br> - You can organize your slides into sections to navigate your presentation easily. Sections can be collapsed or expanded in the left pane and named for easy reference. In this example, we will add two sections: one for volleyball equipment and another for basic skills in volleyball."
-                  },
-                  {
-                    "kicker": "Let's Have Some Fun",
-                    "title": "Directions: Enumerate the following.",
-                    "longText": "<table><tr><th>Major Parts of Microsoft PowerPoint</th><th>Ways to Manage Slides</th><th>Different Views in Microsoft PowerPoint</th></tr><tr><td style='color: red;vertical-align: top'><ol type='1'><li>Slide Tab</li><li>Slide Number</li><li>Slide Area</li><li>View Buttons</li></ol></td><td style='color: red;vertical-align: top'><ol type='1'><li>Viewing an Outline</li><li>Organizing Slides into Sections</li></ol></td><td style='color: red;vertical-align: top'><ol type='1'><li>Normal View</li><li>Slide Sorter View</li><li>Reading View</li><li>Slide Show View</li></ol></td></tr></table>"
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 1",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 1: Lesson 1 - Presentation Software",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions: Enumerate the following.</b>",
+                  "longText": "<table><tr><th>Major Parts of Microsoft PowerPoint</th><th>Ways to Manage Slides</th><th>Different Views in Microsoft PowerPoint</th></tr><tr><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol></td><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li></ol></td><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol></td></tr></table>"
+                }
               },
               {
-                "title": "Presentation Software 2",
+                "title": "Formatting a Presentation File",
                 "subTitle": "Lesson 2: Presentation Software",
                 "items": [
                   {
+                    "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to:",
                     "longText": "<b><ul><li>Demonstrate understanding of formatting in a presentation file;</li><li>Apply different practices in creating slide content;</li><li>Demonstrate good practices in lists and tables in a presentation;</li><li>Customize text in a presentation; and</li><li>Edit charts in a presentation.</li></ul></b>"
                   },
                   {
+                    "section": "Understanding What You Did",
                     "longText": "<b>Formatting A Presentation</b> - One of the primary difficulties encountered by people who use presentation tools is getting and keeping the attention of the audience. To avoid such difficulties, use Microsoft PowerPoint, which has many features that allow you to make your presentation more presentable and creative.<br><br><b>Theme</b> - A theme is a predefined combination of colors, fonts, and effects. Different themes also use different slide layouts. You are already using a theme, even if you are not aware of it: the default Office theme. You can choose from a variety of new themes at any time, giving your entire presentation a consistent, professional look."
                   },
                   {
@@ -2141,28 +2190,34 @@
                   },
                   {
                     "longText": "<ol type= '1'><li>You may change the chart type in the Chart Design tab. Then in the Type group, select Change Chart Type.</li><li>The Change Chart Type dialog box will appear. Select the new chart type you want.</li><li>To edit areas of the chart, select the area then change it to your desired text or content. To add additional elements in the chart, choose Add Chart Element in the Chart Design tab then select the elements you want to add</li><li>To change the background color of the chart, click Change Colors in the Chart Design tab; for the chart styles, select among the predesigned chart styles in the Chart Style group.</li></ol>"
-                  },
-                  {
-                    "kicker": "Let's Have Some Fun",
-                    "title": "Directions: Identify the steps in formatting a presentation. Write your answers on a separate word document.",
-                    "longText": "<table style='width: 75%'><tr><td><i>CHANGE FONT COLOR</i><br>step 1.<br>step 2.</td><td><i>CHANGE FONT TYPE</i><br>step 1.<br>step 2.</td><td><i>APPLY THEME</i><br>step 1.<br>step 2.</td></tr></table>"
                   }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 2",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 2: Lesson 2 - Presentation Software",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "<b>Directions: Identify the steps in formatting a presentation. Write your answers on a separate word document.</b>",
+                  "longText": "<table style='width: 75%'><tr><td><i>CHANGE FONT COLOR</i><br>step 1.<br>step 2.</td><td><i>CHANGE FONT TYPE</i><br>step 1.<br>step 2.</td><td><i>APPLY THEME</i><br>step 1.<br>step 2.</td></tr></table>"
+                }
               },
               {
-                "title": "Presentation Software 3",
+                "title": "Inserting Graphics and Animation",
                 "subTitle": "Lesson 3: Presentation Software",
                 "items": [
                 {
+                  "section": "Setting the Path",
                   "title": "After this lesson, learners should be able to",
                   "longText": "<b><ol type= '1'></li>Insert a graphical object;</li><li>Use tools to customize graphical objects in a presentation;</li><li>Demonstrate the finalization of outputs in presentation software in terms of preparation, checking, and presentation of slides;</li><li>Demonstrate how to save a presentation in various  multimedia presentation formats; and</li>Apply animations on each slide.</ol></b>"
                 },
                 {
+                  "section": "Trying This Out",
                   "kicker": "Try This One",
                   "title": "Directions: Complete the concept map below by giving your ideas about the word in the center. Do this activity on a separate word document.",
                   "longText": "<br>CREATIVITY<ol type ='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol>"
                 },
                 {
+                  "section": "Understanding What You Did",
                   "image": "T3083",
                   "longText": "Slides are considered frames with different scenes. There are pictures and texts that should be arranged in order. It is the same with creating presentations; you should carefully plan them.<br><br>Combining pictures and texts help make the slide become much more interesting and informational, but avoid putting everything in a presentation."
                 },
@@ -2333,26 +2388,29 @@
                 {
                   "title": "POINTS TO REMEMBER",
                   "longText": "<ul><li>Simplicity is key. Simple animations like fade and appear may not be as impressive as other animations available, but these add a touch of elegance to well-timed slides. It makes your slides look clean and simple.</li><li>Limit the number of animations on a slide. One or two animations per slide should suffice. There is no need to animate every single object on each slide.</li><li>Time your presentation well. Make sure your objects appear right after you introduce it. This keeps your audience's interest piqued.</li><li>Remember to practice. Practicing your timings and your animations are key to a successful presentation.</li></ul>"
-                },
-                {
-                  "kicker": "Let's Have Some Fun ",
-                  "title": "Directions: Give at least three Kinds (3) TRANSITION and  four kinds (4) ANIMATION?",
-                  "longText": "<br><table style='width: 75%'><tr><th>TRANSITIONS</th><th>ANIMATIONS</th></tr><tr><td style='color: red;vertical-align: top'><ol type='1'><li>Subtitle</li><li>Exciting</li><li>Dynamic content</li></ol><td style='color: red;vertical-align: top'><ol type='1'><li>Entrance</li><li>Emphasis</li><li>Exit</li><li>Motion path</li></ol></td></tr><table>"
                 }
-                ]
+                ],
+                "quiz": {
+                  "name": "Quiz 3",
+                  "section": "Sharpening Your Skills",
+                  "header": "Quiz 3: Lesson 3 - Presentation Software",
+                  "kicker": "Let's Have Some Fun",
+                  "title": "Directions: Give at least three Kinds (3) TRANSITION and  four kinds (4) ANIMATION?",
+                  "longText": "<table style='width: 75%'><tr><th>TRANSITIONS</th><th>ANIMATIONS</th></tr><tr><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li></ol><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol></td></tr><table>"
+                }
               }
             ]
           }
         ]
       },
       {
-        "title": "DIGITAL SYSTEM NETWORK"
+        "title": "Digital System Network"
       },
       {
-        "title": "DIGITAL DEVICES"
+        "title": "Digital Devices"
       },
       {
-        "title": "DIGITAL ETHICS"
+        "title": "Digital Ethics"
       }
     ]
   }
