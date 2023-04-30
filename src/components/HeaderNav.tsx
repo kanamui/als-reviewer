@@ -1,7 +1,7 @@
 import React from "react";
 import { HStack, Heading, Icon, IconButton } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
-import { ICta } from "../models/components/ICta";
+import { ICta } from "../models/ICta";
 
 const HeaderNav = ({ title, onPress }: ICta) => {
   return (

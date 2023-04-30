@@ -1,4 +1,4 @@
-import { ICta } from "./ICta";
+import { ICta } from "../ICta";
 
 export interface ILayout {
   header?: ICta;
