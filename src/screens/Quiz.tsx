@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useWindowDimensions } from "react-native";
 import {
+  AspectRatio,
   Box,
   Button,
   Flex,
   HStack,
   Image,
   Radio,
+  ScrollView,
   Text,
   VStack,
 } from "native-base";
@@ -80,50 +82,94 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
           <Box flex="1">
             {show && (
               <>
-                {data?.title && (
-                  <RenderHTML
-                    contentWidth={width}
-                    source={{ html: data.title }}
-                  />
-                )}
-                {data?.items ? (
-                  <VStack flex="1" pt="4" space="4" alignItems="center">
-                    {data?.items?.[index]?.title && (
-                      <Text>{data.items[index].title}</Text>
-                    )}
-                    <Image
-                      resizeMode="contain"
-                      source={IMAGES[data?.items?.[index]?.image]}
-                      alt={"question"}
+                {data?.title && data?.items && (
+                  <Box mb="4">
+                    <RenderHTML
+                      contentWidth={width}
+                      source={{ html: data.title }}
                     />
-                    <Radio.Group
-                      name="question"
-                      value={answer}
-                      onChange={handleRadio}
-                    >
-                      <Flex
-                        flexWrap="wrap"
-                        h="70px"
-                        justifyContent="space-between"
+                  </Box>
+                )}
+                <VStack flex="1" space="4" alignItems="center">
+                  {data?.items ? (
+                    <>
+                      {data?.items?.[index]?.title && (
+                        <Text>{data.items[index].title}</Text>
+                      )}
+                      <Image
+                        resizeMode="contain"
+                        source={IMAGES[data?.items?.[index]?.image]}
+                        alt={"question"}
+                      />
+                      <Radio.Group
+                        name="question"
+                        value={answer}
+                        onChange={handleRadio}
                       >
-                        {data?.items?.[index]?.choices.map(
-                          (choice: string, key: number) => {
-                            return (
-                              <Radio key={key} value={`${key}`} m="1">
-                                <Text mr="16">{choice}</Text>
-                              </Radio>
-                            );
-                          }
-                        )}
-                      </Flex>
-                    </Radio.Group>
-                  </VStack>
-                ) : data?.longText ? (
-                  <RenderHTML
-                    contentWidth={width}
-                    source={{ html: data?.longText }}
-                  />
-                ) : null}
+                        <Flex
+                          flexWrap="wrap"
+                          h="70px"
+                          justifyContent="space-between"
+                        >
+                          {data?.items?.[index]?.choices.map(
+                            (choice: string, key: number) => {
+                              return (
+                                <Radio key={key} value={`${key}`} m="1">
+                                  <Text mr="16">{choice}</Text>
+                                </Radio>
+                              );
+                            }
+                          )}
+                        </Flex>
+                      </Radio.Group>
+                    </>
+                  ) : (
+                    <HStack flex="1" justifyContent="center" space="6" w="full">
+                      {data?.image && (
+                        <>
+                          {data?.title || data?.longText ? (
+                            <AspectRatio h="full" ratio={1}>
+                              <Image
+                                size="full"
+                                resizeMode="contain"
+                                source={IMAGES[data?.image]}
+                                alt={data?.image}
+                              />
+                            </AspectRatio>
+                          ) : (
+                            <Image
+                              size="full"
+                              resizeMode="contain"
+                              source={IMAGES[data?.image]}
+                              alt={data?.image}
+                            />
+                          )}
+                        </>
+                      )}
+
+                      {(data?.title || data?.longText) && (
+                        <VStack w={data?.image ? "50%" : "full"}>
+                          <ScrollView>
+                            <VStack space="2">
+                              {data.title && (
+                                <RenderHTML
+                                  contentWidth={width}
+                                  source={{ html: data.title }}
+                                />
+                              )}
+                              {data.longText && (
+                                <RenderHTML
+                                  contentWidth={width}
+                                  source={{ html: data.longText }}
+                                />
+                              )}
+                            </VStack>
+                          </ScrollView>
+                        </VStack>
+                      )}
+                    </HStack>
+                  )}
+                </VStack>
               </>
             )}
           </Box>

@@ -849,7 +849,6 @@
           {
             "title": "Spreadsheets",
             "icon": "table-large",
-            "image": "M3T1",
             "subTitle": "Topic 2: Spreadsheets",
             "longText": "This module will walk you through how to use spreadsheets to help you get familiar with it.",
             "assessment": {
@@ -1781,7 +1780,6 @@
           {
             "title": "Presentation Software",
             "icon": "presentation",
-            "image": "M3T1",
             "subTitle": "Topic 3: Presentation Software",
             "longText": "This module will give you basic the steps on using presentation software.",
             "assessment": {
