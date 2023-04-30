@@ -7,6 +7,7 @@ import {
   Flex,
   HStack,
   Image,
+  Modal,
   Radio,
   ScrollView,
   Text,
@@ -31,13 +32,14 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   const [answer, setAnswer] = useState<string>("");
   const [show, setShow] = useState<boolean>(true);
   const [showResult, setShowResult] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   // Handlers
   const handleRadio = (value: any) => {
     setAnswer(value);
   };
 
-  const handleNext = () => {
+  const handleButton = () => {
     const item = data?.items?.[index];
     if (item && item?.choices?.[answer] === item?.answer) {
       setScore(score + 1);
@@ -46,6 +48,8 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     if (index < total - 1) {
       setAnswer("");
       setIndex(index + 1);
+    } else if (!item) {
+      setShowModal(true);
     } else {
       setShowResult(true);
     }
@@ -59,143 +63,177 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   }, [index]);
 
   return (
-    <Box size="full" bg="tertiary.600">
-      <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
-      {showResult ? (
-        <QuizResult score={score} total={total} navigation={navigation} />
-      ) : (
-        <Box
-          px="5"
-          pt="4"
-          pb="3"
-          flex="1"
-          bg="white"
-          borderTopRadius="3xl"
-          shadow="6"
-          safeAreaX
-        >
-          {data?.kicker && (
-            <Text color="primary.600" mb="2">
-              {data.kicker}
-            </Text>
-          )}
-          <Box flex="1">
-            {show && (
-              <>
-                {data?.title && data?.items && (
-                  <Box mb="4">
-                    <RenderHTML
-                      contentWidth={width}
-                      source={{ html: data.title }}
-                    />
-                  </Box>
-                )}
-                <VStack flex="1" space="4" alignItems="center">
-                  {data?.items ? (
-                    <>
-                      {data?.items?.[index]?.title && (
-                        <Text>{data.items[index].title}</Text>
-                      )}
-                      <Image
-                        resizeMode="contain"
-                        source={IMAGES[data?.items?.[index]?.image]}
-                        alt={"question"}
+    <>
+      <Box size="full" bg="tertiary.600">
+        <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
+        {showResult ? (
+          <QuizResult score={score} total={total} navigation={navigation} />
+        ) : (
+          <Box
+            px="5"
+            pt="4"
+            pb="3"
+            flex="1"
+            bg="white"
+            borderTopRadius="3xl"
+            shadow="6"
+            safeAreaX
+          >
+            {data?.kicker && (
+              <Text color="primary.600" mb="2">
+                {data.kicker}
+              </Text>
+            )}
+            <Box flex="1">
+              {show && (
+                <>
+                  {data?.title && data?.items && (
+                    <Box mb="4">
+                      <RenderHTML
+                        contentWidth={width}
+                        source={{ html: data.title }}
                       />
-                      <Radio.Group
-                        name="question"
-                        value={answer}
-                        onChange={handleRadio}
-                      >
-                        <Flex
-                          flexWrap="wrap"
-                          h="70px"
-                          justifyContent="space-between"
+                    </Box>
+                  )}
+                  <VStack flex="1" space="4" alignItems="center">
+                    {data?.items ? (
+                      <>
+                        {data?.items?.[index]?.title && (
+                          <Text>{data.items[index].title}</Text>
+                        )}
+                        <Image
+                          resizeMode="contain"
+                          source={IMAGES[data?.items?.[index]?.image]}
+                          alt={"question"}
+                        />
+                        <Radio.Group
+                          name="question"
+                          value={answer}
+                          onChange={handleRadio}
                         >
-                          {data?.items?.[index]?.choices.map(
-                            (choice: string, key: number) => {
-                              return (
-                                <Radio key={key} value={`${key}`} m="1">
-                                  <Text mr="16">{choice}</Text>
-                                </Radio>
-                              );
-                            }
-                          )}
-                        </Flex>
-                      </Radio.Group>
-                    </>
-                  ) : (
-                    <HStack flex="1" justifyContent="center" space="6" w="full">
-                      {data?.image && (
-                        <>
-                          {data?.title || data?.longText ? (
-                            <AspectRatio h="full" ratio={1}>
+                          <Flex
+                            flexWrap="wrap"
+                            h="70px"
+                            justifyContent="space-between"
+                          >
+                            {data?.items?.[index]?.choices.map(
+                              (choice: string, key: number) => {
+                                return (
+                                  <Radio key={key} value={`${key}`} m="1">
+                                    <Text mr="16">{choice}</Text>
+                                  </Radio>
+                                );
+                              }
+                            )}
+                          </Flex>
+                        </Radio.Group>
+                      </>
+                    ) : (
+                      <HStack
+                        flex="1"
+                        justifyContent="center"
+                        space="6"
+                        w="full"
+                      >
+                        {data?.image && (
+                          <>
+                            {data?.title || data?.longText ? (
+                              <AspectRatio h="full" ratio={1}>
+                                <Image
+                                  size="full"
+                                  resizeMode="contain"
+                                  source={IMAGES[data?.image]}
+                                  alt={data?.image}
+                                />
+                              </AspectRatio>
+                            ) : (
                               <Image
                                 size="full"
                                 resizeMode="contain"
                                 source={IMAGES[data?.image]}
                                 alt={data?.image}
                               />
-                            </AspectRatio>
-                          ) : (
-                            <Image
-                              size="full"
-                              resizeMode="contain"
-                              source={IMAGES[data?.image]}
-                              alt={data?.image}
-                            />
-                          )}
-                        </>
-                      )}
+                            )}
+                          </>
+                        )}
 
-                      {(data?.title || data?.longText) && (
-                        <VStack w={data?.image ? "50%" : "full"}>
-                          <ScrollView>
-                            <VStack space="2">
-                              {data.title && (
-                                <RenderHTML
-                                  contentWidth={width}
-                                  source={{ html: data.title }}
-                                />
-                              )}
-                              {data.longText && (
-                                <RenderHTML
-                                  contentWidth={width}
-                                  source={{ html: data.longText }}
-                                />
-                              )}
-                            </VStack>
-                          </ScrollView>
-                        </VStack>
-                      )}
-                    </HStack>
-                  )}
-                </VStack>
-              </>
-            )}
-          </Box>
-
-          <HStack justifyContent="space-between">
-            <Box justifyContent="flex-end">
-              {data?.items && (
-                <Text color="gray.400">{`${index + 1} / ${total}`}</Text>
+                        {(data?.title || data?.longText) && (
+                          <VStack w={data?.image ? "50%" : "full"}>
+                            <ScrollView>
+                              <VStack space="2">
+                                {data.title && (
+                                  <RenderHTML
+                                    contentWidth={width}
+                                    source={{ html: data.title }}
+                                  />
+                                )}
+                                {data.longText && (
+                                  <RenderHTML
+                                    contentWidth={width}
+                                    source={{ html: data.longText }}
+                                  />
+                                )}
+                              </VStack>
+                            </ScrollView>
+                          </VStack>
+                        )}
+                      </HStack>
+                    )}
+                  </VStack>
+                </>
               )}
             </Box>
-            <HStack alignSelf="flex-end" space="3" mt="3">
-              <Button
-                w="32"
-                alignSelf="flex-end"
-                onPress={handleNext}
-                isDisabled={!!!answer && !!data?.items}
-              >
-                <Text color="white" bold>
-                  Next
-                </Text>
-              </Button>
+
+            <HStack justifyContent="space-between">
+              <Box justifyContent="flex-end">
+                {data?.items && (
+                  <Text color="gray.400">{`${index + 1} / ${total}`}</Text>
+                )}
+              </Box>
+              <HStack alignSelf="flex-end" space="3" mt="3">
+                <Button
+                  w="32"
+                  alignSelf="flex-end"
+                  onPress={handleButton}
+                  isDisabled={!!!answer && !!data?.items}
+                >
+                  <Text color="white" bold>
+                    {data?.items ? "Next" : "Submit"}
+                  </Text>
+                </Button>
+              </HStack>
             </HStack>
-          </HStack>
-        </Box>
-      )}
-    </Box>
+          </Box>
+        )}
+      </Box>
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header>Confirm Submission</Modal.Header>
+          <Modal.Body>Are you sure you want to submit your answer?</Modal.Body>
+          <Modal.Footer>
+            <Button.Group space={2}>
+              <Button
+                variant="ghost"
+                onPress={() => {
+                  setShowModal(false);
+                }}
+              >
+                Cancel
+              </Button>
+              <Button
+                onPress={() => {
+                  setShowModal(false);
+                  setShowResult(true);
+                }}
+              >
+                Submit
+              </Button>
+            </Button.Group>
+          </Modal.Footer>
+        </Modal.Content>
+      </Modal>
+    </>
   );
 };
 
