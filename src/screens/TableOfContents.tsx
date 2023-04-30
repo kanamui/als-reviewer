@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from "react";
-import {
-  Box,
-  Button,
-  Center,
-  HStack,
-  Heading,
-  Icon,
-  ScrollView,
-  Text,
-  VStack,
-} from "native-base";
-import {
-  Entypo,
-  MaterialCommunityIcons,
-  MaterialIcons,
-} from "@expo/vector-icons";
+import { IModule } from "../models/IModule";
+import { ITopic } from "../models/ITopic";
+import { ISlide } from "../models/ISlide";
+import { Box, ScrollView } from "native-base";
 import HeaderNav from "../components/HeaderNav";
-import AnimatedPressable from "../components/AnimatedPressable";
+import TopicCard from "../components/TopicCard";
+import ModuleCard from "../components/ModuleCard";
+import LessonCard from "../components/LessonCard";
+
+type ITOCScreen = "main" | "topics" | "lessons";
 
 const TableOfContents: React.FC = ({ navigation, route }: any) => {
   // States
-  const [module, setModule] = useState<any>();
+  const [module, setModule] = useState<IModule>();
   const [moduleId, setModuleId] = useState<number>(0);
-  const [topic, setTopic] = useState<any>();
+  const [topic, setTopic] = useState<ITopic>();
   const [topicId, setTopicId] = useState<number>(0);
-  const [screen, setScreen] = useState<string | undefined>();
+  const [screen, setScreen] = useState<ITOCScreen>("main");
   const [show, setShow] = useState<boolean>(true);
 
   // Variables
@@ -39,7 +31,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
           lesson: [
             {
               lessonId: 0,
-              slide: 2,
+              slide: 1,
             },
             // other lessons
           ],
@@ -50,18 +42,37 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     // other modules
   ];
 
-  const isCurrentTopic = (topicId: number) => {
-    const p = progress?.find((p) => p.moduleId === moduleId);
-    return p ? p?.currentTopic === topicId : false;
-  };
-
-  const isCurrentSlide = (lessonId: number, slideId: number) => {
+  const isLessonComplete = (lessonId: number) => {
+    // find lesson
     const p = progress
       ?.find((p) => p.moduleId === moduleId)
       ?.topic?.find((t) => t?.topicId === topicId)
       ?.lesson?.find((l) => l?.lessonId === lessonId);
+    const slideLength = topic?.lessons?.[lessonId]?.items?.length || 0;
+    return p ? p.slide === slideLength - 1 : false;
+  };
 
-    return p ? p?.slide <= slideId : false;
+  const isCurrentTopic = (topicId: number) => {
+    // find module
+    const p = progress?.find((p) => p.moduleId === moduleId);
+    return p ? p?.currentTopic === topicId : false;
+  };
+
+  const isTopicComplete = (topicId: number) => {
+    // find module
+    const p = progress?.find((p) => p.moduleId === moduleId);
+    return p ? p?.currentTopic > topicId : false;
+  };
+
+  const isCurrentSlide = (lessonId: number, slideId: number) => {
+    // find lesson
+    const p = progress
+      ?.find((p) => p.moduleId === moduleId)
+      ?.topic?.find((t) => t?.topicId === topicId)
+      ?.lesson?.find((l) => l?.lessonId === lessonId);
+    const slides = topic?.lessons?.[lessonId]?.items;
+    const slideLength = slides?.length || 0;
+    return p ? slideId === p?.slide : false;
   };
 
   const isSlideComplete = (lessonId: number, slideId: number) => {
@@ -95,10 +106,20 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   const handleAssessment = () => {
     navigation.navigate("Quiz", { data: topic?.assessment });
-  }
+  };
 
   const handleQuiz = (lesson: number) => {
     navigation.navigate("Quiz", { data: topic?.lessons?.[lesson]?.quiz });
+  };
+
+  const handleGoBack = () => {
+    if (screen === "topics") {
+      setScreen("main");
+    } else if (screen === "lessons") {
+      setScreen("topics");
+    } else {
+      navigation.goBack();
+    }
   };
 
   // Effects
@@ -122,350 +143,116 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     }
   };
 
+  const getHeaderTitle = () => {
+    if (screen === "main") {
+      return data?.title;
+    } else if (screen === "topics") {
+      return module?.title;
+    } else if (screen === "lessons") {
+      return topic?.title;
+    }
+    return "";
+  };
+
   const Lessons = () => {
     return (
       <>
-        <HeaderNav title={topic?.title} onPress={() => setScreen("topics")} />
-        <Box
-          pt="6"
-          px="3"
-          flex="1"
-          size="full"
-          bg="gray.100"
-          borderTopRadius="3xl"
-          shadow="6"
-        >
-          <ScrollView opacity={show ? 1 : 0}>
-            <Box safeAreaX>
-              {topic?.longText && (
-                <VStack
-                  borderWidth="1"
-                  borderColor="gray.200"
-                  px="5"
-                  py="3"
-                  mb="5"
-                  bg="white"
-                  space="3"
-                >
-                  <Heading fontSize="md">About</Heading>
-                  <Text>{topic?.longText}</Text>
-                </VStack>
-              )}
+        {topic?.longText && (
+          <LessonCard title="About" longText={topic?.longText} />
+        )}
 
-              {/* Pre-Assessment */}
-              {topic?.assessment && (
-                <VStack borderWidth="1" borderColor="gray.200" mb="5" bg="white">
-                  <HStack
-                    p="5"
-                    space="3"
-                    borderBottomWidth="1"
-                    borderBottomColor="gray.200"
-                    alignItems="center"
-                  >
-                    <Icon
-                      size="lg"
-                      as={MaterialCommunityIcons}
-                      name="brain"
-                      color="tertiary.600"
-                    />
-                    <VStack>
-                      <Heading fontSize="md">{topic?.assessment?.kicker}</Heading>
-                      <Text>{topic?.assessment?.longText}</Text>
-                    </VStack>
-                  </HStack>
-                  <Box p="5">
-                    <Button w="full" variant="outline" onPress={handleAssessment}>
-                      <Text color="tertiary.600" bold>
-                        Start
-                      </Text>
-                    </Button>
-                  </Box>
-                </VStack>
-              )}
-              {topic?.lessons?.map((lesson: any, lessonKey: number) => {
-                return (
-                  <Box key={lessonKey}>
-                    {/* Lesson */}
-                    <VStack
-                      borderWidth="1"
-                      borderColor="gray.200"
-                      mb="5"
-                      bg="white"
-                    >
-                      <HStack
-                        p="5"
-                        borderBottomWidth="1"
-                        borderBottomColor="gray.200"
-                        alignItems="center"
-                      >
-                        <Heading fontSize="md">{`Lesson ${lessonKey + 1}: ${
-                          lesson?.title
-                        }`}</Heading>
-                      </HStack>
-                      <VStack>
-                        {lesson?.items?.map((slide: any, slideKey: number) => {
-                          return slide?.section ? (
-                            <Box key={slideKey}>
-                              <AnimatedPressable
-                                onPress={() => handleLesson(lesson)}
-                              >
-                                <HStack
-                                  px="5"
-                                  py="3"
-                                  space="3"
-                                  alignItems="center"
-                                  pl={isCurrentSlide(lessonKey, slideKey) ? 4 : 5}
-                                  borderLeftWidth={
-                                    isCurrentSlide(lessonKey, slideKey) ? 4 : 0
-                                  }
-                                  borderLeftColor="tertiary.400"
-                                >
-                                  <Icon
-                                    size="lg"
-                                    as={MaterialCommunityIcons}
-                                    name="crown"
-                                    color={
-                                      isSlideComplete(lessonKey, slideKey)
-                                        ? "tertiary.400"
-                                        : "gray.500"
-                                    }
-                                  />
-                                  <VStack>
-                                    {isCurrentSlide(lessonKey, slideKey) && (
-                                      <Text color="tertiary.400" bold>
-                                        Up next for you
-                                      </Text>
-                                    )}
-                                    <Text fontSize="md">{slide.section}</Text>
-                                  </VStack>
-                                </HStack>
-                              </AnimatedPressable>
-                            </Box>
-                          ) : null;
-                        })}
-                      </VStack>
-                    </VStack>
+        {/* Pre-Assessment */}
+        {topic?.assessment && (
+          <LessonCard
+            title={topic.assessment?.kicker}
+            longText={topic.assessment?.longText}
+            icon="brain"
+            cta={{
+              title: "Start",
+              onPress: handleAssessment,
+            }}
+          />
+        )}
 
-                    {/* Quiz */}
-                    {lesson?.quiz && (
-                      <VStack
-                        borderWidth="1"
-                        borderColor="gray.200"
-                        mb="5"
-                        bg="white"
-                      >
-                        <HStack
-                          p="5"
-                          space="3"
-                          borderBottomWidth="1"
-                          borderBottomColor="gray.200"
-                          alignItems="center"
-                        >
-                          <Icon
-                            size="lg"
-                            as={MaterialCommunityIcons}
-                            name="trophy"
-                            color="tertiary.600"
-                          />
-                          <VStack>
-                            <Heading fontSize="md">{lesson?.quiz?.name}</Heading>
-                            <Text>{lesson?.quiz?.section}</Text>
-                          </VStack>
-                        </HStack>
-                        <Box p="5">
-                          <Button
-                            w="full"
-                            variant="outline"
-                            onPress={() => handleQuiz(lessonKey)}
-                          >
-                            <Text color="tertiary.600" bold>
-                              Start
-                            </Text>
-                          </Button>
-                        </Box>
-                      </VStack>
-                    )}
-                  </Box>
-                );
-              })}
+        {topic?.lessons?.map((lesson: any, lessonKey: number) => {
+          return (
+            <Box key={lessonKey}>
+              {/* Lesson */}
+              <LessonCard
+                title={`Lesson ${lessonKey + 1}: ${lesson?.title}`}
+                sections={lesson?.items?.map(
+                  (slide: ISlide, slideKey: number) => {
+                    if (slide?.section) {
+                      return {
+                        title: slide.section,
+                        active: isCurrentSlide(lessonKey, slideKey),
+                        complete: isSlideComplete(lessonKey, slideKey),
+                        onPress: () => handleLesson(lesson),
+                      };
+                    }
+                  }
+                )}
+              />
+
+              {/* Quiz */}
+              {lesson?.quiz && (
+                <LessonCard
+                  title={lesson?.quiz?.name}
+                  longText={lesson?.quiz?.section}
+                  icon="trophy"
+                  cta={{
+                    title: "Start",
+                    onPress: () => handleQuiz(lessonKey),
+                  }}
+                  disabled={!isLessonComplete(lessonKey)}
+                />
+              )}
             </Box>
-          </ScrollView>
-        </Box>
+          );
+        })}
       </>
     );
   };
 
   const Topics = () => {
-    return (
-      <>
-        <HeaderNav title={module?.title} onPress={() => setScreen("main")} />
-        <Box
-          pt="6"
-          px="3"
-          flex="1"
-          size="full"
-          bg="gray.100"
-          borderTopRadius="3xl"
-          shadow="6"
-        >
-          <ScrollView opacity={show ? 1 : 0}>
-            <Box safeAreaX>
-              {module?.topics?.map((topic: any, key: number) => {
-                return (
-                  <VStack
-                    key={key}
-                    borderWidth="1"
-                    borderColor="gray.200"
-                    borderTopWidth={isCurrentTopic(key) ? 4 : 1}
-                    borderTopColor={
-                      isCurrentTopic(key) ? "tertiary.400" : "gray.200"
-                    }
-                    mb="5"
-                    bg="white"
-                  >
-                    <AnimatedPressable onPress={() => handleTopic(topic, key)}>
-                      <HStack
-                        px="5"
-                        py="3"
-                        space="4"
-                        borderBottomWidth="1"
-                        borderBottomColor="gray.200"
-                      >
-                        <Center
-                          borderRadius="full"
-                          size="12"
-                          bg={
-                            !!!module?.topics ? "tertiary.100" : "tertiary.600"
-                          }
-                        >
-                          <Icon
-                            size="lg"
-                            as={MaterialCommunityIcons}
-                            name={topic?.icon || "alert-circle-outline"}
-                            color="white"
-                          />
-                        </Center>
-                        <HStack
-                          w="90%"
-                          alignItems="center"
-                          justifyContent="space-between"
-                        >
-                          <VStack>
-                            {isCurrentTopic(key) && (
-                              <Text color="tertiary.400" bold>
-                                Up next for you
-                              </Text>
-                            )}
-                            <Heading
-                              fontSize="md"
-                              color={!!!module?.topics ? "gray.300" : "black"}
-                            >
-                              {topic?.title}
-                            </Heading>
-                            <Text>0% Progress</Text>
-                          </VStack>
-                          <Icon
-                            size="sm"
-                            as={MaterialIcons}
-                            name="arrow-forward-ios"
-                            color="gray.500"
-                          />
-                        </HStack>
-                      </HStack>
-                    </AnimatedPressable>
-                    <AnimatedPressable onPress={() => handleTopic(topic, key)}>
-                      <VStack space="2" p="5">
-                        {topic?.lessons?.map((lesson: any, key: number) => {
-                          return (
-                            <Text key={key} color="gray.500" fontSize="md">
-                              {lesson?.title}
-                            </Text>
-                          );
-                        })}
-                      </VStack>
-                    </AnimatedPressable>
-                  </VStack>
-                );
-              })}
-            </Box>
-          </ScrollView>
-        </Box>
-      </>
-    );
+    return module?.topics?.map((topic: ITopic, key: number) => (
+      <TopicCard
+        key={key}
+        data={topic}
+        active={isCurrentTopic(key)}
+        complete={isTopicComplete(key)}
+        onPress={() => handleTopic(topic, key)}
+      />
+    ));
   };
 
   const Main = () => {
-    return (
-      <>
-        <HeaderNav title={data?.title} onPress={() => navigation.goBack()} />
-        <Box
-          pt="3"
-          px="3"
-          flex="1"
-          size="full"
-          bg="white"
-          borderTopRadius="3xl"
-          shadow="6"
-        >
-          <ScrollView opacity={show ? 1 : 0}>
-            <Box safeAreaX>
-              {data?.items?.map((module: any, key: number) => {
-                return (
-                  <AnimatedPressable
-                    key={key}
-                    disabled={!!!module?.topics}
-                    onPress={() => handleModule(module, key)}
-                  >
-                    <Box
-                      w="full"
-                      borderBottomWidth="1"
-                      borderBottomColor="gray.200"
-                      py="3"
-                    >
-                      <HStack key={key} p="1" space="4" alignItems="center">
-                        <Box
-                          borderRadius="full"
-                          p="3"
-                          bg={
-                            !!!module?.topics ? "gray.200" : "tertiary.600"
-                          }
-                        >
-                          <Icon
-                            size="lg"
-                            as={Entypo}
-                            name="open-book"
-                            color="white"
-                          />
-                        </Box>
-                        <HStack justifyContent="space-between" w="90%">
-                          <Text
-                            fontSize="md"
-                            color={!!!module?.topics ? "gray.300" : "black"}
-                          >
-                            {module?.title}
-                          </Text>
-                          <Icon
-                            size="sm"
-                            as={MaterialIcons}
-                            name="arrow-forward-ios"
-                            color={!!!module?.topics ? "gray.200" : "gray.500"}
-                          />
-                        </HStack>
-                      </HStack>
-                    </Box>
-                  </AnimatedPressable>
-                );
-              })}
-            </Box>
-          </ScrollView>
-        </Box>
-      </>
-    );
+    return data?.items?.map((module: IModule, key: number) => (
+      <ModuleCard
+        key={key}
+        data={module}
+        disabled={!module?.topics}
+        onPress={() => handleModule(module, key)}
+      />
+    ));
   };
 
   return (
     <Box size="full" bg="tertiary.600">
-      {DynamicScreen()}
+      <HeaderNav title={getHeaderTitle()} onPress={handleGoBack} />
+      <Box
+        pt="3"
+        px="3"
+        flex="1"
+        size="full"
+        bg={screen === "main" ? "white" : "gray.100"}
+        borderTopRadius="3xl"
+        shadow="6"
+      >
+        <ScrollView opacity={show ? 1 : 0} mt={screen === "main" ? 0 : 3}>
+          <Box safeAreaX>{DynamicScreen()}</Box>
+        </ScrollView>
+      </Box>
     </Box>
   );
 };
