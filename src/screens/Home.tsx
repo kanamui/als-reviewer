@@ -22,7 +22,7 @@ const Home: React.FC = ({ navigation, route }: any) => {
   // Handlers
   const handleModal = () => {
     setShowModal(false);
-    navigation.navigate("ModuleTOC");
+    navigation.navigate("TOC");
   };
 
   // Functions

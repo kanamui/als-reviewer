@@ -18,7 +18,7 @@ import {
 import HeaderNav from "../components/HeaderNav";
 import AnimatedPressable from "../components/AnimatedPressable";
 
-const ModuleTOC: React.FC = ({ navigation, route }: any) => {
+const TableOfContents: React.FC = ({ navigation, route }: any) => {
   // States
   const [module, setModule] = useState<any>();
   const [moduleId, setModuleId] = useState<number>(0);
@@ -470,4 +470,4 @@ const ModuleTOC: React.FC = ({ navigation, route }: any) => {
   );
 };
 
-export default ModuleTOC;
+export default TableOfContents;
