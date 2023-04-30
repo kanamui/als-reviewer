@@ -1,8 +1,9 @@
 import React from "react";
 import { Animated } from "react-native";
-import { Pressable, View } from "native-base";
+import { Pressable } from "native-base";
+import { InterfacePressableProps } from "native-base/lib/typescript/components/primitives/Pressable/types";
 
-const AnimatedPressable = (props: any) => {
+const AnimatedPressable: React.FC<InterfacePressableProps> = ({ ...props }) => {
   const animation = new Animated.Value(0);
   const fadeIn = () => {
     Animated.timing(animation, {
@@ -24,9 +25,10 @@ const AnimatedPressable = (props: any) => {
   });
   return (
     <Pressable
-      onPressIn={!props?.disabled ? fadeIn : null}
-      onPressOut={!props?.disabled ? fadeOut : null}
+      onPressIn={fadeIn}
+      onPressOut={fadeOut}
       onPress={props.onPress}
+      {...props}
     >
       <Animated.View
         style={{
@@ -41,7 +43,7 @@ const AnimatedPressable = (props: any) => {
           backgroundColor: bg,
         }}
       />
-      <View {...props}>{props.children}</View>
+      <>{props.children}</>
     </Pressable>
   );
 };
