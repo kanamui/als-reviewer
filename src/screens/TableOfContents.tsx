@@ -102,12 +102,13 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     }
   };
 
-  const handleLesson = (lesson: any, index: number) => {
+  const handleLesson = (lesson: any, index: number, section: number = -1) => {
     navigation.navigate("Module", {
       data: lesson,
       module,
       topic,
       lesson: index,
+      section,
     });
   };
 
@@ -121,8 +122,6 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
   };
 
   const handleQuiz = (lesson: number) => {
-    const l = getLesson(lesson + 1);
-    console.log(l);
     navigation.navigate("Quiz", {
       data: getLesson(lesson)?.quiz,
       final: !getLesson(lesson + 1),
@@ -189,6 +188,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   const Lessons = () => {
     const data = getTopic(topic);
+    const assessment = modules[module].topics[topic].assessment;
 
     return (
       <>
@@ -199,6 +199,11 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         {/* Pre-Assessment */}
         {data?.assessment && (
           <LessonCard
+            score={
+              assessment >= 0
+                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
+                : ""
+            }
             title={data.assessment?.kicker}
             longText={data.assessment?.longText}
             icon="brain"
@@ -210,18 +215,25 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         )}
 
         {data?.lessons?.map((lesson: any, lessonKey: number) => {
+          const score =
+            modules[module].topics[topic].lessons?.[lessonKey]?.quiz;
+          if (lessonKey === 0) console.log(score);
+          const total = lesson?.quiz?.items?.length;
+
           return (
             <Box key={lessonKey}>
               {/* Lesson */}
               <LessonCard
                 title={`Lesson ${lessonKey + 1}: ${lesson?.title}`}
                 sections={lesson?.items?.map((slide: ISlide, index: number) => {
+                  const complete = isSectionComplete(lessonKey, index);
                   if (slide?.section) {
                     return {
                       title: slide.section,
                       active: isCurrentSection(lessonKey, index),
-                      complete: isSectionComplete(lessonKey, index),
-                      onPress: () => handleLesson(lesson, lessonKey),
+                      complete: complete,
+                      onPress: () =>
+                        handleLesson(lesson, lessonKey, complete ? index : -1),
                     };
                   }
                 })}
@@ -230,6 +242,13 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
               {/* Quiz */}
               {lesson?.quiz && (
                 <LessonCard
+                  score={
+                    score >= 0
+                      ? total > 0
+                        ? `Score: ${score}/${total}`
+                        : "Submitted"
+                      : ""
+                  }
                   title={lesson?.quiz?.name}
                   longText={lesson?.quiz?.section}
                   icon="trophy"
@@ -250,9 +269,12 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
   const Topics = () => {
     return getModule(module)?.topics?.map((topic: ITopic, key: number) => {
       const lessons = modules[module].topics?.[key]?.lessons;
-      const doneLessons = lessons?.filter((l) => l.complete === true).length || 0;
+      const doneLessons =
+        lessons?.filter((l) => l.complete === true).length || 0;
       const doneQuizzes = lessons?.filter((l) => l.quiz >= 0).length || 0;
-      const quizLength = getTopic(key)?.lessons?.filter((l) => l?.quiz !== undefined).length || 0;
+      const quizLength =
+        getTopic(key)?.lessons?.filter((l) => l?.quiz !== undefined).length ||
+        0;
       const lessonLength = getTopic(key)?.lessons?.length || 0;
       const total = quizLength + lessonLength;
       const progress = Math.round(((doneLessons + doneQuizzes) / total) * 100);

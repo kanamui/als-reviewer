@@ -56,7 +56,7 @@ const useStore = create<IGlobalStore>((set) => ({
 
   setAssessmentScore: (module, topic, score) => set((state) => {
     const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]) {
+    if (score > modules?.[module]?.topics?.[topic]?.assessment) {
       modules[module].topics[topic].assessment = score;
     }
     return { modules };
@@ -64,7 +64,7 @@ const useStore = create<IGlobalStore>((set) => ({
 
   setQuizScore: (module, topic, lesson, score) => set((state) => {
     const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
+    if (score > modules?.[module]?.topics?.[topic]?.lessons?.[lesson]?.quiz) {
       modules[module].topics[topic].lessons[lesson].quiz = score;
     }
     return { modules };

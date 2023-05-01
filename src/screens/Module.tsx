@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box } from "native-base";
 import Layout from "../components/Layout";
 import useStore from "../store/store";
@@ -6,9 +6,9 @@ import useStore from "../store/store";
 const Module: React.FC = ({ navigation, route }: any) => {
   // Hooks
   const { modules, setSlide, setLessonComplete } = useStore();
-  
+
   // Variables
-  const { data, module, topic, lesson } = route.params;
+  const { data, module, topic, lesson, section } = route.params;
   const slideLength = data?.items?.length || 0;
   const slide = modules[module].topics[topic].lessons[lesson].slide;
 
@@ -36,6 +36,13 @@ const Module: React.FC = ({ navigation, route }: any) => {
       navigation.goBack();
     }
   };
+
+  // Effects
+  useEffect(() => {
+    if (section >= 0) {
+      setSlide(module, topic, lesson, section);
+    }
+  }, []);
 
   return (
     <Box size="full" bg="tertiary.600">

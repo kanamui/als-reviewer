@@ -6,6 +6,7 @@ import { ILessonCard, ISection } from "../models/components/ILessonCard";
 import AnimatedPressable from "./AnimatedPressable";
 
 const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
+  score,
   title,
   longText,
   icon,
@@ -43,6 +44,11 @@ const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
           />
         )}
         <VStack>
+          {score && (
+            <Text color="tertiary.400" bold>
+              {score}
+            </Text>
+          )}
           {title && (
             <Heading fontSize="md" color={isDisabled ? "gray.300" : "black"}>
               {title}

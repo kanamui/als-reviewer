@@ -1,6 +1,7 @@
 import { ICta } from "../ICta";
 
 export interface ILessonCard {
+  score?: string;
   title?: string;
   longText?: string;
   icon?: string;

@@ -26,8 +26,14 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
 
   // Hooks
   const { width } = useWindowDimensions();
-  const { modules, setSlide, setTopicComplete, setQuizScore, setCurrentTopic } =
-    useStore();
+  const {
+    modules,
+    setSlide,
+    setTopicComplete,
+    setAssessmentScore,
+    setQuizScore,
+    setCurrentTopic,
+  } = useStore();
 
   // States
   const [index, setIndex] = useState<number>(0);
@@ -67,13 +73,20 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
 
   useEffect(() => {
     if (showResult) {
-      setQuizScore(module, topic, lesson, score);
+      if (assess) {
+        setAssessmentScore(module, topic, score);
+      } else {
+        setQuizScore(module, topic, lesson, score);
+        console.log(score);
+      }
     }
   }, [showResult]);
 
   useEffect(() => {
     if (showResult) {
-      const slide = modules[module].topics[topic].lessons?.[lesson + 1]?.slide || -1;
+      const slide =
+        modules[module].topics[topic].lessons?.[assess ? 0 : lesson + 1]
+          ?.slide || -1;
       if (slide < 0) setSlide(module, topic, assess ? 0 : lesson + 1, 0);
     }
   }, [showResult]);
