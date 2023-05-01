@@ -3,7 +3,6 @@ import React from "react";
 import { Box } from "native-base";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import mock from "../../mock/als.json";
 // Components
 import Home from "../screens/Home";
 import About from "../screens/About";
@@ -13,9 +12,7 @@ import Quiz from "../screens/Quiz";
 
 const Stack = createNativeStackNavigator();
 
-const AppNavigator = () => {
-  const data = JSON.parse(JSON.stringify(mock)) || [];
-
+const AppNavigator = (data: any) => {
   return (
     <Box size="full" bg="black" safeAreaY>
       <NavigationContainer>
@@ -27,17 +24,17 @@ const AppNavigator = () => {
           <Stack.Screen
             name="Home"
             component={Home}
-            initialParams={{ data: data?.home }}
+            initialParams={{ data: data?.data?.home }}
           />
           <Stack.Screen
             name="About"
             component={About}
-            initialParams={{ data: data?.about }}
+            initialParams={{ data: data?.data?.about }}
           />
           <Stack.Screen
             name="TOC"
             component={TableOfContents}
-            initialParams={{ data: data?.modules }}
+            initialParams={{ data: data?.data?.modules }}
           />
           <Stack.Screen name="Module" component={Module} />
           <Stack.Screen name="Quiz" component={Quiz} />

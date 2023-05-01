@@ -9,6 +9,7 @@ const TopicCard: React.FC<ITopicCard & InterfaceBoxProps> = ({
   data,
   active,
   complete,
+  progress = 0,
   onPress,
   ...props
 }) => {
@@ -16,8 +17,8 @@ const TopicCard: React.FC<ITopicCard & InterfaceBoxProps> = ({
     <Box
       borderWidth="1"
       borderColor="gray.200"
-      borderTopWidth={active ? 4 : 1}
-      borderTopColor={active ? "tertiary.400" : "gray.200"}
+      borderTopWidth={active && !complete ? 4 : 1}
+      borderTopColor={active && !complete ? "tertiary.400" : "gray.200"}
       mb="5"
       bg="white"
       {...props}
@@ -44,7 +45,7 @@ const TopicCard: React.FC<ITopicCard & InterfaceBoxProps> = ({
           </Center>
           <HStack w="90%" alignItems="center" justifyContent="space-between">
             <VStack>
-              {active && (
+              {active && !complete && (
                 <Text color="tertiary.400" bold>
                   Up next for you
                 </Text>
@@ -55,8 +56,12 @@ const TopicCard: React.FC<ITopicCard & InterfaceBoxProps> = ({
               >
                 {data?.title}
               </Heading>
-              <Text color={complete ? "tertiary.400" : active ? "black" : "gray.300"}>
-                {complete ? "Completed" : `0% Progress`}
+              <Text
+                color={
+                  complete ? "tertiary.400" : active ? "black" : "gray.300"
+                }
+              >
+                {complete ? "Completed" : `${progress}% Progress`}
               </Text>
             </VStack>
             <Icon

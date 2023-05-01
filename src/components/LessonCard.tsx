@@ -65,8 +65,12 @@ const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
                 py="3"
                 space="3"
                 alignItems="center"
-                pl={section?.active && !isDisabled ? 4 : 5}
-                borderLeftWidth={section?.active && !isDisabled ? 4 : 0}
+                pl={
+                  section?.active && !section?.complete && !isDisabled ? 4 : 5
+                }
+                borderLeftWidth={
+                  section?.active && !section?.complete && !isDisabled ? 4 : 0
+                }
                 borderLeftColor="tertiary.400"
               >
                 <Icon
@@ -82,7 +86,7 @@ const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
                   }
                 />
                 <VStack>
-                  {section?.active && !isDisabled && (
+                  {section?.active && !section?.complete && !isDisabled && (
                     <Text color="tertiary.400" bold>
                       Up next for you
                     </Text>

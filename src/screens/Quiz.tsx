@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useWindowDimensions } from "react-native";
+import useStore from "../store/store";
 import {
   AspectRatio,
   Box,
@@ -20,11 +21,13 @@ import QuizResult from "../components/QuizResult";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
-  const { data } = route.params;
+  const { data, final, assess, module, topic, lesson } = route.params;
   const total = data?.items?.length || 0;
 
   // Hooks
   const { width } = useWindowDimensions();
+  const { modules, setSlide, setTopicComplete, setQuizScore, setCurrentTopic } =
+    useStore();
 
   // States
   const [index, setIndex] = useState<number>(0);
@@ -61,6 +64,31 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     const timeout = setTimeout(() => setShow(true));
     return () => clearTimeout(timeout);
   }, [index]);
+
+  useEffect(() => {
+    if (showResult) {
+      setQuizScore(module, topic, lesson, score);
+    }
+  }, [showResult]);
+
+  useEffect(() => {
+    if (showResult) {
+      const slide = modules[module].topics[topic].lessons?.[lesson + 1]?.slide || -1;
+      if (slide < 0) setSlide(module, topic, assess ? 0 : lesson + 1, 0);
+    }
+  }, [showResult]);
+
+  useEffect(() => {
+    if (final && showResult) {
+      setTopicComplete(module, topic);
+    }
+  }, [showResult]);
+
+  useEffect(() => {
+    if (final && showResult) {
+      setCurrentTopic(module, topic + 1);
+    }
+  }, [showResult]);
 
   return (
     <>

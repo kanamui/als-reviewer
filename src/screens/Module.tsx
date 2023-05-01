@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box } from "native-base";
 import Layout from "../components/Layout";
+import useStore from "../store/store";
 
 const Module: React.FC = ({ navigation, route }: any) => {
-  // States
-  const [slide, setSlide] = useState<number>(0);
-
+  // Hooks
+  const { modules, setSlide, setLessonComplete } = useStore();
+  
   // Variables
-  const { data } = route.params;
+  const { data, module, topic, lesson } = route.params;
   const slideLength = data?.items?.length || 0;
+  const slide = modules[module].topics[topic].lessons[lesson].slide;
 
   // Handlers
   const handleBack = () => {
@@ -19,13 +21,17 @@ const Module: React.FC = ({ navigation, route }: any) => {
     if (slide === 0) {
       navigation.goBack();
     } else {
-      setSlide(slide - 1);
+      setSlide(module, topic, lesson, slide - 1);
     }
   };
 
   const handleNext = () => {
+    if (slide === slideLength - 1) {
+      setLessonComplete(module, topic, lesson);
+    }
+
     if (slide < slideLength - 1) {
-      setSlide(slide + 1);
+      setSlide(module, topic, lesson, slide + 1);
     } else {
       navigation.goBack();
     }

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IModule } from "../models/IModule";
 import { ITopic } from "../models/ITopic";
+import { ILesson } from "../models/ILesson";
 import { ISlide } from "../models/ISlide";
+import useStore from "../store/store";
 import { Box, ScrollView } from "native-base";
 import HeaderNav from "../components/HeaderNav";
 import TopicCard from "../components/TopicCard";
@@ -12,104 +14,123 @@ type ITOCScreen = "main" | "topics" | "lessons";
 
 const TableOfContents: React.FC = ({ navigation, route }: any) => {
   // States
-  const [module, setModule] = useState<IModule>();
-  const [moduleId, setModuleId] = useState<number>(0);
-  const [topic, setTopic] = useState<ITopic>();
-  const [topicId, setTopicId] = useState<number>(0);
+  const [module, setModule] = useState<number>(0);
+  const [topic, setTopic] = useState<number>(0);
   const [screen, setScreen] = useState<ITOCScreen>("main");
   const [show, setShow] = useState<boolean>(true);
 
   // Variables
   const { data } = route.params;
-  const progress = [
-    {
-      moduleId: 2,
-      currentTopic: 0,
-      topic: [
-        {
-          topicId: 0,
-          lesson: [
-            {
-              lessonId: 0,
-              slide: 1,
-            },
-            // other lessons
-          ],
-        },
-        // other topics
-      ],
-    },
-    // other modules
-  ];
+  const { modules } = useStore();
 
-  const isLessonComplete = (lessonId: number) => {
-    // find lesson
-    const p = progress
-      ?.find((p) => p.moduleId === moduleId)
-      ?.topic?.find((t) => t?.topicId === topicId)
-      ?.lesson?.find((l) => l?.lessonId === lessonId);
-    const slideLength = topic?.lessons?.[lessonId]?.items?.length || 0;
-    return p ? p.slide === slideLength - 1 : false;
-  };
-
+  // TOPIC
   const isCurrentTopic = (topicId: number) => {
-    // find module
-    const p = progress?.find((p) => p.moduleId === moduleId);
-    return p ? p?.currentTopic === topicId : false;
+    return modules[module].current === topicId;
   };
 
   const isTopicComplete = (topicId: number) => {
-    // find module
-    const p = progress?.find((p) => p.moduleId === moduleId);
-    return p ? p?.currentTopic > topicId : false;
+    return !!modules[module].topics?.[topicId]?.complete;
   };
 
-  const isCurrentSlide = (lessonId: number, slideId: number) => {
-    // find lesson
-    const p = progress
-      ?.find((p) => p.moduleId === moduleId)
-      ?.topic?.find((t) => t?.topicId === topicId)
-      ?.lesson?.find((l) => l?.lessonId === lessonId);
-    const slides = topic?.lessons?.[lessonId]?.items;
-    const slideLength = slides?.length || 0;
-    return p ? slideId === p?.slide : false;
+  // LESSON
+  const isCurrentSection = (lessonId: number, sectionId: number) => {
+    const slide = modules[module].topics[topic].lessons?.[lessonId]?.slide;
+    if (slide < 0) return false;
+    const sections =
+      getLesson(lessonId)
+        ?.items?.map((slide: ISlide, index: number) =>
+          slide.section ? index : -1
+        )
+        ?.filter((index) => index >= 0) || [];
+    const closestIndex: number = sections.reduce(
+      (closestIndex: number, current: number, index: number) => {
+        const currentDiff: number = Math.abs(current - slide);
+        const closestDiff: number = Math.abs(sections[closestIndex] - slide);
+        return currentDiff < closestDiff ? index : closestIndex;
+      },
+      0
+    );
+
+    return sectionId === sections[closestIndex];
   };
 
-  const isSlideComplete = (lessonId: number, slideId: number) => {
-    const p = progress
-      ?.find((p) => p.moduleId === moduleId)
-      ?.topic?.find((t) => t?.topicId === topicId)
-      ?.lesson?.find((l) => l?.lessonId === lessonId);
-    return p ? p?.slide > slideId : false;
+  const isSectionComplete = (lessonId: number, sectionId: number) => {
+    const slide = modules[module].topics[topic].lessons?.[lessonId]?.slide;
+    if (slide < 0) return false;
+    const slideLength = getLesson(lessonId)?.items?.length || 0;
+    const sections =
+      getLesson(lessonId)
+        ?.items?.map((slide: ISlide, index: number) =>
+          slide.section ? index : -1
+        )
+        ?.filter((index) => index >= 0) || [];
+    const closestIndex: number = sections.reduce(
+      (closestIndex: number, current: number, index: number) => {
+        const currentDiff: number = Math.abs(current - slide);
+        const closestDiff: number = Math.abs(sections[closestIndex] - slide);
+        return currentDiff < closestDiff ? index : closestIndex;
+      },
+      0
+    );
+
+    if (
+      sectionId === sections?.[sections.length - 1] &&
+      slide > sections?.[sections.length - 1]
+    ) {
+      return slide >= slideLength - 1;
+    }
+
+    return sectionId < sections[closestIndex];
+  };
+
+  const isLessonComplete = (lessonId: number) => {
+    return !!modules[module].topics?.[topic]?.lessons?.[lessonId]?.complete;
   };
 
   // Handlers
   const handleModule = (module: any, index: number) => {
     if (module?.topics) {
-      setModule(module);
-      setModuleId(index);
+      setModule(index);
       setScreen("topics");
     }
   };
 
   const handleTopic = (topic: any, index: number) => {
     if (topic?.lessons) {
-      setTopic(topic);
-      setTopicId(index);
+      setTopic(index);
       setScreen("lessons");
     }
   };
 
-  const handleLesson = (lesson: any) => {
-    navigation.navigate("Module", { data: lesson });
+  const handleLesson = (lesson: any, index: number) => {
+    navigation.navigate("Module", {
+      data: lesson,
+      module,
+      topic,
+      lesson: index,
+    });
   };
 
   const handleAssessment = () => {
-    navigation.navigate("Quiz", { data: topic?.assessment });
+    navigation.navigate("Quiz", {
+      data: getTopic(topic)?.assessment,
+      assess: true,
+      module,
+      topic,
+    });
   };
 
   const handleQuiz = (lesson: number) => {
-    navigation.navigate("Quiz", { data: topic?.lessons?.[lesson]?.quiz });
+    const l = getLesson(lesson + 1);
+    console.log(l);
+    navigation.navigate("Quiz", {
+      data: getLesson(lesson)?.quiz,
+      final: !getLesson(lesson + 1),
+      assess: false,
+      module,
+      topic,
+      lesson,
+    });
   };
 
   const handleGoBack = () => {
@@ -147,25 +168,39 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     if (screen === "main") {
       return data?.title;
     } else if (screen === "topics") {
-      return module?.title;
+      return getModule(module)?.title;
     } else if (screen === "lessons") {
-      return topic?.title;
+      return getTopic(topic)?.title;
     }
     return "";
   };
 
+  const getModule = (moduleId: number): IModule | undefined => {
+    return data?.items?.[moduleId];
+  };
+
+  const getTopic = (topicId: number): ITopic | undefined => {
+    return getModule(module)?.topics?.[topicId];
+  };
+
+  const getLesson = (lessonId: number): ILesson | undefined => {
+    return getTopic(topic)?.lessons?.[lessonId];
+  };
+
   const Lessons = () => {
+    const data = getTopic(topic);
+
     return (
       <>
-        {topic?.longText && (
-          <LessonCard title="About" longText={topic?.longText} />
+        {data?.longText && (
+          <LessonCard title="About" longText={data?.longText} />
         )}
 
         {/* Pre-Assessment */}
-        {topic?.assessment && (
+        {data?.assessment && (
           <LessonCard
-            title={topic.assessment?.kicker}
-            longText={topic.assessment?.longText}
+            title={data.assessment?.kicker}
+            longText={data.assessment?.longText}
             icon="brain"
             cta={{
               title: "Start",
@@ -174,24 +209,22 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
           />
         )}
 
-        {topic?.lessons?.map((lesson: any, lessonKey: number) => {
+        {data?.lessons?.map((lesson: any, lessonKey: number) => {
           return (
             <Box key={lessonKey}>
               {/* Lesson */}
               <LessonCard
                 title={`Lesson ${lessonKey + 1}: ${lesson?.title}`}
-                sections={lesson?.items?.map(
-                  (slide: ISlide, slideKey: number) => {
-                    if (slide?.section) {
-                      return {
-                        title: slide.section,
-                        active: isCurrentSlide(lessonKey, slideKey),
-                        complete: isSlideComplete(lessonKey, slideKey),
-                        onPress: () => handleLesson(lesson),
-                      };
-                    }
+                sections={lesson?.items?.map((slide: ISlide, index: number) => {
+                  if (slide?.section) {
+                    return {
+                      title: slide.section,
+                      active: isCurrentSection(lessonKey, index),
+                      complete: isSectionComplete(lessonKey, index),
+                      onPress: () => handleLesson(lesson, lessonKey),
+                    };
                   }
-                )}
+                })}
               />
 
               {/* Quiz */}
@@ -215,15 +248,25 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
   };
 
   const Topics = () => {
-    return module?.topics?.map((topic: ITopic, key: number) => (
-      <TopicCard
-        key={key}
-        data={topic}
-        active={isCurrentTopic(key)}
-        complete={isTopicComplete(key)}
-        onPress={() => handleTopic(topic, key)}
-      />
-    ));
+    return getModule(module)?.topics?.map((topic: ITopic, key: number) => {
+      const lessons = modules[module].topics?.[key]?.lessons;
+      const doneLessons = lessons?.filter((l) => l.complete === true).length || 0;
+      const doneQuizzes = lessons?.filter((l) => l.quiz >= 0).length || 0;
+      const quizLength = getTopic(key)?.lessons?.filter((l) => l?.quiz !== undefined).length || 0;
+      const lessonLength = getTopic(key)?.lessons?.length || 0;
+      const total = quizLength + lessonLength;
+      const progress = Math.round(((doneLessons + doneQuizzes) / total) * 100);
+      return (
+        <TopicCard
+          key={key}
+          data={topic}
+          active={isCurrentTopic(key)}
+          complete={isTopicComplete(key)}
+          progress={progress}
+          onPress={() => handleTopic(topic, key)}
+        />
+      );
+    });
   };
 
   const Main = () => {
