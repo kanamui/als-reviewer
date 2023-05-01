@@ -77,7 +77,6 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
         setAssessmentScore(module, topic, score);
       } else {
         setQuizScore(module, topic, lesson, score);
-        console.log(score);
       }
     }
   }, [showResult]);

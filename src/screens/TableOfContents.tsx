@@ -217,7 +217,6 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         {data?.lessons?.map((lesson: any, lessonKey: number) => {
           const score =
             modules[module].topics[topic].lessons?.[lessonKey]?.quiz;
-          if (lessonKey === 0) console.log(score);
           const total = lesson?.quiz?.items?.length;
 
           return (
