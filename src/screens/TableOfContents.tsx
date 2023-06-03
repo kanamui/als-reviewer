@@ -39,7 +39,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     const sections =
       getLesson(lessonId)
         ?.items?.map((slide: ISlide, index: number) =>
-          slide.section ? index : -1
+          slide?.title ? index : -1
         )
         ?.filter((index) => index >= 0) || [];
     const closestIndex: number = sections.reduce(
@@ -61,7 +61,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     const sections =
       getLesson(lessonId)
         ?.items?.map((slide: ISlide, index: number) =>
-          slide.section ? index : -1
+          slide?.title ? index : -1
         )
         ?.filter((index) => index >= 0) || [];
     const closestIndex: number = sections.reduce(
@@ -115,6 +115,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
   const handleAssessment = () => {
     navigation.navigate("Quiz", {
       data: getTopic(topic)?.assessment,
+      final: true,
       assess: true,
       module,
       topic,
@@ -124,7 +125,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
   const handleQuiz = (lesson: number) => {
     navigation.navigate("Quiz", {
       data: getLesson(lesson)?.quiz,
-      final: !getLesson(lesson + 1),
+      final: !getLesson(lesson + 1) && !getTopic(topic)?.assessment,
       assess: false,
       module,
       topic,
@@ -186,6 +187,39 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     return getTopic(topic)?.lessons?.[lessonId];
   };
 
+  const getTopicProgress = (topicId: number) => {
+    const lessons = modules[module].topics?.[topicId]?.lessons;
+    const doneLessons = lessons?.filter((l) => l.complete === true).length || 0;
+    const doneQuiz = lessons?.filter((l) => l.quiz >= 0).length || 0;
+    const lessonLength = getTopic(topicId)?.lessons?.length || 0;
+    const quizLength =
+      getTopic(topicId)?.lessons?.filter((l) => l?.quiz !== undefined).length ||
+      0;
+    const assessLength = getTopic(topicId)?.assessment ? 1 : 0;
+    const total = lessonLength + quizLength + assessLength;
+    const progress = Math.round(((doneLessons + doneQuiz) / total) * 100);
+    return progress;
+  };
+
+  const isQuizTaken = (lessonId: number) => {
+    return modules[module].topics?.[topic]?.lessons?.[lessonId]?.quiz >= 0;
+  };
+
+  const isAssessTaken = (topicId: number) => {
+    return modules[module].topics?.[topic]?.assessment >= 0;
+  }
+
+  const isAssessmentUnlocked = (topicId: number) => {
+    const lessons = modules[module].topics?.[topicId]?.lessons;
+    const doneLessons = lessons?.filter((l) => l.complete === true).length || 0;
+    const doneQuiz = lessons?.filter((l) => l.quiz >= 0).length || 0;
+    const lessonLength = getTopic(topicId)?.lessons?.length || 0;
+    const quizLength =
+      getTopic(topicId)?.lessons?.filter((l) => l?.quiz !== undefined).length ||
+      0;
+    return doneLessons === lessonLength && doneQuiz === quizLength;
+  };
+
   const Lessons = () => {
     const data = getTopic(topic);
     const assessment = modules[module].topics[topic].assessment;
@@ -194,24 +228,6 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       <>
         {data?.longText && (
           <LessonCard title="About" longText={data?.longText} />
-        )}
-
-        {/* Pre-Assessment */}
-        {data?.assessment && (
-          <LessonCard
-            score={
-              assessment >= 0
-                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
-                : ""
-            }
-            title={data.assessment?.kicker}
-            longText={data.assessment?.longText}
-            icon="brain"
-            cta={{
-              title: "Start",
-              onPress: handleAssessment,
-            }}
-          />
         )}
 
         {data?.lessons?.map((lesson: any, lessonKey: number) => {
@@ -226,13 +242,12 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
                 title={`Lesson ${lessonKey + 1}: ${lesson?.title}`}
                 sections={lesson?.items?.map((slide: ISlide, index: number) => {
                   const complete = isSectionComplete(lessonKey, index);
-                  if (slide?.section) {
+                  if (slide?.title) {
                     return {
-                      title: slide.section,
+                      title: slide?.section || slide?.title,
                       active: isCurrentSection(lessonKey, index),
                       complete: complete,
-                      onPress: () =>
-                        handleLesson(lesson, lessonKey, complete ? index : -1),
+                      onPress: () => handleLesson(lesson, lessonKey, index),
                     };
                   }
                 })}
@@ -252,7 +267,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
                   longText={lesson?.quiz?.section}
                   icon="trophy"
                   cta={{
-                    title: "Start",
+                    title: isQuizTaken(lessonKey) ? "Retake" : "Start",
                     onPress: () => handleQuiz(lessonKey),
                   }}
                   disabled={!isLessonComplete(lessonKey)}
@@ -261,29 +276,38 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
             </Box>
           );
         })}
+
+        {/* Assessment */}
+        {data?.assessment && (
+          <LessonCard
+            score={
+              assessment >= 0
+                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
+                : ""
+            }
+            title={data.assessment?.kicker}
+            longText={data.assessment?.longText}
+            icon="brain"
+            cta={{
+              title: isAssessTaken(topic) ? "Retake" : "Start",
+              onPress: handleAssessment,
+            }}
+            disabled={!isAssessmentUnlocked(topic)}
+          />
+        )}
       </>
     );
   };
 
   const Topics = () => {
     return getModule(module)?.topics?.map((topic: ITopic, key: number) => {
-      const lessons = modules[module].topics?.[key]?.lessons;
-      const doneLessons =
-        lessons?.filter((l) => l.complete === true).length || 0;
-      const doneQuizzes = lessons?.filter((l) => l.quiz >= 0).length || 0;
-      const quizLength =
-        getTopic(key)?.lessons?.filter((l) => l?.quiz !== undefined).length ||
-        0;
-      const lessonLength = getTopic(key)?.lessons?.length || 0;
-      const total = quizLength + lessonLength;
-      const progress = Math.round(((doneLessons + doneQuizzes) / total) * 100);
       return (
         <TopicCard
           key={key}
           data={topic}
-          active={isCurrentTopic(key)}
+          active={true}
           complete={isTopicComplete(key)}
-          progress={progress}
+          progress={getTopicProgress(key)}
           onPress={() => handleTopic(topic, key)}
         />
       );

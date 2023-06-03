@@ -9,20 +9,20 @@ import {
   VStack,
 } from "native-base";
 import { InterfaceBoxProps } from "native-base/lib/typescript/components/primitives/Box";
+import { useNavigation } from "@react-navigation/native";
 import ConfettiCannon from "react-native-confetti-cannon";
 
 interface IQuizResult {
   score: number;
   total: number;
-  navigation: any;
 }
 
 const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
   score,
   total,
-  navigation,
   ...props
 }) => {
+  const navigation = useNavigation();
   const [animate, setAnimate] = useState<boolean>(false);
   const percent = total > 0 ? (100 * score) / total : 0;
 

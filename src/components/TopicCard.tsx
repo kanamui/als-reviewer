@@ -45,11 +45,11 @@ const TopicCard: React.FC<ITopicCard & InterfaceBoxProps> = ({
           </Center>
           <HStack w="90%" alignItems="center" justifyContent="space-between">
             <VStack>
-              {active && !complete && (
+              {/* {active && !complete && (
                 <Text color="tertiary.400" bold>
                   Up next for you
                 </Text>
-              )}
+              )} */}
               <Heading
                 fontSize="md"
                 color={active || complete ? "black" : "gray.300"}

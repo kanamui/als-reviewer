@@ -6,14 +6,19 @@ import {
   AspectRatio,
   Box,
   Button,
+  CloseIcon,
   HStack,
   Image,
+  PresenceTransition,
+  Pressable,
   ScrollView,
   Text,
   VStack,
 } from "native-base";
+import { ReactNativeZoomableView } from "@openspacelabs/react-native-zoomable-view";
 import RenderHTML from "react-native-render-html";
 import HeaderNav from "./HeaderNav";
+import ImageZoom from "./ImageZoom";
 
 const Layout = ({
   header,
@@ -27,7 +32,16 @@ const Layout = ({
 }: ILayout) => {
   const { width } = useWindowDimensions();
   const [show, setShow] = useState<boolean>(true);
+  const [preview, setPreview] = useState<boolean>(false);
 
+  // Handlers
+  const handlePreview = () => {
+    if (image) {
+      setPreview((prev) => !prev);
+    }
+  };
+
+  // Effects
   useEffect(() => {
     setShow(false);
     const refresh = setTimeout(() => setShow(true));
@@ -59,21 +73,25 @@ const Layout = ({
               {image && (
                 <>
                   {title || longText ? (
-                    <AspectRatio h="full" ratio={1}>
+                    <Pressable onPress={handlePreview}>
+                      <AspectRatio h="full" ratio={1}>
+                        <Image
+                          size="full"
+                          resizeMode="contain"
+                          source={IMAGES[image]}
+                          alt={image}
+                        />
+                      </AspectRatio>
+                    </Pressable>
+                  ) : (
+                    <Pressable size="full" onPress={handlePreview}>
                       <Image
                         size="full"
                         resizeMode="contain"
                         source={IMAGES[image]}
                         alt={image}
                       />
-                    </AspectRatio>
-                  ) : (
-                    <Image
-                      size="full"
-                      resizeMode="contain"
-                      source={IMAGES[image]}
-                      alt={image}
-                    />
+                    </Pressable>
                   )}
                 </>
               )}
@@ -119,6 +137,14 @@ const Layout = ({
           </HStack>
         </HStack>
       </Box>
+
+      {image && (
+        <ImageZoom
+          source={IMAGES[image]}
+          show={preview}
+          onClose={handlePreview}
+        />
+      )}
     </>
   );
 };

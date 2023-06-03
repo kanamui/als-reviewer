@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Box } from "native-base";
 import Layout from "../components/Layout";
 import useStore from "../store/store";
@@ -6,6 +6,7 @@ import useStore from "../store/store";
 const Module: React.FC = ({ navigation, route }: any) => {
   // Hooks
   const { modules, setSlide, setLessonComplete } = useStore();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   // Variables
   const { data, module, topic, lesson, section } = route.params;
@@ -18,20 +19,21 @@ const Module: React.FC = ({ navigation, route }: any) => {
   };
 
   const handlePrev = () => {
-    if (slide === 0) {
+    if (currentSlide === 0) {
       navigation.goBack();
     } else {
-      setSlide(module, topic, lesson, slide - 1);
+      setCurrentSlide((prev) => prev - 1);
     }
   };
 
   const handleNext = () => {
-    if (slide === slideLength - 1) {
+    if (currentSlide === slideLength - 1) {
       setLessonComplete(module, topic, lesson);
     }
 
-    if (slide < slideLength - 1) {
-      setSlide(module, topic, lesson, slide + 1);
+    if (currentSlide < slideLength - 1) {
+      setCurrentSlide((prev) => prev + 1);
+      if (currentSlide >= slide) setSlide(module, topic, lesson, slide + 1);
     } else {
       navigation.goBack();
     }
@@ -40,7 +42,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
   // Effects
   useEffect(() => {
     if (section >= 0) {
-      setSlide(module, topic, lesson, section);
+      setCurrentSlide(section);
     }
   }, []);
 
@@ -51,11 +53,11 @@ const Module: React.FC = ({ navigation, route }: any) => {
           onPress: handleBack,
         }}
         subTitle={data?.subTitle}
-        kicker={data?.items?.[slide]?.kicker}
-        title={data?.items?.[slide]?.title}
-        longText={data?.items?.[slide]?.longText}
-        image={data?.items?.[slide]?.image}
-        page={`${slide + 1} / ${slideLength}`}
+        kicker={data?.items?.[currentSlide]?.kicker}
+        title={data?.items?.[currentSlide]?.title}
+        longText={data?.items?.[currentSlide]?.longText}
+        image={data?.items?.[currentSlide]?.image}
+        page={`${currentSlide + 1} / ${slideLength}`}
         cta={[
           {
             title: "PREV",

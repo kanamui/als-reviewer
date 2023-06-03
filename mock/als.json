@@ -37,109 +37,59 @@
             "longText": "This module will give you the basic steps on using word processors.",
             "assessment": {
               "header": "Word Processing",
-              "kicker": "Pre-Assessment",
+              "kicker": "Assessment",
               "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
-              "longText": "This aims to check what you already know about the lesson.",
+              "longText": "Let's put your learning to the test.",
               "items": [
                 {
                   "image": "T1A01",
                   "answer": "Cut",
-                  "choices": [
-                    "Cut",
-                    "Italic",
-                    "Font type",
-                    "Copy"
-                  ]
+                  "choices": ["Cut", "Italic", "Font type", "Copy"]
                 },
                 {
                   "image": "T1A02",
                   "answer": "Underline",
-                  "choices": [
-                    "Underline",
-                    "Italic",
-                    "Font type",
-                    "Copy"
-                  ]
+                  "choices": ["Underline", "Italic", "Font type", "Copy"]
                 },
                 {
                   "image": "T1A03",
                   "answer": "Font type",
-                  "choices": [
-                    "Font size",
-                    "Italic",
-                    "Font type",
-                    "Arial"
-                  ]
+                  "choices": ["Font size", "Italic", "Font type", "Arial"]
                 },
                 {
                   "image": "T1A04",
                   "answer": "Bold",
-                  "choices": [
-                    "Font size",
-                    "Italic",
-                    "Bold",
-                    "Arial"
-                  ]
+                  "choices": ["Font size", "Italic", "Bold", "Arial"]
                 },
                 {
                   "image": "T1A05",
                   "answer": "Copy",
-                  "choices": [
-                    "Copy",
-                    "Paste",
-                    "Print",
-                    "Cut"
-                  ]
+                  "choices": ["Copy", "Paste", "Print", "Cut"]
                 },
                 {
                   "image": "T1A06",
                   "answer": "Center",
-                  "choices": [
-                    "Align right",
-                    "Center",
-                    "Align left",
-                    "Justify"
-                  ]
+                  "choices": ["Align right", "Center", "Align left", "Justify"]
                 },
                 {
                   "image": "T1A07",
                   "answer": "Align right",
-                  "choices": [
-                    "Align right",
-                    "Center",
-                    "Align left",
-                    "Justify"
-                  ]
+                  "choices": ["Align right", "Center", "Align left", "Justify"]
                 },
                 {
                   "image": "T1A08",
                   "answer": "Italic",
-                  "choices": [
-                    "Italic",
-                    "Bold",
-                    "Underline",
-                    "Shadow"
-                  ]
+                  "choices": ["Italic", "Bold", "Underline", "Shadow"]
                 },
                 {
                   "image": "T1A09",
                   "answer": "Margins",
-                  "choices": [
-                    "Underline",
-                    "Center",
-                    "Align left",
-                    "Margins"
-                  ]
+                  "choices": ["Underline", "Center", "Align left", "Margins"]
                 },
                 {
                   "image": "T1A10",
                   "answer": "Align left",
-                  "choices": [
-                    "Underline",
-                    "Center",
-                    "Align left",
-                    "Margins"
-                  ]
+                  "choices": ["Underline", "Center", "Align left", "Margins"]
                 },
                 {
                   "image": "T1A11",
@@ -164,13 +114,6 @@
                     "longText": "<b><ul><li>make use of a word-processing application to produce different documents used in everyday life;</li><li>create a new document based on the different available templates;</li><li>save documents under another name to a location on a drive;</li><li>switch between open documents and between page view modes;</li><li>demonstrate how to save a document as another file type;</li><li>identify the process of inserting symbols or special characters;</li><li>and determine the use of the display and hide nonprinting formatting marks line.</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "image": "T1020",
-                    "kicker": "Try this one",
-                    "title": "Directions: Recall a moment when you need to create and submit a document in school, in work, or in government transactions. What did you do to produce the documents needed?"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T1021",
                     "title": "Uses of Word Processing",
                     "longText": "Word processors offer a wide variety of features that can help people produce different documents for a specific purpose. Anyone can use word processors because of their user-friendly interface."
@@ -315,13 +258,6 @@
                     "longText": "<b><ul><li>demonstrate the use of formatting commands in a word-processing document;</li><li>make use of formatting in paragraphs; and</li><li>demonstrate good practice in creating tables, formatting tables, and inserting graphical objects</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "image": "T1053",
-                    "kicker": "Try This One",
-                    "title": "Directions: Look at the two documents below. How do they differ from each other? Which is better? Use a Venn diagram to answer"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "longText": "<b>Formatting</b> is the process of modifying specific parts of the document, which will determine how the document will look like when finalized and printed. Common formatting options include the font, font size, color, alignment, spacing, margins, and other properties.<br><br>In making a paragraph for a letter, research paper, or essay, detailed formatting may be applied to achieve a more presentable and readable document. As featured in the first activity, arranging and organizing a document’s contents can have an impact on readers. They may easily understand the information in the document if it is properly formatted."
                   },
                   {
@@ -585,13 +521,6 @@
                     "longText": "<b><ul><li>demonstrate the process of mail merging; and</li><li>finalize a document using page setup, headers and footers, spell-check, and printing commands.</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "kicker": "Try This One",
-                    "title": "Directions: Think about this situation and put your answer on a word document.",
-                    "longText": "<b>Suppose you are a Sangguniang Kabataan chairperson, and your barangay will be having a leadership training two weeks from now. As the chairperson, how are you going to write letters to invite two hundred youths in your barangay in the easiest way possible?</b>"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T1116",
                     "longText": "<b>Mail merge</b> is a feature in most data-processing applications that enables users to send a similar letter or document to multiple recipients. It connects a single form template with a data source that contains information about the recipient's name, address, and other predefined and supported data.<br>Mail plays an important role in creating a word document and sending it to the recipients with their personal information. The idea of mail merge is to mail the same content but with different names and other information without inputting them manually. Mail merge is easy to use especially with the help of the “Step-by-Step Mail Merge Wizard.”"
                   },
@@ -764,82 +693,52 @@
                     {
                       "title": "1. Ctrl+Pr is the shortcut key for Print.",
                       "answer": "False",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "2. You can print selected pages in a document.",
                       "answer": "True",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "3. Aside from the page number, you can also insert dates in the header.",
                       "answer": "True",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "4. You can change the size of the paper at the Layout tab.",
                       "answer": "True",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "5. Only one copy of the document can be printed.",
                       "answer": "False",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "6. Microsoft Word has a feature to correct the spelling if the word turns green.",
                       "answer": "False",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "7. The Header & Footer tab allows you to insert pictures.",
                       "answer": "True",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "8. Page numbers can only be seen at the footer section of the document.",
                       "answer": "False",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "9. The Check Document command can check the spelling and grammar of the whole document.",
                       "answer": "True",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     },
                     {
                       "title": "10. Headers and footers can be seen only in the first page.",
                       "answer": "False",
-                      "choices": [
-                        "True",
-                        "False"
-                      ]
+                      "choices": ["True", "False"]
                     }
                   ]
                 }
@@ -853,129 +752,84 @@
             "longText": "This module will walk you through how to use spreadsheets to help you get familiar with it.",
             "assessment": {
               "header": "Spreadsheets",
-              "kicker": "Pre-Assessment",
+              "kicker": "Assessment",
               "title": "<b>Directions: Choose the correct answer in the parenthesis to complete the statement.</b>",
-              "longText": "This aims to check what you already know about the lesson.",
+              "longText": "Let's put your learning to the test.",
               "items": [
                 {
                   "title": "1. Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
                   "answer": "horizontally",
-                  "choices": [
-                    "horizontally",
-                    "vertically"
-                  ]
+                  "choices": ["horizontally", "vertically"]
                 },
                 {
                   "title": "2. Columns are a range of _________ aligned cells represented by letters in a spreadsheet.",
                   "answer": "vertically",
-                  "choices": [
-                    "horizontally",
-                    "vertically"
-                  ]
+                  "choices": ["horizontally", "vertically"]
                 },
                 {
                   "title": "3. In moving a cell content, use the _________ command",
                   "answer": "cut",
-                  "choices": [
-                    "copy",
-                    "cut"
-                  ]
+                  "choices": ["copy", "cut"]
                 },
                 {
                   "title": "4. _________ is the individual intersection between rows and columns.",
                   "answer": "Cell",
-                  "choices": [
-                    "Box",
-                    "Cell"
-                  ]
+                  "choices": ["Box", "Cell"]
                 },
                 {
                   "title": "5. Bold, Italic, Bold Italic, and Underline are _________.",
                   "answer": "font styles",
-                  "choices": [
-                    "font styles",
-                    "font types"
-                  ]
+                  "choices": ["font styles", "font types"]
                 },
                 {
                   "title": "6. Arial, Times New Roman, and Verdana are examples of _________.",
                   "answer": "font types",
-                  "choices": [
-                    "font styles",
-                    "font types"
-                  ]
+                  "choices": ["font styles", "font types"]
                 },
                 {
                   "title": "7. Spreadsheet or worksheet is an arrangement of _________ in columns and rows.",
                   "answer": "cells",
-                  "choices": [
-                    "boxes",
-                    "cells"
-                  ]
+                  "choices": ["boxes", "cells"]
                 },
                 {
                   "title": "8. To put a background color for a cell, you need to use the _________ command.",
                   "answer": "Fill Color",
-                  "choices": [
-                    "Fill Color",
-                    "Font Color"
-                  ]
+                  "choices": ["Fill Color", "Font Color"]
                 },
                 {
                   "title": "9. Left, center, and right are _________ alignments.",
                   "answer": "horizontal",
-                  "choices": [
-                    "horizontal",
-                    "vertical"
-                  ]
+                  "choices": ["horizontal", "vertical"]
                 },
                 {
                   "title": "10. Addition, subtraction, multiplication, and division are _________ operations.",
                   "answer": "mathematical",
-                  "choices": [
-                    "mathematical",
-                    "logical"
-                  ]
+                  "choices": ["mathematical", "logical"]
                 },
                 {
                   "title": "11. The _________ is used for easy comparison of proportions.",
                   "answer": "Pie Chart",
-                  "choices": [
-                    "Line Chart",
-                    "Pie Chart"
-                  ]
+                  "choices": ["Line Chart", "Pie Chart"]
                 },
                 {
                   "title": "12. _________ are predefined formula in Microsoft Excel.",
                   "answer": "Functions",
-                  "choices": [
-                    "Formulas",
-                    "Functions"
-                  ]
+                  "choices": ["Formulas", "Functions"]
                 },
                 {
                   "title": "13. _________ is the separator used in accounting number format.",
                   "answer": "Comma",
-                  "choices": [
-                    "Comma",
-                    "Point"
-                  ]
+                  "choices": ["Comma", "Point"]
                 },
                 {
                   "title": "14. A function that is used to compute the total of all items in the specified range is called _________.",
                   "answer": "Sum",
-                  "choices": [
-                    "Sum",
-                    "Total"
-                  ]
+                  "choices": ["Sum", "Total"]
                 },
                 {
                   "title": "15. A command called _________ is used to change the background color of a cell.",
                   "answer": "Fill Color",
-                  "choices": [
-                    "Fill Cell",
-                    "Fill Color"
-                  ]
+                  "choices": ["Fill Cell", "Fill Color"]
                 }
               ]
             },
@@ -998,13 +852,6 @@
                     "longText": "<b><ul><li>demonstrate understanding of using cells in a spreadsheet;</li><li>apply the process of modifying rows and columns; and</li><li>customize worksheets.</li></ul>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "image": "T2008",
-                    "kicker": "Try This One",
-                    "longText": "<b>Directions</b>: Identify and locate the contents in the cell references below. Write your answers on a separate word document.<br><br><b><table><tr><td>1. A1</td><td>6. A4</td></tr><tr><td>2. C2</td><td>7. A7</td></tr><tr><td>3. B6</td><td>8. E8</td></tr><tr><td>4. E3</td><td>9. D4</td></tr><tr><td>5. C5 to C11&nbsp;&nbsp;</td><td>10. D6</td></tr></table></b>"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T2009",
                     "title": "SPREADSHEET",
                     "longText": "A spreadsheet or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form. Spreadsheet software programs are considered unique because they can calculate values using mathematical formulas and data in the cells.<br><br>Like word processors, many applications are used to create spreadsheets. Below is a list of the most common spreadsheet applications and their operating system where these programs can be opened."
@@ -1317,13 +1164,6 @@
                     "longText": "<b><ul><li>Employ Good Practices In Using Arithmetic Formulas And Functions In Spreadsheets;</li><li>Create Formulas Using Cell References And Arithmetic Operators;</li><li>Identify Errors In Formulas;</li><li>Identify Errors In Formulas;</li><li>Employ Spreadsheet Functions; And</li><li>Use Logical Functions.</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "kicker": "Try This One",
-                    "title": "Directions: Supply the missing mathematical and logical operators. Write your answers on a separate word document.",
-                    "longText": "<table><tr><td>1. 55 = 10</td><td>6. 44 = True</td></tr><tr><td>2. 73 = 4</td><td>7. 52 = True</td></tr><tr><td>3. 102 = 5</td><td>8. 73 = False</td></tr><tr><td>4. 93 = 27</td><td>9. 18 = False</td></tr><tr><td>5. 55 = 25</td><td>10. 61 = True</td></tr></table>"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T2079",
                     "longText": "Formulas in a spreadsheet are expressions that operate or calculate the values in a range of cells, while functions are predefined formulas that are already available in spreadsheet applications.<br>The most practical way of entering formulas and functions in Excel is to type the equal sign (=) first, followed by the constants and operators.<br>For example, if you want to get the sum of two numbers entered in A1+A2, you will put your formula in A3 as =A1+A2."
                   },
@@ -1509,7 +1349,7 @@
                     "longText": "To change, select E2 then click More Number Formats dialog box launcher. Select the type that you prefer. For this example, let us select the format date/short month/year; just scroll down the selection."
                   },
                   {
-                    "image":"T2123",
+                    "image": "T2123",
                     "longText": "The date will be changed to the type assigned. You can do this to other dates in the cells. Do not use the fill handle, as it will create a series of dates following the first date entered."
                   },
                   {
@@ -1652,13 +1492,6 @@
                     "longText": "<b><ul><li>Create different types of charts in a spreadsheet;</li><li>Edit charts in a spreadsheet; and</li><li>Demonstrate the preparation of outputs in a spreadsheet.</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "image": "T2154",
-                    "kicker": "Try This One",
-                    "longText": "Directions: Answer the following questions based on the given pie chart of job classifications below. Write your answers on a separate word document.<ol type=\"1\"><li>How many job classifications are presented in the chart?</li><li>Which is likely the largest to be applied by the people?</li><li>What percentage does “Janitorial” have in the chart?</li><li>Which job category has a percentage of 24.8%?</li><li>What is the overall percentage of the job classifications?</li></ol>"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T2155",
                     "longText": "Workbooks that contain a lot of data are sometimes difficult to analyze and interpret. Charts allow you to illustrate your workbook data graphically, which makes it easy to visualize comparisons and interpret results.<br><br>Microsoft Excel has different types of charts that allow you to choose what is best for your data. The most frequently used types of charts are as follows:<br><br><b>Column charts</b> use vertical bars to represent data. they are typically used to compare several items in a specific range of values."
                   },
@@ -1784,39 +1617,24 @@
             "longText": "This module will give you basic the steps on using presentation software.",
             "assessment": {
               "header": "Presentation Software",
-              "kicker": "Pre-Assessment",
+              "kicker": "Assessment",
               "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
-              "longText": "This aims to check what you already know about the lesson.",
+              "longText": "Let's put your learning to the test.",
               "items": [
                 {
                   "title": "1. Which tab do you click to add a picture or graphic to your presentation?",
                   "answer": "Insert",
-                  "choices": [
-                    "Home",
-                    "Insert",
-                    "Design",
-                    "Animations"
-                  ]
+                  "choices": ["Home", "Insert", "Design", "Animations"]
                 },
                 {
                   "title": "2. Which tab do you click to change the font from bold to italics?",
                   "answer": "Home",
-                  "choices": [
-                    "Home",
-                    "Insert",
-                    "Design",
-                    "Animations"
-                  ]
+                  "choices": ["Home", "Insert", "Design", "Animations"]
                 },
                 {
                   "title": "3. I added a new slide, but I want to change the layout. Where do I go to change it?",
                   "answer": "Home",
-                  "choices": [
-                    "Home",
-                    "Insert",
-                    "Design",
-                    "Animations"
-                  ]
+                  "choices": ["Home", "Insert", "Design", "Animations"]
                 },
                 {
                   "title": "4. I would like the presentation to fade in and out of each slide. Which tab do I need to click to find the transition?",
@@ -1831,12 +1649,7 @@
                 {
                   "title": "5. If I want to add a chart or a table with data, which tab do I need to click?",
                   "answer": "Insert",
-                  "choices": [
-                    "Home",
-                    "Insert",
-                    "Slide Show",
-                    "View"
-                  ]
+                  "choices": ["Home", "Insert", "Slide Show", "View"]
                 },
                 {
                   "title": "6. I have created a slide with a bulleted list. I would like each item to show up one at a time. Where do I go to make this happen?",
@@ -1851,22 +1664,12 @@
                 {
                   "title": "7. Which tab do you need to click to save a presentation to a different file type?",
                   "answer": "File",
-                  "choices": [
-                    "Home",
-                    "Slide Show",
-                    "File",
-                    "Insert"
-                  ]
+                  "choices": ["Home", "Slide Show", "File", "Insert"]
                 },
                 {
                   "title": "8. When you create a new presentation, you can select a _________ to give all the text and slides a consistent appearance.",
                   "answer": "Template",
-                  "choices": [
-                    "Slide",
-                    "Template",
-                    "Layout",
-                    "Design"
-                  ]
+                  "choices": ["Slide", "Template", "Layout", "Design"]
                 },
                 {
                   "title": "9. The first slide in a presentation is called the _________.",
@@ -1881,12 +1684,7 @@
                 {
                   "title": "10. Once you have made your selection, pick a _________ for each slide.",
                   "answer": "Layout",
-                  "choices": [
-                    "Template",
-                    "Layout",
-                    "Background",
-                    "Design"
-                  ]
+                  "choices": ["Template", "Layout", "Background", "Design"]
                 }
               ]
             },
@@ -1905,16 +1703,8 @@
                     "longText": "<b><ul><li>use a presentation software to produce different documents to present information in everyday life;</li><li>determine the use of the different toolbars;</li><li>create a new presentation based on the default templates;</li><li>demonstrate the creation of a new presentation;</li><li>demonstrate how to save a presentation under another name, as another file type, and to a location on the drive;</li><li>distinguish different view modes; and manage a slide.</li></ul></b>"
                   },
                   {
-                    "section": "Trying This Out",
-                    "image": "T3013",
-                    "kicker": "Try this One",
-                    "longText": "<b>Directions: Identify at least three capabilities of a blackboard and a computer. Write your answers on a separate sheet of word document.</b>"
-                  },
-                  {
-                    "section": "Understanding What You Did",
                     "image": "T3014",
                     "longText": " Presentation tools are helpful when you have a large audience, such as students in a classroom. Most of the time, teachers use the blackboard to help them clearly explain their lesson to the students, but this limits them from becoming more creative in presenting their lesson. This is now possible through technologies such as presentation software.<br><br>Today, people have become more dynamic in presenting information using different presentation software. Among these are Microsoft PowerPoint (MS PowerPoint), Prezi, Presentations, iWork Keynote, OpenOffice Impress, and Google Slides."
-
                   },
                   {
                     "image": "T3015",
@@ -2017,7 +1807,6 @@
                     "longText": "<b><ul><li>Demonstrate understanding of formatting in a presentation file;</li><li>Apply different practices in creating slide content;</li><li>Demonstrate good practices in lists and tables in a presentation;</li><li>Customize text in a presentation; and</li><li>Edit charts in a presentation.</li></ul></b>"
                   },
                   {
-                    "section": "Understanding What You Did",
                     "longText": "<b>Formatting A Presentation</b> - One of the primary difficulties encountered by people who use presentation tools is getting and keeping the attention of the audience. To avoid such difficulties, use Microsoft PowerPoint, which has many features that allow you to make your presentation more presentable and creative.<br><br><b>Theme</b> - A theme is a predefined combination of colors, fonts, and effects. Different themes also use different slide layouts. You are already using a theme, even if you are not aware of it: the default Office theme. You can choose from a variety of new themes at any time, giving your entire presentation a consistent, professional look."
                   },
                   {
@@ -2203,190 +1992,183 @@
                 "title": "Inserting Graphics and Animation",
                 "subTitle": "Lesson 3: Presentation Software",
                 "items": [
-                {
-                  "section": "Setting the Path",
-                  "title": "After this lesson, learners should be able to",
-                  "longText": "<b><ol type= '1'></li>Insert a graphical object;</li><li>Use tools to customize graphical objects in a presentation;</li><li>Demonstrate the finalization of outputs in presentation software in terms of preparation, checking, and presentation of slides;</li><li>Demonstrate how to save a presentation in various  multimedia presentation formats; and</li>Apply animations on each slide.</ol></b>"
-                },
-                {
-                  "section": "Trying This Out",
-                  "kicker": "Try This One",
-                  "title": "Directions: Complete the concept map below by giving your ideas about the word in the center. Do this activity on a separate word document.",
-                  "longText": "<br>CREATIVITY<ol type ='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol>"
-                },
-                {
-                  "section": "Understanding What You Did",
-                  "image": "T3083",
-                  "longText": "Slides are considered frames with different scenes. There are pictures and texts that should be arranged in order. It is the same with creating presentations; you should carefully plan them.<br><br>Combining pictures and texts help make the slide become much more interesting and informational, but avoid putting everything in a presentation."
-                },
-                {
-                  "image": "T3084",
-                  "title": "Inserting Graphics",
-                  "longText": "To insert a picture, select the slide where you want to place the picture. Then in the Insert tab, select one of the options in the Images group. For this example, let us choose Pictures. Choose the location of your picture to be inserted.<br><br>You may select more than one picture by simply pressing the Ctrl key on the keyboard then arrange them accordingly."
-                },
-                {
-                  "image": "T3085",
-                  "longText": "It is best if you have a picture that has a transparent background, or change your layout with white background. You may search pictures that have a PNG file type, even online."
-                },
-                {
-                  "image": "T3086",
-                  "longText": "On the right side of the window, the Design Ideas panel will open with suggestions. These will help you have appealing slides, but they can only be seen if you are connected to the internet."
-                },
-                {
-                  "image": "T3087",
-                  "longtext": "Another way to insert a picture is through the slide itself. For example, if you add a second slide with a Title and Content layout, you will see that there are icons in the slide area. Select the Picture icon."
-                },
-                {
-                  "image": "T3088",
-                  "longText": "A dialog box will appear where you can locate your picture; it will automatically be inserted in the slide.<br><br>The same procedure can be applied if you are going to insert shapes and charts."
-                },
-                {
-                  "image": "T3089",
-                  "title": "Using Tools To Customize Graphical Objects In A Presentation",
-                  "longText": "Graphical objects can be pictures, shapes, and charts. These are useful in creating an effective presentation. They can all be found in the Insert tab in the Images group and Illustrations group."
-                },
-                {
-                  "image": "T3090",
-                  "title": "<i>To copy and remove graphical objects:</i>",
-                  "longText": "1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
-                },
-                {
-                  "longText": "2. To remove a graphical object, click the object to be removed, and then press Del in the keyboard. To cut it, right-click then choose Cut, or press the shortcut key Ctrl+X. It will be in the clipboard, waiting to be pasted.<br><br>3. To copy and remove a slide, select the slide using the switching view command."
-                },
-                {
-                  "image": "T3092",
-                  "title": "<i>To resize, rotate, and delete graphical objects:</i>",
-                  "longText": "<ol type ='1'><li>To resize the graphical objects, click the object then drag one of the size handles (encircled in the figure on the right).</li><li>You can manually enter the desired size to your images in the Shape Format tab in the Size group.</li><li>To rotate a graphical object, select the object then slowly drag clockwise or counterclockwise on the rotate handle (encircled in the figure below).</li></ol>"
-                },
-                {
-                  "image": "T3093",
-                  "longText": "You can also click on Rotate in the Arrange group.<br><br>4. To delete a graphical object, select the object to be deleted then press Del on the keyboard.<br><br>5. To align the graphical objects, select the object then select Align in the Arrange group in the Shape Format tab. Then, select your desired alignment."
-                },
-                {
-                  "image": "T3094",
-                  "title": "To add and change drawn object to a slide:",
-                  "longText": "Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
-                },
-                {
-                  "image": "T3095",
-                  "longText": "For example, let us insert a square and a circle. First, click the square then drag in the area where you want to draw, followed by the circle."
-                },
-                {
-                  "image": "T3096",
-                  "longText": "To change the fill color and line color, select the shape. In the Shape Format tab, select Shape Fill or Shape Outline in the Shape Styles group.<br><br>Shape Fill is the color of the shape, while Shape Outline is the color of its border."
-                },
-                {
-                  "image": "T3097",
-                  "longText": "In Shape Outline, you can also change the line style: Sketched or Dashes. You can also change the line weight, which is the thickness of the border."
-                },
-                {
-                  "image": "T3098",
-                  "longText": "To group objects, select two or more objects by pressing the Ctrl key on the keyboard. Then, right-click and select the Group command."
-                },
-                {
-                  "image": "T3099",
-                  "longText": "To ungroup objects, right-click on the grouped objects then select the Ungroup command.<br><br>To apply shadow, select Shape Effects in the Shape Styles group in Shape Format tab. In Shape Effects, click Shadow then choose the desired shadow to be applied."
-                },
-                {
-                  "image": "T3100",
-                  "longText": "To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
-                },
-                {
-                  "title": "Adding Animation On Slides",
-                  "longText": "Animations are visual effects that make your texts, images, shapes, or charts come “alive.” They can catch your audience's attention and helps them engage with you and your presentation.<br><br>There are two types of animations you can use to make your presentation come alive. These are the following:"
-                },
-                {
-                  "image": "T3102",
-                  "longText": "<b>Transitions</b> - The first type of animation is called transition animation; these are animations added in between slides. You can view the different transition options by going to the Transitions tab in the PowerPoint ribbon.<br><br>The default view shows ten transitions, but if you click on the drop- down arrow on the lower-right corner, it will expand and show more transitions.<br><ul><li>Subtle</li><li>Exciting</li><li>Dynamic Content</li></ul>"
-                },
-                {
-                  "image": "T3103",
-                  "longText": "Transition animations have additional effect options. Clicking on the Effect Options button will allow you to add and change settings.<br><br>You can also adjust the timing and duration of each transition and set when you want the transition to take place."
-                },
-                {
-                  "image": "T3104",
-                  "title": "Animations",
-                  "longText": "Animation brings the objects or elements in your slide to life. To add an animation, click on the object you want to animate, and then go to the Animations tab.<br><br>The default view shows eight animations, but if you click on the drop- down arrow, the menu will show more options."
-                },
-                {
-                  "image": "T3105",
-                  "longText": "<b>Entrance</b> - The icons for this type of animation are colored green. This will animate the object as it enters the slide according to your timing  preferences.<br><br><b>Emphasis</b> -The icons for this type of animation are colored yellow. This animates the object to draw attention to it.<br><br><b>Exit</b> - The icons for this type of animation are colored red. This will animate the object as it exits from the slide.<br><br><b>Motion path</b> - This type of animation will allow an object to move from one spot to another. You can specify or draw the path you want the object to take."
-                },
-                {
-                  "image": "T3106",
-                  "title": "To apply animation:",
-                  "longText": "<ol type ='1'><li>Click all the pictures and texts that you want to apply animation to.</li><li>Select your chosen animation. Notice that a number will appear on the upper left corner of the elements. This is to indicate the sequence of the animation.</li><li>Control the timing of the animation through the commands in the timing group.</li></ol>"
-                },
-                {
-                  "longText": "To see the results of the applied transitions and animations, click on the Slide Show view button or press F5 on the keyboard.<br><br><b>Important Points When Adding Animations</b><br><br>Adding animations to presentation slides is relatively easy, but avoid overdoing it. You might find yourself animating all objects and adding transitions to every slide. It might look fun, but it can distract your audience's  attention from the message you are trying to convey in your presentation"
-                },
-                {
-                  "image": "T3108",
-                  "title": "Adding Presenters Or Speaker Notes In Slides",
-                  "longText": "When you are creating a presentation, you can add speaker notes to refer to later while delivering the slide show in front of an audience.<br><br>1. The Notes pane is a box that appears below each slide. An empty Notes pane will prompt you with text that says, “Click to add notes.” "
-                },
-                {
-                  "image": "T3109",
-                  "longText": "Type your speaker notes there. If you do not see the Notes pane or it is completely minimized, click Notes on the task bar across the bottom of the PowerPoint window.<br><br>2. When you connect your computer to a projector, the presenter view will appear on your computer screen while the slides appear on the projector screen. In presenter view, you can see your notes as you present, while the audience sees only your slides."
-                },
-                {
-                  "image": "T3110",
-                  "title": "Checking The Presentation",
-                  "longText": "<i>To hide or show a slide:</i><br><br>1. In the left navigation pane, select a slide. To hide a slide, right-click the slide that you want to hide and then click Hide Slide. You will notice that the slide number is slashed to indicate that the slide is hidden.<br><br>2. To show a slide that you previously hid, right-click the slide that you want to show and then click Hide Slide."
-                },
-                {
-                  "image": "T3111",
-                  "longText": "<i>To spell-check a presentation:</i><br><br>You can spell-check your entire presentation by using the Spelling command in the Review tab. The Spelling command will do a complete change on the spelling errors."
-                },
-                {
-                  "image": "T3112",
-                  "longText": "<i>To change slide setup and slide orientation:</i><br><br>1. Select the Design tab.<br>2. Near the right end, select Slide Size, and then click Custom Slide Size.<br>3. In the Slide Size dialog box, select Portrait then select OK."
-                },
-                {
-                  "image": "T3113",
-                  "longText": "4. In the next dialog box, select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
-                },
-                {
-                  "image": "T3114",
-                  "longText": "<i>To change paper size:</i>1. Select the Design tab on the toolbar ribbon. Select the Slide Size icon near the far-right end of the toolbar.<br><br>2. Select your desired slide size: Standard (4:3 aspect ratio), Widescreen (16:9), or Custom Slide Size."
-                },
-                {
-                  "image": "T3115",
-                  "longText": "3. In the next dialog box, you can select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
-                },
-                {
-                  "image": "T3116",
-                  "longText": "<i>To print your PowerPoint slides, handouts, or notes:</i><ol type ='1'><li>Select File then Print.</li><li>Then, click on the Printer drop-down menu and select your printer.</li><li>In the Settings drop-down menu, you can customize which slides you want to print. You can also select how you would like them to be printed:</li></ol><ul><li>Slides. Click on the drop-down arrow. Here, you can choose to print all slides, selected slides, or the current slide.</li></ul>"
-                },
-                {
-                  "image": "T3117",
-                  "longText": "You may also type which slide numbers to print in the Slides box, separated by a comma.<ul><li>Print Layout. You may choose to print just the slides, include the speaker notes, or lay it out as an outline or a handout.</li><li>The Outline layout prints only the text in the slides, without images.</li><li>The Notes Pages layout shows the slide and the related speaker notes below it.</li></ul>"
-                },
-                {
-                  "image": "T3118",
-                  "longText": "<ul><li>The Handouts layout allows you to print several slides on one page and, depending on your option, can leave you space for note-taking.</li><li>For Copies, select how many copies you want to print.</li></ul>4. Select print."
-                },
-                {
-                  "image": "T3119",
-                  "title": "Presenting Your Slide Show",
-                  "longText": "Once your slide show is complete, you will need to learn how to present it to an audience. PowerPoint offers several tools and features to help make your presentation smooth, engaging, and professional.<br><br>1. There are several ways you can begin your presentation:<ul><li>Click the Start From Beginning command on the Quick Access Toolbar, or press F5 key on your keyboard. The presentation will appear in full-screen mode.</li>"
-                },
-                {
-                  "image": "T3120",
-                  "longText": "<ul><li>Select the Slide Show view command at the bottom of the PowerPoint window to begin a presentation from the current slide.</li><li>Go to the Slide Show tab on the ribbon to access more options. From here, you can start the presentation from the beginning of the slide.</li></ul>2. You can exit presentation mode by pressing Esc on your keyboard. Alternatively, you can right-click then select End Show."
-                },
-                {
-                  "title": "Saving A Presentation In Various Multimedia Formats",
-                  "longText": "<b>PPTX <i>presentation software</i></b><br>The default format. You can still edit the presentation, even in other computers.<br><br><b>WMV <i>Windows media video</i></b><br>A video file based on the Microsoft Advanced Systems Format (ASF) container format and compressed with Windows Media compression. The presentation will be played as a video.<br><br><b>MP4<i>mpeg-4 video</i></b><br>One of the most common video file formats used for downloading and streaming videos on the internet. The presentation can be played as a video."
-                },
-                {
-                  "image": "T3122",
-                  "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
-                },
-                {
-                  "title": "POINTS TO REMEMBER",
-                  "longText": "<ul><li>Simplicity is key. Simple animations like fade and appear may not be as impressive as other animations available, but these add a touch of elegance to well-timed slides. It makes your slides look clean and simple.</li><li>Limit the number of animations on a slide. One or two animations per slide should suffice. There is no need to animate every single object on each slide.</li><li>Time your presentation well. Make sure your objects appear right after you introduce it. This keeps your audience's interest piqued.</li><li>Remember to practice. Practicing your timings and your animations are key to a successful presentation.</li></ul>"
-                }
+                  {
+                    "section": "Setting the Path",
+                    "title": "After this lesson, learners should be able to",
+                    "longText": "<b><ol type= '1'></li>Insert a graphical object;</li><li>Use tools to customize graphical objects in a presentation;</li><li>Demonstrate the finalization of outputs in presentation software in terms of preparation, checking, and presentation of slides;</li><li>Demonstrate how to save a presentation in various  multimedia presentation formats; and</li>Apply animations on each slide.</ol></b>"
+                  },
+                  {
+                    "image": "T3083",
+                    "longText": "Slides are considered frames with different scenes. There are pictures and texts that should be arranged in order. It is the same with creating presentations; you should carefully plan them.<br><br>Combining pictures and texts help make the slide become much more interesting and informational, but avoid putting everything in a presentation."
+                  },
+                  {
+                    "image": "T3084",
+                    "title": "Inserting Graphics",
+                    "longText": "To insert a picture, select the slide where you want to place the picture. Then in the Insert tab, select one of the options in the Images group. For this example, let us choose Pictures. Choose the location of your picture to be inserted.<br><br>You may select more than one picture by simply pressing the Ctrl key on the keyboard then arrange them accordingly."
+                  },
+                  {
+                    "image": "T3085",
+                    "longText": "It is best if you have a picture that has a transparent background, or change your layout with white background. You may search pictures that have a PNG file type, even online."
+                  },
+                  {
+                    "image": "T3086",
+                    "longText": "On the right side of the window, the Design Ideas panel will open with suggestions. These will help you have appealing slides, but they can only be seen if you are connected to the internet."
+                  },
+                  {
+                    "image": "T3087",
+                    "longtext": "Another way to insert a picture is through the slide itself. For example, if you add a second slide with a Title and Content layout, you will see that there are icons in the slide area. Select the Picture icon."
+                  },
+                  {
+                    "image": "T3088",
+                    "longText": "A dialog box will appear where you can locate your picture; it will automatically be inserted in the slide.<br><br>The same procedure can be applied if you are going to insert shapes and charts."
+                  },
+                  {
+                    "image": "T3089",
+                    "title": "Using Tools To Customize Graphical Objects In A Presentation",
+                    "longText": "Graphical objects can be pictures, shapes, and charts. These are useful in creating an effective presentation. They can all be found in the Insert tab in the Images group and Illustrations group."
+                  },
+                  {
+                    "image": "T3090",
+                    "title": "<i>To copy and remove graphical objects:</i>",
+                    "longText": "1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
+                  },
+                  {
+                    "longText": "2. To remove a graphical object, click the object to be removed, and then press Del in the keyboard. To cut it, right-click then choose Cut, or press the shortcut key Ctrl+X. It will be in the clipboard, waiting to be pasted.<br><br>3. To copy and remove a slide, select the slide using the switching view command."
+                  },
+                  {
+                    "image": "T3092",
+                    "title": "<i>To resize, rotate, and delete graphical objects:</i>",
+                    "longText": "<ol type ='1'><li>To resize the graphical objects, click the object then drag one of the size handles (encircled in the figure on the right).</li><li>You can manually enter the desired size to your images in the Shape Format tab in the Size group.</li><li>To rotate a graphical object, select the object then slowly drag clockwise or counterclockwise on the rotate handle (encircled in the figure below).</li></ol>"
+                  },
+                  {
+                    "image": "T3093",
+                    "longText": "You can also click on Rotate in the Arrange group.<br><br>4. To delete a graphical object, select the object to be deleted then press Del on the keyboard.<br><br>5. To align the graphical objects, select the object then select Align in the Arrange group in the Shape Format tab. Then, select your desired alignment."
+                  },
+                  {
+                    "image": "T3094",
+                    "title": "To add and change drawn object to a slide:",
+                    "longText": "Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
+                  },
+                  {
+                    "image": "T3095",
+                    "longText": "For example, let us insert a square and a circle. First, click the square then drag in the area where you want to draw, followed by the circle."
+                  },
+                  {
+                    "image": "T3096",
+                    "longText": "To change the fill color and line color, select the shape. In the Shape Format tab, select Shape Fill or Shape Outline in the Shape Styles group.<br><br>Shape Fill is the color of the shape, while Shape Outline is the color of its border."
+                  },
+                  {
+                    "image": "T3097",
+                    "longText": "In Shape Outline, you can also change the line style: Sketched or Dashes. You can also change the line weight, which is the thickness of the border."
+                  },
+                  {
+                    "image": "T3098",
+                    "longText": "To group objects, select two or more objects by pressing the Ctrl key on the keyboard. Then, right-click and select the Group command."
+                  },
+                  {
+                    "image": "T3099",
+                    "longText": "To ungroup objects, right-click on the grouped objects then select the Ungroup command.<br><br>To apply shadow, select Shape Effects in the Shape Styles group in Shape Format tab. In Shape Effects, click Shadow then choose the desired shadow to be applied."
+                  },
+                  {
+                    "image": "T3100",
+                    "longText": "To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
+                  },
+                  {
+                    "title": "Adding Animation On Slides",
+                    "longText": "Animations are visual effects that make your texts, images, shapes, or charts come “alive.” They can catch your audience's attention and helps them engage with you and your presentation.<br><br>There are two types of animations you can use to make your presentation come alive. These are the following:"
+                  },
+                  {
+                    "image": "T3102",
+                    "longText": "<b>Transitions</b> - The first type of animation is called transition animation; these are animations added in between slides. You can view the different transition options by going to the Transitions tab in the PowerPoint ribbon.<br><br>The default view shows ten transitions, but if you click on the drop- down arrow on the lower-right corner, it will expand and show more transitions.<br><ul><li>Subtle</li><li>Exciting</li><li>Dynamic Content</li></ul>"
+                  },
+                  {
+                    "image": "T3103",
+                    "longText": "Transition animations have additional effect options. Clicking on the Effect Options button will allow you to add and change settings.<br><br>You can also adjust the timing and duration of each transition and set when you want the transition to take place."
+                  },
+                  {
+                    "image": "T3104",
+                    "title": "Animations",
+                    "longText": "Animation brings the objects or elements in your slide to life. To add an animation, click on the object you want to animate, and then go to the Animations tab.<br><br>The default view shows eight animations, but if you click on the drop- down arrow, the menu will show more options."
+                  },
+                  {
+                    "image": "T3105",
+                    "longText": "<b>Entrance</b> - The icons for this type of animation are colored green. This will animate the object as it enters the slide according to your timing  preferences.<br><br><b>Emphasis</b> -The icons for this type of animation are colored yellow. This animates the object to draw attention to it.<br><br><b>Exit</b> - The icons for this type of animation are colored red. This will animate the object as it exits from the slide.<br><br><b>Motion path</b> - This type of animation will allow an object to move from one spot to another. You can specify or draw the path you want the object to take."
+                  },
+                  {
+                    "image": "T3106",
+                    "title": "To apply animation:",
+                    "longText": "<ol type ='1'><li>Click all the pictures and texts that you want to apply animation to.</li><li>Select your chosen animation. Notice that a number will appear on the upper left corner of the elements. This is to indicate the sequence of the animation.</li><li>Control the timing of the animation through the commands in the timing group.</li></ol>"
+                  },
+                  {
+                    "longText": "To see the results of the applied transitions and animations, click on the Slide Show view button or press F5 on the keyboard.<br><br><b>Important Points When Adding Animations</b><br><br>Adding animations to presentation slides is relatively easy, but avoid overdoing it. You might find yourself animating all objects and adding transitions to every slide. It might look fun, but it can distract your audience's  attention from the message you are trying to convey in your presentation"
+                  },
+                  {
+                    "image": "T3108",
+                    "title": "Adding Presenters Or Speaker Notes In Slides",
+                    "longText": "When you are creating a presentation, you can add speaker notes to refer to later while delivering the slide show in front of an audience.<br><br>1. The Notes pane is a box that appears below each slide. An empty Notes pane will prompt you with text that says, “Click to add notes.” "
+                  },
+                  {
+                    "image": "T3109",
+                    "longText": "Type your speaker notes there. If you do not see the Notes pane or it is completely minimized, click Notes on the task bar across the bottom of the PowerPoint window.<br><br>2. When you connect your computer to a projector, the presenter view will appear on your computer screen while the slides appear on the projector screen. In presenter view, you can see your notes as you present, while the audience sees only your slides."
+                  },
+                  {
+                    "image": "T3110",
+                    "title": "Checking The Presentation",
+                    "longText": "<i>To hide or show a slide:</i><br><br>1. In the left navigation pane, select a slide. To hide a slide, right-click the slide that you want to hide and then click Hide Slide. You will notice that the slide number is slashed to indicate that the slide is hidden.<br><br>2. To show a slide that you previously hid, right-click the slide that you want to show and then click Hide Slide."
+                  },
+                  {
+                    "image": "T3111",
+                    "longText": "<i>To spell-check a presentation:</i><br><br>You can spell-check your entire presentation by using the Spelling command in the Review tab. The Spelling command will do a complete change on the spelling errors."
+                  },
+                  {
+                    "image": "T3112",
+                    "longText": "<i>To change slide setup and slide orientation:</i><br><br>1. Select the Design tab.<br>2. Near the right end, select Slide Size, and then click Custom Slide Size.<br>3. In the Slide Size dialog box, select Portrait then select OK."
+                  },
+                  {
+                    "image": "T3113",
+                    "longText": "4. In the next dialog box, select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
+                  },
+                  {
+                    "image": "T3114",
+                    "longText": "<i>To change paper size:</i>1. Select the Design tab on the toolbar ribbon. Select the Slide Size icon near the far-right end of the toolbar.<br><br>2. Select your desired slide size: Standard (4:3 aspect ratio), Widescreen (16:9), or Custom Slide Size."
+                  },
+                  {
+                    "image": "T3115",
+                    "longText": "3. In the next dialog box, you can select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
+                  },
+                  {
+                    "image": "T3116",
+                    "longText": "<i>To print your PowerPoint slides, handouts, or notes:</i><ol type ='1'><li>Select File then Print.</li><li>Then, click on the Printer drop-down menu and select your printer.</li><li>In the Settings drop-down menu, you can customize which slides you want to print. You can also select how you would like them to be printed:</li></ol><ul><li>Slides. Click on the drop-down arrow. Here, you can choose to print all slides, selected slides, or the current slide.</li></ul>"
+                  },
+                  {
+                    "image": "T3117",
+                    "longText": "You may also type which slide numbers to print in the Slides box, separated by a comma.<ul><li>Print Layout. You may choose to print just the slides, include the speaker notes, or lay it out as an outline or a handout.</li><li>The Outline layout prints only the text in the slides, without images.</li><li>The Notes Pages layout shows the slide and the related speaker notes below it.</li></ul>"
+                  },
+                  {
+                    "image": "T3118",
+                    "longText": "<ul><li>The Handouts layout allows you to print several slides on one page and, depending on your option, can leave you space for note-taking.</li><li>For Copies, select how many copies you want to print.</li></ul>4. Select print."
+                  },
+                  {
+                    "image": "T3119",
+                    "title": "Presenting Your Slide Show",
+                    "longText": "Once your slide show is complete, you will need to learn how to present it to an audience. PowerPoint offers several tools and features to help make your presentation smooth, engaging, and professional.<br><br>1. There are several ways you can begin your presentation:<ul><li>Click the Start From Beginning command on the Quick Access Toolbar, or press F5 key on your keyboard. The presentation will appear in full-screen mode.</li>"
+                  },
+                  {
+                    "image": "T3120",
+                    "longText": "<ul><li>Select the Slide Show view command at the bottom of the PowerPoint window to begin a presentation from the current slide.</li><li>Go to the Slide Show tab on the ribbon to access more options. From here, you can start the presentation from the beginning of the slide.</li></ul>2. You can exit presentation mode by pressing Esc on your keyboard. Alternatively, you can right-click then select End Show."
+                  },
+                  {
+                    "title": "Saving A Presentation In Various Multimedia Formats",
+                    "longText": "<b>PPTX <i>presentation software</i></b><br>The default format. You can still edit the presentation, even in other computers.<br><br><b>WMV <i>Windows media video</i></b><br>A video file based on the Microsoft Advanced Systems Format (ASF) container format and compressed with Windows Media compression. The presentation will be played as a video.<br><br><b>MP4<i>mpeg-4 video</i></b><br>One of the most common video file formats used for downloading and streaming videos on the internet. The presentation can be played as a video."
+                  },
+                  {
+                    "image": "T3122",
+                    "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
+                  },
+                  {
+                    "title": "POINTS TO REMEMBER",
+                    "longText": "<ul><li>Simplicity is key. Simple animations like fade and appear may not be as impressive as other animations available, but these add a touch of elegance to well-timed slides. It makes your slides look clean and simple.</li><li>Limit the number of animations on a slide. One or two animations per slide should suffice. There is no need to animate every single object on each slide.</li><li>Time your presentation well. Make sure your objects appear right after you introduce it. This keeps your audience's interest piqued.</li><li>Remember to practice. Practicing your timings and your animations are key to a successful presentation.</li></ul>"
+                  }
                 ],
                 "quiz": {
                   "name": "Quiz 3",
