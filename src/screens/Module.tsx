@@ -1,17 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { IMAGES } from "../logic/constants/images.constants";
 import { Box } from "native-base";
 import Layout from "../components/Layout";
 import useStore from "../store/store";
+import ModalImage from "../components/ModalImage";
 
 const Module: React.FC = ({ navigation, route }: any) => {
   // Hooks
-  const { modules, setSlide, setLessonComplete } = useStore();
+  const {
+    modules,
+    settings,
+    slideIncrement,
+    setLessonHalfReached,
+    setLessonComplete,
+  } = useStore();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showReward, setShowReward] = useState(false);
 
   // Variables
-  const { data, module, topic, lesson, section } = route.params;
+  const { data, module, topic, lesson, section, onComplete } = route.params;
   const slideLength = data?.items?.length || 0;
-  const slide = modules[module].topics[topic].lessons[lesson].slide;
+  const moduleLesson = modules[module].topics[topic].lessons[lesson];
+  const slide = moduleLesson.slide;
+  const half = moduleLesson.half;
+  const complete = moduleLesson.complete;
 
   // Handlers
   const handleBack = () => {
@@ -28,16 +40,22 @@ const Module: React.FC = ({ navigation, route }: any) => {
 
   const handleNext = () => {
     if (currentSlide === slideLength - 1) {
+      if (!complete && onComplete) onComplete();
       setLessonComplete(module, topic, lesson);
     }
 
     if (currentSlide < slideLength - 1) {
       setCurrentSlide((prev) => prev + 1);
-      if (currentSlide >= slide) setSlide(module, topic, lesson, slide + 1);
+      if (currentSlide >= slide) slideIncrement(module, topic, lesson);
     } else {
       navigation.goBack();
     }
   };
+
+  const handleClaimReward = () => {
+    setShowReward(false);
+    settings.coins += 5;
+  }
 
   // Effects
   useEffect(() => {
@@ -45,6 +63,13 @@ const Module: React.FC = ({ navigation, route }: any) => {
       setCurrentSlide(section);
     }
   }, []);
+
+  useEffect(() => {
+    if (!half && slide === Math.floor((slideLength - 1) / 2)) {
+      setLessonHalfReached(module, topic, lesson);
+      setShowReward(true);
+    }
+  }, [slide]);
 
   return (
     <Box size="full" bg="tertiary.600">
@@ -68,6 +93,16 @@ const Module: React.FC = ({ navigation, route }: any) => {
             onPress: handleNext,
           },
         ]}
+      />
+      <ModalImage
+        show={showReward}
+        slides={[
+          { image: IMAGES.coin, title: "Almost there! Here are 5 coins! 🔥" },
+        ]}
+        cta={{
+          title: "Claim reward",
+          onPress: handleClaimReward,
+        }}
       />
     </Box>
   );

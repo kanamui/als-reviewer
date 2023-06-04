@@ -15,17 +15,26 @@ import ConfettiCannon from "react-native-confetti-cannon";
 interface IQuizResult {
   score: number;
   total: number;
+  onComplete?: () => void;
 }
 
 const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
   score,
   total,
+  onComplete,
   ...props
 }) => {
   const navigation = useNavigation();
   const [animate, setAnimate] = useState<boolean>(false);
   const percent = total > 0 ? (100 * score) / total : 0;
 
+  // Handlers
+  const handleComplete = () => {
+    navigation.goBack();
+    if (onComplete) onComplete();
+  };
+
+  // Functions
   const getMessage = () => {
     let message = "";
 
@@ -38,6 +47,7 @@ const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
     return message;
   };
 
+  // Effects
   useEffect(() => {
     setAnimate(true);
   }, []);
@@ -86,12 +96,7 @@ const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
           </VStack>
         </PresenceTransition>
       </Center>
-      <Button
-        w="32"
-        bg="white"
-        alignSelf="center"
-        onPress={() => navigation.goBack()}
-      >
+      <Button w="32" bg="white" alignSelf="center" onPress={handleComplete}>
         <Text color="tertiary.600" bold>
           Done
         </Text>

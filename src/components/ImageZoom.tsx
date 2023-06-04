@@ -7,14 +7,9 @@ import {
   PresenceTransition,
   Pressable,
 } from "native-base";
+import { IImageZoom } from "../models/components/IImageZoom";
 
-interface ImageZoom {
-  source: any;
-  show?: boolean;
-  onClose?: () => void;
-}
-
-const ImageZoom = ({ source, show, onClose }: ImageZoom) => {
+const ImageZoom = ({ source, show, onClose }: IImageZoom) => {
   // const [show, setShow] = useState(false);
 
   return show ? (

@@ -4,6 +4,29 @@ export const IMAGES: any = {
   checklist: require("../../../assets/als/checklist.jpg"),
   book: require("../../../assets/als/book.jpg"),
 
+  handBook: require("../../../assets/als/hands-book.png"),
+  openBook: require("../../../assets/als/open-book.png"),
+  unlock: require("../../../assets/als/unlock.png"),
+  coin: require("../../../assets/als/coin.png"),
+  lightbulb: require("../../../assets/als/lightbulb.png"),
+  denied: require("../../../assets/als/denied.png"),
+
+  // TIPS
+  tip1: require("../../../assets/als/tip1.png"),
+  tip2: require("../../../assets/als/tip2.png"),
+
+  // PET
+  catFish: require("../../../assets/als/pet/cat-fish.png"),
+  catHappy: require("../../../assets/als/pet/cat-happy.png"),
+  catHello: require("../../../assets/als/pet/cat-hello.png"),
+  catPlayMouse: require("../../../assets/als/pet/cat-play-mouse.png"),
+  catPlayYarn: require("../../../assets/als/pet/cat-play-yarn.png"),
+  catSleep: require("../../../assets/als/pet/cat-sleep.png"),
+  catYay: require("../../../assets/als/pet/cat-yay.png"),
+  fish: require("../../../assets/als/pet/fish.png"),
+  mouse: require("../../../assets/als/pet/mouse.png"),
+  yarn: require("../../../assets/als/pet/yarn.png"),
+
   // TOPIC 1 ASSESSMENT
   T1A01: require("../../../assets/als/topic-1/assessment/T1A01.png"),
   T1A02: require("../../../assets/als/topic-1/assessment/T1A02.png"),

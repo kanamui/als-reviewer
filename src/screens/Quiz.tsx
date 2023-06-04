@@ -22,7 +22,8 @@ import PopupCard from "../components/PopupCard";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
-  const { data, final, assess, module, topic, lesson } = route.params;
+  const { data, final, assess, module, topic, lesson, onComplete } =
+    route.params;
   const total = data?.items?.length || 0;
 
   // Hooks
@@ -51,6 +52,21 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   // Handlers
   const handleRadio = (value: any) => {
     setAnswer(value);
+  };
+
+  const handleComplete = () => {
+    if (onComplete) {
+      const modTopic = modules[module].topics[topic];
+      const modLesson = modTopic.lessons[lesson];
+      const score = assess ? modTopic.assessment : modLesson.quiz;
+      if (score < 0) onComplete();
+    }
+
+    if (assess) {
+      setAssessmentScore(module, topic, score);
+    } else {
+      setQuizScore(module, topic, lesson, score);
+    }
   };
 
   // Functions
@@ -91,16 +107,6 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
 
   useEffect(() => {
     if (showResult) {
-      if (assess) {
-        setAssessmentScore(module, topic, score);
-      } else {
-        setQuizScore(module, topic, lesson, score);
-      }
-    }
-  }, [showResult]);
-
-  useEffect(() => {
-    if (showResult) {
       const slide =
         modules[module].topics[topic].lessons?.[assess ? 0 : lesson + 1]
           ?.slide || -1;
@@ -125,7 +131,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
       <Box size="full" bg="tertiary.600">
         <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
         {showResult ? (
-          <QuizResult score={score} total={total} />
+          <QuizResult score={score} total={total} onComplete={handleComplete} />
         ) : (
           <Box
             px="5"

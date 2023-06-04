@@ -1,27 +1,33 @@
 import React, { useEffect, useState } from "react";
+import { IMAGES } from "../logic/constants/images.constants";
 import { IModule } from "../models/IModule";
 import { ITopic } from "../models/ITopic";
 import { ILesson } from "../models/ILesson";
 import { ISlide } from "../models/ISlide";
-import useStore from "../store/store";
 import { Box, ScrollView } from "native-base";
+import useStore from "../store/store";
 import HeaderNav from "../components/HeaderNav";
 import TopicCard from "../components/TopicCard";
 import ModuleCard from "../components/ModuleCard";
 import LessonCard from "../components/LessonCard";
+import ModalImage from "../components/ModalImage";
 
 type ITOCScreen = "main" | "topics" | "lessons";
 
 const TableOfContents: React.FC = ({ navigation, route }: any) => {
   // States
-  const [module, setModule] = useState<number>(0);
-  const [topic, setTopic] = useState<number>(0);
+  const [module, setModule] = useState(0);
+  const [topic, setTopic] = useState(0);
   const [screen, setScreen] = useState<ITOCScreen>("main");
-  const [show, setShow] = useState<boolean>(true);
+  const [show, setShow] = useState(true);
+
+  const [showIntro, setShowIntro] = useState(true);
+  const [showLessonReward, setShowLessonReward] = useState(false);
+  const [showQuizReward, setShowQuizReward] = useState(false);
 
   // Variables
   const { data } = route.params;
-  const { modules } = useStore();
+  const { modules, settings } = useStore();
 
   // TOPIC
   const isCurrentTopic = (topicId: number) => {
@@ -109,6 +115,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       topic,
       lesson: index,
       section,
+      onComplete: giveLessonReward,
     });
   };
 
@@ -119,6 +126,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       assess: true,
       module,
       topic,
+      onComplete: giveQuizReward,
     });
   };
 
@@ -130,6 +138,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       module,
       topic,
       lesson,
+      onComplete: giveQuizReward,
     });
   };
 
@@ -162,6 +171,24 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       default:
         return Main();
     }
+  };
+
+  const giveLessonReward = () => {
+    setShowLessonReward(true);
+  };
+
+  const giveQuizReward = () => {
+    setShowQuizReward(true);
+  };
+
+  const handleQuizClaimReward = () => {
+    setShowQuizReward(false);
+    settings.coins += 10;
+  }
+
+  const handleLessonClaimReward = () => {
+    setShowLessonReward(false);
+    settings.coins += 5;
   };
 
   const getHeaderTitle = () => {
@@ -329,7 +356,12 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   return (
     <Box size="full" bg="tertiary.600">
-      <HeaderNav title={getHeaderTitle()} onPress={handleGoBack} />
+      <HeaderNav
+        title={getHeaderTitle()}
+        onPress={handleGoBack}
+        showCoins
+        showPet
+      />
       <Box
         pt="3"
         px="3"
@@ -343,6 +375,58 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
           <Box safeAreaX>{DynamicScreen()}</Box>
         </ScrollView>
       </Box>
+
+      {/* Introduction */}
+      <ModalImage
+        show={showIntro}
+        slides={[
+          { image: IMAGES.catHello, title: "Hello there, I'm Alice!" },
+          {
+            image: IMAGES.catHappy,
+            title: "Your mission is to make me happy!",
+          },
+          { image: IMAGES.lightbulb, title: "Here's the plan!" },
+          { image: IMAGES.coin, title: "Study hard to get coins" },
+          { image: IMAGES.mouse, title: "So you can buy me treats!" },
+          { image: IMAGES.tip1, title: "Tip: See your total coins here" },
+          { image: IMAGES.tip2, title: "Tip: Visit Alice here" },
+          { image: IMAGES.catHappy, title: "Have fun!" },
+        ]}
+        cta={{
+          title: "Get started",
+          onPress: () => setShowIntro(false),
+        }}
+      />
+
+      {/* Claim lesson reward */}
+      <ModalImage
+        show={showLessonReward}
+        slides={[
+          {
+            image: IMAGES.coin,
+            title: "Lesson completed! Here are 5 coins! 🎉",
+          },
+        ]}
+        cta={{
+          title: "Claim reward",
+          onPress: handleLessonClaimReward,
+        }}
+      />
+
+      {/* Claim quiz reward */}
+      <ModalImage
+        show={showQuizReward}
+        slides={[
+          {
+            image: IMAGES.coin,
+            title: "Quiz completed! Here are 10 coins! 🎉",
+          },
+        ]}
+        cta={{
+          title: "Claim reward",
+          onPress: handleQuizClaimReward,
+        }}
+      />
     </Box>
   );
 };

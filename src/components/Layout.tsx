@@ -50,7 +50,7 @@ const Layout = ({
 
   return (
     <>
-      <HeaderNav title={subTitle} onPress={header?.onPress} />
+      <HeaderNav title={subTitle} onPress={header?.onPress} showCoins showPet />
       <Box
         px="5"
         pt="4"

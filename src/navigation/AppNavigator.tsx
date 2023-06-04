@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import About from "../screens/About";
 import TableOfContents from "../screens/TableOfContents";
+import Pet from "../screens/Pet";
 import Module from "../screens/Module";
 import Quiz from "../screens/Quiz";
 
@@ -36,6 +37,7 @@ const AppNavigator = (data: any) => {
             component={TableOfContents}
             initialParams={{ data: data?.data?.modules }}
           />
+          <Stack.Screen name="Pet" component={Pet} />
           <Stack.Screen name="Module" component={Module} />
           <Stack.Screen name="Quiz" component={Quiz} />
         </Stack.Navigator>
