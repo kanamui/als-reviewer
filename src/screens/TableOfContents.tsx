@@ -207,7 +207,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   const isAssessTaken = (topicId: number) => {
     return modules[module].topics?.[topic]?.assessment >= 0;
-  }
+  };
 
   const isAssessmentUnlocked = (topicId: number) => {
     const lessons = modules[module].topics?.[topicId]?.lessons;
@@ -240,17 +240,19 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
               {/* Lesson */}
               <LessonCard
                 title={`Lesson ${lessonKey + 1}: ${lesson?.title}`}
-                sections={lesson?.items?.map((slide: ISlide, index: number) => {
-                  const complete = isSectionComplete(lessonKey, index);
-                  if (slide?.title) {
-                    return {
-                      title: slide?.section || slide?.title,
-                      active: isCurrentSection(lessonKey, index),
-                      complete: complete,
-                      onPress: () => handleLesson(lesson, lessonKey, index),
-                    };
-                  }
-                })}
+                sections={lesson?.items
+                  ?.map((slide: ISlide, index: number) => {
+                    const complete = isSectionComplete(lessonKey, index);
+                    if (slide?.section || slide?.title) {
+                      return {
+                        title: slide?.section || slide?.title,
+                        active: isCurrentSection(lessonKey, index),
+                        complete: complete,
+                        onPress: () => handleLesson(lesson, lessonKey, index),
+                      };
+                    }
+                  })
+                  .filter((slide: ISlide) => slide !== undefined)}
               />
 
               {/* Quiz */}

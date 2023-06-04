@@ -1,6 +1,15 @@
 import React from "react";
 import { InterfaceBoxProps } from "native-base/lib/typescript/components/primitives/Box";
-import { Box, Button, HStack, Heading, Icon, Text, VStack } from "native-base";
+import {
+  Box,
+  Button,
+  HStack,
+  Heading,
+  Icon,
+  IconButton,
+  Text,
+  VStack,
+} from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { ILessonCard, ISection } from "../models/components/ILessonCard";
 import AnimatedPressable from "./AnimatedPressable";
@@ -22,6 +31,22 @@ const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
     ? !sections?.find((s) => s?.active || s?.complete)
     : false;
 
+  // Handlers
+  const handleStart = () => {
+    const complete = sections?.filter(
+      (section: ISection) => section?.complete === true
+    ).length;
+    if (complete === sections?.length && sections?.[0]?.onPress) {
+      // start from beginning
+      sections[0].onPress();
+    } else {
+      const active = sections?.find((section: ISection) => section?.active);
+      // resume lesson
+      if (active?.onPress) active.onPress();
+    }
+  };
+
+  // Functions
   const isSectionDisabled = (section: ISection) => {
     return (isDisabled || !section?.active) && !section?.complete;
   };
@@ -29,35 +54,55 @@ const LessonCard: React.FC<ILessonCard & InterfaceBoxProps> = ({
   return (
     <Box borderWidth="1" borderColor="gray.200" mb="5" bg="white" {...props}>
       <HStack
+        w="full"
         p="5"
-        space="3"
         borderBottomWidth={cta || sections ? 1 : 0}
         borderBottomColor="gray.200"
         alignItems="center"
+        justifyContent="space-between"
       >
-        {icon && (
-          <Icon
-            size="lg"
-            as={MaterialCommunityIcons}
-            name={icon}
-            color={isDisabled ? "gray.300" : "tertiary.600"}
+        <HStack space="3" alignItems="center">
+          {icon && (
+            <Icon
+              size="lg"
+              as={MaterialCommunityIcons}
+              name={icon}
+              color={isDisabled ? "gray.300" : "tertiary.600"}
+            />
+          )}
+          <VStack>
+            {score && (
+              <Text color="tertiary.400" bold>
+                {score}
+              </Text>
+            )}
+            {title && (
+              <Heading fontSize="md" color={isDisabled ? "gray.300" : "black"}>
+                {title}
+              </Heading>
+            )}
+            {longText && (
+              <Text color={isDisabled ? "gray.300" : "black"}>{longText}</Text>
+            )}
+          </VStack>
+        </HStack>
+        {sections && (
+          <IconButton
+            p="1"
+            bg="tertiary.600"
+            borderRadius="full"
+            icon={
+              <Icon
+                as={MaterialCommunityIcons}
+                name="play"
+                size="sm"
+                color="white"
+              />
+            }
+            onPress={handleStart}
+            isDisabled={isDisabled}
           />
         )}
-        <VStack>
-          {score && (
-            <Text color="tertiary.400" bold>
-              {score}
-            </Text>
-          )}
-          {title && (
-            <Heading fontSize="md" color={isDisabled ? "gray.300" : "black"}>
-              {title}
-            </Heading>
-          )}
-          {longText && (
-            <Text color={isDisabled ? "gray.300" : "black"}>{longText}</Text>
-          )}
-        </VStack>
       </HStack>
       {sections?.map((section: ISection, key: number) => {
         return section?.title ? (
