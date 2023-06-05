@@ -1,3 +1,5 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { persist, createJSONStorage } from "zustand/middleware";
 import { create } from "zustand";
 import { IPetActivity } from "../models/IPetActivity";
 
@@ -21,10 +23,12 @@ interface IModuleStore {
 
 interface IPetStore {
   activity: IPetActivity;
+  mood: number;
+  help: boolean;
 }
 
 interface ISettingStore {
-  intro: boolean;
+  help: boolean;
   coins: number;
 }
 
@@ -32,6 +36,13 @@ interface IGlobalStore {
   modules: IModuleStore[];
   pet: IPetStore;
   settings: ISettingStore;
+
+  homeHelpDone: () => void;
+  petHelpDone: () => void;
+
+  addCoins: (value: number) => void;
+  buyTreat: (price: number, activity: IPetActivity) => void;
+
   setCurrentTopic: (module: number, topic: number) => void;
   setSlide: (module: number, topic: number, lesson: number, slide: number) => void;
   slideIncrement: (module: number, topic: number, lesson: number) => void;
@@ -42,86 +53,133 @@ interface IGlobalStore {
   setTopicComplete: (module: number, topic: number) => void;
 }
 
-const useStore = create<IGlobalStore>((set) => ({
-  modules: [
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-    { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
-  ],
-  pet: {
-    activity: "sleep",
-  },
-  settings: {
-    intro: true,
-    coins: 0,
-  },
+const useStore = create(
+  persist<IGlobalStore>(
+    (set, get) => ({
+      modules: [
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+        { current: 0, topics: [{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]},{assessment: -1, complete: false, lessons: [{slide: 0, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false},{slide: -1, quiz: -1, half: false, complete: false}]}] },
+      ],
+      pet: {
+        activity: "sleep",
+        mood: 0,
+        help: true,
+      },
+      settings: {
+        help: true,
+        coins: 0,
+      },
 
-  setCurrentTopic: (module, topic) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module] && topic < modules[module].topics.length) {
-      modules[module].current = topic;
-    }
-    return { modules };
-  }),
+      homeHelpDone: () =>
+        set((state) => {
+          state.settings.help = false;
+          return state;
+        }),
+      
+      petHelpDone: () =>
+        set((state) => {
+          state.pet.help = false;
+          return state;
+        }),
 
-  setSlide: (module, topic, lesson, slide) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
-      modules[module].topics[topic].lessons[lesson].slide = slide;
-    }
-    return { modules };
-  }),
+      addCoins: (value) =>
+        set((state) => {
+          state.settings.coins += value;
+          return state;
+        }),
 
-  slideIncrement: (module, topic, lesson) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
-      modules[module].topics[topic].lessons[lesson].slide += 1;
-    }
-    return { modules };
-  }),
+      buyTreat: (price, activity) =>
+        set((state) => {
+          state.settings.coins -= price;
+          state.pet.activity = activity;
+          state.pet.mood += 20;
+          if (state.pet.mood > 100) state.pet.mood = 100;
+          return state;
+        }),
 
-  setAssessmentScore: (module, topic, score) => set((state) => {
-    const modules = [...state.modules];
-    if (score > modules?.[module]?.topics?.[topic]?.assessment) {
-      modules[module].topics[topic].assessment = score;
-    }
-    return { modules };
-  }),
+      setCurrentTopic: (module, topic) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module] && topic < modules[module].topics.length) {
+            modules[module].current = topic;
+          }
+          return { modules };
+        }),
 
-  setQuizScore: (module, topic, lesson, score) => set((state) => {
-    const modules = [...state.modules];
-    if (score > modules?.[module]?.topics?.[topic]?.lessons?.[lesson]?.quiz) {
-      modules[module].topics[topic].lessons[lesson].quiz = score;
-    }
-    return { modules };
-  }),
+      setSlide: (module, topic, lesson, slide) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
+            modules[module].topics[topic].lessons[lesson].slide = slide;
+          }
+          return { modules };
+        }),
 
-  setLessonComplete: (module, topic, lesson) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
-      modules[module].topics[topic].lessons[lesson].complete = true;
-    }
-    return { modules };
-  }),
+      slideIncrement: (module, topic, lesson) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
+            modules[module].topics[topic].lessons[lesson].slide += 1;
+          }
+          return { modules };
+        }),
 
-  setLessonHalfReached: (module, topic, lesson) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
-      modules[module].topics[topic].lessons[lesson].half = true;
-    }
-    return { modules };
-  }),
+      setAssessmentScore: (module, topic, score) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (score > modules?.[module]?.topics?.[topic]?.assessment) {
+            modules[module].topics[topic].assessment = score;
+          }
+          return { modules };
+        }),
 
-  setTopicComplete: (module, topic) => set((state) => {
-    const modules = [...state.modules];
-    if (modules?.[module]?.topics?.[topic]) {
-      modules[module].topics[topic].complete = true;
+      setQuizScore: (module, topic, lesson, score) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (
+            score > modules?.[module]?.topics?.[topic]?.lessons?.[lesson]?.quiz
+          ) {
+            modules[module].topics[topic].lessons[lesson].quiz = score;
+          }
+          return { modules };
+        }),
+
+      setLessonComplete: (module, topic, lesson) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
+            modules[module].topics[topic].lessons[lesson].complete = true;
+          }
+          return { modules };
+        }),
+
+      setLessonHalfReached: (module, topic, lesson) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module]?.topics?.[topic]?.lessons?.[lesson]) {
+            modules[module].topics[topic].lessons[lesson].half = true;
+          }
+          return { modules };
+        }),
+
+      setTopicComplete: (module, topic) =>
+        set((state) => {
+          const modules = [...state.modules];
+          if (modules?.[module]?.topics?.[topic]) {
+            modules[module].topics[topic].complete = true;
+          }
+          return { modules };
+        }),
+    }),
+    {
+      name: "als-storage",
+      storage: createJSONStorage(() => AsyncStorage),
     }
-    return { modules };
-  }),
-}));
+  )
+);
 
 export default useStore;

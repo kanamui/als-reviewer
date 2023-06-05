@@ -10,16 +10,16 @@ import {
   Pressable,
   Text,
 } from "native-base";
+import { IHeaderNav } from "../models/components/IHeaderNav";
 import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
 
-interface IHeaderNav {
-  title?: string;
-  showCoins?: boolean;
-  showPet?: boolean;
-  onPress?: () => void;
-}
-
-const HeaderNav = ({ title, onPress, showCoins, showPet }: IHeaderNav) => {
+const HeaderNav = ({
+  title,
+  showCoins,
+  showPet,
+  onPress,
+  onHelpPress,
+}: IHeaderNav) => {
   // Hooks
   const navigation: any = useNavigation();
   const { settings } = useStore();
@@ -100,10 +100,25 @@ const HeaderNav = ({ title, onPress, showCoins, showPet }: IHeaderNav) => {
             p="2"
             borderRadius="full"
             bg="tertiary.700"
+            _pressed={{
+              bg: "tertiary.800",
+            }}
             icon={
-              <Icon as={Ionicons} size="sm" color="white" name="logo-octocat" />
+              <Icon as={Ionicons} size="sm" color="white" name="paw-sharp" />
             }
             onPress={handlePet}
+          />
+        )}
+        {onHelpPress && (
+          <IconButton
+            p="2"
+            borderRadius="full"
+            bg="tertiary.700"
+            _pressed={{
+              bg: "tertiary.800",
+            }}
+            icon={<Icon as={Ionicons} size="sm" color="white" name="help" />}
+            onPress={onHelpPress}
           />
         )}
       </HStack>

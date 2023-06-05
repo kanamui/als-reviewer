@@ -10,10 +10,14 @@ export const IMAGES: any = {
   coin: require("../../../assets/als/coin.png"),
   lightbulb: require("../../../assets/als/lightbulb.png"),
   denied: require("../../../assets/als/denied.png"),
+  background: require("../../../assets/als/paw-bg.png"),
 
   // TIPS
-  tip1: require("../../../assets/als/tip1.png"),
-  tip2: require("../../../assets/als/tip2.png"),
+  tip1: require("../../../assets/als/tips/tip1.jpg"),
+  tip2: require("../../../assets/als/tips/tip2.jpg"),
+  tip3: require("../../../assets/als/tips/tip3.jpg"),
+  tip4: require("../../../assets/als/tips/tip4.jpg"),
+  tip5: require("../../../assets/als/tips/tip5.jpg"),
 
   // PET
   catFish: require("../../../assets/als/pet/cat-fish.png"),

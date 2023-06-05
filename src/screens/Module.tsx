@@ -10,6 +10,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
   const {
     modules,
     settings,
+    addCoins,
     slideIncrement,
     setLessonHalfReached,
     setLessonComplete,
@@ -54,7 +55,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
 
   const handleClaimReward = () => {
     setShowReward(false);
-    settings.coins += 5;
+    addCoins(5);
   }
 
   // Effects

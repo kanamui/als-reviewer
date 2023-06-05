@@ -5,9 +5,12 @@ export interface IModalImage {
   show?: boolean;
   delay?: number;
   cta?: ICta;
+  closeAlign?: "left" | "right";
+  onClose?: () => void;
 }
 
 export interface IModalImageSlide {
   image: any;
   title?: string;
+  hideClose?: boolean;
 }

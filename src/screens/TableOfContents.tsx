@@ -15,19 +15,21 @@ import ModalImage from "../components/ModalImage";
 type ITOCScreen = "main" | "topics" | "lessons";
 
 const TableOfContents: React.FC = ({ navigation, route }: any) => {
+  // Variables
+  const { data } = route.params;
+
+  // Hooks
+  const { modules, settings, homeHelpDone, addCoins } = useStore();
+
   // States
   const [module, setModule] = useState(0);
   const [topic, setTopic] = useState(0);
   const [screen, setScreen] = useState<ITOCScreen>("main");
   const [show, setShow] = useState(true);
 
-  const [showIntro, setShowIntro] = useState(true);
+  const [showHelp, setShowHelp] = useState(settings.help);
   const [showLessonReward, setShowLessonReward] = useState(false);
   const [showQuizReward, setShowQuizReward] = useState(false);
-
-  // Variables
-  const { data } = route.params;
-  const { modules, settings } = useStore();
 
   // TOPIC
   const isCurrentTopic = (topicId: number) => {
@@ -152,6 +154,11 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     }
   };
 
+  const handleHelpClose = () => {
+    setShowHelp(false);
+    homeHelpDone();
+  };
+
   // Effects
   useEffect(() => {
     // force reload cached images
@@ -183,12 +190,12 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   const handleQuizClaimReward = () => {
     setShowQuizReward(false);
-    settings.coins += 10;
-  }
+    addCoins(10);
+  };
 
   const handleLessonClaimReward = () => {
     setShowLessonReward(false);
-    settings.coins += 5;
+    addCoins(5);
   };
 
   const getHeaderTitle = () => {
@@ -361,6 +368,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         onPress={handleGoBack}
         showCoins
         showPet
+        onHelpPress={() => setShowHelp(true)}
       />
       <Box
         pt="3"
@@ -376,11 +384,11 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         </ScrollView>
       </Box>
 
-      {/* Introduction */}
+      {/* Instructions */}
       <ModalImage
-        show={showIntro}
+        show={showHelp}
         slides={[
-          { image: IMAGES.catHello, title: "Hello there, I'm Alice!" },
+          { image: IMAGES.catHello, title: "Meow~ I'm Alice!" },
           {
             image: IMAGES.catHappy,
             title: "Your mission is to make me happy!",
@@ -388,14 +396,23 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
           { image: IMAGES.lightbulb, title: "Here's the plan!" },
           { image: IMAGES.coin, title: "Study hard to get coins" },
           { image: IMAGES.mouse, title: "So you can buy me treats!" },
-          { image: IMAGES.tip1, title: "Tip: See your total coins here" },
-          { image: IMAGES.tip2, title: "Tip: Visit Alice here" },
-          { image: IMAGES.catHappy, title: "Have fun!" },
+          {
+            image: IMAGES.tip1,
+            title: "Tip: see your coins here",
+            hideClose: true,
+          },
+          {
+            image: IMAGES.tip2,
+            title: "Tip: visit Alice here",
+            hideClose: true,
+          },
+          { image: IMAGES.catYay, title: "Have fun meow learning!" },
         ]}
         cta={{
           title: "Get started",
-          onPress: () => setShowIntro(false),
+          onPress: handleHelpClose,
         }}
+        onClose={handleHelpClose}
       />
 
       {/* Claim lesson reward */}

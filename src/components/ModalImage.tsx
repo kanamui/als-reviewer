@@ -2,16 +2,25 @@ import { useEffect, useState } from "react";
 import {
   Box,
   Button,
+  CloseIcon,
   HStack,
   Image,
   PresenceTransition,
+  Pressable,
   Stack,
   Text,
   VStack,
 } from "native-base";
 import { IModalImage } from "../models/components/IModalImage";
 
-const ModalImage = ({ slides, show, delay, cta }: IModalImage) => {
+const ModalImage = ({
+  slides,
+  show,
+  delay,
+  cta,
+  closeAlign = "right",
+  onClose,
+}: IModalImage) => {
   const [visible, setVisible] = useState(false);
   const [slide, setSlide] = useState(0);
   const [render, setRender] = useState(true);
@@ -34,8 +43,16 @@ const ModalImage = ({ slides, show, delay, cta }: IModalImage) => {
   }, [slide]);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setVisible(!!show), delay || 500);
-    return () => clearInterval(timeout);
+    if (show) {
+      const close = () => {
+        setVisible(true);
+        setSlide(0);
+      };
+      const timeout = setTimeout(close, delay || 500);
+      return () => clearInterval(timeout);
+    } else {
+      setVisible(false);
+    }
   }, [show]);
 
   return visible ? (
@@ -75,7 +92,7 @@ const ModalImage = ({ slides, show, delay, cta }: IModalImage) => {
                 animate={{
                   opacity: 1,
                   transition: {
-                    duration: 100,
+                    duration: 200,
                   },
                 }}
               >
@@ -86,6 +103,19 @@ const ModalImage = ({ slides, show, delay, cta }: IModalImage) => {
                   alt="picture"
                 />
               </PresenceTransition>
+            )}
+            {onClose && !slides[slide].hideClose && (
+              <Box
+                position="absolute"
+                left={closeAlign === "left" ? 2 : undefined}
+                right={closeAlign === "right" ? 2 : undefined}
+                top="2"
+                opacity={0.5}
+              >
+                <Pressable onPress={onClose} p="1">
+                  <CloseIcon size="md" />
+                </Pressable>
+              </Box>
             )}
           </Box>
           {slideLength > 1 && (

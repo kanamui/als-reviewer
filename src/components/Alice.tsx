@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from "react";
+import { View } from "react-native";
 import { Animated } from "react-native";
-import { Image } from "native-base";
+import {
+  Box,
+  Center,
+  CloseIcon,
+  Image,
+  Pressable,
+  Stack,
+  Text,
+} from "native-base";
 import { IMAGES } from "../logic/constants/images.constants";
 import { IPetActivity } from "../models/IPetActivity";
+import useStore from "../store/store";
 
-interface IAlice {
-  activity?: IPetActivity;
-}
-
-const Alice = ({ activity }: IAlice) => {
+const Alice = () => {
+  const { pet } = useStore();
+  const [initiated, setInitiated] = useState(false);
+  const [activity, setActivity] = useState<IPetActivity>("sleep");
   const [show, setShow] = useState(true);
+  const [showStats, setShowStats] = useState(false);
   const scaleValue = new Animated.Value(1);
 
   // Functions
@@ -31,54 +41,117 @@ const Alice = ({ activity }: IAlice) => {
     }
   };
 
-  const startBreath = () => {
-    Animated.timing(scaleValue, {
-      toValue: 1.1,
-      duration: 1000,
-      useNativeDriver: true,
-    }).start();
+  const getActivityFromMood = (): IPetActivity => {
+    if (pet.mood >= 90) {
+      return "excited";
+    } else if (pet.mood >= 30) {
+      return "happy";
+    }
+    return "sleep";
   };
 
-  const startBreathLooped = () => {
-    const scaleAnimation = Animated.timing(scaleValue, {
+  const getMood = () => {
+    if (pet.mood >= 90) {
+      return "Happy happy happy";
+    } else if (pet.mood >= 60) {
+      return "Very happy";
+    } else if (pet.mood >= 30) {
+      return "Happy";
+    } else {
+      return "Grumpy";
+    }
+  };
+
+  const startAnimation = () => {
+    const scaleAnimate = Animated.timing(scaleValue, {
       toValue: 1.1,
-      duration: 1000,
+      duration: 600,
       useNativeDriver: true,
     });
-    const resetAnimation = Animated.timing(scaleValue, {
+    const resetScale = Animated.timing(scaleValue, {
       toValue: 1,
       duration: 1000,
       useNativeDriver: true,
     });
-    const animationLoop = Animated.sequence([scaleAnimation, resetAnimation]);
-    const loopedAnimation = Animated.loop(animationLoop);
-    loopedAnimation.start();
-    return () => loopedAnimation.stop();
+    const animate = Animated.sequence([scaleAnimate, resetScale]);
+    animate.start();
+    return () => animate.stop();
   };
 
   // Effects
   useEffect(() => {
-    // startBreath();
-    startBreathLooped();
+    if (show) {
+      // startAnimation();
+    }
   }, [show]);
 
   useEffect(() => {
     setShow(false);
-    const timeout = setTimeout(() => setShow(true));
+    const updateAlice = () => {
+      setActivity(initiated ? pet.activity : getActivityFromMood());
+      setInitiated(true);
+      setShow(true);
+    };
+    const timeout = setTimeout(updateAlice);
     return () => clearInterval(timeout);
-  }, [activity]);
+  }, [pet.activity, pet.mood]);
 
   return (
-    <Animated.View style={{ transform: [{ scale: scaleValue }] }}>
-      {show && (
-        <Image
-          size="full"
-          resizeMode="contain"
-          source={getImage()}
-          alt="picture"
-        />
+    <>
+      {/* Alice */}
+      <Animated.View style={{ transform: [{ scale: scaleValue }] }}>
+        {show && (
+          <Pressable onPress={() => setShowStats((prev) => !prev)}>
+            <Image
+              size="full"
+              resizeMode="contain"
+              source={getImage()}
+              alt="picture"
+            />
+          </Pressable>
+        )}
+      </Animated.View>
+
+      {/* Stats */}
+      {showStats && (
+        <Center position="absolute" top="4" w="full">
+          <Stack
+            w="80%"
+            px="4"
+            py="3"
+            bg="light.50"
+            borderRadius="lg"
+            borderWidth="1"
+            borderColor="gray.300"
+            space="1"
+          >
+            <Box position="absolute" right="1" top="1">
+              <Pressable onPress={() => setShowStats((prev) => !prev)} p="1">
+                <CloseIcon size="sm" />
+              </Pressable>
+            </Box>
+            <Text fontSize="xs">
+              <Text bold>Name: </Text>Alice
+            </Text>
+            <Text fontSize="xs">
+              <Text bold>Mood: </Text>
+              {getMood()}
+            </Text>
+          </Stack>
+          <Box position="absolute" bottom="-8px">
+            <View style={{ transform: [{ rotate: "45deg" }] }}>
+              <Box
+                size="4"
+                bg="light.50"
+                borderRightWidth="1"
+                borderBottomWidth="1"
+                borderColor="gray.300"
+              ></Box>
+            </View>
+          </Box>
+        </Center>
       )}
-    </Animated.View>
+    </>
   );
 };
 
