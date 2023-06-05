@@ -266,7 +266,7 @@
                   },
                   {
                     "image": "T1056",
-                    "title": "INSERTING AND REMOVING A LINE BREAK",
+                    "title": "Inserting and Removing a Line Break",
                     "longText": "Line breaks end a current line and lets you continue the text on another line. These are useful for separating paragraphs from each other, without the space registering as an empty line that can have characters on it.<br><br>1. Place the cursor where you want to put a line break. For example, the third sentence in the first paragraph will be placed on a new line."
                   },
                   {
@@ -377,7 +377,7 @@
                   },
                   {
                     "image": "T1083",
-                    "title": "INSERTING AND FORMATTING TABLES",
+                    "title": "Inserting and Formatting Tables",
                     "longText": "Tables can help you control the alignment of contents, keep related contents together, layout step-by-step instructions and present numerical data. A table is a grid of cells arranged in rows and columns.<br><br>1. To insert a table in a document, click the Insert tab and choose Table in the Tables group."
                   },
                   {
@@ -526,12 +526,12 @@
                   },
                   {
                     "image": "T1117",
-                    "title": "PREPARING THE DOCUMENT TO BE MAIL MERGED",
+                    "title": "Preparing the Document to be Mail Merged",
                     "longText": "To begin, let us have an invitation letter as the document for mail merge.<br>Notice the big space between the date and the content of the letter. This space will hold the individual name and greeting for each recipient."
                   },
                   {
                     "image": "T1118",
-                    "title": "SELECTING THE RECIPIENTS",
+                    "title": "Selecting the Recipients",
                     "longText": "Before mail merging, make sure you have the list of recipients. You can create a database of recipients if you do not have an existing list in a spreadsheet or email contacts.<br><br>1. To create, click <b>Select Recipients</b> in the Mailings tab."
                   },
                   {
@@ -598,7 +598,7 @@
                   },
                   {
                     "image": "T1134",
-                    "title": "INSERTING AND DELETING PAGE BREAKS IN A DOCUMENT",
+                    "title": "Inserting and Deleting Page Breaks in a Document",
                     "longText": "Word automatically adds page breaks when there is more content that can fit on one page, but sometimes you will want to add a break somewhere else, for example, if you are creating a new section in a long document or more space around an image or a chart. Page breaks work when you want to use another page to put other words or images.<br><br>To insert a page break in a document, follow the following steps:<br><br>1. Place your cursor where you want to create a page break. For example, the rest of the paragraphs needs to be in another page."
                   },
                   {
@@ -611,7 +611,7 @@
                   },
                   {
                     "image": "T1137",
-                    "title": "PLACING HEADERS AND FOOTERS",
+                    "title": "Placing Headers and Footers",
                     "longText": "The Header and Footer group can be found on the Insert tab.<br><br>1. To add text or graphics to the top or bottom of the pages in your document, add a header or footer. Changes made in the header and footer will appear on every page of your document."
                   },
                   {
@@ -658,7 +658,7 @@
                   },
                   {
                     "image": "T1148",
-                    "title": "CHECKING SPELLING AND GRAMMAR",
+                    "title": "Checking Spelling and Grammar",
                     "longText": "Word processors such as Microsoft Word have a feature to check your document for spelling and grammar mistakes. Let us follow this step-by-step guide to learn how to use it.<br><br>1. To correct, just right click on the word and then choose the suggested correction."
                   },
                   {
@@ -671,7 +671,7 @@
                   },
                   {
                     "image": "T1151",
-                    "title": "PREVIEWING AND PRINTING A DOCUMENT",
+                    "title": "Previewing and Printing a Document",
                     "longText": "1. To print a document, check first if there is an installed printer and if it is plugged properly.<br><br>2. Microsoft Word allows you to preview your document before printing. If you press <b>Ctrl+P</b> or click the File tab and select Print, you will be directed to the <b>Print</b> window where you can preview your document."
                   },
                   {
@@ -853,51 +853,46 @@
                   },
                   {
                     "image": "T2009",
-                    "title": "SPREADSHEET",
+                    "title": "Spreadsheet",
                     "longText": "A spreadsheet or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form. Spreadsheet software programs are considered unique because they can calculate values using mathematical formulas and data in the cells.<br><br>Like word processors, many applications are used to create spreadsheets. Below is a list of the most common spreadsheet applications and their operating system where these programs can be opened."
                   },
                   {
                     "image": "T2010",
-                    "title": "USES OF SPREADSHEET",
+                    "title": "Uses of Spreadsheet",
                     "longText": "Spreadsheets are mostly used in accounting and recording data, such as preparing budgets, recording students' grades, preparing financial statements, analyzing numbers, managing inventory, or making forecasts. Spreadsheets can be used at home, in school, in work, or in business."
                   },
                   {
                     "image": "T2011",
-                    "title": "PARTS OF A SPREADSHEET",
+                    "title": "Parts of a Spreadsheet",
                     "longText": "Let us get to know the parts of Microsoft Excel before creating spreadsheets. To open Microsoft Excel, look for the Excel logo in your desktop or search using the search bar and then double-click. Spreadsheets are contained in a file called workbook. In Microsoft Excel, Book with a number beside it (in this case “Book1”) refers to the spreadsheet's file name. The basic parts of the Microsoft Excel are row, column, cell, active cell, cell address, and formula bar."
                   },
                   {
                     "image": "T2012",
-                    "title": "PARTS OF A SPREADSHEET",
                     "longText": "Rows. - The horizontally aligned cells in a spreadsheet, identified with numbers (row header).<br><br>Columns - The vertically aligned cells in a spreadsheet, identified with letters (column header).<br><br>Cell - An individual intersection between rows and columns, labeled by the row number and column letter."
                   },
                   {
-                    "title": "PARTS OF A SPREADSHEET",
                     "longText": "Active cell - The cell currently being edited, marked by a thick black border around the cell.<br><br>Cell address - Also called cell reference, an alphanumeric value used to identify a specific cell.<br><br>Formula bar - Shows the contents of the active cell and allows you to create and view formulas.<br><br>Sheet tabs - Contains the names of the available worksheets in the current workbook."
                   },
                   {
                     "image": "T2014",
-                    "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
+                    "title": "Opening and Closing a Spreadsheet Application",
                     "longText": "1. To launch or open a spreadsheet application, double-click the spreadsheet icon in the desktop if it is available. For example, you will see the Excel icon is in the desktop."
                   },
                   {
                     "image": "T2015",
-                    "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "2. You may also use the search bar on the taskbar. Type the name of the spreadsheet application you are looking for. For example, type Excel; if there is a result, click it to launch."
                   },
                   {
                     "image": "T2016",
-                    "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "3. To open a new workbook, click New on the right side of the screen then select Blank workbook."
                   },
                   {
                     "image": "T2017",
-                    "title": "OPENING AND CLOSING A SPREADSHEET APPLICATION",
                     "longText": "4. To close a spreadsheet application, click the Close button on the upper right corner of the screen."
                   },
                   {
                     "image": "T2018",
-                    "title": "CREATING A NEW SPREADSHEET BASED ON THE AVAILABLE TEMPLATES",
+                    "title": "Creating a New Spreadsheet Based on the Available Templates",
                     "longText": "Microsoft Excel allows users to use available templates with formatting and predefined formulas. You can browse different templates, depending on the type of spreadsheet you want to create, such as record lists, budgets, calendars, schedules, inventory lists, and plans."
                   },
                   {
@@ -914,7 +909,7 @@
                   },
                   {
                     "image": "T2022",
-                    "title": "SAVING A WORKBOOK",
+                    "title": "Saving a Workbook",
                     "longText": "1. To save a new workbook, press Ctrl+S on the keyboard. You can also click the Save button on the upper left corner of the workbook, or click the File tab then select Save.<br><br>2. A dialog box will appear, asking for a File Name and Choose a Location where the file will be stored. If you are going to locate a folder, click the drop-down arrow on Choose a Location or click More save options to look for other locations. Enter your desired file name and press."
                   },
                   {
@@ -943,7 +938,7 @@
                   },
                   {
                     "image": "T2029",
-                    "title": "USING AVAILABLE HELP FUNCTIONS",
+                    "title": "Using Available Help Functions",
                     "longText": "The help feature in Microsoft Office applications is usually the fastest and easiest way to get help. In Windows, access it by pressing F1 in the application or just click the Help tab."
                   },
                   {
@@ -952,7 +947,7 @@
                   },
                   {
                     "image": "T2031",
-                    "title": "ZOOM TOOLS",
+                    "title": "Zoom Tools",
                     "longText": "Zoom tools are available in most applications such as Microsoft Word, Microsoft Excel, and Microsoft PowerPoint. Zoom tools let you zoom in or out your documents, workbooks, or presentations while working on them. You can find the zoom tools under the View tab of the application."
                   },
                   {
@@ -965,7 +960,7 @@
                   },
                   {
                     "image": "T2034",
-                    "title": "USING RIBBONS, TABS, AND THE QUICK ACCESS TOOLBAR",
+                    "title": "Using Ribbons, Tabs, and the Quick Access Toolbar",
                     "longText": "Ribbons are designed to help you quickly find the command that you want to execute in Microsoft Office. Ribbons are divided into logical groups called tabs, and each tab has its own set of groups with unique functions to perform. There are various tabs: Home, Insert, Page Layout, Formulas, Data, Review, and View.<br><br>Ribbons can be hidden when you collapse or minimize ribbons. Right- click on the ribbon area and choose Collapse the Ribbon."
                   },
                   {
@@ -982,7 +977,7 @@
                   },
                   {
                     "image": "T2038",
-                    "title": "USING SPREADSHEET CELLS",
+                    "title": "Using Spreadsheet Cells",
                     "longText": "As aforementioned, a cell is made up of a row and a column. Each cell should only contain one element of data. If you are ready to insert data or content, click a cell.<br><br>1. Click the cell to insert data such as numbers, dates, and texts. Let us put data in cells A1 to A5.<br><br>To organize your workbook, starting at the left corner of the sheet is recommended."
                   },
                   {
@@ -999,7 +994,7 @@
                   },
                   {
                     "image": "T2042",
-                    "title": "CREATING LISTS",
+                    "title": "Creating Lists",
                     "longText": "When creating lists of data in a spreadsheet, remember the basics to for better results. Examine the sample illustrations below.<br><br>1. Avoid blank rows and columns in the main body of the list. It may look unpleasing to the eye, and the data may look disorganized."
                   },
                   {
@@ -1012,7 +1007,7 @@
                   },
                   {
                     "image": "T2045",
-                    "title": "SELECTING CELLS AND WORKSHEETS",
+                    "title": "Selecting Cells and Worksheets",
                     "longText": "1. To select a single cell, click the cell using your mouse or use the arrows keys on the keyboard.<br><br>2. To select a range of cells, hold the left button of your mouse and drag from the start of the range up to the end. You may also use the arrow keys while holding the Shift key in the keyboard."
                   },
                   {
@@ -1025,7 +1020,7 @@
                   },
                   {
                     "image": "T2048",
-                    "title": "COPYING AND MOVING CELL CONTENTS",
+                    "title": "Copying and Moving Cell Contents",
                     "longText": "1. To copy cell content, follow the steps we previously discussed on selecting cells then click Copy in the Clipboard group on the Home tab, or press Ctrl+C on your keyboard. You can also right-click on the selected cells and choose Copy."
                   },
                   {
@@ -1046,7 +1041,7 @@
                   },
                   {
                     "image": "T2053",
-                    "title": "USING THE AUTOFILL TOOL",
+                    "title": "Using the Autofill Tool",
                     "longText": "Instead of entering data manually, Microsoft Excel has a feature called AutoFill that lets you fill cells automatically. It may either follow a pattern or base on data from other cells.<br><br>1. To use AutoFill, let us enter a text in a cell. In this example, let us type a month, say, January."
                   },
                   {
@@ -1070,7 +1065,7 @@
                   },
                   {
                     "image": "T2059",
-                    "title": "SELECTING ROWS AND COLUMNS",
+                    "title": "Selecting Rows and Columns",
                     "longText": "1. To choose a row or a column, click the row header (number) or column header (letter).<br><br>2. To click more than one row or column, click and hold the headers, hold the left button, and drag the mouse vertically or horizontally."
                   },
                   {
@@ -1079,7 +1074,7 @@
                   },
                   {
                     "image": "T2061",
-                    "title": "ADJUSTING ROW HEIGHT AND COLUMN WIDTH",
+                    "title": "Adjusting Row Height and Column Width",
                     "longText": "1. To adjust the row height, select the row headers to be adjusted and then point your mouse to the last selected row header. Double-click or resize it manually by holding the left button while dragging down the headers."
                   },
                   {
@@ -1088,7 +1083,7 @@
                   },
                   {
                     "image": "T2063",
-                    "title": "INSERTING AND DELETING ROWS AND COLUMNS",
+                    "title": "Inserting and Deleting Rows and Columns",
                     "longText": "1. To insert a row in between, right-click on the row header and click Insert.<br><br>2. To insert more than one row, select the desired number of row headers and click Insert. The selected rows correspond to the number of new rows."
                   },
                   {
@@ -1101,7 +1096,7 @@
                   },
                   {
                     "image": "T2066",
-                    "title": "FREEZING AND UNFREEZING PANES",
+                    "title": "Freezing and Unfreezing Panes",
                     "longText": "1. To keep an area of a worksheet visible while you scroll to another area of the worksheet, go to the View tab and click Freeze Panes to lock specific rows and columns in place.<br><br>2. To freeze the first column, click Freeze First Column; to freeze the top row, click Freeze Top Row. You will see a faint line between the first column and the second column. It indicates that the first column was locked or frozen."
                   },
                   {
@@ -1110,17 +1105,17 @@
                   },
                   {
                     "image": "T2068",
-                    "title": "CUSTOMIZING WORKSHEETS",
+                    "title": "Customizing Worksheets",
                     "longText": "You can only see one worksheet upon opening a workbook, and its default name is “Sheet1.” You can add more sheets, and each sheet added will have their names change incrementally."
                   },
                   {
                     "image": "T2069",
-                    "title": "ADDING WORKSHEETS",
+                    "title": "Adding Worksheets",
                     "longText": "1. To add another sheet, click the plus sign button beside Sheet 1.<br><br>2. A new sheet will appear with Sheet2 as the name. You can continue doing this if you need more worksheets."
                   },
                   {
                     "image": "T2070",
-                    "title": "RENAMING A WORKSHEET",
+                    "title": "Renaming a Worksheet",
                     "longText": "1. To Rename a worksheet, right-click on the worksheet to be renamed then select Rename. Type a meaningful worksheet name that is related to your task. Let us rename our worksheet to “Sample 1” and “Sample 2.”"
                   },
                   {
@@ -1129,7 +1124,7 @@
                   },
                   {
                     "image": "T2072",
-                    "title": "COPYING, MOVING, AND DELETING WORKSHEETS",
+                    "title": "Copying, Moving, and Deleting Worksheets",
                     "longText": "1. To copy a worksheet, right-click the worksheet to be copied then click Move or Copy.."
                   },
                   {
@@ -1150,8 +1145,59 @@
                   "section": "Sharpening Your Skills",
                   "header": "Quiz 1: Lesson 1 - Spreadsheets",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions:</b> Identify the parts of Microsoft Excel. Write your answers on a separate word document.",
-                  "image": "T2076"
+                  "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
+                  "items": [
+                    {
+                      "title": "1. _________ or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form.",
+                      "answer": "Spreadsheet",
+                      "choices": ["Spreadsheet", "Powerpoint"]
+                    },
+                    {
+                      "title": "2. Horizontally _________ aligned cells in a spreadsheet, identified with number row header.",
+                      "answer": "Rows",
+                      "choices": ["Columns", "Rows"]
+                    },
+                    {
+                      "title": "3. Vertically _________ aligned cells in a spreadsheet, identified with letters column header.",
+                      "answer": "Columns",
+                      "choices": ["Rows", "Columns"]
+                    },
+                    {
+                      "title": "4. An individual intersection _________ between rows and column, labeled by the row number and column letter.",
+                      "answer": "Cell",
+                      "choices": ["Cell", "Active Cell"]
+                    },
+                    {
+                      "title": "5. The _________ is currently being edited, marked by a thick black border around the cell.",
+                      "answer": "Active Cell",
+                      "choices": ["Active Cell", "Cell Address"]
+                    },
+                    {
+                      "title": "6. _________ also called cell reference, an alphanumeric value used to identify a specific cell.",
+                      "answer": "Cell Address",
+                      "choices": ["Cell Address", "Sheet Tabs"]
+                    },
+                    {
+                      "title": "7. Shows the content of the active cell and allows you to create and view formulas _________.",
+                      "answer": "Formula Bar",
+                      "choices": ["Sheet Tabs", "Formula Bar"]
+                    },
+                    {
+                      "title": "8. Contains the names of the available worksheet in the current workbook _________.",
+                      "answer": "Sheet Tabs",
+                      "choices": ["Sheet Tabs", "Formula Bar"]
+                    },
+                    {
+                      "title": "9. To close a spreadsheet application, click the Close button on the _________ right corner of the screen.",
+                      "answer": "upper",
+                      "choices": ["lower", "upper"]
+                    },
+                    {
+                      "title": "10. To launch or _________ in a spreadsheet application, double- click the spreadsheet icon in the desktop if it available.",
+                      "answer": "open",
+                      "choices": ["open", "close"]
+                    }
+                  ]
                 }
               },
               {
@@ -1169,7 +1215,7 @@
                   },
                   {
                     "image": "T2080",
-                    "title": "ENTERING A FORMULA",
+                    "title": "Entering a Formula",
                     "longText": "1. To enter a formula, select a cell then type an equal sign (=), followed by the cell address of the numbers to be calculated. For example, A3 is the cell where the formula will be inserted to calculate the input numbers in cells A1 and A2."
                   },
                   {
@@ -1194,7 +1240,7 @@
                   },
                   {
                     "image": "T2086",
-                    "title": "USING RELATIVE AND ABSOLUTE CELL REFERENCING",
+                    "title": "Using Relative and Absolute Cell Referencing",
                     "longText": "Cell reference or cell address is a combination of a column letter and a row number that identifies a cell on a worksheet. You can see your cell reference at the cell address bar. Cell references help Excel find the values the formula should calculate.<br>In Excel, a range is a block of two or more cells. A range reference is represented by the address of the upper left cell and the lower right cell separated with a colon. For example, the range A1:D3 contains 12 cells from A1 to D3."
                   },
                   {
@@ -1242,12 +1288,12 @@
                     "longText": "Let us check the formula of the other cell references. It is absolute because the E7 cell reference did not change for the rest of the formulas when a dollar sign was placed."
                   },
                   {
-                    "title": "USING FUNCTIONS",
+                    "title": "Using Functions",
                     "longText": "<ul><li>SUM is used to compute the total of all items in the specified range.</li><li>AVERAGE is used to get the average of the items in a range.</li><li>COUNT is used to count the values found in the range.</li><li>COUNTA is used to count cells that contain numbers, texts, logical values, error values, and empty texts returned n formulas.</li><li>ROUND is used to round a number to a specified number of digits.</li><li>MAX is used to get the largest value within the range.</li><li>MIN is used to get the smallest value within the range.</li></ul>"
                   },
                   {
                     "image": "T2099",
-                    "title": "THE SUM FUNCTION",
+                    "title": "The SUM Function",
                     "longText": "1. Let us prepare sample data to work with."
                   },
                   {
@@ -1260,7 +1306,7 @@
                   },
                   {
                     "image": "T2102",
-                    "title": "THE AVERAGE FUNCTION",
+                    "title": "The AVERAGE Function",
                     "longText": "Let us get the average, total number of quizzes, largest score, and smallest score in the quizzes of the previous example.<br><br>1. To get the average, enter =AVERAGE(B2:F2)."
                   },
                   {
@@ -1269,12 +1315,12 @@
                   },
                   {
                     "image": "T2104",
-                    "title": "THE COUNT FUNCTION",
+                    "title": "The COUNT Function",
                     "longText": "1. To use the count function, type =COUNT([range of cells]).<br><br>You can also double-click COUNT from the drop-down list. Here, we type =COUNT(B2:F2)<br><br>2. When you double-click the function, it will automatically be selected, and the next entry should be the range of the cell.<br><br>The result will be 5, which means there are five quizzes. Use the fill handle to copy the formula to the rest of the cells."
                   },
                   {
                     "image": "T2105",
-                    "title": "THE COUNTA FUNCTION",
+                    "title": "The COUNTA Function",
                     "longText": "1. If you wish to return the number of non-blank cells in one cell range, say A2:A7, use the COUNTA function. In this example, you can see that the formula returns the number of non-blank cells in the range A2:A7."
                   },
                   {
@@ -1283,17 +1329,17 @@
                   },
                   {
                     "image": "T2107",
-                    "title": "THE ROUND FUNCTION",
+                    "title": "The ROUND Function",
                     "longText": "The ROUND function in Excel rounds a number to a specified number of digits. Numbers 1, 2, 3, and 4 get rounded down, while 5, 6, 7, 8, and 9 get rounded up. Here are examples on how to use the ROUND function."
                   },
                   {
                     "image": "T2108",
-                    "title": "THE MAX AND MIN FUNCTION",
+                    "title": "The MAX And MIN Function",
                     "longText": "To use the max or min function, type in the formula =MAX([range of cells]) or =MIN([range of cells]). In these examples, we type =MAX(B2:F2) and =MIN(B2:F2).<ul><li>The maximum number should be 25, and the minimum number should be 10. Use the fill handle to copy the formulas to the rest of the cells.</li></ul>"
                   },
                   {
                     "image": "T2109",
-                    "title": "USING THE LOGICAL FUNCTION IF",
+                    "title": "Using The Logical Function IF",
                     "longText": "The logical function If is useful in decision-making statements to determine if the result is a success or not to the standard being set.<br><br>Let us use grades of students as an example.<br><br>1. Prepare a sample workbook containing students' grades in the first quarter. The remarks will only display “Passed” or “Failed.”"
                   },
                   {
@@ -1354,7 +1400,7 @@
                   },
                   {
                     "image": "T2124",
-                    "title": "CURRENCY SYMBOL",
+                    "title": "Currency Symbol",
                     "longText": "Let us put a currency symbol on the price and total prices. Select the cell range to be formatted. In this example, we will select B2:B4 and D2:D4. To select nonadjacent cells and format cells easily and quickly, press the Ctrl key while selecting the cell ranges."
                   },
                   {
@@ -1367,7 +1413,7 @@
                   },
                   {
                     "image": "T2127",
-                    "title": "PERCENTAGE",
+                    "title": "Percentage",
                     "longText": "How about discounting the price of the items? Let us put a percentage in each price. There are two ways to do it. First, enter the numbers.<br><br>For the first method, click Percent Style in the Number group."
                   },
                   {
@@ -1424,7 +1470,7 @@
                   },
                   {
                     "image": "T2141",
-                    "title": "APPLYING CELL BACKGROUND AND CONTENT COLOR",
+                    "title": "Applying Cell Background and Content Color",
                     "longText": "1. Apply color green to the background of all the headings. Highlight the cells first then click the drop-down arrow in the Fill Color command and choose green in the Standard Colors. You can also choose among Theme Colors or click More Colors."
                   },
                   {
@@ -1437,22 +1483,22 @@
                   },
                   {
                     "image": "T2144",
-                    "title": "WRAPPING TEXT CONTENT",
+                    "title": "Wrapping Text Content",
                     "longText": "Because Excel cells have a default width, long text contents overlap with other cells, but you can easily fix this by adjusting the column widths.<br><br>However, if you want to keep the width as is or shorter so that all the information is there when you print the file, use the Wrap Text command. Wrap Text can display long texts by wrapping it into multiple lines in a single cell."
                   },
                   {
                     "image": "T2145",
-                    "title": "ALIGNING CELL CONTENTS HORIZONTALLY AND VERTICALLY",
+                    "title": "Aligning Cell Contents Horizontally and Vertically",
                     "longText": "To apply horizontal alignment, select the cells then select align left, which is the default alignment; center; or align right. For the example, let us align the headings to the center.<br><br>For vertical alignment, the default is bottom alignment. You can apply top align, middle align, or bottom align. Let us align all the headings in the middle of the cell."
                   },
                   {
                     "image": "T2146",
-                    "title": "USING CELL CONTENT ORIENTATION",
+                    "title": "Using Cell Content Orientation",
                     "longText": "The Orientation command lets you rotate texts vertically or diagonally. It is a great way to label narrow columns. Simply click the Orientation command in the Alignment group then choose your preferred orientation."
                   },
                   {
                     "image": "T2147",
-                    "title": "MERGING CELLS",
+                    "title": "Merging Cells",
                     "longText": "Merging cells is to combine two or more cells. This can be useful if you want to clarify that a label in Excel applies to multiple columns. The Merge & Center command is found in the Alignment group."
                   },
                   {
@@ -1461,7 +1507,7 @@
                   },
                   {
                     "image": "T2149",
-                    "title": "APPLYING CELL BORDERS",
+                    "title": "Applying Cell Borders",
                     "longText": "Cell borders allow you to create a clear boundary among the different cells of your worksheet.<br><br>First, select the cells to be modified then click Borders in the Font group and choose what border to apply."
                   },
                   {
@@ -1478,8 +1524,59 @@
                   "section": "Sharpening Your Skills",
                   "header": "Quiz 2: Lesson 2 - Spreadsheets",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions:</b> Determine the formula needed for the following situations. Write your answers on a separate word document.",
-                  "image": "T2152"
+                  "title": "<b>Directions. Read the questions carefully and click your answer from the choices below.</b>",
+                  "items": [
+                    {
+                      "title": "1. Used to compute the total of all items in the specified range.",
+                      "answer": "SUM",
+                      "choices": ["AVERAGE", "SUM", "COUNT"]
+                    },
+                    {
+                      "title": "2. Used to get the average of the items in a range.",
+                      "answer": "AVERAGE",
+                      "choices": ["AVERAGE", "SUM", "COUNT"]
+                    },
+                    {
+                      "title": "3. Used to count the values found in the range.",
+                      "answer": "COUNT",
+                      "choices": ["AVERAGE", "SUM", "COUNT"]
+                    },
+                    {
+                      "title": "4. Used to count the cells that contain numbers, texts, logical values, error values, and empty texts returned in formulas.",
+                      "answer": "COUNTA",
+                      "choices": ["COUNTA", "ROUND", "MAX"]
+                    },
+                    {
+                      "title": "5. Used to round a number to a specified number of digits.",
+                      "answer": "ROUND",
+                      "choices": ["MIN", "MAX", "ROUND"]
+                    },
+                    {
+                      "title": "6. Used to get the largest value within the range.",
+                      "answer": "MAX",
+                      "choices": ["MIN", "MAX", "ROUND"]
+                    },
+                    {
+                      "title": "7. Used to get the smallest value within the range.",
+                      "answer": "MIN",
+                      "choices": ["MIN", "MAX", "ROUND"]
+                    },
+                    {
+                      "title": "8. To get the average, enter =AVERAGE.",
+                      "answer": "(B2:F2)",
+                      "choices": ["(B2:F2)", "(B3:F3)", "(B4:F4)"]
+                    },
+                    {
+                      "title": "9. Located beside the Font Size drop-down menu.",
+                      "answer": "Font",
+                      "choices": ["Theme", "Color", "Font"]
+                    },
+                    {
+                      "title": "10. To combine two or more cells.",
+                      "answer": "Merging Cells",
+                      "choices": ["Merging Cells", "Wrap Text", "Cell Borders"]
+                    }
+                  ]
                 }
               },
               {
@@ -1501,7 +1598,7 @@
                   },
                   {
                     "image": "T2157",
-                    "title": "CREATING A CHART",
+                    "title": "Creating A Chart",
                     "longText": "To create a chart, you must first have your data in the worksheet. Let us create a dummy grading sheet for first quarter.<br><br>1. To insert a chart, select the data you will need. In our example, select A1:B17. The remarks column is not included.<br><br>2. Click the Insert tab and find the Charts group."
                   },
                   {
@@ -1530,7 +1627,7 @@
                   },
                   {
                     "image": "T2164",
-                    "title": "CHANGING COLORS IN A CHART",
+                    "title": "Changing Colors In a Chart",
                     "longText": "To change colors, select the chart and click the Chart Design tab. Choose Change Colors then pick a set of colors.<br><br>To change the background color and text color of the chart, select the parts that you want to change the color, then select Format beside Chart Design."
                   },
                   {
@@ -1539,12 +1636,12 @@
                   },
                   {
                     "image": "T2166",
-                    "title": "FINALIZING A SPREADSHEET",
+                    "title": "Finalizing a Spreadsheet",
                     "longText": "Before printing the spreadsheet, check its setup.<br><br>Let us begin with the page setup of the spreadsheet. Page Setup is in the Page Layout tab, which includes the margins, paper size, and document orientation."
                   },
                   {
                     "image": "T2167",
-                    "title": "MARGINS",
+                    "title": "Margins",
                     "longText": "To edit the margins, click Margins. Decide which option you need for your spreadsheet. Normal is the default, but if you like none of the options, customize with Custom Margins."
                   },
                   {
@@ -1553,7 +1650,7 @@
                   },
                   {
                     "image": "T2169",
-                    "title": "SIZE AND ORIENTATION",
+                    "title": "Size and Orientation",
                     "longText": "Paper Size can be set up before you begin doing your spreadsheet. The default size is Letter size, but you can always choose which one you need.<br><br>Unlike word processors, you are unable to see the paper size in spreadsheets until you set up the size or go to Print Preview.<br><br>Once you have set up the size, you will see a marquee line indicating the boundary of the page."
                   },
                   {
@@ -1570,7 +1667,7 @@
                   },
                   {
                     "image": "T2173",
-                    "title": "HEADER AND FOOTER",
+                    "title": "Header and Footer",
                     "longText": "To add a header and footer, open the Page Setup dialog box.<br><br>In the Header/Footer tab, you will see that Excel already has a number of presets based on your worksheet when you click on the Header or Footer drop-down. You may choose from the list or customize your own."
                   },
                   {
@@ -1591,7 +1688,7 @@
                   },
                   {
                     "image": "T2178",
-                    "title": "PREVIEWING AND PRINTING SPREADSHEETS",
+                    "title": "Previewing and Printing Spreadsheets",
                     "longText": "It is important to preview your output first to avoid errors and waste of paper.<br><br>1. Select the Print Preview button on the Quick Access Toolbar or press Ctrl+P on the keyboard."
                   },
                   {
@@ -1604,8 +1701,49 @@
                   "section": "Sharpening Your Skills",
                   "header": "Quiz 3: Lesson 3 - Spreadsheets",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions:</b> Using a Venn diagram, compare and contrast the different types of charts used in a spreadsheet by listing down their characteristics and features. Do this activity on a separate word document.",
-                  "image": "T2180"
+                  "title": "<b>Direction. Read the questions carefully and click your answer from the choices below.</b>",
+                  "items": [
+                    {
+                      "title": "1. Use vertical bars to represent data. They are typically used to compare several items in a specific range of values.",
+                      "answer": "Column charts",
+                      "choices": ["Pie charts", "Bar charts", "Column charts"]
+                    },
+                    {
+                      "title": "2. Work just like column chart, but they use horizontal bars instead of vertical bars.",
+                      "answer": "Bar charts",
+                      "choices": ["Pie charts", "Bar charts", "Column charts"]
+                    },
+                    {
+                      "title": "3. Charts are ideal for showing trends.",
+                      "answer": "Line",
+                      "choices": ["Bar charts", "Pie charts", "Line"]
+                    },
+                    {
+                      "title": "4. Make it easy to compare proportions.",
+                      "answer": "Pie charts",
+                      "choices": ["Bar charts", "Pie charts", "Line"]
+                    },
+                    {
+                      "title": "4. To charge the color of the background, choose _________ in the Shape styles group.",
+                      "answer": "Shape Fill",
+                      "choices": ["Shape Fill", "Shape Outline", "Shape Effects"]
+                    },
+                    {
+                      "title": "5. For the text color, choose _________ in the WordArt Styles group.",
+                      "answer": "Text Fill",
+                      "choices": ["Shape Fill", "Text Fill", "Shape Outline"]
+                    },
+                    {
+                      "title": "6. Select the Print Preview button on the Quick Access Toolbar or press _________ on the keyboard.",
+                      "answer": "Ctrl+P",
+                      "choices": ["Ctrl+P", "Ctrl+J", "Ctrl+V"]
+                    },
+                    {
+                      "title": "7. Microsoft _________ has different types of charts that allow you to choose what is best for your data.",
+                      "answer": "Word",
+                      "choices": ["Word", "Excel", "Powerpoint"]
+                    }
+                  ]
                 }
               }
             ]
@@ -1793,8 +1931,59 @@
                   "section": "Sharpening Your Skills",
                   "header": "Quiz 1: Lesson 1 - Presentation Software",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions: Enumerate the following.</b>",
-                  "longText": "<table><tr><th>Major Parts of Microsoft PowerPoint</th><th>Ways to Manage Slides</th><th>Different Views in Microsoft PowerPoint</th></tr><tr><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol></td><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li></ol></td><td style='vertical-align: top'><ol type='1'><li>________</li><li>________</li><li>________</li><li>________</li></ol></td></tr></table>"
+                  "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
+                  "items": [
+                    {
+                      "title": "1. Tab _________ that shows you a scheme with a title and work area.",
+                      "answer": "Slide Tab",
+                      "choices": ["Slide Tab", "Slide Area"]
+                    },
+                    {
+                      "title": "2. The four buttons to the left of the zoom control allow you to switch between different displays _________.",
+                      "answer": "View Buttons",
+                      "choices": ["View Buttons", "Slide Area"]
+                    },
+                    {
+                      "title": "3. This _________ shows the current number of slides you are working with.",
+                      "answer": "Slide Number",
+                      "choices": ["Slide Tab", "Slide Number"]
+                    },
+                    {
+                      "title": "4. _________ is where most of your work such as editing, adding, and deleting content is done.",
+                      "answer": "Slide Area",
+                      "choices": ["Slide Area", "Slide Number"]
+                    },
+                    {
+                      "title": "5. This view _________ will allow you to read the slide carefully, but you cannot perform any editing.",
+                      "answer": "Reading View",
+                      "choices": ["Reading View", "Slide Show"]
+                    },
+                    {
+                      "title": "6. There are many ways to manage slides _________ more easily, especially when you have a long presentation.",
+                      "answer": "Managing Slides",
+                      "choices": ["Slide Show", "Managing Slides"]
+                    },
+                    {
+                      "title": "7. This displays all the slides _________ along with animations and sounds that you have included.",
+                      "answer": "Slide Show",
+                      "choices": ["Slide Show", "Reading View"]
+                    },
+                    {
+                      "title": "8. Presentations in Microsoft _________ are usually saved in the documents folder and with the file type PPTX.",
+                      "answer": "Powerpoint",
+                      "choices": ["Powerpoint", "Word"]
+                    },
+                    {
+                      "title": "9. The outline view shows your slide text _________ in outline form.",
+                      "answer": "Viewing an Outline",
+                      "choices": ["Slide Show", "Viewing an Outline"]
+                    },
+                    {
+                      "title": "10. _________ tools are helpful when you have a long audience, such as students in the classroom.",
+                      "answer": "Presentation",
+                      "choices": ["Presentation", "Spreadsheet"]
+                    }
+                  ]
                 }
               },
               {
@@ -1811,7 +2000,7 @@
                   },
                   {
                     "image": "T3038",
-                    "title": "THEME ELEMENTS",
+                    "title": "Theme Elements",
                     "longText": "<b>Theme Colors</b><br>There are ten theme colors with light to dark variations, available from every Color menu."
                   },
                   {
@@ -1824,7 +2013,7 @@
                   },
                   {
                     "image": "T3041",
-                    "title": "APPLYING THEMES",
+                    "title": "Applying Themes",
                     "longText": "To apply a theme, do the following steps:<br><br>1. On the Design tab, in the Themes group, click the drop-down arrow. The menu will expand to show a gallery of themes."
                   },
                   {
@@ -1841,7 +2030,7 @@
                   },
                   {
                     "image": "T3045",
-                    "title": "ENTERING TEXT INTO A PLACEHOLDER IN STANDARD AND OUTLINE VIEW",
+                    "title": "Entering Text into a Placeholder in Standard and Outline View",
                     "longText": "1. To enter a text in a standard view or normal view, click the placeholder you want to enter a text with. There are two placeholders available on the example below, one for the title and another for the subtitle."
                   },
                   {
@@ -1861,7 +2050,7 @@
                     "longText": "6. To add text on the next placeholder, the subtitle, using Outline View, position your cursor under the first letter of the title text. In this example, click your mouse under the letter H. If you wish to add a new slide, just press enter."
                   },
                   {
-                    "title": "Copying, Cutting, And Pasting In Presentations",
+                    "title": "Copying, Cutting, and Pasting in Presentations",
                     "longText": "<i>To copy a text</i>:<br><br>1.Highlight the text, right-click, and then choose Copy; or simply press the shortcut key, Ctrl+C.<br><br>2. Select the slide of the presentation where you want to paste the copied text."
                   },
                   {
@@ -1871,7 +2060,7 @@
                     "longText": "<i>To paste a text:</i><br><br>1. Click the area where you want to paste the text then right-click, and then select Paste. Or simply press the shortcut key, Ctrl+V."
                   },
                   {
-                    "title": "Using The Undo And Redo Command",
+                    "title": "Using the Undo and Redo Command",
                     "longText": "<i>To Undo:</i><ul><li>Press the shortcut key Ctrl+Z or the Undo button at the Quick Access Bar and select which action you want to reverse.</li><li>By default, you can only undo up to 20 times.</li></ul>"
                   },
                   {
@@ -1904,7 +2093,7 @@
                   },
                   {
                     "image": "T3061",
-                    "title": "ADDING LISTS AND TABLES",
+                    "title": "Adding Lists and Tables",
                     "longText": "For example, you will list down all the places in the Philippines that will be joining a volleyball tournament. Numbers 1-30 representatives are now listed, but as you can see, the list automatically goes down and fits itself by adjusting the font size."
                   },
                   {
@@ -1959,8 +2148,7 @@
                   },
                   {
                     "image": "T3075",
-                    "title": "<i>To modify column width and row height:</i>",
-                    "longText": "1. To modify the column width and row height of a table, select the area you want to adjust. A double arrow mouse pointer will appear."
+                    "longText": "<i>To modify column width and row height:</i><br><br>1. To modify the column width and row height of a table, select the area you want to adjust. A double arrow mouse pointer will appear."
                   },
                   {
                     "image": "T3076",
@@ -1973,10 +2161,10 @@
                   {
                     "image": "T3078",
                     "title": "Editing Charts In A Presentation",
-                    "longText": "<ol type= '1'><li>Click the insert tab then select chart.</li><li>Click the type you need and then double-click your chart choice.</li><li>In the worksheet, replace the placeholder data with your own information.</li></ol>"
+                    "longText": "<ol type='1'><li>Click the insert tab then select chart.</li><li>Click the type you need and then double-click your chart choice.</li><li>In the worksheet, replace the placeholder data with your own information.</li></ol>"
                   },
                   {
-                    "longText": "<ol type= '1'><li>You may change the chart type in the Chart Design tab. Then in the Type group, select Change Chart Type.</li><li>The Change Chart Type dialog box will appear. Select the new chart type you want.</li><li>To edit areas of the chart, select the area then change it to your desired text or content. To add additional elements in the chart, choose Add Chart Element in the Chart Design tab then select the elements you want to add</li><li>To change the background color of the chart, click Change Colors in the Chart Design tab; for the chart styles, select among the predesigned chart styles in the Chart Style group.</li></ol>"
+                    "longText": "<ol type='1'><li>You may change the chart type in the Chart Design tab. Then in the Type group, select Change Chart Type.</li><li>The Change Chart Type dialog box will appear. Select the new chart type you want.</li><li>To edit areas of the chart, select the area then change it to your desired text or content. To add additional elements in the chart, choose Add Chart Element in the Chart Design tab then select the elements you want to add</li><li>To change the background color of the chart, click Change Colors in the Chart Design tab; for the chart styles, select among the predesigned chart styles in the Chart Style group.</li></ol>"
                   }
                 ],
                 "quiz": {
@@ -1984,8 +2172,59 @@
                   "section": "Sharpening Your Skills",
                   "header": "Quiz 2: Lesson 2 - Presentation Software",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions: Identify the steps in formatting a presentation. Write your answers on a separate word document.</b>",
-                  "longText": "<table style='width: 75%'><tr><td><i>CHANGE FONT COLOR</i><br>step 1.<br>step 2.</td><td><i>CHANGE FONT TYPE</i><br>step 1.<br>step 2.</td><td><i>APPLY THEME</i><br>step 1.<br>step 2.</td></tr></table>"
+                  "title": "<b>Directions. Read the questions carefully and click your answer from the choices below.</b>",
+                  "items": [
+                    {
+                      "title": "1. There are two fonts available at the top of the font menu.",
+                      "answer": "Theme Font",
+                      "choices": ["Theme Color", "Theme Font", "Theme Effect"]
+                    },
+                    {
+                      "title": "2. Affect the present shape styles.",
+                      "answer": "Theme Effect",
+                      "choices": ["Theme Font", "Theme Effect", "Theme Color"]
+                    },
+                    {
+                      "title": "3. There are 10 theme colors with light to dark variations available from every color menu.",
+                      "answer": "Theme Color",
+                      "choices": ["Theme Effect", "Theme Font", "Theme Color"]
+                    },
+                    {
+                      "title": "4. Highlight the text, right-click and then choose to copy or simply press the shortcut key.",
+                      "answer": "Ctrl+C",
+                      "choices": ["Ctrl+C", "Ctrl+V", "Ctrl+S"]
+                    },
+                    {
+                      "title": "5. To cut a text means the text will be moved to another slide or another presentation simply press the shortcut key.",
+                      "answer": "Ctrl+X",
+                      "choices": ["Ctrl+U", "Ctrl+A", "Ctrl+X"]
+                    },
+                    {
+                      "title": "6. Click the area you want to paste the text then right-click, and then select paste or simply press the shortcut key.",
+                      "answer": "Ctrl+V",
+                      "choices": ["Ctrl+J", "Ctrl+P", "Ctrl+V"]
+                    },
+                    {
+                      "title": "7. Shortcut key of undo.",
+                      "answer": "Ctrl+Z",
+                      "choices": ["Ctrl+Z", "Ctrl+Y", "Ctrl+P"]
+                    },
+                    {
+                      "title": "8. Redo button at the access bar or simply press the shortcut key.",
+                      "answer": "Ctrl+Y",
+                      "choices": ["Ctrl+J", "Ctrl+Y", "Ctrl+P"]
+                    },
+                    {
+                      "title": "9. Highlight the text then select the font button in the font group in the Home Tab.",
+                      "answer": "Font Type",
+                      "choices": ["Font Type", "Font Styles", "Font Color"]
+                    },
+                    {
+                      "title": "10. Highlight the text then select the font color button in the font group in the Home Tab.",
+                      "answer": "Font Color",
+                      "choices": ["Font Type", "Font Styles", "Font Color"]
+                    }
+                  ]
                 }
               },
               {
@@ -1995,7 +2234,7 @@
                   {
                     "section": "Setting the Path",
                     "title": "After this lesson, learners should be able to",
-                    "longText": "<b><ol type= '1'></li>Insert a graphical object;</li><li>Use tools to customize graphical objects in a presentation;</li><li>Demonstrate the finalization of outputs in presentation software in terms of preparation, checking, and presentation of slides;</li><li>Demonstrate how to save a presentation in various  multimedia presentation formats; and</li>Apply animations on each slide.</ol></b>"
+                    "longText": "<b><ol type='1'></li>Insert a graphical object;</li><li>Use tools to customize graphical objects in a presentation;</li><li>Demonstrate the finalization of outputs in presentation software in terms of preparation, checking, and presentation of slides;</li><li>Demonstrate how to save a presentation in various  multimedia presentation formats; and</li>Apply animations on each slide.</ol></b>"
                   },
                   {
                     "image": "T3083",
@@ -2029,16 +2268,14 @@
                   },
                   {
                     "image": "T3090",
-                    "title": "<i>To copy and remove graphical objects:</i>",
-                    "longText": "1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
+                    "longText": "<i>To copy and remove graphical objects:</i><br><br>1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
                   },
                   {
                     "longText": "2. To remove a graphical object, click the object to be removed, and then press Del in the keyboard. To cut it, right-click then choose Cut, or press the shortcut key Ctrl+X. It will be in the clipboard, waiting to be pasted.<br><br>3. To copy and remove a slide, select the slide using the switching view command."
                   },
                   {
                     "image": "T3092",
-                    "title": "<i>To resize, rotate, and delete graphical objects:</i>",
-                    "longText": "<ol type ='1'><li>To resize the graphical objects, click the object then drag one of the size handles (encircled in the figure on the right).</li><li>You can manually enter the desired size to your images in the Shape Format tab in the Size group.</li><li>To rotate a graphical object, select the object then slowly drag clockwise or counterclockwise on the rotate handle (encircled in the figure below).</li></ol>"
+                    "longText": "<i>To resize, rotate, and delete graphical objects:</i><ol type='1'><li>To resize the graphical objects, click the object then drag one of the size handles (encircled in the figure on the right).</li><li>You can manually enter the desired size to your images in the Shape Format tab in the Size group.</li><li>To rotate a graphical object, select the object then slowly drag clockwise or counterclockwise on the rotate handle (encircled in the figure below).</li></ol>"
                   },
                   {
                     "image": "T3093",
@@ -2046,8 +2283,7 @@
                   },
                   {
                     "image": "T3094",
-                    "title": "To add and change drawn object to a slide:",
-                    "longText": "Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
+                    "longText": "To add and change drawn object to a slide:<br<br>Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
                   },
                   {
                     "image": "T3095",
@@ -2074,7 +2310,7 @@
                     "longText": "To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
                   },
                   {
-                    "title": "Adding Animation On Slides",
+                    "title": "Adding Animation on Slides",
                     "longText": "Animations are visual effects that make your texts, images, shapes, or charts come “alive.” They can catch your audience's attention and helps them engage with you and your presentation.<br><br>There are two types of animations you can use to make your presentation come alive. These are the following:"
                   },
                   {
@@ -2096,15 +2332,14 @@
                   },
                   {
                     "image": "T3106",
-                    "title": "To apply animation:",
-                    "longText": "<ol type ='1'><li>Click all the pictures and texts that you want to apply animation to.</li><li>Select your chosen animation. Notice that a number will appear on the upper left corner of the elements. This is to indicate the sequence of the animation.</li><li>Control the timing of the animation through the commands in the timing group.</li></ol>"
+                    "longText": "To apply animation:<ol type ='1'><li>Click all the pictures and texts that you want to apply animation to.</li><li>Select your chosen animation. Notice that a number will appear on the upper left corner of the elements. This is to indicate the sequence of the animation.</li><li>Control the timing of the animation through the commands in the timing group.</li></ol>"
                   },
                   {
                     "longText": "To see the results of the applied transitions and animations, click on the Slide Show view button or press F5 on the keyboard.<br><br><b>Important Points When Adding Animations</b><br><br>Adding animations to presentation slides is relatively easy, but avoid overdoing it. You might find yourself animating all objects and adding transitions to every slide. It might look fun, but it can distract your audience's  attention from the message you are trying to convey in your presentation"
                   },
                   {
                     "image": "T3108",
-                    "title": "Adding Presenters Or Speaker Notes In Slides",
+                    "title": "Adding Presenters or Speaker Notes in Slides",
                     "longText": "When you are creating a presentation, you can add speaker notes to refer to later while delivering the slide show in front of an audience.<br><br>1. The Notes pane is a box that appears below each slide. An empty Notes pane will prompt you with text that says, “Click to add notes.” "
                   },
                   {
@@ -2113,7 +2348,7 @@
                   },
                   {
                     "image": "T3110",
-                    "title": "Checking The Presentation",
+                    "title": "Checking the Presentation",
                     "longText": "<i>To hide or show a slide:</i><br><br>1. In the left navigation pane, select a slide. To hide a slide, right-click the slide that you want to hide and then click Hide Slide. You will notice that the slide number is slashed to indicate that the slide is hidden.<br><br>2. To show a slide that you previously hid, right-click the slide that you want to show and then click Hide Slide."
                   },
                   {
@@ -2166,7 +2401,7 @@
                     "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
                   },
                   {
-                    "title": "POINTS TO REMEMBER",
+                    "title": "Points to Remember",
                     "longText": "<ul><li>Simplicity is key. Simple animations like fade and appear may not be as impressive as other animations available, but these add a touch of elegance to well-timed slides. It makes your slides look clean and simple.</li><li>Limit the number of animations on a slide. One or two animations per slide should suffice. There is no need to animate every single object on each slide.</li><li>Time your presentation well. Make sure your objects appear right after you introduce it. This keeps your audience's interest piqued.</li><li>Remember to practice. Practicing your timings and your animations are key to a successful presentation.</li></ul>"
                   }
                 ],
