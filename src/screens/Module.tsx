@@ -9,7 +9,6 @@ const Module: React.FC = ({ navigation, route }: any) => {
   // Hooks
   const {
     modules,
-    settings,
     addCoins,
     slideIncrement,
     setLessonHalfReached,
@@ -19,7 +18,8 @@ const Module: React.FC = ({ navigation, route }: any) => {
   const [showReward, setShowReward] = useState(false);
 
   // Variables
-  const { data, module, topic, lesson, section, onComplete } = route.params;
+  const { data, module, topic, lesson, hasQuiz, section, onComplete } =
+    route.params;
   const slideLength = data?.items?.length || 0;
   const moduleLesson = modules[module].topics[topic].lessons[lesson];
   const slide = moduleLesson.slide;
@@ -43,6 +43,13 @@ const Module: React.FC = ({ navigation, route }: any) => {
     if (currentSlide === slideLength - 1) {
       if (!complete && onComplete) onComplete();
       setLessonComplete(module, topic, lesson);
+
+      // if no quiz, set the next lesson to first slide
+      if (!hasQuiz) {
+        const slide =
+          modules[module].topics[topic].lessons?.[lesson + 1]?.slide || -1;
+        if (slide < 0) slideIncrement(module, topic, lesson + 1);
+      }
     }
 
     if (currentSlide < slideLength - 1) {
@@ -56,7 +63,7 @@ const Module: React.FC = ({ navigation, route }: any) => {
   const handleClaimReward = () => {
     setShowReward(false);
     addCoins(5);
-  }
+  };
 
   // Effects
   useEffect(() => {

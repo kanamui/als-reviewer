@@ -116,6 +116,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       module,
       topic,
       lesson: index,
+      hasQuiz: !!getLesson(index)?.quiz,
       section,
       onComplete: giveLessonReward,
     });

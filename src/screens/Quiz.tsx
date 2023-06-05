@@ -30,7 +30,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   const { width } = useWindowDimensions();
   const {
     modules,
-    setSlide,
+    slideIncrement,
     setTopicComplete,
     setAssessmentScore,
     setQuizScore,
@@ -108,9 +108,8 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   useEffect(() => {
     if (showResult) {
       const slide =
-        modules[module].topics[topic].lessons?.[assess ? 0 : lesson + 1]
-          ?.slide || -1;
-      if (slide < 0) setSlide(module, topic, assess ? 0 : lesson + 1, 0);
+        modules[module].topics[topic].lessons?.[lesson + 1]?.slide || -1;
+      if (slide < 0) slideIncrement(module, topic, lesson + 1);
     }
   }, [showResult]);
 
