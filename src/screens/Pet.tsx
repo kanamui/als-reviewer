@@ -101,7 +101,7 @@ const Pet: React.FC = () => {
           </AspectRatio>
         </Box>
 
-        <HStack>
+        <HStack justifyContent="center">
           {/* Shop */}
           <Box w="60%" pl="0" p="4" overflow="hidden" safeAreaLeft>
             <ZStack size="full">
@@ -145,7 +145,7 @@ const Pet: React.FC = () => {
           </Box>
 
           {/* Divider */}
-          <Box w="5%" />
+          <Box w="2%" />
 
           {/* Alice */}
           <Box w="35%" py="12" safeAreaRight>

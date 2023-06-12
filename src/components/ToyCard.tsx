@@ -57,7 +57,7 @@ const ToyCard = ({ image, price, title, longText, onPress }: IToyCard) => {
             </HStack>
           )}
         </Box>
-        <Stack h="full" px="4" space="1" alignSelf="">
+        <Stack h="full" px="4" space="1">
           <Heading size="md">{title}</Heading>
           <Text fontSize="xs" color="gray.400" numberOfLines={3}>
             {longText}
