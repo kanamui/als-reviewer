@@ -37,9 +37,9 @@
             "longText": "This module will give you the basic steps on using word processors.",
             "assessment": {
               "header": "Word Processing",
-              "kicker": "Assessment",
+              "kicker": "Pre-Assessment",
               "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
-              "longText": "Let's put your learning to the test.",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
                   "image": "T1A01",
@@ -752,9 +752,9 @@
             "longText": "This module will walk you through how to use spreadsheets to help you get familiar with it.",
             "assessment": {
               "header": "Spreadsheets",
-              "kicker": "Assessment",
+              "kicker": "Pre-Assessment",
               "title": "<b>Directions: Choose the correct answer in the parenthesis to complete the statement.</b>",
-              "longText": "Let's put your learning to the test.",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
                   "title": "1. Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
@@ -1755,9 +1755,9 @@
             "longText": "This module will give you basic the steps on using presentation software.",
             "assessment": {
               "header": "Presentation Software",
-              "kicker": "Assessment",
+              "kicker": "Pre-Assessment",
               "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
-              "longText": "Let's put your learning to the test.",
+              "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
                   "title": "1. Which tab do you click to add a picture or graphic to your presentation?",

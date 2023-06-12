@@ -230,8 +230,9 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     const quizLength =
       getTopic(topicId)?.lessons?.filter((l) => l?.quiz !== undefined).length ||
       0;
-    const assessLength = getTopic(topicId)?.assessment ? 1 : 0;
-    const total = lessonLength + quizLength + assessLength;
+    // const assessLength = getTopic(topicId)?.assessment ? 1 : 0;
+    // const total = lessonLength + quizLength + assessLength;
+    const total = lessonLength + quizLength;
     const progress = Math.round(((doneLessons + doneQuiz) / total) * 100);
     return progress;
   };
@@ -263,6 +264,25 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       <>
         {data?.longText && (
           <LessonCard title="About" longText={data?.longText} />
+        )}
+
+        {/* Pre-Assessment */}
+        {data?.assessment && (
+          <LessonCard
+            score={
+              assessment >= 0
+                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
+                : ""
+            }
+            title={data.assessment?.kicker}
+            longText={data.assessment?.longText}
+            icon="brain"
+            cta={{
+              title: isAssessTaken(topic) ? "Retake" : "Start",
+              onPress: handleAssessment,
+            }}
+            // disabled={!isAssessmentUnlocked(topic)}
+          />
         )}
 
         {data?.lessons?.map((lesson: any, lessonKey: number) => {
@@ -313,25 +333,6 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
             </Box>
           );
         })}
-
-        {/* Assessment */}
-        {data?.assessment && (
-          <LessonCard
-            score={
-              assessment >= 0
-                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
-                : ""
-            }
-            title={data.assessment?.kicker}
-            longText={data.assessment?.longText}
-            icon="brain"
-            cta={{
-              title: isAssessTaken(topic) ? "Retake" : "Start",
-              onPress: handleAssessment,
-            }}
-            disabled={!isAssessmentUnlocked(topic)}
-          />
-        )}
       </>
     );
   };
