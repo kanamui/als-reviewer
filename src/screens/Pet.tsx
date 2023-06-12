@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Animated } from "react-native";
 import {
   AspectRatio,
   Box,
@@ -26,21 +25,21 @@ const shopItems: IShopItem[] = [
   {
     title: "Yarn",
     image: "yarn",
-    price: 10,
+    price: 5,
     activity: "play-yarn",
     longText: "A delightful, playful bundle of yarn.",
   },
   {
     title: "Mouse",
     image: "mouse",
-    price: 15,
+    price: 10,
     activity: "play-mouse",
     longText: "It can cook better than Ratatouille!",
   },
   {
     title: "Fish",
     image: "fish",
-    price: 20,
+    price: 15,
     activity: "eat-fish",
     longText: "It reeks of palengke, but Alice loves it!",
   },

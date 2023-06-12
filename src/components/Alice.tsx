@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { View } from "react-native";
-import { Animated } from "react-native";
 import {
   Box,
   Center,
   CloseIcon,
   Image,
+  PresenceTransition,
   Pressable,
   Stack,
   Text,
@@ -19,8 +19,8 @@ const Alice = () => {
   const [initiated, setInitiated] = useState(false);
   const [activity, setActivity] = useState<IPetActivity>("sleep");
   const [show, setShow] = useState(true);
+  const [animate, setAnimate] = useState(true);
   const [showStats, setShowStats] = useState(false);
-  const scaleValue = new Animated.Value(1);
 
   // Functions
   const getImage = () => {
@@ -41,14 +41,14 @@ const Alice = () => {
     }
   };
 
-  const getActivityFromMood = (): IPetActivity => {
+  function getActivityFromMood(): IPetActivity {
     if (pet.mood >= 90) {
       return "excited";
     } else if (pet.mood >= 30) {
       return "happy";
     }
     return "sleep";
-  };
+  }
 
   const getMood = () => {
     if (pet.mood >= 90) {
@@ -62,35 +62,15 @@ const Alice = () => {
     }
   };
 
-  const startAnimation = () => {
-    const scaleAnimate = Animated.timing(scaleValue, {
-      toValue: 1.1,
-      duration: 600,
-      useNativeDriver: true,
-    });
-    const resetScale = Animated.timing(scaleValue, {
-      toValue: 1,
-      duration: 1000,
-      useNativeDriver: true,
-    });
-    const animate = Animated.sequence([scaleAnimate, resetScale]);
-    animate.start();
-    return () => animate.stop();
-  };
-
   // Effects
   useEffect(() => {
-    if (show) {
-      // startAnimation();
-    }
-  }, [show]);
-
-  useEffect(() => {
     setShow(false);
+    setAnimate(false);
     const updateAlice = () => {
       setActivity(initiated ? pet.activity : getActivityFromMood());
       setInitiated(true);
       setShow(true);
+      setAnimate(true);
     };
     const timeout = setTimeout(updateAlice);
     return () => clearInterval(timeout);
@@ -99,18 +79,36 @@ const Alice = () => {
   return (
     <>
       {/* Alice */}
-      <Animated.View style={{ transform: [{ scale: scaleValue }] }}>
-        {show && (
-          <Pressable onPress={() => setShowStats((prev) => !prev)}>
+      {show && (
+        <Pressable onPress={() => setShowStats((prev) => !prev)}>
+          <PresenceTransition
+            visible={animate}
+            initial={{ scale: 1 }}
+            animate={{
+              scale: 1.1,
+              transition: {
+                duration: 700,
+              },
+            }}
+            exit={{
+              scale: 1,
+              transition: {
+                duration: 1000,
+              },
+            }}
+            onTransitionComplete={() =>
+              setTimeout(() => setAnimate(false), 500)
+            }
+          >
             <Image
               size="full"
               resizeMode="contain"
               source={getImage()}
               alt="picture"
             />
-          </Pressable>
-        )}
-      </Animated.View>
+          </PresenceTransition>
+        </Pressable>
+      )}
 
       {/* Stats */}
       {showStats && (
