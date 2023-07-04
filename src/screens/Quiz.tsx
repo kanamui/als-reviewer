@@ -19,12 +19,14 @@ import { IMAGES } from "../logic/constants/images.constants";
 import RenderHTML from "react-native-render-html";
 import QuizResult from "../components/QuizResult";
 import PopupCard from "../components/PopupCard";
+import { randomizeArray } from "../logic/Utilities";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
   const { data, final, assess, module, topic, lesson, onComplete } =
     route.params;
-  const total = data?.items?.length || 0;
+  const [questions] = useState<any[]>(randomizeArray(data?.items || [], 10));
+  const total = questions.length;
 
   // Hooks
   const { width } = useWindowDimensions();
@@ -71,7 +73,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
 
   // Functions
   const checkAnswer = () => {
-    const item = data?.items?.[index];
+    const item = questions?.[index];
     if (item?.choices?.[answer] === item?.answer) {
       setScore(score + 1);
       setCorrect(true);
@@ -82,7 +84,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   };
 
   const nextScreen = () => {
-    const item = data?.items?.[index];
+    const item = questions?.[index];
 
     if (index < total - 1) {
       // next slide
@@ -103,7 +105,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     setShow(false);
     const timeout = setTimeout(() => setShow(true));
     return () => clearTimeout(timeout);
-  }, [index, checked]);
+  }, [index, checked, questions]);
 
   useEffect(() => {
     if (showResult) {
@@ -161,12 +163,12 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                   <VStack flex="1" space="4" alignItems="center">
                     {data?.items ? (
                       <>
-                        {data?.items?.[index]?.title && (
+                        {questions?.[index]?.title && (
                           <Text>{data.items[index].title}</Text>
                         )}
                         <Image
                           resizeMode="contain"
-                          source={IMAGES[data?.items?.[index]?.image]}
+                          source={IMAGES[questions?.[index]?.image]}
                           alt={"question"}
                         />
                         <Radio.Group
@@ -180,7 +182,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                             h="70px"
                             justifyContent="space-between"
                           >
-                            {data?.items?.[index]?.choices.map(
+                            {questions?.[index]?.choices?.map(
                               (choice: string, key: number) => {
                                 return (
                                   <Radio key={key} value={`${key}`} m="1">
@@ -251,7 +253,7 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
               {checked && (
                 <PopupCard
                   correct={correct}
-                  answer={data?.items?.[index]?.answer}
+                  answer={questions?.[index]?.answer}
                 />
               )}
             </Box>
@@ -275,7 +277,9 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                   <Text color="white" bold>
                     {data?.items
                       ? checked
-                        ? "Next question"
+                        ? index === total - 1
+                          ? "Done"
+                          : "Next question"
                         : "Check answer"
                       : "Submit"}
                   </Text>

@@ -507,8 +507,34 @@
                   "section": "Treading the Road to Mastery",
                   "header": "Quiz 2: Lesson 2 - Word Processing",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions: Make a two-paragraph essay about yourself in Microsoft Word using the following format:</b>",
-                  "longText": "<ol type=\"1\"><li>Font size - 12 pt for the body and 16pt for the title</li><li>Font family - Arial</li><li>Alignment - Justify</li><li>Title - “All About Me” (before the paragraph)</li><li>Indent the first line of each paragraph</li><li>Spacing - 1.5</li><li>File name - lastname_aboutmyself<br>Example: santos_aboutmyself</li></ol>"
+                  "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
+                  "items": [
+                    {
+                      "title": "1. Open the _________ to be saved in its original document program (Word, Excel, etc).",
+                      "answer": "File",
+                      "choices": ["Save as", "File Name", "File", "Save"]
+                    },
+                    {
+                      "title": "2. Go to File > _________",
+                      "answer": "Save As",
+                      "choices": ["File", "Save as", "Save", "File Name"]
+                    },
+                    {
+                      "title": "3. Save As and select _________ from the drop-down menu of file types.",
+                      "answer": "PDF",
+                      "choices": ["Save", "File Name", "PDF", "Word"]
+                    },
+                    {
+                      "title": "4. Rename the file in the white box labeled “_________”.",
+                      "answer": "File Name",
+                      "choices": ["PDF", "Word", "File Name", "Save"]
+                    },
+                    {
+                      "title": "5. Check the box labeled “Save As Type” and ensure that PDS is selecte; then click _________.",
+                      "answer": "File Name",
+                      "choices": ["Save as", "File Name", "PDF", "Save"]
+                    }
+                  ]
                 }
               },
               {

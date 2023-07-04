@@ -4,13 +4,14 @@ import { IModule } from "../models/IModule";
 import { ITopic } from "../models/ITopic";
 import { ILesson } from "../models/ILesson";
 import { ISlide } from "../models/ISlide";
-import { Box, ScrollView } from "native-base";
+import { Box, ScrollView, useToast } from "native-base";
 import useStore from "../store/store";
 import HeaderNav from "../components/HeaderNav";
 import TopicCard from "../components/TopicCard";
 import ModuleCard from "../components/ModuleCard";
 import LessonCard from "../components/LessonCard";
 import ModalImage from "../components/ModalImage";
+import ToastAlert from "../components/ToastAlert";
 
 type ITOCScreen = "main" | "topics" | "lessons";
 
@@ -20,6 +21,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
 
   // Hooks
   const { modules, settings, homeHelpDone, addCoins } = useStore();
+  const toast = useToast();
 
   // States
   const [module, setModule] = useState(0);
@@ -118,14 +120,14 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
       lesson: index,
       hasQuiz: !!getLesson(index)?.quiz,
       section,
-      onComplete: giveLessonReward,
+      onComplete: lessonCompleteHandler,
     });
   };
 
   const handleAssessment = () => {
     navigation.navigate("Quiz", {
       data: getTopic(topic)?.assessment,
-      final: true,
+      final: false,
       assess: true,
       module,
       topic,
@@ -181,7 +183,20 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
     }
   };
 
-  const giveLessonReward = () => {
+  const lessonCompleteHandler = () => {
+    toast.show({
+      placement: "top",
+      duration: 3000,
+      render: () => {
+        return (
+          <ToastAlert
+            title="You have completed the lesson!"
+            status="success"
+            onClose={() => toast.closeAll()}
+          />
+        );
+      },
+    });
     setShowLessonReward(true);
   };
 
@@ -271,7 +286,11 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
           <LessonCard
             score={
               assessment >= 0
-                ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
+                ? // ? `Score: ${assessment}/${data?.assessment?.items?.length || 0}`
+                  `Score: ${assessment}/${Math.min(
+                    data?.assessment?.items?.length || 0,
+                    10
+                  )}`
                 : ""
             }
             title={data.assessment?.kicker}
@@ -316,7 +335,8 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
                   score={
                     score >= 0
                       ? total > 0
-                        ? `Score: ${score}/${total}`
+                        ? // ? `Score: ${score}/${total}`
+                          `Score: ${score}/${Math.min(total, 10)}`
                         : "Submitted"
                       : ""
                   }
@@ -380,6 +400,7 @@ const TableOfContents: React.FC = ({ navigation, route }: any) => {
         bg={screen === "main" ? "white" : "gray.100"}
         borderTopRadius="3xl"
         shadow="6"
+        zIndex={-1}
       >
         <ScrollView opacity={show ? 1 : 0} mt={screen === "main" ? 0 : 3}>
           <Box safeAreaX>{DynamicScreen()}</Box>

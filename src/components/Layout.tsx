@@ -6,16 +6,13 @@ import {
   AspectRatio,
   Box,
   Button,
-  CloseIcon,
   HStack,
   Image,
-  PresenceTransition,
   Pressable,
   ScrollView,
   Text,
   VStack,
 } from "native-base";
-import { ReactNativeZoomableView } from "@openspacelabs/react-native-zoomable-view";
 import RenderHTML from "react-native-render-html";
 import HeaderNav from "./HeaderNav";
 import ImageZoom from "./ImageZoom";
@@ -29,6 +26,7 @@ const Layout = ({
   image,
   page,
   cta,
+  searchData,
 }: ILayout) => {
   const { width } = useWindowDimensions();
   const [show, setShow] = useState<boolean>(true);
@@ -50,7 +48,13 @@ const Layout = ({
 
   return (
     <>
-      <HeaderNav title={subTitle} onPress={header?.onPress} showCoins showPet />
+      <HeaderNav
+        title={subTitle}
+        onPress={header?.onPress}
+        searchData={searchData}
+        showCoins
+        showPet
+      />
       <Box
         px="5"
         pt="4"
@@ -60,6 +64,7 @@ const Layout = ({
         borderTopRadius="3xl"
         shadow="6"
         safeAreaX
+        zIndex={-1}
       >
         {kicker && <Text color="primary.600">{kicker}</Text>}
         <VStack flex="1" alignItems="center" justifyContent="space-between">

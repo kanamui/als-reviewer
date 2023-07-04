@@ -9,4 +9,5 @@ export interface ILayout {
   image?: string;
   page?: string;
   cta?: ICta[];
+  searchData?: any;
 }

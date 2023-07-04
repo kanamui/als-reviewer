@@ -12,9 +12,11 @@ import {
 } from "native-base";
 import { IHeaderNav } from "../models/components/IHeaderNav";
 import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
+import Search from "./Search";
 
 const HeaderNav = ({
   title,
+  searchData,
   showCoins,
   showPet,
   onPress,
@@ -57,6 +59,13 @@ const HeaderNav = ({
           {title}
         </Heading>
       </HStack>
+
+      {searchData && (
+        <HStack w="40%">
+          <Search data={searchData} />
+        </HStack>
+      )}
+
       <HStack space="2" alignItems="center">
         {showCoins && (
           <Popover

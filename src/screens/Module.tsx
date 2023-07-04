@@ -60,6 +60,22 @@ const Module: React.FC = ({ navigation, route }: any) => {
     }
   };
 
+  const getCTA = () => {
+    if (currentSlide === 0) {
+      return [{ title: "NEXT", onPress: handleNext }];
+    } else if (currentSlide === slideLength - 1) {
+      return [
+        { title: "PREV", onPress: handlePrev },
+        { title: "DONE", onPress: handleNext },
+      ];
+    } else {
+      return [
+        { title: "PREV", onPress: handlePrev },
+        { title: "NEXT", onPress: handleNext },
+      ];
+    }
+  };
+
   const handleClaimReward = () => {
     setShowReward(false);
     addCoins(5);
@@ -79,6 +95,10 @@ const Module: React.FC = ({ navigation, route }: any) => {
     }
   }, [slide]);
 
+  const searchHandler = (slide: number) => {
+    setCurrentSlide(slide);
+  };
+
   return (
     <Box size="full" bg="tertiary.600">
       <Layout
@@ -91,16 +111,11 @@ const Module: React.FC = ({ navigation, route }: any) => {
         longText={data?.items?.[currentSlide]?.longText}
         image={data?.items?.[currentSlide]?.image}
         page={`${currentSlide + 1} / ${slideLength}`}
-        cta={[
-          {
-            title: "PREV",
-            onPress: handlePrev,
-          },
-          {
-            title: "NEXT",
-            onPress: handleNext,
-          },
-        ]}
+        cta={getCTA()}
+        searchData={{
+          data: data?.items,
+          onSelect: searchHandler,
+        }}
       />
       <ModalImage
         show={showReward}
