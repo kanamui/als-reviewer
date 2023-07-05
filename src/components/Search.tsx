@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
-import { Box, CloseIcon, FlatList, Input, Text, VStack } from "native-base";
-import { trimHTML } from "../logic/Utilities";
+import {
+  Box,
+  CloseIcon,
+  FlatList,
+  HStack,
+  Input,
+  Text,
+  VStack,
+} from "native-base";
+import { isNumeric, trimHTML } from "../logic/Utilities";
 import { Pressable } from "react-native";
 import AnimatedPressable from "./AnimatedPressable";
 
@@ -25,10 +33,11 @@ const Search = ({ data }: { data: any }) => {
       const res =
         data?.data
           ?.map((obj: any, index: number) => ({ ...obj, slide: index }))
-          .filter(
-            (slide: any) =>
-              slide?.title?.includes(search) ||
-              slide?.longText?.includes(search)
+          .filter((slide: any) =>
+            isNumeric(search)
+              ? slide?.slide + 1 === parseInt(search)
+              : slide?.title?.includes(search) ||
+                slide?.longText?.includes(search)
           ) || [];
       setResults(res);
     }
@@ -75,12 +84,26 @@ const Search = ({ data }: { data: any }) => {
                     onPress={() => resultItemHandler(item?.item?.slide)}
                   >
                     <VStack minH="12" space="0.5" p="2" justifyContent="center">
-                      {item?.item?.title && (
-                        <Text bold numberOfLines={1} fontSize="xs">
-                          {trimHTML(item?.item?.title)}
+                      <HStack w="full" justifyContent="space-between" space="2">
+                        {item?.item?.title && item?.item?.longText ? (
+                          <Text bold numberOfLines={1} fontSize="xs">
+                            {trimHTML(item?.item?.title)}
+                          </Text>
+                        ) : item?.item?.longText ? (
+                          <Text numberOfLines={1} fontSize="xs">
+                            {trimHTML(item?.item?.longText)}
+                          </Text>
+                        ) : item?.item?.image ? (
+                          <Text numberOfLines={1} fontSize="xs">
+                            Image
+                          </Text>
+                        ) : null}
+                        <Text fontSize="xs" color="gray.400">
+                          p{item?.item?.slide + 1}
                         </Text>
-                      )}
-                      {item?.item?.longText && (
+                      </HStack>
+
+                      {item?.item?.title && item?.item?.longText && (
                         <Text numberOfLines={1} fontSize="xs">
                           {trimHTML(item?.item?.longText)}
                         </Text>

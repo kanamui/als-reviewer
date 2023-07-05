@@ -20,5 +20,10 @@ export const randomizeArray = (
 };
 
 export const trimHTML = (html: string): string => {
+  if (!html) return "";
   return html.replaceAll(/<\/?([a-zA-Z]+\d*)\b[^>]*>/g, "");
 };
+
+export const isNumeric = (str: string) => {
+  return /^\d+$/.test(str);
+}
