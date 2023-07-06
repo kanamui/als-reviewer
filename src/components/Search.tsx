@@ -85,19 +85,21 @@ const Search = ({ data }: { data: any }) => {
                   >
                     <VStack minH="12" space="0.5" p="2" justifyContent="center">
                       <HStack w="full" justifyContent="space-between" space="2">
-                        {item?.item?.title && item?.item?.longText ? (
-                          <Text bold numberOfLines={1} fontSize="xs">
-                            {trimHTML(item?.item?.title)}
-                          </Text>
-                        ) : item?.item?.longText ? (
-                          <Text numberOfLines={1} fontSize="xs">
-                            {trimHTML(item?.item?.longText)}
-                          </Text>
-                        ) : item?.item?.image ? (
-                          <Text numberOfLines={1} fontSize="xs">
-                            Image
-                          </Text>
-                        ) : null}
+                        <Box w="88%">
+                          {item?.item?.title && item?.item?.longText ? (
+                            <Text bold numberOfLines={1} fontSize="xs">
+                              {trimHTML(item?.item?.title)}
+                            </Text>
+                          ) : item?.item?.longText ? (
+                            <Text numberOfLines={1} fontSize="xs">
+                              {trimHTML(item?.item?.longText)}
+                            </Text>
+                          ) : item?.item?.image ? (
+                            <Text numberOfLines={1} fontSize="xs">
+                              Image
+                            </Text>
+                          ) : null}
+                        </Box>
                         <Text fontSize="xs" color="gray.400">
                           p{item?.item?.slide + 1}
                         </Text>

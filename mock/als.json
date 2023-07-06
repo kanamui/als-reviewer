@@ -15,7 +15,7 @@
   },
   "about": {
     "title": "ALS Reviewer Mobile Application",
-    "longText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "longText": "<div style='text-align: center'><b>Roqsel Jane Quinto</b><br>Bachelor of Science in Information Technology<br>CvSU student<br><br><b>Digna Lyn Lim</b><br>Bachelor of Science in Information Technology<br>CvSU student</div>",
     "footer": "Cavite State University Tanza Campus"
   },
   "modules": {
@@ -507,7 +507,7 @@
                   "section": "Treading the Road to Mastery",
                   "header": "Quiz 2: Lesson 2 - Word Processing",
                   "kicker": "Let's Have Some Fun",
-                  "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
+                  "title": "<b>Directions. Choose the letter of the correct answer. The question is all about the step-by-step procedure in saving a file under a new filename and file type as a PDF file.</b>",
                   "items": [
                     {
                       "title": "1. Open the _________ to be saved in its original document program (Word, Excel, etc).",
@@ -531,7 +531,7 @@
                     },
                     {
                       "title": "5. Check the box labeled “Save As Type” and ensure that PDS is selecte; then click _________.",
-                      "answer": "File Name",
+                      "answer": "Save",
                       "choices": ["Save as", "File Name", "PDF", "Save"]
                     }
                   ]
