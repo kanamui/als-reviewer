@@ -15,7 +15,7 @@
   },
   "about": {
     "title": "ALS Reviewer Mobile Application",
-    "longText": "<div style='text-align: center'><b>Roqsel Jane Quinto</b><br>Bachelor of Science in Information Technology<br>CvSU student<br><br><b>Digna Lyn Lim</b><br>Bachelor of Science in Information Technology<br>CvSU student</div>",
+    "longText": "<div style='text-align: center'><b>Roqsel Jane Quinto</b><br>Bachelor of Science in Information Technology<br>CvSU student<br><br><b>Digna Lyn Lim</b><br>Bachelor of Science in Information Technology<br>CvSU student<br><br><b>John Alvin Bongon</b><br>Bachelor of Science in Information Technology<br>CvSU student</div>",
     "footer": "Cavite State University Tanza Campus"
   },
   "modules": {
@@ -38,7 +38,7 @@
             "assessment": {
               "header": "Word Processing",
               "kicker": "Pre-Assessment",
-              "title": "<b>Directions: Read each question carefully and choose what is the correct answer.</b>",
+              "title": "<b>Directions: please identify the following images.</b>",
               "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
