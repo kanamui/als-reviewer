@@ -16,6 +16,7 @@ import Search from "./Search";
 
 const HeaderNav = ({
   title,
+  showBack = true,
   searchData,
   showCoins,
   showPet,
@@ -42,19 +43,21 @@ const HeaderNav = ({
   return (
     <HStack alignItems="center" py="3" px="6" justifyContent="space-between">
       <HStack alignItems="center" space="3">
-        <IconButton
-          p="1"
-          borderRadius="full"
-          icon={
-            <Icon
-              as={Ionicons}
-              size="lg"
-              color="white"
-              name="arrow-back-outline"
-            />
-          }
-          onPress={handleBack}
-        />
+        {showBack && (
+          <IconButton
+            p="1"
+            borderRadius="full"
+            icon={
+              <Icon
+                as={Ionicons}
+                size="lg"
+                color="white"
+                name="arrow-back-outline"
+              />
+            }
+            onPress={handleBack}
+          />
+        )}
         <Heading fontSize="lg" color="white">
           {title}
         </Heading>

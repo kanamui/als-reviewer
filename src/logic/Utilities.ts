@@ -27,3 +27,10 @@ export const trimHTML = (html: string): string => {
 export const isNumeric = (str: string) => {
   return /^\d+$/.test(str);
 }
+
+export const getHourDifference = (date1: Date, date2: Date) => {
+  if (!(date1 && date2)) return 0;
+  const timeDifferenceMs = date2.getTime() - date1.getTime();
+  const timeDifferenceDays = timeDifferenceMs / (1000 * 60 * 60);
+  return timeDifferenceDays;
+}

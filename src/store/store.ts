@@ -25,6 +25,7 @@ interface IPetStore {
   activity: IPetActivity;
   mood: number;
   help: boolean;
+  modified: Date | undefined;
 }
 
 interface ISettingStore {
@@ -42,6 +43,7 @@ interface IGlobalStore {
 
   addCoins: (value: number) => void;
   buyTreat: (price: number, activity: IPetActivity) => void;
+  resetPet: () => void;
 
   setCurrentTopic: (module: number, topic: number) => void;
   setSlide: (module: number, topic: number, lesson: number, slide: number) => void;
@@ -68,6 +70,7 @@ const useStore = create(
         activity: "sleep",
         mood: 0,
         help: true,
+        modified: undefined,
       },
       settings: {
         help: true,
@@ -91,12 +94,20 @@ const useStore = create(
           state.settings.coins += value;
           return state;
         }),
+      
+      resetPet: () =>
+        set((state) => {
+          state.pet.activity = "sleep";
+          state.pet.mood = 0;
+          return state;
+        }),
 
       buyTreat: (price, activity) =>
         set((state) => {
           state.settings.coins -= price;
           state.pet.activity = activity;
           state.pet.mood += 20;
+          state.pet.modified = new Date();
           if (state.pet.mood > 100) state.pet.mood = 100;
           return state;
         }),

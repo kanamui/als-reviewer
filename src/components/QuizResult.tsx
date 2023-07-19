@@ -3,11 +3,13 @@ import {
   Box,
   Button,
   Center,
+  HStack,
   Heading,
   PresenceTransition,
   Text,
   VStack,
 } from "native-base";
+import { ICta } from "../models/ICta";
 import { InterfaceBoxProps } from "native-base/lib/typescript/components/primitives/Box";
 import { useNavigation } from "@react-navigation/native";
 import ConfettiCannon from "react-native-confetti-cannon";
@@ -15,12 +17,14 @@ import ConfettiCannon from "react-native-confetti-cannon";
 interface IQuizResult {
   score: number;
   total: number;
+  cta?: ICta;
   onComplete?: () => void;
 }
 
 const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
   score,
   total,
+  cta,
   onComplete,
   ...props
 }) => {
@@ -96,11 +100,20 @@ const QuizResult: React.FC<IQuizResult & InterfaceBoxProps> = ({
           </VStack>
         </PresenceTransition>
       </Center>
-      <Button w="32" bg="white" alignSelf="center" onPress={handleComplete}>
-        <Text color="tertiary.600" bold>
-          Done
-        </Text>
-      </Button>
+      <HStack w="full" space="2" justifyContent="center">
+        {cta && (
+          <Button w="32" bg="white" onPress={cta?.onPress}>
+            <Text color="tertiary.600" bold>
+              {cta?.title}
+            </Text>
+          </Button>
+        )}
+        <Button w="32" bg="white" onPress={handleComplete}>
+          <Text color="tertiary.600" bold>
+            Done
+          </Text>
+        </Button>
+      </HStack>
     </Box>
   );
 };

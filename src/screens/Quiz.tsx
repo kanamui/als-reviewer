@@ -18,14 +18,14 @@ import HeaderNav from "../components/HeaderNav";
 import { IMAGES } from "../logic/constants/images.constants";
 import RenderHTML from "react-native-render-html";
 import QuizResult from "../components/QuizResult";
-import PopupCard from "../components/PopupCard";
 import { randomizeArray } from "../logic/Utilities";
 
 const Quiz: React.FC = ({ navigation, route }: any) => {
   // Variables
   const { data, final, assess, module, topic, lesson, onComplete } =
     route.params;
-  const [questions] = useState<any[]>(randomizeArray(data?.items || [], 10));
+  const [questions] = useState(randomizeArray(data?.items || [], 10));
+
   const total = questions.length;
 
   // Hooks
@@ -42,14 +42,12 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   // States
   const [index, setIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
-
   const [answer, setAnswer] = useState<string>("");
-  const [checked, setChecked] = useState<boolean>(false);
-  const [correct, setCorrect] = useState<boolean>(false);
-
+  const [answers, setAnswers] = useState<string[]>(Array(10).fill(""));
   const [show, setShow] = useState<boolean>(true);
   const [showResult, setShowResult] = useState<boolean>(false);
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [showConfirmModal, setShowConfirmModal] = useState<boolean>(false);
+  const [showResultModal, setShowResultModal] = useState<boolean>(false);
 
   // Handlers
   const handleRadio = (value: any) => {
@@ -72,28 +70,28 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   };
 
   // Functions
-  const checkAnswer = () => {
-    const item = questions?.[index];
-    if (item?.choices?.[answer] === item?.answer) {
-      setScore(score + 1);
-      setCorrect(true);
-    } else {
-      setCorrect(false);
-    }
-    setChecked(true);
-  };
-
   const nextScreen = () => {
     const item = questions?.[index];
+
+    // record answer
+    setAnswers((prev) => {
+      const updated = [...prev];
+      updated[index] = item?.choices?.[answer];
+      return updated;
+    });
+
+    // check if answer is correct
+    if (item?.choices?.[answer] === item?.answer) {
+      setScore(score + 1);
+    }
 
     if (index < total - 1) {
       // next slide
       setAnswer("");
-      setChecked(false);
       setIndex(index + 1);
     } else if (!item) {
       // show confirm submission modal
-      setShowModal(true);
+      setShowConfirmModal(true);
     } else {
       // show result screen
       setShowResult(true);
@@ -105,24 +103,18 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
     setShow(false);
     const timeout = setTimeout(() => setShow(true));
     return () => clearTimeout(timeout);
-  }, [index, checked, questions]);
+  }, [index, questions]);
 
   useEffect(() => {
+    // proceed to next slide after quiz
     if (showResult) {
       const slide =
         modules[module].topics[topic].lessons?.[lesson + 1]?.slide || -1;
       if (slide < 0) slideIncrement(module, topic, lesson + 1);
     }
-  }, [showResult]);
-
-  useEffect(() => {
+    // if final quiz, proceed to next topic
     if (final && showResult) {
       setTopicComplete(module, topic);
-    }
-  }, [showResult]);
-
-  useEffect(() => {
-    if (final && showResult) {
       setCurrentTopic(module, topic + 1);
     }
   }, [showResult]);
@@ -130,9 +122,21 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
   return (
     <>
       <Box size="full" bg="tertiary.600">
-        <HeaderNav title={data?.header} onPress={() => navigation.goBack()} />
+        <HeaderNav title={data?.header} showBack={false} />
         {showResult ? (
-          <QuizResult score={score} total={total} onComplete={handleComplete} />
+          <QuizResult
+            score={score}
+            total={total}
+            cta={
+              total > 0
+                ? {
+                    onPress: () => setShowResultModal(true),
+                    title: "See result",
+                  }
+                : undefined
+            }
+            onComplete={handleComplete}
+          />
         ) : (
           <Box
             px="5"
@@ -164,7 +168,9 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                     {data?.items ? (
                       <>
                         {questions?.[index]?.title && (
-                          <Text>{data.items[index].title}</Text>
+                          <Text>{`${index + 1}. ${
+                            questions?.[index].title
+                          }`}</Text>
                         )}
                         <Image
                           resizeMode="contain"
@@ -175,7 +181,6 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                           name="question"
                           value={answer}
                           onChange={handleRadio}
-                          isReadOnly={checked}
                         >
                           <Flex
                             flexWrap="wrap"
@@ -248,14 +253,6 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                   </VStack>
                 </>
               )}
-
-              {/* Answer result popup */}
-              {checked && (
-                <PopupCard
-                  correct={correct}
-                  answer={questions?.[index]?.answer}
-                />
-              )}
             </Box>
 
             <HStack justifyContent="space-between">
@@ -271,16 +268,14 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
                 <Button
                   w="32"
                   alignSelf="flex-end"
-                  onPress={data?.items && !checked ? checkAnswer : nextScreen}
+                  onPress={data?.items && nextScreen}
                   isDisabled={!!!answer && !!data?.items}
                 >
                   <Text color="white" bold>
                     {data?.items
-                      ? checked
-                        ? index === total - 1
-                          ? "Done"
-                          : "Next question"
-                        : "Check answer"
+                      ? index === total - 1
+                        ? "Done"
+                        : "Next question"
                       : "Submit"}
                   </Text>
                 </Button>
@@ -291,7 +286,10 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
       </Box>
 
       {/* Confirm submission modal */}
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+      <Modal
+        isOpen={showConfirmModal}
+        onClose={() => setShowConfirmModal(false)}
+      >
         <Modal.Content>
           <Modal.CloseButton />
           <Modal.Header>Confirm Submission</Modal.Header>
@@ -301,20 +299,70 @@ const Quiz: React.FC = ({ navigation, route }: any) => {
               <Button
                 variant="ghost"
                 onPress={() => {
-                  setShowModal(false);
+                  setShowConfirmModal(false);
                 }}
               >
                 Cancel
               </Button>
               <Button
                 onPress={() => {
-                  setShowModal(false);
+                  setShowConfirmModal(false);
                   setShowResult(true);
                 }}
               >
                 Submit
               </Button>
             </Button.Group>
+          </Modal.Footer>
+        </Modal.Content>
+      </Modal>
+
+      {/* Answer result modal */}
+      <Modal isOpen={showResultModal} onClose={() => setShowResultModal(false)}>
+        <Modal.Content maxW="90%" maxH="80%">
+          <Modal.CloseButton />
+          <Modal.Header>
+            <Text fontSize="md" bold>
+              Result ({score}/{total})
+            </Text>
+          </Modal.Header>
+          <Modal.Body>
+            <VStack space="4">
+              {answers.map((el: string, key: number) => {
+                return (
+                  <Box key={key}>
+                    <Text mb={questions?.[key]?.image ? 2 : 0}>
+                      <Text bold>{key + 1}</Text>.{" "}
+                      {questions?.[key]?.image ? (
+                        <Image
+                          resizeMode="contain"
+                          source={IMAGES[questions?.[key]?.image]}
+                          alt={"question"}
+                        />
+                      ) : (
+                        questions?.[key]?.title
+                      )}
+                    </Text>
+                    <Text>
+                      <Text bold>Your answer:</Text> {el}
+                    </Text>
+                    {el === questions?.[key]?.answer ? (
+                      <Text color="tertiary.600">
+                        <Text bold>Result:</Text> Correct
+                      </Text>
+                    ) : (
+                      <Text color="red.600">
+                        <Text bold>Result:</Text> Wrong (Answer:{" "}
+                        {questions?.[key]?.answer})
+                      </Text>
+                    )}
+                  </Box>
+                );
+              })}
+            </VStack>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onPress={() => setShowResultModal(false)}>Close</Button>
           </Modal.Footer>
         </Modal.Content>
       </Modal>

@@ -6,7 +6,7 @@
     "description": "ALS Reviewer Mobile Application",
     "githubUrl": "https://github.com/kanamui/als-reviewer",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {

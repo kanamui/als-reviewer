@@ -39,7 +39,11 @@ const AppNavigator = (data: any) => {
           />
           <Stack.Screen name="Pet" component={Pet} />
           <Stack.Screen name="Module" component={Module} />
-          <Stack.Screen name="Quiz" component={Quiz} />
+          <Stack.Screen
+            name="Quiz"
+            component={Quiz}
+            options={{ gestureEnabled: false }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </Box>

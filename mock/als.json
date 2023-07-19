@@ -134,23 +134,23 @@
                   },
                   {
                     "image": "T1025",
-                    "longText": "1. Select a template (e.g., Blue curve business cards). Once it is selected, a window will appear with details about the template. Click Create"
+                    "longText": "<br><br><br><br><br>1. Select a template (e.g., Blue curve business cards). Once it is selected, a window will appear with details about the template. Click Create"
                   },
                   {
                     "image": "T1026",
-                    "longText": "2. Next, you will see the selected business card template ready for editing contents.<br><br>3. To put contents in the business card, you just need to edit the first card; it will be automatically applied to the rest of the cards."
+                    "longText": "<br><br><br>2. Next, you will see the selected business card template ready for editing contents.<br><br>3. To put contents in the business card, you just need to edit the first card; it will be automatically applied to the rest of the cards."
                   },
                   {
                     "image": "T1027",
-                    "longText": "4. To insert a logo, select each LOGO HERE box, right-click and choose Change Picture, and then click From a File. It means that the image to be inserted is stored in a folder in the computer."
+                    "longText": "<br><br><br><br>4. To insert a logo, select each LOGO HERE box, right-click and choose Change Picture, and then click From a File. It means that the image to be inserted is stored in a folder in the computer."
                   },
                   {
                     "image": "T1028",
-                    "longText": "5. A window will appear, letting you locate your image to be inserted. Once located, just click on the desired image and then click Insert."
+                    "longText": "<br><br><br><br><br>5. A window will appear, letting you locate your image to be inserted. Once located, just click on the desired image and then click Insert."
                   },
                   {
                     "image": "T1029",
-                    "longText": "6. To save a new document, press Ctrl+S on the keyboard, or click the Save button on the upper left corner of the document. You may also click the File tab then select Save."
+                    "longText": "<br><br><br><br>6. To save a new document, press Ctrl+S on the keyboard, or click the Save button on the upper left corner of the document. You may also click the File tab then select Save."
                   },
                   {
                     "image": "T1030",
@@ -158,7 +158,7 @@
                   },
                   {
                     "image": "T1031",
-                    "longText": "8. You can also save the files in a different location, with a different file name, and with a different file type. Just click on the File tab, then select Save As."
+                    "longText": "<br><br><br><br><br>8. You can also save the files in a different location, with a different file name, and with a different file type. Just click on the File tab, then select Save As."
                   },
                   {
                     "image": "T1032",
@@ -174,7 +174,7 @@
                   },
                   {
                     "image": "T1035",
-                    "longText": "Click the document you want to view in the screen. Documents can also be viewed in the same screen simultaneously, but with a limited view<br><br>On the upper right corner of the document, click Restore Down beside Close for both documents, and then arrange the documents in the screen."
+                    "longText": "<br><br><br>Click the document you want to view in the screen. Documents can also be viewed in the same screen simultaneously, but with a limited view<br><br>On the upper right corner of the document, click Restore Down beside Close for both documents, and then arrange the documents in the screen."
                   },
                   {
                     "image": "T1036",
@@ -183,19 +183,19 @@
                   },
                   {
                     "image": "T1037",
-                    "longText": "2. <b>Print Layout</b> displays page breaks as thick, dark horizontal bars so you can clearly see where a page ends and begins. (This is the default view.)"
+                    "longText": "<br><br><br><br><br>2. <b>Print Layout</b> displays page breaks as thick, dark horizontal bars so you can clearly see where a page ends and begins. (This is the default view.)"
                   },
                   {
                     "image": "T1038",
-                    "longText": "3. <b>Web Layout</b> displays your document exactly as it    would appear if you saved it as a web page."
+                    "longText": "<br><br><br><br><br><br>3. <b>Web Layout</b> displays your document exactly as it    would appear if you saved it as a web page."
                   },
                   {
                     "image": "T1039",
-                    "longText": "4. <b>Outline</b> displays your document as outline headings and subheadings."
+                    "longText": "<br><br><br><br><br><br>4. <b>Outline</b> displays your document as outline headings and subheadings."
                   },
                   {
                     "image": "T1040",
-                    "longText": "5. <b>Draft</b> displays the document without top or bottom page margins and with page breaks as dotted lines."
+                    "longText": "<br><br><br><br><br><br>5. <b>Draft</b> displays the document without top or bottom page margins and with page breaks as dotted lines."
                   },
                   {
                     "image": "T1041",
@@ -204,7 +204,7 @@
                   },
                   {
                     "image": "T1042",
-                    "longText": "2. Click the View tab and then click what you want to use, such as Print Layout or Draft view."
+                    "longText": "<br><br><br><br><br><br>2. Click the View tab and then click what you want to use, such as Print Layout or Draft view."
                   },
                   {
                     "image": "T1043",
@@ -213,7 +213,7 @@
                   },
                   {
                     "image": "T1044",
-                    "longText": "Once the help feature opens, you can use the search feature on the right-side task pane to find answers to your questions that are related to using Microsoft Word. To browse, open <b>Recommended Topics</b>."
+                    "longText": "<br><br><br><br>Once the help feature opens, you can use the search feature on the right-side task pane to find answers to your questions that are related to using Microsoft Word. To browse, open <b>Recommended Topics</b>."
                   },
                   {
                     "image": "T1045",
@@ -222,7 +222,7 @@
                   },
                   {
                     "image": "T1046",
-                    "longText": "2. Under Font, browse through the Webdings, Windings, Windings 2, and Windings 3 fonts. These are fonts that feature symbols and special characters. Choose which symbols you want to insert. You can insert as many as needed."
+                    "longText": "<br><br><br>2. Under Font, browse through the Webdings, Windings, Windings 2, and Windings 3 fonts. These are fonts that feature symbols and special characters. Choose which symbols you want to insert. You can insert as many as needed."
                   },
                   {
                     "image": "T1047",
@@ -237,7 +237,7 @@
                   },
                   {
                     "image": "T1050",
-                    "longText": "Templates can be helpful when thinking of an initial design for a document, as these serve as a starting point in case you run out of concepts or ideas. Getting to know various features of a word processor can help you flawlessly create a document"
+                    "longText": "<br><br><br><br>Templates can be helpful when thinking of an initial design for a document, as these serve as a starting point in case you run out of concepts or ideas. Getting to know various features of a word processor can help you flawlessly create a document"
                   }
                 ],
                 "quiz": {
@@ -262,7 +262,7 @@
                   },
                   {
                     "image": "T1055",
-                    "longText": "Let us start by looking at an unformatted paragraph.<br><br>There are two paragraphs in the image. If you want them to be merged, place your cursor at the period of the first paragraph and then press Del on the keyboard."
+                    "longText": "<br><br><br>Let us start by looking at an unformatted paragraph.<br><br>There are two paragraphs in the image. If you want them to be merged, place your cursor at the period of the first paragraph and then press Del on the keyboard."
                   },
                   {
                     "image": "T1056",
@@ -280,27 +280,27 @@
                   },
                   {
                     "image": "T1059",
-                    "longText": "2. Next, go to the Home tab. In the Paragraph group, click the Paragraph launcher arrow on the lower right corner."
+                    "longText": "<br><br><br><br><br>2. Next, go to the Home tab. In the Paragraph group, click the Paragraph launcher arrow on the lower right corner."
                   },
                   {
                     "image": "T1060",
-                    "longText": "3. The Paragraph dialog box will appear. Then, click the Tabs button."
+                    "longText": "<br><br><br><br><br><br>3. The Paragraph dialog box will appear. Then, click the Tabs button."
                   },
                   {
                     "image": "T1061",
-                    "longText": "4. The Tabs dialog box will appear. Type your desired position in numbers where the characters will be placed. Select Decimal and then click Set and OK."
+                    "longText": "<br><br><br><br><br>4. The Tabs dialog box will appear. Type your desired position in numbers where the characters will be placed. Select Decimal and then click Set and OK."
                   },
                   {
                     "image": "T1062",
-                    "longText": "Notice that the text was placed automatically eight centimeters away from its original position and a tab indication (∟) can be seen under number 8 of the ruler"
+                    "longText": "<br><br><br><br><br>Notice that the text was placed automatically eight centimeters away from its original position and a tab indication (∟) can be seen under number 8 of the ruler"
                   },
                   {
                     "image": "T1063",
-                    "longText": "5. You can also add visible dots in between words and numbers. Select your desired number under the Leader option then click OK"
+                    "longText": "<br><br><br><br><br>5. You can also add visible dots in between words and numbers. Select your desired number under the Leader option then click OK"
                   },
                   {
                     "image": "T1064",
-                    "longText": "6. To remove the tabs being set, just click Clear or Clear All."
+                    "longText": "<br><br><br><br><br><br>6. To remove the tabs being set, just click Clear or Clear All."
                   },
                   {
                     "image": "T1065",
@@ -315,11 +315,11 @@
                   },
                   {
                     "image": "T1068",
-                    "longText": "2. To indent the first lines of each paragraph, place your cursor at the beginning of the word in the paragraph then press Tab on the keyboard. Indentions give the signal to the readers that it is the start of the paragraph."
+                    "longText": "<br><br><br>2. To indent the first lines of each paragraph, place your cursor at the beginning of the word in the paragraph then press Tab on the keyboard. Indentions give the signal to the readers that it is the start of the paragraph."
                   },
                   {
                     "image": "T1069",
-                    "longText": "3. At times, a whole paragraph can be indented far away from the margin, depending on what is needed. Go again to the Paragraph group then click Increase Indent."
+                    "longText": "<br><br><br><br>3. At times, a whole paragraph can be indented far away from the margin, depending on what is needed. Go again to the Paragraph group then click Increase Indent."
                   },
                   {
                     "image": "T1070",
@@ -327,7 +327,7 @@
                   },
                   {
                     "image": "T1071",
-                    "longText": "2. Select the paragraph and apply your desired spacing. Spacing can also be modified in Line Spacing Options.<br><br>3. Add Space Before Paragraph and Add Space After Paragraph are simply adding spaces between the paragraphs."
+                    "longText": "<br><br>2. Select the paragraph and apply your desired spacing. Spacing can also be modified in Line Spacing Options.<br><br>3. Add Space Before Paragraph and Add Space After Paragraph are simply adding spaces between the paragraphs."
                   },
                   {
                     "image": "T1072",
@@ -336,23 +336,23 @@
                   },
                   {
                     "image": "T1073",
-                    "longText": "2. To change the background or shading of the border, click on Borders and Shading... at the bottom of the drop-down list"
+                    "longText": "<br><br><br><br><br>2. To change the background or shading of the border, click on Borders and Shading... at the bottom of the drop-down list"
                   },
                   {
                     "image": "T1074",
-                    "longText": "In the Borders and Shading dialog box, you will see the Borders, Page Border, and Shading. You may change the style, color, and width of the border."
+                    "longText": "<br><br><br><br><br>In the Borders and Shading dialog box, you will see the Borders, Page Border, and Shading. You may change the style, color, and width of the border."
                   },
                   {
                     "image": "T1075",
-                    "longText": "3. You need to select all the sides in the diagram to apply the border style, color, and width."
+                    "longText": "<br><br><br><br><br><br>3. You need to select all the sides in the diagram to apply the border style, color, and width."
                   },
                   {
                     "image": "T1076",
-                    "longText": "4. To add background color, do the same procedure, but this time, select the Shading tab."
+                    "longText": "<br><br><br><br><br><br>4. To add background color, do the same procedure, but this time, select the Shading tab."
                   },
                   {
                     "image": "T1077",
-                    "longText": "5. Click Fill to choose the color you want for your background then click OK.<br><br>Borders can also be applied to other paragraphs with different styles and shading."
+                    "longText": "<br><br><br><br>5. Click Fill to choose the color you want for your background then click OK.<br><br>Borders can also be applied to other paragraphs with different styles and shading."
                   },
                   {
                     "image": "T1078",
@@ -361,11 +361,11 @@
                   },
                   {
                     "image": "T1079",
-                    "longText": "Recommended styles can be applied to a text or a paragraph. Styles can help emphasize a word or words in a paragraph.<br><br>1. To apply a style to a text, highlight the text and then select the desired style in the Styles group."
+                    "longText": "<br><br><br>Recommended styles can be applied to a text or a paragraph. Styles can help emphasize a word or words in a paragraph.<br><br>1. To apply a style to a text, highlight the text and then select the desired style in the Styles group."
                   },
                   {
                     "image": "T1080",
-                    "longText": "2. For paragraphs, select the whole paragraph and then choose a style. It will be automatically applied to the selected paragraph."
+                    "longText": "<br><br><br><br><br>2. For paragraphs, select the whole paragraph and then choose a style. It will be automatically applied to the selected paragraph."
                   },
                   {
                     "image": "T1081",
@@ -373,7 +373,7 @@
                   },
                   {
                     "image": "T1082",
-                    "longText": "Format Painter saves time and energy in formatting texts or paragraphs over again."
+                    "longText": "<br><br><br><br><br><br>Format Painter saves time and energy in formatting texts or paragraphs over again."
                   },
                   {
                     "image": "T1083",
@@ -382,15 +382,15 @@
                   },
                   {
                     "image": "T1084",
-                    "longText": "2. Next, highlight the number of rows and columns you need for the table. For example, let us make a table with five columns and two rows.<br>You may insert or delete rows and columns later as needed."
+                    "longText": "<br><br><br><br>2. Next, highlight the number of rows and columns you need for the table. For example, let us make a table with five columns and two rows.<br>You may insert or delete rows and columns later as needed."
                   },
                   {
                     "image": "T1085",
-                    "longText": "3. You will be taken from the Insert tab to the Table Design tab. In other versions, select <b>Table Tools</b> then <b>Design</b>. Tabs like Table Design will only appear after the element in the document has been selected, as shown below."
+                    "longText": "<br><br><br>3. You will be taken from the Insert tab to the Table Design tab. In other versions, select <b>Table Tools</b> then <b>Design</b>. Tabs like Table Design will only appear after the element in the document has been selected, as shown below."
                   },
                   {
                     "image": "T1086",
-                    "longText": "4. To insert data in the table, put the cursor on the desired rows and columns and start typing."
+                    "longText": "<br><br><br><br><br><br>4. To insert data in the table, put the cursor on the desired rows and columns and start typing."
                   },
                   {
                     "image": "T1087",
@@ -399,19 +399,19 @@
                   },
                   {
                     "image": "T1088",
-                    "longText": "2. Another way to add more rows and columns is to click the plus sign (+) button in the table. Just hover your mouse on the leftmost edge of the row of the table."
+                    "longText": "<br><br><br><br><br>2. Another way to add more rows and columns is to click the plus sign (+) button in the table. Just hover your mouse on the leftmost edge of the row of the table."
                   },
                   {
                     "image": "T1089",
-                    "longText": "3. To delete rows and columns in between, highlight the rows or columns to be deleted, right-click, and select Delete Cells. Alternatively, you can press the Backspace key after highlighting"
+                    "longText": "<br><br><br><br><br>3. To delete rows and columns in between, highlight the rows or columns to be deleted, right-click, and select Delete Cells. Alternatively, you can press the Backspace key after highlighting"
                   },
                   {
                     "image": "T1090",
-                    "longText": "4. A dialog box will open, showing options on what will happen to the cells around the cells to be deleted. Just select the default, which is Shift cells Left, then press OK."
+                    "longText": "<br><br><br><br><br>4. A dialog box will open, showing options on what will happen to the cells around the cells to be deleted. Just select the default, which is Shift cells Left, then press OK."
                   },
                   {
                     "image": "T1091",
-                    "longText": "5. To remove excess rows, select the rows and columns to be deleted. You can either right-click and select Delete Cells or press the Backspace key."
+                    "longText": "<br><br><br><br><br>5. To remove excess rows, select the rows and columns to be deleted. You can either right-click and select Delete Cells or press the Backspace key."
                   },
                   {
                     "image": "T1092",
@@ -420,7 +420,7 @@
                   },
                   {
                     "image": "T1093",
-                    "longText": "2. After selecting the entire table, you may choose the desired font, font size, font color, font style, and alignment."
+                    "longText": "<br><br><br><br><br>2. After selecting the entire table, you may choose the desired font, font size, font color, font style, and alignment."
                   },
                   {
                     "image": "T1094",
@@ -429,11 +429,11 @@
                   },
                   {
                     "image": "T1095",
-                    "longText": "2. There are table styles ready to use if you do not have time to modify each part. Browse other styles by expanding Table Styles. You will see a preview when you point your mouse to the style."
+                    "longText": "<br><br><br><br>2. There are table styles ready to use if you do not have time to modify each part. Browse other styles by expanding Table Styles. You will see a preview when you point your mouse to the style."
                   },
                   {
                     "image": "T1095",
-                    "longText": "3. If you feel like creating your own style, Borders can help you modify the shading, width, and border style."
+                    "longText": "<br><br><br><br><br><br>3. If you feel like creating your own style, Borders can help you modify the shading, width, and border style."
                   },
                   {
                     "image": "T1097",
@@ -442,43 +442,43 @@
                   },
                   {
                     "image": "T1098",
-                    "longText": "2. Click Pictures. A dialog box will appear that will let you locate a saved picture in your computer. Once you have selected a picture, click Insert."
+                    "longText": "<br><br><br><br><br>2. Click Pictures. A dialog box will appear that will let you locate a saved picture in your computer. Once you have selected a picture, click Insert."
                   },
                   {
                     "image": "T1099",
-                    "longText": "3. To reduce the size of the picture, select the picture and click any of the sizing handles. Then, drag it continuously until you reach your desired size.<br><br>4. You may continue inserting more pictures that is needed in your document."
+                    "longText": "<br><br><br>3. To reduce the size of the picture, select the picture and click any of the sizing handles. Then, drag it continuously until you reach your desired size.<br><br>4. You may continue inserting more pictures that is needed in your document."
                   },
                   {
                     "image": "T1100",
-                    "longText": "Next, let us try getting pictures online. This will only work if you are connected to the internet."
+                    "longText": "<br><br><br><br><br><br>Next, let us try getting pictures online. This will only work if you are connected to the internet."
                   },
                   {
                     "image": "T1101",
-                    "longText": "There are thousands of pictures online, and these pictures are all protected by copyright laws. Microsoft Word has the license to let you use the pictures. In the picture above, categories are already available, but you can still search by typing the keyword in the search bar."
+                    "longText": "<br><br><br>There are thousands of pictures online, and these pictures are all protected by copyright laws. Microsoft Word has the license to let you use the pictures. In the picture above, categories are already available, but you can still search by typing the keyword in the search bar."
                   },
                   {
                     "image": "T1102",
-                    "longText": "5. For this activity, let us find images of dogs. Different pictures of dogs will appear. Select the pictures you want then click Insert."
+                    "longText": "<br><br><br><br><br>5. For this activity, let us find images of dogs. Different pictures of dogs will appear. Select the pictures you want then click Insert."
                   },
                   {
                     "image": "T1103",
-                    "longText": "6. You can insert as many online pictures as you want on the same category at the same time. Simply click all the desired pictures, click Insert, and then adjust the pictures."
+                    "longText": "<br><br><br><br><br>6. You can insert as many online pictures as you want on the same category at the same time. Simply click all the desired pictures, click Insert, and then adjust the pictures."
                   },
                   {
                     "image": "T1104",
-                    "longText": "Inserting pictures may be easy, but putting them in a desired position may give you a hard time. You can always modify its position so that pictures, other objects, and texts can go along with one another."
+                    "longText": "<br><br><br><br><br>Inserting pictures may be easy, but putting them in a desired position may give you a hard time. You can always modify its position so that pictures, other objects, and texts can go along with one another."
                   },
                   {
                     "image": "T1105",
-                    "longText": "7. Select the picture you want to modify; a Picture Format tab will appear. Click Wrap Text and choose Tight. Do the same for the other pictures."
+                    "longText": "<br><br><br><br><br>7. Select the picture you want to modify; a Picture Format tab will appear. Click Wrap Text and choose Tight. Do the same for the other pictures."
                   },
                   {
                     "image": "T1106",
-                    "longText": "Pictures are now ready to be positioned anywhere. There are more options on how the picture will be wrapped in the text.<br><br>When a document has a text, you can use the Position command to position the text to the center, left, right, bottom, or in line with the text."
+                    "longText": "<br><br><br>Pictures are now ready to be positioned anywhere. There are more options on how the picture will be wrapped in the text.<br><br>When a document has a text, you can use the Position command to position the text to the center, left, right, bottom, or in line with the text."
                   },
                   {
                     "image": "T1107",
-                    "longText": "8. To position the text and picture, click the picture then select the Picture Format tab and choose Position. A preview will be displayed upon pointing the mouse to different text-wrapping positions."
+                    "longText": "<br><br><br><br>8. To position the text and picture, click the picture then select the Picture Format tab and choose Position. A preview will be displayed upon pointing the mouse to different text-wrapping positions."
                   },
                   {
                     "image": "T1108",
@@ -487,19 +487,19 @@
                   },
                   {
                     "image": "T1109",
-                    "longText": "2. Choose your desired shapes and start dragging the mouse to draw the object. You can modify it by changing the color of the outline or the fill color of the shape through the Shape Format tab."
+                    "longText": "<br><br><br><br>2. Choose your desired shapes and start dragging the mouse to draw the object. You can modify it by changing the color of the outline or the fill color of the shape through the Shape Format tab."
                   },
                   {
                     "image": "T1110",
-                    "longText": "3. Objects in a document can be duplicated. Let us duplicate the rectangle and paste it beside the first shape. Select the shape; press Ctrl+C, which is the shortcut key for copy; and then press Ctrl+V, which is the shortcut key for paste. Or right-click the shape, select copy, click anywhere, right click again, and choose Paste Options."
+                    "longText": "<br><br>3. Objects in a document can be duplicated. Let us duplicate the rectangle and paste it beside the first shape. Select the shape; press Ctrl+C, which is the shortcut key for copy; and then press Ctrl+V, which is the shortcut key for paste. Or right-click the shape, select copy, click anywhere, right click again, and choose Paste Options."
                   },
                   {
                     "image": "T1111",
-                    "longText": "Numerical data can also be presented in a document through a chart. When you insert a chart, a spreadsheet program will appear to input the numbers."
+                    "longText": "<br><br><br><br><br>Numerical data can also be presented in a document through a chart. When you insert a chart, a spreadsheet program will appear to input the numbers."
                   },
                   {
                     "image": "T1112",
-                    "longText": "Any changes in the contents will show in the chart because they are connected. Then, click Close to close the program.<br><br>Word processors are very flexible because of its wide variety of formatting commands that can modify and personalize your documents."
+                    "longText": "<br><br><br>Any changes in the contents will show in the chart because they are connected. Then, click Close to close the program.<br><br>Word processors are very flexible because of its wide variety of formatting commands that can modify and personalize your documents."
                   }
                 ],
                 "quiz": {
@@ -510,27 +510,27 @@
                   "title": "<b>Directions. Choose the letter of the correct answer. The question is all about the step-by-step procedure in saving a file under a new filename and file type as a PDF file.</b>",
                   "items": [
                     {
-                      "title": "1. Open the _________ to be saved in its original document program (Word, Excel, etc).",
+                      "title": "Open the _________ to be saved in its original document program (Word, Excel, etc).",
                       "answer": "File",
                       "choices": ["Save as", "File Name", "File", "Save"]
                     },
                     {
-                      "title": "2. Go to File > _________",
+                      "title": "Go to File > _________",
                       "answer": "Save As",
                       "choices": ["File", "Save as", "Save", "File Name"]
                     },
                     {
-                      "title": "3. Save As and select _________ from the drop-down menu of file types.",
+                      "title": "Save As and select _________ from the drop-down menu of file types.",
                       "answer": "PDF",
                       "choices": ["Save", "File Name", "PDF", "Word"]
                     },
                     {
-                      "title": "4. Rename the file in the white box labeled “_________”.",
+                      "title": "Rename the file in the white box labeled “_________”.",
                       "answer": "File Name",
                       "choices": ["PDF", "Word", "File Name", "Save"]
                     },
                     {
-                      "title": "5. Check the box labeled “Save As Type” and ensure that PDS is selecte; then click _________.",
+                      "title": "Check the box labeled “Save As Type” and ensure that PDS is selecte; then click _________.",
                       "answer": "Save",
                       "choices": ["Save as", "File Name", "PDF", "Save"]
                     }
@@ -562,15 +562,15 @@
                   },
                   {
                     "image": "T1119",
-                    "longText": "2. Enter all the names of the recipients and other details you want to include, such as home address. Press <b>New Entry</b> every time you will input a new record. If done, click <b>OK</b>. The Save Address List box will appear, asking for a file name for the database. Then, click <b>Save</b>."
+                    "longText": "<br><br><br>2. Enter all the names of the recipients and other details you want to include, such as home address. Press <b>New Entry</b> every time you will input a new record. If done, click <b>OK</b>. The Save Address List box will appear, asking for a file name for the database. Then, click <b>Save</b>."
                   },
                   {
                     "image": "T1120",
-                    "longText": "3. If you want to add more people in the created database, you may click <b>Edit Recipients</b> in the Mailings tab."
+                    "longText": "<br><br><br><br><br>3. If you want to add more people in the created database, you may click <b>Edit Recipients</b> in the Mailings tab."
                   },
                   {
                     "image": "T1121",
-                    "longText": "4. Then, select the database to be edited on the lower left corner and click <b>Edit</b> and <b>OK</b>."
+                    "longText": "<br><br><br><br><br><br>4. Then, select the database to be edited on the lower left corner and click <b>Edit</b> and <b>OK</b>."
                   },
                   {
                     "image": "T1122",
@@ -579,31 +579,31 @@
                   },
                   {
                     "image": "T1123",
-                    "longText": "2. A Mail Merge panel will be displayed on the right side of the screen, guiding you in each step."
+                    "longText": "<br><br><br><br><br><br>2. A Mail Merge panel will be displayed on the right side of the screen, guiding you in each step."
                   },
                   {
                     "image": "T1124",
-                    "longText": "3. Then, you will be asked to select the recipients. In our example, the Barangay Mansanas database was already selected because it was created prior to the wizard."
+                    "longText": "<br><br><br><br>3. Then, you will be asked to select the recipients. In our example, the Barangay Mansanas database was already selected because it was created prior to the wizard."
                   },
                   {
                     "image": "T1125",
-                    "longText": "4. Write the letter if you have not done it yet. This step also allows adding information or fields, such as the address block and the greeting line.<br><br>If you click Address Block, a dialog box will appear with options on what to include in address block."
+                    "longText": "<br><br><br>4. Write the letter if you have not done it yet. This step also allows adding information or fields, such as the address block and the greeting line.<br><br>If you click Address Block, a dialog box will appear with options on what to include in address block."
                   },
                   {
                     "image": "T1126",
-                    "longText": "5. An Address Block placeholder will appear after selecting the information to be included."
+                    "longText": "<br><br><br><br><br><br>5. An Address Block placeholder will appear after selecting the information to be included."
                   },
                   {
                     "image": "T1127",
-                    "longText": "6. You can preview how the letter will look like in each recipient by clicking the next step in the wizard."
+                    "longText": "<br><br><br><br><br><br>6. You can preview how the letter will look like in each recipient by clicking the next step in the wizard."
                   },
                   {
                     "image": "T1128",
-                    "longText": "7. You may see the preview from different recipients by clicking the arrows on the wizard."
+                    "longText": "<br><br><br><br><br><br>7. You may see the preview from different recipients by clicking the arrows on the wizard."
                   },
                   {
                     "image": "T1129",
-                    "longText": "8. The last step in this process is to complete the merge, prepare it for printing, and send it to the intended recipients. Click Print to start printing all the letters.<br><br>You may print all the records or choose pages to be printed."
+                    "longText": "<br><br><br>8. The last step in this process is to complete the merge, prepare it for printing, and send it to the intended recipients. Click Print to start printing all the letters.<br><br>You may print all the records or choose pages to be printed."
                   },
                   {
                     "image": "T1130",
@@ -612,11 +612,11 @@
                   },
                   {
                     "image": "T1131",
-                    "longText": "1. <b>Margins</b> help define where a line of text begins and ends. The normal margin, or the default, has a margin of 1 inch or 2.54 cm on all sides. You can change this depending on the required margin."
+                    "longText": "<br><br><br><br>1. <b>Margins</b> help define where a line of text begins and ends. The normal margin, or the default, has a margin of 1 inch or 2.54 cm on all sides. You can change this depending on the required margin."
                   },
                   {
                     "image": "T1132",
-                    "longText": "2. To check the Here, you will find the margins, paper size, and document orientation tools, among others. orientation of the document, click <b>Orientation</b> and choose between portrait, which is the default, or landscape."
+                    "longText": "<br><br><br>2. To check the Here, you will find the margins, paper size, and document orientation tools, among others. orientation of the document, click <b>Orientation</b> and choose between portrait, which is the default, or landscape."
                   },
                   {
                     "image": "T1133",
@@ -629,11 +629,11 @@
                   },
                   {
                     "image": "T1135",
-                    "longText": "2. Then select the Layout tab, click <b>Breaks</b>, and then click <b>Page</b>. You will notice the succeeding paragraphs will be placed in a new page."
+                    "longText": "<br><br><br><br><br>2. Then select the Layout tab, click <b>Breaks</b>, and then click <b>Page</b>. You will notice the succeeding paragraphs will be placed in a new page."
                   },
                   {
                     "image": "T1136",
-                    "longText": "3. To remove a page break, place the cursor where the page break was done then press the Del key."
+                    "longText": "<br><br><br><br><br><br>3. To remove a page break, place the cursor where the page break was done then press the Del key."
                   },
                   {
                     "image": "T1137",
@@ -642,11 +642,11 @@
                   },
                   {
                     "image": "T1138",
-                    "longText": "2. Select one of the Header or Footer templates from the options that appear."
+                    "longText": "<br><br><br><br><br><br>2. Select one of the Header or Footer templates from the options that appear."
                   },
                   {
                     "image": "T1139",
-                    "longText": "3. When one template has been selected, it will appear in your document.<br>4. To change the header or footer, simply select <b>eader or Footer</b> again and choose a different template.<br>5. To get back into the body of your document, double-click in the body of your document or select <b>Close Header and Footer</b>."
+                    "longText": "<br><br><br>3. When one template has been selected, it will appear in your document.<br>4. To change the header or footer, simply select <b>eader or Footer</b> again and choose a different template.<br>5. To get back into the body of your document, double-click in the body of your document or select <b>Close Header and Footer</b>."
                   },
                   {
                     "image": "T1140",
@@ -655,23 +655,23 @@
                   },
                   {
                     "image": "T1141",
-                    "longText": "2. To add a picture, click on the header or footer where you want to add the picture.<br><br>3. Select Pictures in the Insert group of the Header & Footer tab."
+                    "longText": "<br><br><br>2. To add a picture, click on the header or footer where you want to add the picture.<br><br>3. Select Pictures in the Insert group of the Header & Footer tab."
                   },
                   {
                     "image": "T1142",
-                    "longText": "4. Select a picture and click Insert."
+                    "longText": "<br><br><br><br><br><br><br>4. Select a picture and click Insert."
                   },
                   {
                     "image": "T1143",
-                    "longText": "5. Resize the picture by selecting it and dragging the sizing handle.<br><br>6. To add the date, click on the header or footer where you want to add it.<br><br>7. Select Date & Time in the Insert group of the Header & Footer tab."
+                    "longText": "<br><br>5. Resize the picture by selecting it and dragging the sizing handle.<br><br>6. To add the date, click on the header or footer where you want to add it.<br><br>7. Select Date & Time in the Insert group of the Header & Footer tab."
                   },
                   {
                     "image": "T1144",
-                    "longText": "8. Select the date format of your choice and click OK."
+                    "longText": "<br><br><br><br><br><br><br>8. Select the date format of your choice and click OK."
                   },
                   {
                     "image": "T1145",
-                    "longText": "9. To set the header and footer such that they do not show on the first page, check Different First Page in the Options group of the Header & Footer tab."
+                    "longText": "<br><br><br><br><br>9. To set the header and footer such that they do not show on the first page, check Different First Page in the Options group of the Header & Footer tab."
                   },
                   {
                     "image": "T1146",
@@ -680,7 +680,7 @@
                   },
                   {
                     "image": "T1147",
-                    "longText": "2. Click Page Number in the Header & Footer group.<br><br>3. Choose Bottom of Page then select your desired option. Let us use Plain Number 3 for our lesson.<br><br>4. Once it is selected, you can change the font and font size of the page numbers. Simply highlight the page number then click the Insert tab and choose the Font group. The succeeding pages will automatically insert the corresponding page number."
+                    "longText": "<br><br>2. Click Page Number in the Header & Footer group.<br><br>3. Choose Bottom of Page then select your desired option. Let us use Plain Number 3 for our lesson.<br><br>4. Once it is selected, you can change the font and font size of the page numbers. Simply highlight the page number then click the Insert tab and choose the Font group. The succeeding pages will automatically insert the corresponding page number."
                   },
                   {
                     "image": "T1148",
@@ -689,7 +689,7 @@
                   },
                   {
                     "image": "T1149",
-                    "longText": "2. If many words in the document need to be corrected, click Check Document in the Review tab."
+                    "longText": "<br><br><br><br><br><br>2. If many words in the document need to be corrected, click Check Document in the Review tab."
                   },
                   {
                     "image": "T1150",
@@ -702,7 +702,7 @@
                   },
                   {
                     "image": "T1152",
-                    "longText": "3. Click the Printer menu to choose the printer you want to use, or which printer is in a Ready status."
+                    "longText": "<br><br><br><br><br><br>3. Click the Printer menu to choose the printer you want to use, or which printer is in a Ready status."
                   },
                   {
                     "image": "T1153",
@@ -717,52 +717,52 @@
                   "title": "<b>Directions. Write True if the statement is correct; otherwise, write False and underline the word that makes the statement incorrect.</b>",
                   "items": [
                     {
-                      "title": "1. Ctrl+Pr is the shortcut key for Print.",
+                      "title": "Ctrl+Pr is the shortcut key for Print.",
                       "answer": "False",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "2. You can print selected pages in a document.",
+                      "title": "You can print selected pages in a document.",
                       "answer": "True",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "3. Aside from the page number, you can also insert dates in the header.",
+                      "title": "Aside from the page number, you can also insert dates in the header.",
                       "answer": "True",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "4. You can change the size of the paper at the Layout tab.",
+                      "title": "You can change the size of the paper at the Layout tab.",
                       "answer": "True",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "5. Only one copy of the document can be printed.",
+                      "title": "Only one copy of the document can be printed.",
                       "answer": "False",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "6. Microsoft Word has a feature to correct the spelling if the word turns green.",
+                      "title": "Microsoft Word has a feature to correct the spelling if the word turns green.",
                       "answer": "False",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "7. The Header & Footer tab allows you to insert pictures.",
+                      "title": "The Header & Footer tab allows you to insert pictures.",
                       "answer": "True",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "8. Page numbers can only be seen at the footer section of the document.",
+                      "title": "Page numbers can only be seen at the footer section of the document.",
                       "answer": "False",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "9. The Check Document command can check the spelling and grammar of the whole document.",
+                      "title": "The Check Document command can check the spelling and grammar of the whole document.",
                       "answer": "True",
                       "choices": ["True", "False"]
                     },
                     {
-                      "title": "10. Headers and footers can be seen only in the first page.",
+                      "title": "Headers and footers can be seen only in the first page.",
                       "answer": "False",
                       "choices": ["True", "False"]
                     }
@@ -783,77 +783,77 @@
               "longText": "This aims to check what you already know about the lesson.",
               "items": [
                 {
-                  "title": "1. Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
+                  "title": "Rows are a range of _________ aligned cells represented by numbers in a spreadsheet.",
                   "answer": "horizontally",
                   "choices": ["horizontally", "vertically"]
                 },
                 {
-                  "title": "2. Columns are a range of _________ aligned cells represented by letters in a spreadsheet.",
+                  "title": "Columns are a range of _________ aligned cells represented by letters in a spreadsheet.",
                   "answer": "vertically",
                   "choices": ["horizontally", "vertically"]
                 },
                 {
-                  "title": "3. In moving a cell content, use the _________ command",
+                  "title": "In moving a cell content, use the _________ command",
                   "answer": "cut",
                   "choices": ["copy", "cut"]
                 },
                 {
-                  "title": "4. _________ is the individual intersection between rows and columns.",
+                  "title": "_________ is the individual intersection between rows and columns.",
                   "answer": "Cell",
                   "choices": ["Box", "Cell"]
                 },
                 {
-                  "title": "5. Bold, Italic, Bold Italic, and Underline are _________.",
+                  "title": "Bold, Italic, Bold Italic, and Underline are _________.",
                   "answer": "font styles",
                   "choices": ["font styles", "font types"]
                 },
                 {
-                  "title": "6. Arial, Times New Roman, and Verdana are examples of _________.",
+                  "title": "Arial, Times New Roman, and Verdana are examples of _________.",
                   "answer": "font types",
                   "choices": ["font styles", "font types"]
                 },
                 {
-                  "title": "7. Spreadsheet or worksheet is an arrangement of _________ in columns and rows.",
+                  "title": "Spreadsheet or worksheet is an arrangement of _________ in columns and rows.",
                   "answer": "cells",
                   "choices": ["boxes", "cells"]
                 },
                 {
-                  "title": "8. To put a background color for a cell, you need to use the _________ command.",
+                  "title": "To put a background color for a cell, you need to use the _________ command.",
                   "answer": "Fill Color",
                   "choices": ["Fill Color", "Font Color"]
                 },
                 {
-                  "title": "9. Left, center, and right are _________ alignments.",
+                  "title": "Left, center, and right are _________ alignments.",
                   "answer": "horizontal",
                   "choices": ["horizontal", "vertical"]
                 },
                 {
-                  "title": "10. Addition, subtraction, multiplication, and division are _________ operations.",
+                  "title": "Addition, subtraction, multiplication, and division are _________ operations.",
                   "answer": "mathematical",
                   "choices": ["mathematical", "logical"]
                 },
                 {
-                  "title": "11. The _________ is used for easy comparison of proportions.",
+                  "title": "The _________ is used for easy comparison of proportions.",
                   "answer": "Pie Chart",
                   "choices": ["Line Chart", "Pie Chart"]
                 },
                 {
-                  "title": "12. _________ are predefined formula in Microsoft Excel.",
+                  "title": "_________ are predefined formula in Microsoft Excel.",
                   "answer": "Functions",
                   "choices": ["Formulas", "Functions"]
                 },
                 {
-                  "title": "13. _________ is the separator used in accounting number format.",
+                  "title": "_________ is the separator used in accounting number format.",
                   "answer": "Comma",
                   "choices": ["Comma", "Point"]
                 },
                 {
-                  "title": "14. A function that is used to compute the total of all items in the specified range is called _________.",
+                  "title": "A function that is used to compute the total of all items in the specified range is called _________.",
                   "answer": "Sum",
                   "choices": ["Sum", "Total"]
                 },
                 {
-                  "title": "15. A command called _________ is used to change the background color of a cell.",
+                  "title": "A command called _________ is used to change the background color of a cell.",
                   "answer": "Fill Color",
                   "choices": ["Fill Cell", "Fill Color"]
                 }
@@ -894,7 +894,7 @@
                   },
                   {
                     "image": "T2012",
-                    "longText": "Rows. - The horizontally aligned cells in a spreadsheet, identified with numbers (row header).<br><br>Columns - The vertically aligned cells in a spreadsheet, identified with letters (column header).<br><br>Cell - An individual intersection between rows and columns, labeled by the row number and column letter."
+                    "longText": "<br><br><br>Rows. - The horizontally aligned cells in a spreadsheet, identified with numbers (row header).<br><br>Columns - The vertically aligned cells in a spreadsheet, identified with letters (column header).<br><br>Cell - An individual intersection between rows and columns, labeled by the row number and column letter."
                   },
                   {
                     "longText": "Active cell - The cell currently being edited, marked by a thick black border around the cell.<br><br>Cell address - Also called cell reference, an alphanumeric value used to identify a specific cell.<br><br>Formula bar - Shows the contents of the active cell and allows you to create and view formulas.<br><br>Sheet tabs - Contains the names of the available worksheets in the current workbook."
@@ -906,15 +906,15 @@
                   },
                   {
                     "image": "T2015",
-                    "longText": "2. You may also use the search bar on the taskbar. Type the name of the spreadsheet application you are looking for. For example, type Excel; if there is a result, click it to launch."
+                    "longText": "<br><br><br><br>2. You may also use the search bar on the taskbar. Type the name of the spreadsheet application you are looking for. For example, type Excel; if there is a result, click it to launch."
                   },
                   {
                     "image": "T2016",
-                    "longText": "3. To open a new workbook, click New on the right side of the screen then select Blank workbook."
+                    "longText": "<br><br><br><br><br><br>3. To open a new workbook, click New on the right side of the screen then select Blank workbook."
                   },
                   {
                     "image": "T2017",
-                    "longText": "4. To close a spreadsheet application, click the Close button on the upper right corner of the screen."
+                    "longText": "<br><br><br><br><br><br>4. To close a spreadsheet application, click the Close button on the upper right corner of the screen."
                   },
                   {
                     "image": "T2018",
@@ -923,15 +923,15 @@
                   },
                   {
                     "image": "T2019",
-                    "longText": "Click Personal in the suggested searches.<br><br>2. Select Personal Monthly Budget. Once it is selected, a window will appear with details about the template. Click Create."
+                    "longText": "<br><br><br><br>Click Personal in the suggested searches.<br><br>2. Select Personal Monthly Budget. Once it is selected, a window will appear with details about the template. Click Create."
                   },
                   {
                     "image": "T2020",
-                    "longText": "3. Once Excel loads the selected template, you will see two sheets: Start and Personal Monthly Budget.<br><br>Click the Personal Monthly Budget sheet.<br><br>4. To edit, click the cells and change to your desired contents."
+                    "longText": "<br><br><br>3. Once Excel loads the selected template, you will see two sheets: Start and Personal Monthly Budget.<br><br>Click the Personal Monthly Budget sheet.<br><br>4. To edit, click the cells and change to your desired contents."
                   },
                   {
                     "image": "T2021",
-                    "longText": "5. Templates can still be modified according to the preferred data.<br><br>6. If you do not like the templates, you can always go back and use a blank workbook"
+                    "longText": "<br><br><br>5. Templates can still be modified according to the preferred data.<br><br>6. If you do not like the templates, you can always go back and use a blank workbook"
                   },
                   {
                     "image": "T2022",
@@ -940,15 +940,15 @@
                   },
                   {
                     "image": "T2023",
-                    "longText": "3. Notice that the file name on the upper left corner has changed from “Book1” to “My First Workbook.”<br><br>Spreadsheets in Microsoft Excel are usually saved in the Documents folder as XLSX."
+                    "longText": "<br><br><br>3. Notice that the file name on the upper left corner has changed from “Book1” to “My First Workbook.”<br><br>Spreadsheets in Microsoft Excel are usually saved in the Documents folder as XLSX."
                   },
                   {
                     "image": "T2024",
-                    "longText": "4. You can also save the file in a different location, with a different file name, and file type. Just click on the File tab then select Save As.<br><br>5. To save under a different file name, delete the current filename and type a new one. You can also save it as a different file format, just click the drop-down arrow on the file type and select the desired file type."
+                    "longText": "<br><br>4. You can also save the file in a different location, with a different file name, and file type. Just click on the File tab then select Save As.<br><br>5. To save under a different file name, delete the current filename and type a new one. You can also save it as a different file format, just click the drop-down arrow on the file type and select the desired file type."
                   },
                   {
                     "image": "T2025",
-                    "longText": "It can be saved as a template, Portable Document Format (PDF), web page, rich text format, or any file type you want to use.<br><br>6. Click Browse to choose the folder or drive where you want to save the file. A window will appear where you can locate your folder or drive. Choose a location then click Save to finish the process."
+                    "longText": "<br><br>It can be saved as a template, Portable Document Format (PDF), web page, rich text format, or any file type you want to use.<br><br>6. Click Browse to choose the folder or drive where you want to save the file. A window will appear where you can locate your folder or drive. Choose a location then click Save to finish the process."
                   },
                   {
                     "image": "T2026",
@@ -956,7 +956,7 @@
                   },
                   {
                     "image": "T2027",
-                    "longText": "2. Pick the workbook you would like to move from the list of available open files. There will be a check next to the file that you are currently viewing for easy reference. In the example below, there are two open spreadsheets: Book 1 and Book 2. Choose among the open spreadsheets you want to switch with by clicking it."
+                    "longText": "<br><br><br>2. Pick the workbook you would like to move from the list of available open files. There will be a check next to the file that you are currently viewing for easy reference. In the example below, there are two open spreadsheets: Book 1 and Book 2. Choose among the open spreadsheets you want to switch with by clicking it."
                   },
                   {
                     "image": "T2028",
@@ -969,7 +969,7 @@
                   },
                   {
                     "image": "T2030",
-                    "longText": "Once the help feature opens, use the search feature in the right-side task pane to find answers to your questions related to the use of spreadsheet programs. To browse for topics, open <b>Recommended Topics</b>."
+                    "longText": "<br><br><br><br>Once the help feature opens, use the search feature in the right-side task pane to find answers to your questions related to the use of spreadsheet programs. To browse for topics, open <b>Recommended Topics</b>."
                   },
                   {
                     "image": "T2031",
@@ -982,7 +982,7 @@
                   },
                   {
                     "image": "T2033",
-                    "longText": "3. Alternatively, the <b>zoom slider</b> is available for instant zoom in and zoom out. It is located at the lower right corner of the workbook."
+                    "longText": "<br><br><br><br><br>3. Alternatively, the <b>zoom slider</b> is available for instant zoom in and zoom out. It is located at the lower right corner of the workbook."
                   },
                   {
                     "image": "T2034",
@@ -991,15 +991,15 @@
                   },
                   {
                     "image": "T2035",
-                    "longText": "To restore the Ribbons, click the Ribbon Display Options at the upper right of the workbook then select Show Tabs and Commands."
+                    "longText": "<br><br><br><br><br>To restore the Ribbons, click the Ribbon Display Options at the upper right of the workbook then select Show Tabs and Commands."
                   },
                   {
                     "image": "T2036",
-                    "longText": "The Quick Access Toolbar is a universal toolbar that is always visible and is not dependent on the tab that you are working with. It lets you execute commands easily."
+                    "longText": "<br><br><br><br><br>The Quick Access Toolbar is a universal toolbar that is always visible and is not dependent on the tab that you are working with. It lets you execute commands easily."
                   },
                   {
                     "image": "T2037",
-                    "longText": "The default commands are the save, undo, and redo buttons. You can customize the toolbar by clicking on the drop-down button at the right of the toolbar and then checking the desired commands to be included on the Quick Access Toolbar."
+                    "longText": "<br><br><br>The default commands are the save, undo, and redo buttons. You can customize the toolbar by clicking on the drop-down button at the right of the toolbar and then checking the desired commands to be included on the Quick Access Toolbar."
                   },
                   {
                     "image": "T2038",
@@ -1008,15 +1008,15 @@
                   },
                   {
                     "image": "T2039",
-                    "longText": "2. Let us put names as text beside each number in cells B1 to B5."
+                    "longText": "<br><br><br><br><br><br>2. Let us put names as text beside each number in cells B1 to B5."
                   },
                   {
                     "image": "T2040",
-                    "longText": "3. Then, insert birthdates on C1 to C5 in mm/dd/yyyy format.<br><br>Notice that the inserted date can be seen in the formula bar."
+                    "longText": "<br><br><br><br>3. Then, insert birthdates on C1 to C5 in mm/dd/yyyy format.<br><br>Notice that the inserted date can be seen in the formula bar."
                   },
                   {
                     "image": "T2041",
-                    "longText": "4. If the data is longer than the width, put your cursor on the right side of the header and drag to adjust the column headers. Use the same process to adjust the rows."
+                    "longText": "<br><br><br><br><br>4. If the data is longer than the width, put your cursor on the right side of the header and drag to adjust the column headers. Use the same process to adjust the rows."
                   },
                   {
                     "image": "T2042",
@@ -1025,11 +1025,11 @@
                   },
                   {
                     "image": "T2043",
-                    "longText": "2. If your list needs to have a total row like the example on the next page, it is best to put a blank row before the total row to separate the final data from the main list."
+                    "longText": "<br><br><br><br><br>2. If your list needs to have a total row like the example on the next page, it is best to put a blank row before the total row to separate the final data from the main list."
                   },
                   {
                     "image": "T2044",
-                    "longText": "3. Ensure that the cell bordering lists are blank. It is better not to put borders to main lists to avoid confusion, especially if you are going to insert rows between data in the future. Apply No Border found on the Font group to remove the cell borders."
+                    "longText": "<br><br><br><br>3. Ensure that the cell bordering lists are blank. It is better not to put borders to main lists to avoid confusion, especially if you are going to insert rows between data in the future. Apply No Border found on the Font group to remove the cell borders."
                   },
                   {
                     "image": "T2045",
@@ -1038,11 +1038,11 @@
                   },
                   {
                     "image": "T2046",
-                    "longText": "3. To select a nonadjacent cell or cell, click each cell while holding the Ctrl key on the keyboard."
+                    "longText": "<br><br><br><br><br>3. To select a nonadjacent cell or cell, click each cell while holding the Ctrl key on the keyboard."
                   },
                   {
                     "image": "T2047",
-                    "longText": "4. If you want to select the entire worksheet, click the triangle at the corner of A1."
+                    "longText": "<br><br><br><br><br>4. If you want to select the entire worksheet, click the triangle at the corner of A1."
                   },
                   {
                     "image": "T2048",
@@ -1051,19 +1051,19 @@
                   },
                   {
                     "image": "T2049",
-                    "longText": "2. Select the cell or cells where you want to paste the content then click the Paste command on the Home tab, or press Ctrl+V on your keyboard. Alternatively, right-click on a blank cell, choose Paste Options, and click Paste."
+                    "longText": "<br><br><br><br>2. Select the cell or cells where you want to paste the content then click the Paste command on the Home tab, or press Ctrl+V on your keyboard. Alternatively, right-click on a blank cell, choose Paste Options, and click Paste."
                   },
                   {
                     "image": "T2050",
-                    "longText": "3. To move contents in a cell, select the cell or cells to be moved then click Cut on the Home tab. You may also press Ctrl+X on the keyboard, or right-click on the selected cells and choose Cut. The Cut command will remove the contents from its origin and transfer them to your chosen cell."
+                    "longText": "<br><br><br>3. To move contents in a cell, select the cell or cells to be moved then click Cut on the Home tab. You may also press Ctrl+X on the keyboard, or right-click on the selected cells and choose Cut. The Cut command will remove the contents from its origin and transfer them to your chosen cell."
                   },
                   {
                     "image": "T2051",
-                    "longText": "4. Select the cells where you want to move your content then click Paste."
+                    "longText": "<br><br><br><br><br><br>4. Select the cells where you want to move your content then click Paste."
                   },
                   {
                     "image": "T2052",
-                    "longText": "5. You can also copy or move cell contents from one sheet to another or between open workbooks. Do the same procedure in copying contents in a worksheet.<br><br>6. To remove or delete cell contents, select the cells to be deleted then press Del on the keyboard."
+                    "longText": "<br><br><br>5. You can also copy or move cell contents from one sheet to another or between open workbooks. Do the same procedure in copying contents in a worksheet.<br><br>6. To remove or delete cell contents, select the cells to be deleted then press Del on the keyboard."
                   },
                   {
                     "image": "T2053",
@@ -1072,22 +1072,22 @@
                   },
                   {
                     "image": "T2054",
-                    "longText": "2. Point your mouse on the lower right corner of the cell. You should see a solid cross pointer; this is called the fill handle.<br><br>3. Hold the mouse's left button and drag down the pointer. You will be guided by a tool tip indicating the next content."
+                    "longText": "<br><br><br>2. Point your mouse on the lower right corner of the cell. You should see a solid cross pointer; this is called the fill handle.<br><br>3. Hold the mouse's left button and drag down the pointer. You will be guided by a tool tip indicating the next content."
                   },
                   {
                     "image": "T2055",
-                    "longText": "4. AutoFill Options will appear after your use the fill handle. When you click the button, the options for AutoFill will be displayed.<br><br>5. The default selection is Fill Series. Copy Cells will not follow a pattern; it will only copy the selected word."
+                    "longText": "<br><br><br>4. AutoFill Options will appear after your use the fill handle. When you click the button, the options for AutoFill will be displayed.<br><br>5. The default selection is Fill Series. Copy Cells will not follow a pattern; it will only copy the selected word."
                   },
                   {
                     "image": "T2056",
-                    "longText": "If you want to copy the format of the cell but not the content, choose Fill Formatting Only. If you want to copy the content of the cell but not the format, choose Fill Without Formatting.<br><br>Autofill can also be done horizontally; just follow the same steps, but this time, drag your mouse to the right."
+                    "longText": "<br><br>If you want to copy the format of the cell but not the content, choose Fill Formatting Only. If you want to copy the content of the cell but not the format, choose Fill Without Formatting.<br><br>Autofill can also be done horizontally; just follow the same steps, but this time, drag your mouse to the right."
                   },
                   {
                     "image": "T2057"
                   },
                   {
                     "image": "T2058",
-                    "longText": "AutoFill can add incremental data entries if the data is numerical or alphanumeric. Enter any starting value in a cell. Enter the next value in the cell below it to establish a pattern. Select those two cells and drag the bottom fill handle down the column to create a series of incremental numbers."
+                    "longText": "<br><br><br>AutoFill can add incremental data entries if the data is numerical or alphanumeric. Enter any starting value in a cell. Enter the next value in the cell below it to establish a pattern. Select those two cells and drag the bottom fill handle down the column to create a series of incremental numbers."
                   },
                   {
                     "image": "T2059",
@@ -1096,7 +1096,7 @@
                   },
                   {
                     "image": "T2060",
-                    "longText": "3. To select nonadjacent rows and columns, click the headers of the desired rows and columns while pressing the Ctrl key on the keyboard."
+                    "longText": "<br><br><br><br><br>3. To select nonadjacent rows and columns, click the headers of the desired rows and columns while pressing the Ctrl key on the keyboard."
                   },
                   {
                     "image": "T2061",
@@ -1105,7 +1105,7 @@
                   },
                   {
                     "image": "T2062",
-                    "longText": "2. To adjust the column width, select the column headers to be adjusted and then point your mouse to the last selected column header. Double-click or resize it manually by holding the left click while dragging the headers to the left or to the right."
+                    "longText": "<br><br><br><br>2. To adjust the column width, select the column headers to be adjusted and then point your mouse to the last selected column header. Double-click or resize it manually by holding the left click while dragging the headers to the left or to the right."
                   },
                   {
                     "image": "T2063",
@@ -1114,11 +1114,11 @@
                   },
                   {
                     "image": "T2064",
-                    "longText": "3. To insert a column in between, right-click the column header and click Insert.<br><br>4. To insert more than one column, select the desired number of column headers then click Insert. The selected columns correspond to the number of new columns."
+                    "longText": "<br><br><br>3. To insert a column in between, right-click the column header and click Insert.<br><br>4. To insert more than one column, select the desired number of column headers then click Insert. The selected columns correspond to the number of new columns."
                   },
                   {
                     "image": "T2065",
-                    "longText": "5. To delete cells, do the same procedure in inserting rows or columns, but instead of Insert, click Delete."
+                    "longText": "<br><br><br><br><br><br>5. To delete cells, do the same procedure in inserting rows or columns, but instead of Insert, click Delete."
                   },
                   {
                     "image": "T2066",
@@ -1146,7 +1146,7 @@
                   },
                   {
                     "image": "T2071",
-                    "longText": "2. Do the same procedure to all the worksheets that you will add.<br><br>3. To switch between worksheets, just click the sheet that you want to work on."
+                    "longText": "<br><br><br><br>2. Do the same procedure to all the worksheets that you will add.<br><br>3. To switch between worksheets, just click the sheet that you want to work on."
                   },
                   {
                     "image": "T2072",
@@ -1155,15 +1155,15 @@
                   },
                   {
                     "image": "T2073",
-                    "longText": "2. A dialog box will appear with a list of existing worksheets. Check Create a copy.<br><br>3. A duplicate worksheet will appear with the same name but with “(2)” because Excel does not accept worksheets with the same names. You can also change it to your desired name."
+                    "longText": "<br><br><br>2. A dialog box will appear with a list of existing worksheets. Check Create a copy.<br><br>3. A duplicate worksheet will appear with the same name but with “(2)” because Excel does not accept worksheets with the same names. You can also change it to your desired name."
                   },
                   {
                     "image": "T2074",
-                    "longText": "4. To move worksheets, right- click the sheet to be moved then select Move or Copy and choose (move to end). Click OK.<br><br>Here, Sample 3 was moved to the end after all the existing sheets. Moving can also be as easy as dragging the worksheet to your desired place."
+                    "longText": "<br><br><br>4. To move worksheets, right- click the sheet to be moved then select Move or Copy and choose (move to end). Click OK.<br><br>Here, Sample 3 was moved to the end after all the existing sheets. Moving can also be as easy as dragging the worksheet to your desired place."
                   },
                   {
                     "image": "T2075",
-                    "longText": "5. To delete a worksheet, click the worksheet to be deleted, right-click, and then choose Delete."
+                    "longText": "<br><br><br><br><br><br>5. To delete a worksheet, click the worksheet to be deleted, right-click, and then choose Delete."
                   }
                 ],
                 "quiz": {
@@ -1174,52 +1174,52 @@
                   "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
                   "items": [
                     {
-                      "title": "1. _________ or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form.",
+                      "title": "_________ or worksheet is an arrangement of cells in columns and rows used to organize, analyze, calculate, and report information, usually in numerical form.",
                       "answer": "Spreadsheet",
                       "choices": ["Spreadsheet", "Powerpoint"]
                     },
                     {
-                      "title": "2. Horizontally _________ aligned cells in a spreadsheet, identified with number row header.",
+                      "title": "Horizontally _________ aligned cells in a spreadsheet, identified with number row header.",
                       "answer": "Rows",
                       "choices": ["Columns", "Rows"]
                     },
                     {
-                      "title": "3. Vertically _________ aligned cells in a spreadsheet, identified with letters column header.",
+                      "title": "Vertically _________ aligned cells in a spreadsheet, identified with letters column header.",
                       "answer": "Columns",
                       "choices": ["Rows", "Columns"]
                     },
                     {
-                      "title": "4. An individual intersection _________ between rows and column, labeled by the row number and column letter.",
+                      "title": "An individual intersection _________ between rows and column, labeled by the row number and column letter.",
                       "answer": "Cell",
                       "choices": ["Cell", "Active Cell"]
                     },
                     {
-                      "title": "5. The _________ is currently being edited, marked by a thick black border around the cell.",
+                      "title": "The _________ is currently being edited, marked by a thick black border around the cell.",
                       "answer": "Active Cell",
                       "choices": ["Active Cell", "Cell Address"]
                     },
                     {
-                      "title": "6. _________ also called cell reference, an alphanumeric value used to identify a specific cell.",
+                      "title": "_________ also called cell reference, an alphanumeric value used to identify a specific cell.",
                       "answer": "Cell Address",
                       "choices": ["Cell Address", "Sheet Tabs"]
                     },
                     {
-                      "title": "7. Shows the content of the active cell and allows you to create and view formulas _________.",
+                      "title": "Shows the content of the active cell and allows you to create and view formulas _________.",
                       "answer": "Formula Bar",
                       "choices": ["Sheet Tabs", "Formula Bar"]
                     },
                     {
-                      "title": "8. Contains the names of the available worksheet in the current workbook _________.",
+                      "title": "Contains the names of the available worksheet in the current workbook _________.",
                       "answer": "Sheet Tabs",
                       "choices": ["Sheet Tabs", "Formula Bar"]
                     },
                     {
-                      "title": "9. To close a spreadsheet application, click the Close button on the _________ right corner of the screen.",
+                      "title": "To close a spreadsheet application, click the Close button on the _________ right corner of the screen.",
                       "answer": "upper",
                       "choices": ["lower", "upper"]
                     },
                     {
-                      "title": "10. To launch or _________ in a spreadsheet application, double- click the spreadsheet icon in the desktop if it available.",
+                      "title": "To launch or _________ in a spreadsheet application, double- click the spreadsheet icon in the desktop if it available.",
                       "answer": "open",
                       "choices": ["open", "close"]
                     }
@@ -1246,11 +1246,11 @@
                   },
                   {
                     "image": "T2081",
-                    "longText": "2. Instead of typing the cell labels, simply the first select cell, type the operator, and then select the second cell.<br><br>If you change the value in the input cells, the output cell will change as well because it has a formula."
+                    "longText": "<br><br><br>2. Instead of typing the cell labels, simply the first select cell, type the operator, and then select the second cell.<br><br>If you change the value in the input cells, the output cell will change as well because it has a formula."
                   },
                   {
                     "image": "T2082",
-                    "longText": "3. To edit the formula, click the cell on the formula bar and press Enter. Alternatively, you can double-click on the cell to change the formula.<br><ul><li>You can change the arithmetic operators, such as the division sign ( / ) and the multiplication sign ( * ).</li></ul>"
+                    "longText": "<br><br><br>3. To edit the formula, click the cell on the formula bar and press Enter. Alternatively, you can double-click on the cell to change the formula.<br><ul><li>You can change the arithmetic operators, such as the division sign ( / ) and the multiplication sign ( * ).</li></ul>"
                   },
                   {
                     "image": "T2083",
@@ -1258,11 +1258,11 @@
                   },
                   {
                     "image": "T2084",
-                    "longText": "#DIV/0! displays when a number is divided either by zero or by a cell that contains no value.<br><br>In the example shown on the next page, instead of A2, the cell reference that was entered in the formula was B2, which has no value entered. To remove the error, do not divide the other number by zero or correct the cell reference in the formula."
+                    "longText": "<br><br><br>#DIV/0! displays when a number is divided either by zero or by a cell that contains no value.<br><br>In the example shown on the next page, instead of A2, the cell reference that was entered in the formula was B2, which has no value entered. To remove the error, do not divide the other number by zero or correct the cell reference in the formula."
                   },
                   {
                     "image": "T2085",
-                    "longText": "#REF! displays when a cell reference is not valid.<br><br>For example, you may have deleted the row of cell A2. To remove the error, press Undo or Ctrl+Z to undo the deletion."
+                    "longText": "<br><br><br><br>#REF! displays when a cell reference is not valid.<br><br>For example, you may have deleted the row of cell A2. To remove the error, press Undo or Ctrl+Z to undo the deletion."
                   },
                   {
                     "image": "T2086",
@@ -1275,15 +1275,15 @@
                   },
                   {
                     "image": "T2088",
-                    "longText": "2. Type the formula in the output cell. Here, the formula is typed on C2 to get the sum of the two numbers."
+                    "longText": "<br><br><br><br><br>2. Type the formula in the output cell. Here, the formula is typed on C2 to get the sum of the two numbers."
                   },
                   {
                     "image": "T2089",
-                    "longText": "3. To automatically insert a formula for a range, say C3:C6, use relative referencing. Use the fill handle tool on the lower right corner of the cell, drag it down until you reach the last cell, and then release the left button."
+                    "longText": "<br><br><br><br>3. To automatically insert a formula for a range, say C3:C6, use relative referencing. Use the fill handle tool on the lower right corner of the cell, drag it down until you reach the last cell, and then release the left button."
                   },
                   {
                     "image": "T2090",
-                    "longText": "In the example, notice that even if the formula in C2 was copied to the cell range C3:C6, there are different answers. This is because in relative reference, the position of the cell will change automatically."
+                    "longText": "<br><br><br><br>In the example, notice that even if the formula in C2 was copied to the cell range C3:C6, there are different answers. This is because in relative reference, the position of the cell will change automatically."
                   },
                   {
                     "image": "T2091",
@@ -1291,27 +1291,27 @@
                   },
                   {
                     "image": "T2092",
-                    "longText": "2. Enter a new formula in D2, =C2*E7."
+                    "longText": "<br><br><br><br><br><br>2. Enter a new formula in D2, =C2*E7."
                   },
                   {
                     "image": "T2093",
-                    "longText": "3. To copy the formula, use the fill handle and drag down until D6.<br><br>After using the fill handle tool, you will notice a zero (0) result. It is because a relative reference was used."
+                    "longText": "<br><br><br>3. To copy the formula, use the fill handle and drag down until D6.<br><br>After using the fill handle tool, you will notice a zero (0) result. It is because a relative reference was used."
                   },
                   {
                     "image": "T2094",
-                    "longText": "4. Let us check the result. Click each cell reference and you will notice that it follows the next cell reference after E7, which is E8, then E9, and so on."
+                    "longText": "<br><br><br><br><br>4. Let us check the result. Click each cell reference and you will notice that it follows the next cell reference after E7, which is E8, then E9, and so on."
                   },
                   {
                     "image": "T2095",
-                    "longText": "5. To make the formula absolute, you need to put a dollar sign ($) in the cell reference E7 in the formula. To execute the dollar sign, press Shift+4."
+                    "longText": "<br><br><br><br><br>5. To make the formula absolute, you need to put a dollar sign ($) in the cell reference E7 in the formula. To execute the dollar sign, press Shift+4."
                   },
                   {
                     "image": "T2096",
-                    "longText": "6. After putting a dollar sign, easily apply the formula to the other cells by dragging the fill handle until D6. Notice that the only thing that changed is the position of the first cell reference in the formula, which is C2 to C6."
+                    "longText": "<br><br><br><br>6. After putting a dollar sign, easily apply the formula to the other cells by dragging the fill handle until D6. Notice that the only thing that changed is the position of the first cell reference in the formula, which is C2 to C6."
                   },
                   {
                     "image": "T2097",
-                    "longText": "Let us check the formula of the other cell references. It is absolute because the E7 cell reference did not change for the rest of the formulas when a dollar sign was placed."
+                    "longText": "<br><br><br><br>Let us check the formula of the other cell references. It is absolute because the E7 cell reference did not change for the rest of the formulas when a dollar sign was placed."
                   },
                   {
                     "title": "Using Functions",
@@ -1319,16 +1319,15 @@
                   },
                   {
                     "image": "T2099",
-                    "title": "The SUM Function",
-                    "longText": "1. Let us prepare sample data to work with."
+                    "longText": "<br><br><br><br><br><b>The SUM Function</b><br><br>1. Let us prepare sample data to work with."
                   },
                   {
                     "image": "T2100",
-                    "longText": "2. To get the total score, you need to use a sum function. In this example, you need to enter the formula =SUM(B2:F2) in G2. To get the range of the cells, simply highlight the range to be inserted in the formula."
+                    "longText": "<br><br><br>2. To get the total score, you need to use a sum function. In this example, you need to enter the formula =SUM(B2:F2) in G2. To get the range of the cells, simply highlight the range to be inserted in the formula."
                   },
                   {
                     "image": "T2101",
-                    "longText": "3. Use relative referencing to copy the formula to the rest of cells.<br><br>The result is 0 because there is no data in the cells yet."
+                    "longText": "<br><br><br><br>3. Use relative referencing to copy the formula to the rest of cells.<br><br>The result is 0 because there is no data in the cells yet."
                   },
                   {
                     "image": "T2102",
@@ -1337,7 +1336,7 @@
                   },
                   {
                     "image": "T2103",
-                    "longText": "2. Use the fill handle to copy the function to other cells."
+                    "longText": "<br><br><br><br><br><br>2. Use the fill handle to copy the function to other cells."
                   },
                   {
                     "image": "T2104",
@@ -1351,7 +1350,7 @@
                   },
                   {
                     "image": "T2106",
-                    "longText": "2. =COUNTA(A2:A7) counts the number of data-filled cells in A2 through A7 and returns a value of 5 because cell A5 is blank. So all values are counted except the value in cell A5, which is blank."
+                    "longText": "<br><br><br><br>2. =COUNTA(A2:A7) counts the number of data-filled cells in A2 through A7 and returns a value of 5 because cell A5 is blank. So all values are counted except the value in cell A5, which is blank."
                   },
                   {
                     "image": "T2107",
@@ -1370,11 +1369,11 @@
                   },
                   {
                     "image": "T2110",
-                    "longText": "2. Enter the IF function in the output cell. Here, type in =IF(B2>=75, “Passed”, “Failed”) in C2.<br><br>If the value in B2 is greater than or equal to 75, it will result in a passed remark. Otherwise, if the value in B2 is 74 and below, it will result in a failed remark."
+                    "longText": "<br><br><br>2. Enter the IF function in the output cell. Here, type in =IF(B2>=75, “Passed”, “Failed”) in C2.<br><br>If the value in B2 is greater than or equal to 75, it will result in a passed remark. Otherwise, if the value in B2 is 74 and below, it will result in a failed remark."
                   },
                   {
                     "image": "T2111",
-                    "longText": "The remark for C2 will be “Passed” because the statement is true for C2; the grade 75 is equal to the value set.<br><br>3. Use the fill handle to copy the formula. C4 is “Failed” because the grade 71 is not greater than or equal to 75."
+                    "longText": "<br><br><br>The remark for C2 will be “Passed” because the statement is true for C2; the grade 75 is equal to the value set.<br><br>3. Use the fill handle to copy the formula. C4 is “Failed” because the grade 71 is not greater than or equal to 75."
                   },
                   {
                     "image": "T2112",
@@ -1382,7 +1381,7 @@
                   },
                   {
                     "image": "T2113",
-                    "longText": "You can find the full set of number formatting options if you click the Dialog Box Launcher in the corner of the Number group."
+                    "longText": "<br><br><br><br><br>You can find the full set of number formatting options if you click the Dialog Box Launcher in the corner of the Number group."
                   },
                   {
                     "image": "T2114",
@@ -1390,27 +1389,27 @@
                   },
                   {
                     "image": "T2115",
-                    "longText": "2. Next, let us calculate first. Here, we compute for the total price of each item by multiplying the price by the quantity."
+                    "longText": "<br><br><br><br><br>2. Next, let us calculate first. Here, we compute for the total price of each item by multiplying the price by the quantity."
                   },
                   {
                     "image": "T2116",
-                    "longText": "3. To change the format to two decimal places, change the number format to Number in the Number group."
+                    "longText": "<br><br><br><br><br><br>3. To change the format to two decimal places, change the number format to Number in the Number group."
                   },
                   {
                     "image": "T2117",
-                    "longText": "However, this quick access is not applicable if you want a decimal place that is more than two. To format it, click More Number Formats... or the dialog box launcher. For example, when you use the mathematical operator divide (/) in a formula, it is expected to have results with decimal places."
+                    "longText": "<br><br><br><br>However, this quick access is not applicable if you want a decimal place that is more than two. To format it, click More Number Formats... or the dialog box launcher. For example, when you use the mathematical operator divide (/) in a formula, it is expected to have results with decimal places."
                   },
                   {
                     "image": "T2118",
-                    "longText": "Let us change the decimal places to three. Select the range of cells, say C2:C4, then click More Number Formats. A Format Cells dialog box will appear. Then, choose Number."
+                    "longText": "<br><br><br><br>Let us change the decimal places to three. Select the range of cells, say C2:C4, then click More Number Formats. A Format Cells dialog box will appear. Then, choose Number."
                   },
                   {
                     "image": "T2119",
-                    "longText": "Let us go back to the first example. Total prices in thousands do not have a separator because they were entered as numbers with a General format.<br><br>To add a comma or a thousands separator, select the cell range to be formatted then click Comma Style in the Number group."
+                    "longText": "<br><br><br>Let us go back to the first example. Total prices in thousands do not have a separator because they were entered as numbers with a General format.<br><br>To add a comma or a thousands separator, select the cell range to be formatted then click Comma Style in the Number group."
                   },
                   {
                     "image": "T2120",
-                    "longText": "Then, the number format will become Accounting, and a thousands separator will be displayed in D4."
+                    "longText": "<br><br><br><br><br><br>Then, the number format will become Accounting, and a thousands separator will be displayed in D4."
                   },
                   {
                     "image": "T2121",
@@ -1418,11 +1417,11 @@
                   },
                   {
                     "image": "T2122",
-                    "longText": "To change, select E2 then click More Number Formats dialog box launcher. Select the type that you prefer. For this example, let us select the format date/short month/year; just scroll down the selection."
+                    "longText": "<br><br><br><br>To change, select E2 then click More Number Formats dialog box launcher. Select the type that you prefer. For this example, let us select the format date/short month/year; just scroll down the selection."
                   },
                   {
                     "image": "T2123",
-                    "longText": "The date will be changed to the type assigned. You can do this to other dates in the cells. Do not use the fill handle, as it will create a series of dates following the first date entered."
+                    "longText": "<br><br><br><br>The date will be changed to the type assigned. You can do this to other dates in the cells. Do not use the fill handle, as it will create a series of dates following the first date entered."
                   },
                   {
                     "image": "T2124",
@@ -1431,11 +1430,11 @@
                   },
                   {
                     "image": "T2125",
-                    "longText": "Click the Currency format in the Number group. You can see a Peso sign if you are using Microsoft Excel in countries with a Peso currency such as the Philippines."
+                    "longText": "<br><br><br><br><br>Click the Currency format in the Number group. You can see a Peso sign if you are using Microsoft Excel in countries with a Peso currency such as the Philippines."
                   },
                   {
                     "image": "T2126",
-                    "longText": "If the data is displayed as a series of number signs or hashtags (#)- also known as hash or pound sign-it means that the data is longer than the default width of the column. Adjust the column width by double-clicking on the right side of the header."
+                    "longText": "<br><br><br><br>If the data is displayed as a series of number signs or hashtags (#)- also known as hash or pound sign-it means that the data is longer than the default width of the column. Adjust the column width by double-clicking on the right side of the header."
                   },
                   {
                     "image": "T2127",
@@ -1444,27 +1443,27 @@
                   },
                   {
                     "image": "T2128",
-                    "longText": "But the percentage displayed two additional decimal places. To solve this problem, simply reenter the original numbers 5, 10, and 50."
+                    "longText": "<br><br><br><br><br>But the percentage displayed two additional decimal places. To solve this problem, simply reenter the original numbers 5, 10, and 50."
                   },
                   {
                     "image": "T2129",
-                    "longText": "The second method is to enter the numbers followed by a percent sign (%) to avoid reentering the numbers."
+                    "longText": "<br><br><br><br><br><br>The second method is to enter the numbers followed by a percent sign (%) to avoid reentering the numbers."
                   },
                   {
                     "image": "T2130",
-                    "longText": "To complete our example, let us compute for the less price, discounted price, and the total amount due. Create a formula on G2:G4 for the less price by multiplying the original price to the percentage discount."
+                    "longText": "<br><br><br>To complete our example, let us compute for the less price, discounted price, and the total amount due. Create a formula on G2:G4 for the less price by multiplying the original price to the percentage discount."
                   },
                   {
                     "image": "T2131",
-                    "longText": "Next, for the discounted price, create a formula in H2:H4 by subtracting the original price to the less price. Freeze columns A and B for a while."
+                    "longText": "<br><br><br><br><br>Next, for the discounted price, create a formula in H2:H4 by subtracting the original price to the less price. Freeze columns A and B for a while."
                   },
                   {
                     "image": "T2132",
-                    "longText": "For the total amount, multiply the discounted price to the quantity. First, freeze columns A, B, and C."
+                    "longText": "<br><br><br><br><br><br>For the total amount, multiply the discounted price to the quantity. First, freeze columns A, B, and C."
                   },
                   {
                     "image": "T2133",
-                    "longText": "Lastly, compute for the total price on all items, both with original prices and discounted prices. Use the SUM function in D5 and I5."
+                    "longText": "<br><br><br><br><br>Lastly, compute for the total price on all items, both with original prices and discounted prices. Use the SUM function in D5 and I5."
                   },
                   {
                     "image": "T2134",
@@ -1472,27 +1471,27 @@
                   },
                   {
                     "image": "T2135",
-                    "longText": "To change the font size, click the drop-down arrow and choose the desired size, or click the Increase Font Size or Decrease Font Size button. You can also type a number in the text box.<br><br><b>Font</b> is located beside the Font Size drop-down menu. Click the drop-down arrow to choose from the variety of fonts or type the font if you know the name."
+                    "longText": "<br><br>To change the font size, click the drop-down arrow and choose the desired size, or click the Increase Font Size or Decrease Font Size button. You can also type a number in the text box.<br><br><b>Font</b> is located beside the Font Size drop-down menu. Click the drop-down arrow to choose from the variety of fonts or type the font if you know the name."
                   },
                   {
                     "image": "T2136",
-                    "longText": "1. In this sample, let us change the font size of the headings to 12 and the rest of the cells to 10."
+                    "longText": "<br><br><br><br><br><br>1. In this sample, let us change the font size of the headings to 12 and the rest of the cells to 10."
                   },
                   {
                     "image": "T2137",
-                    "longText": "2. Apply the font Arial Narrow to all the cells."
+                    "longText": "<br><br><br><br><br><br>2. Apply the font Arial Narrow to all the cells."
                   },
                   {
                     "image": "T2138",
-                    "longText": "You can also apply font styles. Font style can be bold, italic, underline, or double underline.<br><br>3. Let us make all the headings bold. Click the B icon in the Font group.<br><br>4. Next, make A2:A4 italic. Click the I icon in the Font group."
+                    "longText": "<br><br><br>You can also apply font styles. Font style can be bold, italic, underline, or double underline.<br><br>3. Let us make all the headings bold. Click the B icon in the Font group.<br><br>4. Next, make A2:A4 italic. Click the I icon in the Font group."
                   },
                   {
                     "image": "T2139",
-                    "longText": "5. Apply underline on D4 and I4, the last prices in the items. Click U in the Font group."
+                    "longText": "<br><br><br><br><br><br>5. Apply underline on D4 and I4, the last prices in the items. Click U in the Font group."
                   },
                   {
                     "image": "T2140",
-                    "longText": "6. Apply double underline to D5 and I5, the sum of each total amount. A Format Cells dialog box will appear where there are options for Underline. Click the drop-down arrow then select Double Underline.<br><br>Alternatively, you can click on the drop-down arrow beside the U button."
+                    "longText": "<br><br><br>6. Apply double underline to D5 and I5, the sum of each total amount. A Format Cells dialog box will appear where there are options for Underline. Click the drop-down arrow then select Double Underline.<br><br>Alternatively, you can click on the drop-down arrow beside the U button."
                   },
                   {
                     "image": "T2141",
@@ -1501,11 +1500,11 @@
                   },
                   {
                     "image": "T2142",
-                    "longText": "1. Apply color green to the background of all the headings. Highlight the cells first then click the drop-down arrow in the Fill Color command and choose green in the Standard Colors. You can also choose among Theme Colors or click More Colors."
+                    "longText": "<br><br><br><br>1. Apply color green to the background of all the headings. Highlight the cells first then click the drop-down arrow in the Fill Color command and choose green in the Standard Colors. You can also choose among Theme Colors or click More Colors."
                   },
                   {
                     "image": "T2143",
-                    "longText": "2. Apply a light blue color for the items under Items.<br><br>3. Next, color B2:E4 yellow and F2:I4 red.<br><br>4. For D5 and I5, let us make the background black and the text white."
+                    "longText": "<br><br><br>2. Apply a light blue color for the items under Items.<br><br>3. Next, color B2:E4 yellow and F2:I4 red.<br><br>4. For D5 and I5, let us make the background black and the text white."
                   },
                   {
                     "image": "T2144",
@@ -1529,7 +1528,7 @@
                   },
                   {
                     "image": "T2148",
-                    "longText": "Insert a column beside column A and highlight the two cells. Click Merge & Center.<br><br>A1 and B1 were combined without affecting the other cells. To unmerge cells, just click the drop-down arrow on Merge & Center command then select Unmerge Cells."
+                    "longText": "<br><br><br>Insert a column beside column A and highlight the two cells. Click Merge & Center.<br><br>A1 and B1 were combined without affecting the other cells. To unmerge cells, just click the drop-down arrow on Merge & Center command then select Unmerge Cells."
                   },
                   {
                     "image": "T2149",
@@ -1538,11 +1537,11 @@
                   },
                   {
                     "image": "T2150",
-                    "longText": "You can also modify the line color and line style. Click the drop- down arrow again and select Line Color. Select Light Gray, Background 2, Darker 10%, and then select the style at the bottom of the Line Style drop-down list.<br><br>You will notice a pencil pointer ready to apply the chosen color and style."
+                    "longText": "<br><br>You can also modify the line color and line style. Click the drop- down arrow again and select Line Color. Select Light Gray, Background 2, Darker 10%, and then select the style at the bottom of the Line Style drop-down list.<br><br>You will notice a pencil pointer ready to apply the chosen color and style."
                   },
                   {
                     "image": "T2151",
-                    "longText": "Apply this to the borders one by one. This lets you personalize your worksheets more.<br><br>There is so much you can do in preparing your workbook. You can always improve your spreadsheets and create different finance applications, tabular records, as well as calculate numbers, by using the best features of the software program, formulas and formatting cells."
+                    "longText": "<br><br>Apply this to the borders one by one. This lets you personalize your worksheets more.<br><br>There is so much you can do in preparing your workbook. You can always improve your spreadsheets and create different finance applications, tabular records, as well as calculate numbers, by using the best features of the software program, formulas and formatting cells."
                   }
                 ],
                 "quiz": {
@@ -1553,52 +1552,52 @@
                   "title": "<b>Directions. Read the questions carefully and click your answer from the choices below.</b>",
                   "items": [
                     {
-                      "title": "1. Used to compute the total of all items in the specified range.",
+                      "title": "Used to compute the total of all items in the specified range.",
                       "answer": "SUM",
                       "choices": ["AVERAGE", "SUM", "COUNT"]
                     },
                     {
-                      "title": "2. Used to get the average of the items in a range.",
+                      "title": "Used to get the average of the items in a range.",
                       "answer": "AVERAGE",
                       "choices": ["AVERAGE", "SUM", "COUNT"]
                     },
                     {
-                      "title": "3. Used to count the values found in the range.",
+                      "title": "Used to count the values found in the range.",
                       "answer": "COUNT",
                       "choices": ["AVERAGE", "SUM", "COUNT"]
                     },
                     {
-                      "title": "4. Used to count the cells that contain numbers, texts, logical values, error values, and empty texts returned in formulas.",
+                      "title": "Used to count the cells that contain numbers, texts, logical values, error values, and empty texts returned in formulas.",
                       "answer": "COUNTA",
                       "choices": ["COUNTA", "ROUND", "MAX"]
                     },
                     {
-                      "title": "5. Used to round a number to a specified number of digits.",
+                      "title": "Used to round a number to a specified number of digits.",
                       "answer": "ROUND",
                       "choices": ["MIN", "MAX", "ROUND"]
                     },
                     {
-                      "title": "6. Used to get the largest value within the range.",
+                      "title": "Used to get the largest value within the range.",
                       "answer": "MAX",
                       "choices": ["MIN", "MAX", "ROUND"]
                     },
                     {
-                      "title": "7. Used to get the smallest value within the range.",
+                      "title": "Used to get the smallest value within the range.",
                       "answer": "MIN",
                       "choices": ["MIN", "MAX", "ROUND"]
                     },
                     {
-                      "title": "8. To get the average, enter =AVERAGE.",
+                      "title": "To get the average, enter =AVERAGE.",
                       "answer": "(B2:F2)",
                       "choices": ["(B2:F2)", "(B3:F3)", "(B4:F4)"]
                     },
                     {
-                      "title": "9. Located beside the Font Size drop-down menu.",
+                      "title": "Located beside the Font Size drop-down menu.",
                       "answer": "Font",
                       "choices": ["Theme", "Color", "Font"]
                     },
                     {
-                      "title": "10. To combine two or more cells.",
+                      "title": "To combine two or more cells.",
                       "answer": "Merging Cells",
                       "choices": ["Merging Cells", "Wrap Text", "Cell Borders"]
                     }
@@ -1629,7 +1628,7 @@
                   },
                   {
                     "image": "T2158",
-                    "longText": "3. Choose the column and bar chart type and click the drop-down arrow to choose Clustered Column under 2-D Column as the subtype. A column chart will be displayed on the right side of the worksheet."
+                    "longText": "<br><br><br><br>3. Choose the column and bar chart type and click the drop-down arrow to choose Clustered Column under 2-D Column as the subtype. A column chart will be displayed on the right side of the worksheet."
                   },
                   {
                     "image": "T2159",
@@ -1637,7 +1636,7 @@
                   },
                   {
                     "image": "T2160",
-                    "longText": "4. Let us delete the first chart and update our data.<br><br>5. Click Line Chart in the Charts group and choose Line with Markers."
+                    "longText": "<br><br><br><br>4. Let us delete the first chart and update our data.<br><br>5. Click Line Chart in the Charts group and choose Line with Markers."
                   },
                   {
                     "image": "T2161",
@@ -1645,7 +1644,7 @@
                   },
                   {
                     "image": "T2162",
-                    "longText": "To remove a chart, click the plus sign button or Chart Elements at the right corner of the chart then uncheck Chart Title. If you want to add a title, check Chart Title."
+                    "longText": "<br><br><br><br><br>To remove a chart, click the plus sign button or Chart Elements at the right corner of the chart then uncheck Chart Title. If you want to add a title, check Chart Title."
                   },
                   {
                     "image": "T2163",
@@ -1672,7 +1671,7 @@
                   },
                   {
                     "image": "T2168",
-                    "longText": "When you apply changes in the margin, you will not be able to see the effect unless you go to Print Preview. From there, click Show Margin in the lower right corner of the preview to adjust the margins manually.<br><br>Margins will now be visible for manual adjustment. Just click and drag the lines to apply changes."
+                    "longText": "<br><br><br>When you apply changes in the margin, you will not be able to see the effect unless you go to Print Preview. From there, click Show Margin in the lower right corner of the preview to adjust the margins manually.<br><br>Margins will now be visible for manual adjustment. Just click and drag the lines to apply changes."
                   },
                   {
                     "image": "T2169",
@@ -1681,15 +1680,15 @@
                   },
                   {
                     "image": "T2170",
-                    "longText": "Notice that the half of the chart overlapped the marquee line. It means that only the first half of the chart will be included on the first page. Printing spreadsheets is challenging, especially if you are only limited to common paper sizes."
+                    "longText": "<br><br><br><br>Notice that the half of the chart overlapped the marquee line. It means that only the first half of the chart will be included on the first page. Printing spreadsheets is challenging, especially if you are only limited to common paper sizes."
                   },
                   {
                     "image": "T2171",
-                    "longText": "To fix this problem, you can put the chart after the data above or simply change the orientation from Portrait to Landscape.<br><br>But if you are aiming for a portrait orientation, adjust the margins or scale of the spreadsheet. Click the Scaling option on Print Preview then choose Fit Sheet on One Page."
+                    "longText": "<br><br><br>To fix this problem, you can put the chart after the data above or simply change the orientation from Portrait to Landscape.<br><br>But if you are aiming for a portrait orientation, adjust the margins or scale of the spreadsheet. Click the Scaling option on Print Preview then choose Fit Sheet on One Page."
                   },
                   {
                     "image": "T2172",
-                    "longText": "You may use Show Margins to enlarge the scale."
+                    "longText": "<br><br><br><br><br><br>You may use Show Margins to enlarge the scale."
                   },
                   {
                     "image": "T2173",
@@ -1698,11 +1697,11 @@
                   },
                   {
                     "image": "T2174",
-                    "longText": "To customize your header or footer, click Custom Header or Custom Footer. A header or footer dialog box will open. Click the left, center, or right section and type your own header or footer."
+                    "longText": "<br><br><br><br>To customize your header or footer, click Custom Header or Custom Footer. A header or footer dialog box will open. Click the left, center, or right section and type your own header or footer."
                   },
                   {
                     "image": "T2175",
-                    "longText": "Customize your header or footer with the different available formatting options just above the text boxes."
+                    "longText": "<br><br><br><br><br>Customize your header or footer with the different available formatting options just above the text boxes."
                   },
                   {
                     "image": "T2176",
@@ -1710,7 +1709,7 @@
                   },
                   {
                     "image": "T2177",
-                    "longText": "Click on the text box and type your new header or footer.<br><br>Edit your header and footer with the formatting tools available on the Header & Footer Design tab."
+                    "longText": "<br><br><br>Click on the text box and type your new header or footer.<br><br>Edit your header and footer with the formatting tools available on the Header & Footer Design tab."
                   },
                   {
                     "image": "T2178",
@@ -1730,42 +1729,42 @@
                   "title": "<b>Direction. Read the questions carefully and click your answer from the choices below.</b>",
                   "items": [
                     {
-                      "title": "1. Use vertical bars to represent data. They are typically used to compare several items in a specific range of values.",
+                      "title": "Use vertical bars to represent data. They are typically used to compare several items in a specific range of values.",
                       "answer": "Column charts",
                       "choices": ["Pie charts", "Bar charts", "Column charts"]
                     },
                     {
-                      "title": "2. Work just like column chart, but they use horizontal bars instead of vertical bars.",
+                      "title": "Work just like column chart, but they use horizontal bars instead of vertical bars.",
                       "answer": "Bar charts",
                       "choices": ["Pie charts", "Bar charts", "Column charts"]
                     },
                     {
-                      "title": "3. Charts are ideal for showing trends.",
+                      "title": "Charts are ideal for showing trends.",
                       "answer": "Line",
                       "choices": ["Bar charts", "Pie charts", "Line"]
                     },
                     {
-                      "title": "4. Make it easy to compare proportions.",
+                      "title": "Make it easy to compare proportions.",
                       "answer": "Pie charts",
                       "choices": ["Bar charts", "Pie charts", "Line"]
                     },
                     {
-                      "title": "4. To charge the color of the background, choose _________ in the Shape styles group.",
+                      "title": "To charge the color of the background, choose _________ in the Shape styles group.",
                       "answer": "Shape Fill",
                       "choices": ["Shape Fill", "Shape Outline", "Shape Effects"]
                     },
                     {
-                      "title": "5. For the text color, choose _________ in the WordArt Styles group.",
+                      "title": "For the text color, choose _________ in the WordArt Styles group.",
                       "answer": "Text Fill",
                       "choices": ["Shape Fill", "Text Fill", "Shape Outline"]
                     },
                     {
-                      "title": "6. Select the Print Preview button on the Quick Access Toolbar or press _________ on the keyboard.",
+                      "title": "Select the Print Preview button on the Quick Access Toolbar or press _________ on the keyboard.",
                       "answer": "Ctrl+P",
                       "choices": ["Ctrl+P", "Ctrl+J", "Ctrl+V"]
                     },
                     {
-                      "title": "7. Microsoft _________ has different types of charts that allow you to choose what is best for your data.",
+                      "title": "Microsoft _________ has different types of charts that allow you to choose what is best for your data.",
                       "answer": "Word",
                       "choices": ["Word", "Excel", "Powerpoint"]
                     }
@@ -1880,7 +1879,7 @@
                   },
                   {
                     "image": "T3017",
-                    "longText": "1. <b>Slide tab</b>The tab that shows you a scheme with a title and work area. It allows you to visualize a thumbnail of the created slide.<br>2. <b>Slide area</b>The area where most of your work such as editing, adding, and deleting content is done. It has a series of panels, such as notes and zoom, which simplifies the work.<br>3. <b>Slide number</b>This shows the current number of slides you are working with.<br>4. <b>View buttons</b>The four buttons to the left of the Zoom control that allows you to switch between different displays: Normal, Slide Sorter, Reading View, and Slideshow."
+                    "longText": "1. <b>Slide tab</b> - The tab that shows you a scheme with a title and work area. It allows you to visualize a thumbnail of the created slide.<br>2. <b>Slide area</b> - The area where most of your work such as editing, adding, and deleting content is done. It has a series of panels, such as notes and zoom, which simplifies the work.<br>3. <b>Slide number</b> - This shows the current number of slides you are working with.<br>4. <b>View buttons</b> - The four buttons to the left of the Zoom control that allows you to switch between different displays: Normal, Slide Sorter, Reading View, and Slideshow."
                   },
                   {
                     "image": "T3018",
@@ -1889,27 +1888,27 @@
                   },
                   {
                     "image": "T3019",
-                    "longText": "1. Click More themes to explore other templates and themes"
+                    "longText": "<br><br><br><br><br>1. Click More themes to explore other templates and themes"
                   },
                   {
                     "image": "T3020",
-                    "longText": "2. For this lesson, let us select and click the Geometric Color Block template."
+                    "longText": "<br><br><br><br><br>2. For this lesson, let us select and click the Geometric Color Block template."
                   },
                   {
                     "image": "T3021",
-                    "longText": "Once it is selected, a window will appear with some details about the template. Click Create."
+                    "longText": "<br><br><br><br><br>Once it is selected, a window will appear with some details about the template. Click Create."
                   },
                   {
                     "image": "T3022",
-                    "longText": "3. You may now start creating your presentation. Simply edit the contents of the text in this template. First is the title of your presentation<br><br>4. After editing the title, click on the second slide to proceed with your next slide presentation"
+                    "longText": "<br><br><br>3. You may now start creating your presentation. Simply edit the contents of the text in this template. First is the title of your presentation<br><br>4. After editing the title, click on the second slide to proceed with your next slide presentation"
                   },
                   {
                     "image": "T3023",
-                    "longText": "Go to the Graphics Format (or Graphic Tools > Format) tab, and then click Change Graphic. You will be presented with four methods: From a File, From Online Sources, From Icons, From Clipboard. For this activity, choose From Icons."
+                    "longText": "<br><br><br>Go to the Graphics Format (or Graphic Tools > Format) tab, and then click Change Graphic. You will be presented with four methods: From a File, From Online Sources, From Icons, From Clipboard. For this activity, choose From Icons."
                   },
                   {
                     "image": "T3024",
-                    "longText": "An Insert Icons window will appear, and you will see various icons grouped into several categories. Scroll down and find the Sports category. Select the volleyball icon then click Insert."
+                    "longText": "<br><br><br><br>An Insert Icons window will appear, and you will see various icons grouped into several categories. Scroll down and find the Sports category. Select the volleyball icon then click Insert."
                   },
                   {
                     "image": "T3025",
@@ -1960,52 +1959,52 @@
                   "title": "<b>Directions. Click on the correct answer inside the open and close parenthesis.</b>",
                   "items": [
                     {
-                      "title": "1. Tab _________ that shows you a scheme with a title and work area.",
+                      "title": "Tab _________ that shows you a scheme with a title and work area.",
                       "answer": "Slide Tab",
                       "choices": ["Slide Tab", "Slide Area"]
                     },
                     {
-                      "title": "2. The four buttons to the left of the zoom control allow you to switch between different displays _________.",
+                      "title": "The four buttons to the left of the zoom control allow you to switch between different displays _________.",
                       "answer": "View Buttons",
                       "choices": ["View Buttons", "Slide Area"]
                     },
                     {
-                      "title": "3. This _________ shows the current number of slides you are working with.",
+                      "title": "This _________ shows the current number of slides you are working with.",
                       "answer": "Slide Number",
                       "choices": ["Slide Tab", "Slide Number"]
                     },
                     {
-                      "title": "4. _________ is where most of your work such as editing, adding, and deleting content is done.",
+                      "title": "_________ is where most of your work such as editing, adding, and deleting content is done.",
                       "answer": "Slide Area",
                       "choices": ["Slide Area", "Slide Number"]
                     },
                     {
-                      "title": "5. This view _________ will allow you to read the slide carefully, but you cannot perform any editing.",
+                      "title": "This view _________ will allow you to read the slide carefully, but you cannot perform any editing.",
                       "answer": "Reading View",
                       "choices": ["Reading View", "Slide Show"]
                     },
                     {
-                      "title": "6. There are many ways to manage slides _________ more easily, especially when you have a long presentation.",
+                      "title": "There are many ways to manage slides _________ more easily, especially when you have a long presentation.",
                       "answer": "Managing Slides",
                       "choices": ["Slide Show", "Managing Slides"]
                     },
                     {
-                      "title": "7. This displays all the slides _________ along with animations and sounds that you have included.",
+                      "title": "This displays all the slides _________ along with animations and sounds that you have included.",
                       "answer": "Slide Show",
                       "choices": ["Slide Show", "Reading View"]
                     },
                     {
-                      "title": "8. Presentations in Microsoft _________ are usually saved in the documents folder and with the file type PPTX.",
+                      "title": "Presentations in Microsoft _________ are usually saved in the documents folder and with the file type PPTX.",
                       "answer": "Powerpoint",
                       "choices": ["Powerpoint", "Word"]
                     },
                     {
-                      "title": "9. The outline view shows your slide text _________ in outline form.",
+                      "title": "The outline view shows your slide text _________ in outline form.",
                       "answer": "Viewing an Outline",
                       "choices": ["Slide Show", "Viewing an Outline"]
                     },
                     {
-                      "title": "10. _________ tools are helpful when you have a long audience, such as students in the classroom.",
+                      "title": "_________ tools are helpful when you have a long audience, such as students in the classroom.",
                       "answer": "Presentation",
                       "choices": ["Presentation", "Spreadsheet"]
                     }
@@ -2027,15 +2026,15 @@
                   {
                     "image": "T3038",
                     "title": "Theme Elements",
-                    "longText": "<b>Theme Colors</b><br>There are ten theme colors with light to dark variations, available from every Color menu."
+                    "longText": "<br><br><br><b>Theme Colors</b><br>There are ten theme colors with light to dark variations, available from every Color menu."
                   },
                   {
                     "image": "T3039",
-                    "longText": "<b>Theme Font</b><br>There are two theme fonts available at the top of the Font menu under Theme Fonts."
+                    "longText": "<br><br><br><br><b>Theme Font</b><br>There are two theme fonts available at the top of the Font menu under Theme Fonts."
                   },
                   {
                     "image": "T3040",
-                    "longText": "<b>Theme Effects</b><br>These affect the preset shape styles. You can find shape styles on the Format tab whenever you select a shape or a SmartArt graphic."
+                    "longText": "<br><br><br><br><b>Theme Effects</b><br>These affect the preset shape styles. You can find shape styles on the Format tab whenever you select a shape or a SmartArt graphic."
                   },
                   {
                     "image": "T3041",
@@ -2044,7 +2043,7 @@
                   },
                   {
                     "image": "T3042",
-                    "longText": "2. Select a theme by clicking it. After application, every slide will have a new look based on the selected theme."
+                    "longText": "<br><br><br><br><br>2. Select a theme by clicking it. After application, every slide will have a new look based on the selected theme."
                   },
                   {
                     "image": "T3043",
@@ -2061,19 +2060,19 @@
                   },
                   {
                     "image": "T3046",
-                    "longText": "2. Let us add a text for the title. Type in “Hello World.” You can always click the placeholder if you want to edit the text.<br><br>3. You may also use the outline view to enter text. First, click the View tab, and then select Outline View on the Presentation Views group."
+                    "longText": "<br><br><br>2. Let us add a text for the title. Type in “Hello World.” You can always click the placeholder if you want to edit the text.<br><br>3. You may also use the outline view to enter text. First, click the View tab, and then select Outline View on the Presentation Views group."
                   },
                   {
                     "image": "T3047",
-                    "longText": "4. Once you select Outline View, you will see the outline on the left panel and the content of the slide. Let us edit “Hello World” to “Hello Philippines.” Just put your cursor on the text you want to edit."
+                    "longText": "<br><br><br><br>4. Once you select Outline View, you will see the outline on the left panel and the content of the slide. Let us edit “Hello World” to “Hello Philippines.” Just put your cursor on the text you want to edit."
                   },
                   {
                     "image": "T3048",
-                    "longText": "5. You will notice that the text in the slide area also changed."
+                    "longText": "<br><br><br><br><br>5. You will notice that the text in the slide area also changed."
                   },
                   {
                     "image": "T3049",
-                    "longText": "6. To add text on the next placeholder, the subtitle, using Outline View, position your cursor under the first letter of the title text. In this example, click your mouse under the letter H. If you wish to add a new slide, just press enter."
+                    "longText": "<br><br><br>6. To add text on the next placeholder, the subtitle, using Outline View, position your cursor under the first letter of the title text. In this example, click your mouse under the letter H. If you wish to add a new slide, just press enter."
                   },
                   {
                     "title": "Copying, Cutting, and Pasting in Presentations",
@@ -2099,23 +2098,23 @@
                   },
                   {
                     "image": "T3056",
-                    "longText": "<i>To change the font type:</i><br><br>Highlight the text then select the Font button in the Font group in the Home tab. Click the drop-down arrow to choose font types."
+                    "longText": "<br><br><br><i>To change the font type:</i><br><br>Highlight the text then select the Font button in the Font group in the Home tab. Click the drop-down arrow to choose font types."
                   },
                   {
                     "image": "T3057",
-                    "longText": "<i>To apply font styles:</i><br><br>Highlight the text then choose among the five font styles in the Font group. In PowerPoint, there are five available font styles: bold, italic, underline, text shadow, and strikethrough. Font styles can be used all at the same time."
+                    "longText": "<br><br><br><i>To apply font styles:</i><br><br>Highlight the text then choose among the five font styles in the Font group. In PowerPoint, there are five available font styles: bold, italic, underline, text shadow, and strikethrough. Font styles can be used all at the same time."
                   },
                   {
                     "image": "T3058",
-                    "longText": "<i>To change the font color:</i><br><br>Highlight the text then select the Font Color button in the Font group n the Home tab. Click the drop-down arrow to choose from a selection of font colors, or choose a custom color by clicking on More Colors. You may also use the eyedropper tool."
+                    "longText": "<br><br><br><i>To change the font color:</i><br><br>Highlight the text then select the Font Color button in the Font group n the Home tab. Click the drop-down arrow to choose from a selection of font colors, or choose a custom color by clicking on More Colors. You may also use the eyedropper tool."
                   },
                   {
                     "image": "T3059",
-                    "longText": "<i>To apply case changes to text:</i><br><br>1. The Change Case command, which can be found in the Font group, allows you to select among Sentence Case, Lowercase, Uppercase, Capitalize Each Word, and Toggle Case."
+                    "longText": "<br><br><br><i>To apply case changes to text:</i><br><br>1. The Change Case command, which can be found in the Font group, allows you to select among Sentence Case, Lowercase, Uppercase, Capitalize Each Word, and Toggle Case."
                   },
                   {
                     "image": "T3060",
-                    "longText": "<i>To align text:</i><br><br>Highlight the text you want to align, and then choose your preferred alignment: Align Left, Center, Align Right, Justify, or Distributed (only in newer versions) in the Paragraph group in the Home tab."
+                    "longText": "<br><br><br><i>To align text:</i><br><br>Highlight the text you want to align, and then choose your preferred alignment: Align Left, Center, Align Right, Justify, or Distributed (only in newer versions) in the Paragraph group in the Home tab."
                   },
                   {
                     "image": "T3061",
@@ -2124,7 +2123,7 @@
                   },
                   {
                     "image": "T3063",
-                    "longText": "First, highlight all the text to break down. Then in the Paragraph group, click the Columns drop-down arrow and choose Three Columns.<br><br>The long list is now broken down into three columns. The text and font are now readable."
+                    "longText": "<br><br><br>First, highlight all the text to break down. Then in the Paragraph group, click the Columns drop-down arrow and choose Three Columns.<br><br>The long list is now broken down into three columns. The text and font are now readable."
                   },
                   {
                     "image": "T3064",
@@ -2133,19 +2132,19 @@
                   },
                   {
                     "image": "T3065",
-                    "longText": "2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
+                    "longText": "<br><br><br>2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
                   },
                   {
                     "image": "T3066",
-                    "longText": "3. To remove the indentions, click the Decrease List level button."
+                    "longText": "<br><br><br><br><br>3. To remove the indentions, click the Decrease List level button."
                   },
                   {
                     "image": "T3067",
-                    "longText": "<i>To switch to different bullet and number styles:</i><br><br>1. Highlight the list, and then select the Bullets drop-down button in the Paragraph group. You will see different styles of bullets."
+                    "longText": "<br><br><br><i>To switch to different bullet and number styles:</i><br><br>1. Highlight the list, and then select the Bullets drop-down button in the Paragraph group. You will see different styles of bullets."
                   },
                   {
                     "image": "T3068",
-                    "longText": "2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
+                    "longText": "<br><br><br>2. Highlight the list, and then select the Increase List Level button in the paragraph group. This increases the indent level, which is often done when there is a sub list. You will notice that the more you indent, the smaller the texts and bullets become."
                   },
                   {
                     "image": "T3069",
@@ -2154,35 +2153,35 @@
                   },
                   {
                     "image": "T3070",
-                    "longText": "2. If you need to move the table, select it and place your cursor on one of the edges. Click and drag it to your desired location then let go."
+                    "longText": "<br><br><br><br>2. If you need to move the table, select it and place your cursor on one of the edges. Click and drag it to your desired location then let go."
                   },
                   {
                     "image": "T3071",
-                    "longText": "3. You might also want to add columns and rows. For example, let us add a row above and column to the right of Violet. Select the table, and then go to the Layout tab then the Rows & Columns group."
+                    "longText": "<br><br><br><br>3. You might also want to add columns and rows. For example, let us add a row above and column to the right of Violet. Select the table, and then go to the Layout tab then the Rows & Columns group."
                   },
                   {
                     "image": "T3072",
-                    "longText": "4. If you want to delete rows and columns, go to the Layout tab then click Delete in the Rows & Columns group. A drop-down menu will appear; choose what you want to delete. In this example, let us delete the second row"
+                    "longText": "<br><br><br><br>4. If you want to delete rows and columns, go to the Layout tab then click Delete in the Rows & Columns group. A drop-down menu will appear; choose what you want to delete. In this example, let us delete the second row"
                   },
                   {
                     "image": "T3073",
-                    "longText": "5. You can also merge cells with one another. Let us select the cell Violet and the cell beside it. Highlight the two cells. Then in the Layout tab, click Merge Cells in the Merge group."
+                    "longText": "<br><br><br><br>5. You can also merge cells with one another. Let us select the cell Violet and the cell beside it. Highlight the two cells. Then in the Layout tab, click Merge Cells in the Merge group."
                   },
                   {
                     "image": "T3074",
-                    "longText": "6. You can also split cells. For example, select the cell Violet. Then in the Layout tab, choose Split Cells in the Merge group. A dialog box will appear, asking the number of columns and rows. If it is all set, click OK."
+                    "longText": "<br><br><br><br>6. You can also split cells. For example, select the cell Violet. Then in the Layout tab, choose Split Cells in the Merge group. A dialog box will appear, asking the number of columns and rows. If it is all set, click OK."
                   },
                   {
                     "image": "T3075",
-                    "longText": "<i>To modify column width and row height:</i><br><br>1. To modify the column width and row height of a table, select the area you want to adjust. A double arrow mouse pointer will appear."
+                    "longText": "<br><br><br><i>To modify column width and row height:</i><br><br>1. To modify the column width and row height of a table, select the area you want to adjust. A double arrow mouse pointer will appear."
                   },
                   {
                     "image": "T3076",
-                    "longText": "2. For column width, drag your mouse to the left to decrease the width or to the right to increase it."
+                    "longText": "<br><br><br><br><br>2. For column width, drag your mouse to the left to decrease the width or to the right to increase it."
                   },
                   {
                     "image": "T3077",
-                    "longText": "3. For row height, drag your mouse up to decrease the height or down to increase it."
+                    "longText": "<br><br><br><br><br>3. For row height, drag your mouse up to decrease the height or down to increase it."
                   },
                   {
                     "image": "T3078",
@@ -2201,52 +2200,52 @@
                   "title": "<b>Directions. Read the questions carefully and click your answer from the choices below.</b>",
                   "items": [
                     {
-                      "title": "1. There are two fonts available at the top of the font menu.",
+                      "title": "There are two fonts available at the top of the font menu.",
                       "answer": "Theme Font",
                       "choices": ["Theme Color", "Theme Font", "Theme Effect"]
                     },
                     {
-                      "title": "2. Affect the present shape styles.",
+                      "title": "Affect the present shape styles.",
                       "answer": "Theme Effect",
                       "choices": ["Theme Font", "Theme Effect", "Theme Color"]
                     },
                     {
-                      "title": "3. There are 10 theme colors with light to dark variations available from every color menu.",
+                      "title": "There are 10 theme colors with light to dark variations available from every color menu.",
                       "answer": "Theme Color",
                       "choices": ["Theme Effect", "Theme Font", "Theme Color"]
                     },
                     {
-                      "title": "4. Highlight the text, right-click and then choose to copy or simply press the shortcut key.",
+                      "title": "Highlight the text, right-click and then choose to copy or simply press the shortcut key.",
                       "answer": "Ctrl+C",
                       "choices": ["Ctrl+C", "Ctrl+V", "Ctrl+S"]
                     },
                     {
-                      "title": "5. To cut a text means the text will be moved to another slide or another presentation simply press the shortcut key.",
+                      "title": "To cut a text means the text will be moved to another slide or another presentation simply press the shortcut key.",
                       "answer": "Ctrl+X",
                       "choices": ["Ctrl+U", "Ctrl+A", "Ctrl+X"]
                     },
                     {
-                      "title": "6. Click the area you want to paste the text then right-click, and then select paste or simply press the shortcut key.",
+                      "title": "Click the area you want to paste the text then right-click, and then select paste or simply press the shortcut key.",
                       "answer": "Ctrl+V",
                       "choices": ["Ctrl+J", "Ctrl+P", "Ctrl+V"]
                     },
                     {
-                      "title": "7. Shortcut key of undo.",
+                      "title": "Shortcut key of undo.",
                       "answer": "Ctrl+Z",
                       "choices": ["Ctrl+Z", "Ctrl+Y", "Ctrl+P"]
                     },
                     {
-                      "title": "8. Redo button at the access bar or simply press the shortcut key.",
+                      "title": "Redo button at the access bar or simply press the shortcut key.",
                       "answer": "Ctrl+Y",
                       "choices": ["Ctrl+J", "Ctrl+Y", "Ctrl+P"]
                     },
                     {
-                      "title": "9. Highlight the text then select the font button in the font group in the Home Tab.",
+                      "title": "Highlight the text then select the font button in the font group in the Home Tab.",
                       "answer": "Font Type",
                       "choices": ["Font Type", "Font Styles", "Font Color"]
                     },
                     {
-                      "title": "10. Highlight the text then select the font color button in the font group in the Home Tab.",
+                      "title": "Highlight the text then select the font color button in the font group in the Home Tab.",
                       "answer": "Font Color",
                       "choices": ["Font Type", "Font Styles", "Font Color"]
                     }
@@ -2273,19 +2272,19 @@
                   },
                   {
                     "image": "T3085",
-                    "longText": "It is best if you have a picture that has a transparent background, or change your layout with white background. You may search pictures that have a PNG file type, even online."
+                    "longText": "<br><br><br><br>It is best if you have a picture that has a transparent background, or change your layout with white background. You may search pictures that have a PNG file type, even online."
                   },
                   {
                     "image": "T3086",
-                    "longText": "On the right side of the window, the Design Ideas panel will open with suggestions. These will help you have appealing slides, but they can only be seen if you are connected to the internet."
+                    "longText": "<br><br><br><br>On the right side of the window, the Design Ideas panel will open with suggestions. These will help you have appealing slides, but they can only be seen if you are connected to the internet."
                   },
                   {
                     "image": "T3087",
-                    "longtext": "Another way to insert a picture is through the slide itself. For example, if you add a second slide with a Title and Content layout, you will see that there are icons in the slide area. Select the Picture icon."
+                    "longtext": "<br><br><br>Another way to insert a picture is through the slide itself. For example, if you add a second slide with a Title and Content layout, you will see that there are icons in the slide area. Select the Picture icon."
                   },
                   {
                     "image": "T3088",
-                    "longText": "A dialog box will appear where you can locate your picture; it will automatically be inserted in the slide.<br><br>The same procedure can be applied if you are going to insert shapes and charts."
+                    "longText": "<br><br><br>A dialog box will appear where you can locate your picture; it will automatically be inserted in the slide.<br><br>The same procedure can be applied if you are going to insert shapes and charts."
                   },
                   {
                     "image": "T3089",
@@ -2294,7 +2293,7 @@
                   },
                   {
                     "image": "T3090",
-                    "longText": "<i>To copy and remove graphical objects:</i><br><br>1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
+                    "longText": "<br><br><br><i>To copy and remove graphical objects:</i><br><br>1. Click the object then right-click and choose Copy or press the shortcut key Ctrl+C. It will be in the clipboard, waiting to be pasted."
                   },
                   {
                     "longText": "2. To remove a graphical object, click the object to be removed, and then press Del in the keyboard. To cut it, right-click then choose Cut, or press the shortcut key Ctrl+X. It will be in the clipboard, waiting to be pasted.<br><br>3. To copy and remove a slide, select the slide using the switching view command."
@@ -2309,31 +2308,31 @@
                   },
                   {
                     "image": "T3094",
-                    "longText": "To add and change drawn object to a slide:<br<br>Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
+                    "longText": "To add and change drawn object to a slide:<br><br>Drawn objects include different basic shapes such as line, arrow, block arrow, rectangle, square, oval, and circle.<br><br>1. To insert a drawn object, click Shapes in the Insert tab. Then, select the shapes you want to put in your slide. You can insert as many shapes as needed."
                   },
                   {
                     "image": "T3095",
-                    "longText": "For example, let us insert a square and a circle. First, click the square then drag in the area where you want to draw, followed by the circle."
+                    "longText": "<br><br><br><br><br>For example, let us insert a square and a circle. First, click the square then drag in the area where you want to draw, followed by the circle."
                   },
                   {
                     "image": "T3096",
-                    "longText": "To change the fill color and line color, select the shape. In the Shape Format tab, select Shape Fill or Shape Outline in the Shape Styles group.<br><br>Shape Fill is the color of the shape, while Shape Outline is the color of its border."
+                    "longText": "<br><br><br>To change the fill color and line color, select the shape. In the Shape Format tab, select Shape Fill or Shape Outline in the Shape Styles group.<br><br>Shape Fill is the color of the shape, while Shape Outline is the color of its border."
                   },
                   {
                     "image": "T3097",
-                    "longText": "In Shape Outline, you can also change the line style: Sketched or Dashes. You can also change the line weight, which is the thickness of the border."
+                    "longText": "<br><br><br><br><br>In Shape Outline, you can also change the line style: Sketched or Dashes. You can also change the line weight, which is the thickness of the border."
                   },
                   {
                     "image": "T3098",
-                    "longText": "To group objects, select two or more objects by pressing the Ctrl key on the keyboard. Then, right-click and select the Group command."
+                    "longText": "<br><br><br><br><br>To group objects, select two or more objects by pressing the Ctrl key on the keyboard. Then, right-click and select the Group command."
                   },
                   {
                     "image": "T3099",
-                    "longText": "To ungroup objects, right-click on the grouped objects then select the Ungroup command.<br><br>To apply shadow, select Shape Effects in the Shape Styles group in Shape Format tab. In Shape Effects, click Shadow then choose the desired shadow to be applied."
+                    "longText": "<br><br><br>To ungroup objects, right-click on the grouped objects then select the Ungroup command.<br><br>To apply shadow, select Shape Effects in the Shape Styles group in Shape Format tab. In Shape Effects, click Shadow then choose the desired shadow to be applied."
                   },
                   {
                     "image": "T3100",
-                    "longText": "To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
+                    "longText": "<br><br><br>To move objects within objects, select Arrange in the Shape Format tab. You can choose between Bring Forward and Send Backward. For example, to move the circle to the back of the square, select the circle then click Send Backward."
                   },
                   {
                     "title": "Adding Animation on Slides",
@@ -2341,7 +2340,7 @@
                   },
                   {
                     "image": "T3102",
-                    "longText": "<b>Transitions</b> - The first type of animation is called transition animation; these are animations added in between slides. You can view the different transition options by going to the Transitions tab in the PowerPoint ribbon.<br><br>The default view shows ten transitions, but if you click on the drop- down arrow on the lower-right corner, it will expand and show more transitions.<br><ul><li>Subtle</li><li>Exciting</li><li>Dynamic Content</li></ul>"
+                    "longText": "<br><br><br><b>Transitions</b> - The first type of animation is called transition animation; these are animations added in between slides. You can view the different transition options by going to the Transitions tab in the PowerPoint ribbon.<br><br>The default view shows ten transitions, but if you click on the drop- down arrow on the lower-right corner, it will expand and show more transitions.<br><ul><li>Subtle</li><li>Exciting</li><li>Dynamic Content</li></ul>"
                   },
                   {
                     "image": "T3103",
@@ -2379,23 +2378,23 @@
                   },
                   {
                     "image": "T3111",
-                    "longText": "<i>To spell-check a presentation:</i><br><br>You can spell-check your entire presentation by using the Spelling command in the Review tab. The Spelling command will do a complete change on the spelling errors."
+                    "longText": "<br><br><br><i>To spell-check a presentation:</i><br><br>You can spell-check your entire presentation by using the Spelling command in the Review tab. The Spelling command will do a complete change on the spelling errors."
                   },
                   {
                     "image": "T3112",
-                    "longText": "<i>To change slide setup and slide orientation:</i><br><br>1. Select the Design tab.<br>2. Near the right end, select Slide Size, and then click Custom Slide Size.<br>3. In the Slide Size dialog box, select Portrait then select OK."
+                    "longText": "<br><br><i>To change slide setup and slide orientation:</i><br><br>1. Select the Design tab.<br>2. Near the right end, select Slide Size, and then click Custom Slide Size.<br>3. In the Slide Size dialog box, select Portrait then select OK."
                   },
                   {
                     "image": "T3113",
-                    "longText": "4. In the next dialog box, select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
+                    "longText": "<br><br><br><br><br>4. In the next dialog box, select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
                   },
                   {
                     "image": "T3114",
-                    "longText": "<i>To change paper size:</i>1. Select the Design tab on the toolbar ribbon. Select the Slide Size icon near the far-right end of the toolbar.<br><br>2. Select your desired slide size: Standard (4:3 aspect ratio), Widescreen (16:9), or Custom Slide Size."
+                    "longText": "<br><br><br><i>To change paper size:</i>1. Select the Design tab on the toolbar ribbon. Select the Slide Size icon near the far-right end of the toolbar.<br><br>2. Select your desired slide size: Standard (4:3 aspect ratio), Widescreen (16:9), or Custom Slide Size."
                   },
                   {
                     "image": "T3115",
-                    "longText": "3. In the next dialog box, you can select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
+                    "longText": "<br><br><br><br><br>3. In the next dialog box, you can select Maximize to take advantage of the space available or Ensure Fit to make sure that your content fits on the vertical page"
                   },
                   {
                     "image": "T3116",
@@ -2424,7 +2423,7 @@
                   },
                   {
                     "image": "T3122",
-                    "longText": "To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
+                    "longText": "<br><br><br>To save, follow the procedure in saving then select which among the three file formats you prefer.<br><br>You can identify the file format because of its icon. For PPTX, the Microsoft PowerPoint icon will be used, while for MP4 and WMV, a preview of the presentation will be displayed."
                   },
                   {
                     "title": "Points to Remember",

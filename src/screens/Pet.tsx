@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AspectRatio,
   Box,
@@ -20,6 +20,7 @@ import HeaderNav from "../components/HeaderNav";
 import ToyCard from "../components/ToyCard";
 import Alice from "../components/Alice";
 import ModalImage from "../components/ModalImage";
+import { getHourDifference } from "../logic/Utilities";
 
 const shopItems: IShopItem[] = [
   {
@@ -46,7 +47,7 @@ const shopItems: IShopItem[] = [
 ];
 
 const Pet: React.FC = () => {
-  const { settings, pet, petHelpDone, buyTreat } = useStore();
+  const { settings, pet, resetPet, petHelpDone, buyTreat } = useStore();
   const [showHelp, setShowHelp] = useState(pet.help);
   const [item, setItem] = useState(0);
   const [showConfirm, setShowConfirm] = useState(false);
@@ -74,6 +75,15 @@ const Pet: React.FC = () => {
       setShowWarn(true);
     }
   };
+
+  // Effects
+  useEffect(() => {
+    // reset pet if no treat after 12hrs
+    if (pet.modified) {
+      const diff = getHourDifference(new Date(pet.modified), new Date());
+      if (diff >= 12) resetPet();
+    }
+  }, []);
 
   return (
     <Box size="full" bg="tertiary.600">
